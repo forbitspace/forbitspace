@@ -1,0 +1,13 @@
+{
+	"host": "localhost",
+	"port": 3002,
+	"public": "./public/",
+	"logLevel": {
+		"console": "debug",
+		"file": "debug"
+	},
+	"paginate": {
+		"default": 10,
+		"max": 50
+	}
+}
