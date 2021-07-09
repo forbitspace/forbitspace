@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { MemberData } from "../constants";
+// import { MemberData } from "../constants";
 
-const Members = () => {
+const Members = (props) => {
   const RenderMemberItem = ({ thumb, name, job, lang }) => {
     return (
       <StyledMemberItem>
@@ -30,9 +30,9 @@ const Members = () => {
 
   return (
     <WrapperMembers>
-      <Title>Active core contributors</Title>
+      <Title>{props.title}</Title>
       <GroupMembers>
-        {MemberData.map((item) => {
+        {props.data.map((item) => {
           return (
             <RenderMemberItem
               thumb={item.thumb}
