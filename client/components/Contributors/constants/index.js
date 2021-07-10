@@ -5,7 +5,7 @@ export const NumData = [
     },
     {
         num: 20,
-        text: 'backers'
+        text: 'Backers'
     },
     {
         num: 50,
@@ -53,5 +53,57 @@ export const MemberData = [
         thumb: './images/thumb-members.png',
         job: 'Designer',
         lang: 'En, Vi',
+    }
+]
+
+export const AuditorData = [
+    {
+        name: 'Meliora Lily',
+        thumb: './images/thumb-members.png',
+        job: 'Founder',
+        lang: 'En, Vi'
+    },
+    {
+        name: 'Meliora Lily',
+        thumb: './images/thumb-members.png',
+        job: 'Founder',
+        lang: 'En, Vi'
+    }
+    // ,
+    // {
+    //     name: 'Meliora Lily',
+    //     thumb: './images/thumb-members.png',
+    //     job: 'Founder',
+    //     lang: 'En, Vi'
+    // }
+]
+
+export const ContributorData = [
+    {
+        img: 'coingecko'
+    },
+    {
+        img: 'chainlink'
+    },
+    {
+        img: 'graph'
+    },
+    {
+        img: 'metamask'
+    },
+    {
+        img: 'dune'
+    },
+    {
+        img: 'wallet'
+    },
+    {
+        img: 'binance'
+    },
+    {
+        img: 'polygon'
+    },
+    {
+        img: 'coinbase'
     }
 ]
