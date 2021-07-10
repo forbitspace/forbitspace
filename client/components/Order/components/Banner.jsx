@@ -34,7 +34,7 @@ const WrapperBanner = styled.div`
 const BackgroundBanner = styled.div`
     position: relative;
     z-index: -1;
-    max-width: 750px;
+    max-width: 950px;
     top: 0;
     bottom: 0;
     left: 0;
