@@ -27,7 +27,7 @@ const Misson = () => {
                 <Title>Mission</Title>
                 <Text>
                     The mission of the 1inch Foundation is to foster growth and expansion
-                    of the 1inch Network and incentivize contributions through<br />
+                    of the 1inch Network and incentivize contributions through
                     grants and other capital deployment vehicles. The 1inch Foundation is
                     focused on the following areas:
                 </Text>
@@ -42,7 +42,7 @@ const WrapperMission = styled.section`
     position: relative;
 
     @media (max-width: 1024px){
-        padding: 50px 0;
+        padding: 50px 0 0;
     }
 `
 
@@ -60,6 +60,9 @@ const Title = styled.h2`
     @media (max-width: 576px) {
       font-size: 45px;
       letter-spacing: 2px;
+    }
+    @media (max-width: 415px){
+        font-size: 2rem;
     }
 `
 
@@ -106,6 +109,9 @@ const Liner = styled.div`
 
 const BoxTitle = styled.div`
     font-size: 3rem;
+    @media (max-width: 415px){
+        font-size: 1.6rem;
+    }
 `
 
 export default Misson;

@@ -78,14 +78,22 @@ const Title = styled.p`
 
 const GroupMembers = styled.div`
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: 1075px){
+    justify-content: flex-start;
+  }
 `;
 const StyledMemberItem = styled.div`
   position: relative;
   width: 350px;
   height: 350px;
   margin: 0 auto;
+
+  @media (min-width: 1075px){
+    margin: 0 calc((100% - 1050px)/6);
+  }
 `;
 
 const WrapperIfo = styled.div`

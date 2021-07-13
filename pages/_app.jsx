@@ -22,9 +22,9 @@ export default class extends App {
     return (
       <React.Fragment>
         <NextSeo
-          title={"forbitswap"}
+          title={"forbitspace"}
           description={
-            "forbitswap The future of decentralized finance Defi space is the next evolution of the financial system"
+            "forbitspace The future of decentralized finance Defi space is the next evolution of the financial system"
           }
         />
         <Header />
