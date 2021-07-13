@@ -81,6 +81,9 @@ const ContentActivity = styled.div`
             padding: 40px 0;
         }
     }
+    @media (max-width: 415px){
+        padding: 20px 0;
+    }
 
 `
 const Title = styled.h2`
@@ -88,8 +91,10 @@ const Title = styled.h2`
     line-height: 1.2;
     font-weight: 600;
     @media (max-width: 576px) {
-
-      letter-spacing: 2px;
+        letter-spacing: 2px;
+    }
+    @media (max-width: 415px){
+        font-size: 2rem;
     }
 `
 

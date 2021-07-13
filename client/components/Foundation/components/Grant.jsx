@@ -72,6 +72,9 @@ const Title = styled.h2`
       font-size: 45px;
       letter-spacing: 2px;
     }
+    @media (max-width: 415px){
+        font-size: 2rem;
+    }
 `
 
 const Text = styled.p`
@@ -95,7 +98,7 @@ const BoxGrant = styled.div`
         padding: 0 20px;
     }
 
-    @media (max-width: 768px){
+    @media (max-width: 576px){
         gap: 10px!important;
         margin: 50px auto;
     }
