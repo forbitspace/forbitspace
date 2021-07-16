@@ -44,7 +44,7 @@ export default class extends App {
                                     alt=''
                                 />
                             </LogoSpace>
-                            <UseBtn>Use App</UseBtn>
+                            <UseBtn href='/#'>Use App</UseBtn>
                         </HeaderContent>
                         <Orbit />
                     </Main>
@@ -84,6 +84,9 @@ const HeaderContent = styled.div`
     right: 0;
     background: transparent;
     padding: 0 120px;
+    @media (max-width: 768px) {
+        padding: 0 10px;
+    }
 `;
 const LogoSpace = styled.div`
     max-height: 80px;
@@ -120,5 +123,8 @@ const UseBtn = styled.a`
         color: #fff;
         background-size: 200%;
         background-position: right;
+    }
+    @media (max-width: 576px) {
+        font-size: 0.8rem;
     }
 `;
