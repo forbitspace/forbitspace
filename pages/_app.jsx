@@ -1,9 +1,12 @@
 // @flow
 import React from "react";
-import styled from "styled-components";
+// import styled from "styled-components";
 import App from "next/app";
 import { NextSeo } from "next-seo";
 import dynamic from "next/dynamic";
+const Planet = dynamic(import("../client/components/Planets/Planet"), {
+    ssr: false,
+});
 const Header = dynamic(import("../client/components/Header"), { ssr: false });
 // const Footer = dynamic(import("../client/components/Footer"), { ssr: false });
 
@@ -18,6 +21,7 @@ export default class extends App {
         return { pageProps };
     }
     render() {
+        var show = false;
         const { Component, pageProps } = this.props;
         return (
             <React.Fragment>
@@ -27,17 +31,17 @@ export default class extends App {
                         "forbitspace The future of decentralized finance Defi space is the next evolution of the financial system"
                     }
                 />
-                <Header />
-                <div className='main'>
-                    <Component {...pageProps} />
-                </div>
-                {/* <Footer /> */}
+                {show ? (
+                    <>
+                        <Header />
+                        <div className='main'>
+                            <Component {...pageProps} />
+                        </div>
+                    </>
+                ) : (
+                    <Planet />
+                )}
             </React.Fragment>
         );
     }
 }
-
-const Main = styled.div`
-    position: relative;
-    margin-top: 130px;
-`;
