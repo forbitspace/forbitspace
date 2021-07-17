@@ -33,6 +33,30 @@
       "file": "static/chunks/0.js"
     },
     {
+      "id": "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/@emotion/memoize/dist/memoize.browser.esm.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/@emotion/stylis/dist/stylis.browser.esm.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/@emotion/unitless/dist/unitless.browser.esm.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
+      "file": "static/chunks/0.js"
+    },
+    {
       "id": "./node_modules/next/dist/client/link.js",
       "file": "static/chunks/0.js"
     },
@@ -42,6 +66,18 @@
     },
     {
       "id": "./node_modules/next/link.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/process/browser.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/shallowequal/index.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/styled-components/dist/styled-components.browser.esm.js",
       "file": "static/chunks/0.js"
     }
   ],
@@ -813,6 +849,48 @@
     {
       "id": "./node_modules/webpack/buildin/global.js",
       "file": "static/chunks/2.js"
+    }
+  ],
+  "../client/components/Planets/Planet": [
+    {
+      "id": "./client/components/Planets/Planet.jsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@emotion/memoize/dist/memoize.browser.esm.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@emotion/stylis/dist/stylis.browser.esm.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@emotion/unitless/dist/unitless.browser.esm.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/process/browser.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/shallowequal/index.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/styled-components/dist/styled-components.browser.esm.js",
+      "file": "static/chunks/3.js"
     }
   ],
   "./dev/noop": [
