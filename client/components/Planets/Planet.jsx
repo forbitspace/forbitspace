@@ -102,6 +102,44 @@ const Orbit = styled.div`
 const WrapperPlanet = styled.div`
     display: flex;
     justify-content: center;
+    @media (min-height: 1260px) {
+        transform: scale(1.3);
+    }
+    @media (min-width: 1281px) {
+        transform: scale(1.3);
+    }
+
+    @media (min-width: 1024px) {
+        transform: scale(1);
+    }
+
+    @media (max-height: 768px) {
+        transform: scale(0.7);
+    }
+
+    @media (max-height: 768px) {
+        transform: scale(0.7);
+    }
+
+    @media (max-height: 600px) {
+        transform: scale(0.5);
+    }
+
+    @media (max-width: 415px) {
+        transform: scale(0.5);
+    }
+
+    @media (max-height: 425px) {
+        transform: scale(0.4);
+    }
+
+    @media (max-width: 320px) {
+        transform: scale(0.4);
+    }
+
+    @media (max-height: 350px) {
+        transform: scale(0.3);
+    }
 `;
 const System = styled.div``;
 const Circle = styled.div`
@@ -128,21 +166,6 @@ const Circle = styled.div`
         to {
             transform: rotate(-360deg);
         }
-    }
-    @media (max-width: 900px) {
-        max-width: 100%;
-        width: 750px;
-        height: 750px;
-    }
-    @media (max-width: 720px) {
-        max-width: 100%;
-        width: 500px;
-        height: 500px;
-    }
-    @media (max-width: 576px) {
-        max-width: 100%;
-        width: 350px;
-        height: 350px;
     }
 `;
 const Logo = styled.div`
@@ -186,9 +209,6 @@ const Planets = styled.div`
     :nth-child(1) {
         right: 15%;
         top: 16%;
-        @media (max-width: 576px) {
-            top: 10%;
-        }
     }
 
     :nth-child(2) {
@@ -225,16 +245,6 @@ const Planets = styled.div`
         left: 35%;
         bottom: -1%;
     }
-
-    @media (max-width: 900px) {
-        max-width: 70%;
-        transform: scale(0.9);
-    }
-
-    @media (max-width: 576px) {
-        max-width: 70%;
-        transform: scale(0.4);
-    }
     @keyframes spinning {
         from {
             transform: rotate(0deg);
@@ -257,16 +267,6 @@ const Earth = styled.div`
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
-
-    @media (max-width: 900px) {
-        max-width: 70%;
-        transform: scale(0.9);
-    }
-
-    @media (max-width: 576px) {
-        max-width: 70%;
-        transform: scale(0.4);
-    }
 `;
 const Moon = styled.div`
     width: 100%;
@@ -281,16 +281,6 @@ const Moon = styled.div`
         position: absolute;
         top: -16px;
         right: 0;
-    }
-
-    @media (max-width: 900px) {
-        max-width: 70%;
-        transform: scale(0.9);
-    }
-
-    @media (max-width: 576px) {
-        max-width: 70%;
-        transform: scale(0.4);
     }
 `;
 const HeaderContent = styled.div`
