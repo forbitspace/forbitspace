@@ -6,15 +6,15 @@ const Logo = () => {
     <BoxLogo>
       <a href="/">
         <img
-          src="images/logo-forbitswap-dark.svg"
+          src="../images/Forbitspace-comming/logo-forbitspace.png"
           alt="forbitswap"
           className="logo-dark-mode"
         />
-        <img
+        {/* <img
           src="images/logo-forbitswap-light.svg"
           alt="forbitswap"
           className="logo-light-mode"
-        />
+        /> */}
       </a>
     </BoxLogo>
   );

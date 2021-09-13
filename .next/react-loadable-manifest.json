@@ -1,4 +1,58 @@
 {
+  "../client/components/API": [
+    {
+      "id": "./client/components/API/components/Banner.jsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./client/components/API/index.jsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/@emotion/memoize/dist/memoize.browser.esm.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/@emotion/stylis/dist/stylis.browser.esm.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/@emotion/unitless/dist/unitless.browser.esm.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/process/browser.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-is/cjs/react-is.development.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-is/index.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/shallowequal/index.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/styled-components/dist/styled-components.browser.esm.js",
+      "file": "static/chunks/6.js"
+    }
+  ],
   "../client/components/Header": [
     {
       "id": "./client/components/Header/components/AppLink.jsx",
@@ -103,7 +157,7 @@
       "file": "static/chunks/3.js"
     },
     {
-      "id": "./client/components/Home/components/DecentralizedText.jsx",
+      "id": "./client/components/Home/components/Derivative.jsx",
       "file": "static/chunks/3.js"
     },
     {
@@ -119,7 +173,27 @@
       "file": "static/chunks/3.js"
     },
     {
+      "id": "./client/components/Home/components/LimitOrder.jsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./client/components/Home/components/Liquidity.jsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./client/components/Home/components/Partners.jsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./client/components/Home/components/Planet.jsx",
+      "file": "static/chunks/3.js"
+    },
+    {
       "id": "./client/components/Home/components/Pramaster.jsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./client/components/Home/components/SelfCustody.jsx",
       "file": "static/chunks/3.js"
     },
     {
@@ -135,11 +209,19 @@
       "file": "static/chunks/3.js"
     },
     {
+      "id": "./client/components/Home/components/System.jsx",
+      "file": "static/chunks/3.js"
+    },
+    {
       "id": "./client/components/Home/constants/index.js",
       "file": "static/chunks/3.js"
     },
     {
       "id": "./client/components/Home/index.jsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./client/components/Planets/Planet.jsx",
       "file": "static/chunks/3.js"
     },
     {

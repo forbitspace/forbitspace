@@ -5,7 +5,7 @@ const AppLink = ({ marginRight }) => {
   return (
     <ButtonBanner href="/" marginRight={marginRight}>
       {" "}
-      Use forbitswap
+      Launch App
     </ButtonBanner>
   );
 };
@@ -25,7 +25,7 @@ const ButtonBanner = styled.a`
   width: fit-content;
   background-color: rgb(255, 255, 255);
   color: white;
-  border: 1px solid white;
+  /* border: 1px solid transparent; */
   margin-right: 1rem;
   background-image: linear-gradient(
     38deg,
@@ -37,11 +37,12 @@ const ButtonBanner = styled.a`
     #0d00ff 111%
   );
   width: 100%;
-  &:hover {
-    background-size: 200%;
-    background-position: right;
-    color: white;
-  }
+  max-width: 210px;
+  /* &:hover { */
+  background-size: 200%;
+  background-position: right;
+  color: white;
+  /* } */
 `;
 
 export default AppLink;
