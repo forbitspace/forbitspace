@@ -49,6 +49,9 @@ const StyledNav = styled.div`
         max-height: 300px;
       }
     }
+    .text-visi {
+      font-weight: 600;
+    }
   }
 `;
 
@@ -63,6 +66,7 @@ const DropdownMenu = styled.div`
   cursor: pointer;
   a {
     margin-bottom: 10px !important;
+    font-weight: 300 !important;
   }
 `;
 

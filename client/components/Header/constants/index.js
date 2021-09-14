@@ -125,7 +125,7 @@ export const navContent = [
     contents: [
       {
         link: "",
-        content: "Aggregation",
+        content: "Aggregation Protocol",
       },
       {
         link: "",
@@ -139,10 +139,6 @@ export const navContent = [
         link: "",
         content: "Derivative Protocol",
       },
-      {
-        link: "",
-        content: "Aggregation",
-      },
     ],
   },
   {
@@ -154,7 +150,11 @@ export const navContent = [
       },
       {
         link: "",
-        content: "Space Dao Pools",
+        content: "Space Dao",
+      },
+      {
+        link: "",
+        content: "Pools",
       },
       {
         link: "",
@@ -205,20 +205,20 @@ export const navContent = [
     ],
   },
   {
-    nav: "Support",
+    nav: "API",
     contents: [
-      {
-        link: "",
-        content: "Help Center",
-      },
-      {
-        link: "",
-        content: "Term of Use",
-      },
-      {
-        link: "",
-        content: "Privacy Policy",
-      },
+      // {
+      //   link: "",
+      //   content: "Help Center",
+      // },
+      // {
+      //   link: "",
+      //   content: "Term of Use",
+      // },
+      // {
+      //   link: "",
+      //   content: "Privacy Policy",
+      // },
     ],
   },
   {

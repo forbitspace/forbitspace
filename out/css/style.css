@@ -1370,7 +1370,13 @@ body.dark-mode {
   transition: ease-in-out 0.5s all;
   color: #fff;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, #00284b 0%, #020a1a 100%);
+  /* background-image: linear-gradient(to right, #00284b 0%, #020a1a 100%); */
+  background-image: linear-gradient(
+    to right,
+    #020a1a 0%,
+    #00284b 50%,
+    #020a1a 100%
+  );
 }
 
 body.visible p {

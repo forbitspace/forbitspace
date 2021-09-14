@@ -3,7 +3,7 @@ import { Container } from "reactstrap";
 import styled from "styled-components";
 // import Title from "../../Title";
 // import DecentralizedText from "./DecentralizedText";
-import ButtonApp from "../../Header/components/AppLink";
+// import ButtonApp from "../../Header/components/AppLink";
 
 const Banner = () => {
   return (
@@ -22,9 +22,9 @@ const Banner = () => {
             traders to tap deep liquidity and receive better pricing one single
             interface.
           </SubText>
-          <WrapperButtonApp>
+          {/* <WrapperButtonApp>
             <ButtonApp marginRight="0px" />
-          </WrapperButtonApp>
+          </WrapperButtonApp> */}
         </Content>
       </Container>
     </BoxSection>
@@ -34,11 +34,11 @@ const Banner = () => {
 const BoxSection = styled.section`
   position: relative;
   /* min-height: 88vh; */
-  /* padding: 10vh 0 0; */
+  padding: 10vh 0 0;
 
   @media (max-width: 770px) {
-    padding-top: 10px;
-    /* min-height: 80vh; */
+    padding-top: 50px;
+    min-height: 100vh;
   }
 `;
 const WrapImgBanner = styled.div`
@@ -107,41 +107,41 @@ const Text = styled.p`
     line-height: 25px;
   }
 `;
-const WrapperButtonApp = styled.div`
-  max-width: 350px;
-  /* margin: 0 auto; */
-  /* width: 90%; */
-  text-align: left;
-  @media (max-width: 1200px) {
-    display: block;
-  }
-  @media (max-width: 576px) {
-    text-align: center;
-    max-width: unset;
-  }
-`;
+// const WrapperButtonApp = styled.div`
+//   max-width: 350px;
+//   /* margin: 0 auto; */
+//   /* width: 90%; */
+//   text-align: left;
+//   @media (max-width: 1200px) {
+//     display: block;
+//   }
+//   @media (max-width: 576px) {
+//     text-align: center;
+//     max-width: unset;
+//   }
+// `;
 
-const TitleBanner = styled.h2`
-  font-size: 40px;
-  font-weight: bold;
-  text-align: right;
-  font-family: "Prompt", sans-serif;
-  color: #3a3939;
-  margin-bottom: 30vh;
-  line-height: 50px;
+// const TitleBanner = styled.h2`
+//   font-size: 40px;
+//   font-weight: bold;
+//   text-align: right;
+//   font-family: "Prompt", sans-serif;
+//   color: #3a3939;
+//   margin-bottom: 30vh;
+//   line-height: 50px;
 
-  animation: animationTextBanner 3s 1;
+//   animation: animationTextBanner 3s 1;
 
-  @media (max-width: 770px) {
-    font-size: 35px;
-    margin-bottom: 50px;
-    text-align: center;
-  }
+//   @media (max-width: 770px) {
+//     font-size: 35px;
+//     margin-bottom: 50px;
+//     text-align: center;
+//   }
 
-  @media (max-width: 576px) {
-    font-size: 1.6rem;
-    text-align: left;
-  }
-`;
+//   @media (max-width: 576px) {
+//     font-size: 1.6rem;
+//     text-align: left;
+//   }
+// `;
 
 export default Banner;

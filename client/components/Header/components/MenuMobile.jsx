@@ -30,9 +30,10 @@ const MenuMobile = () => {
               <Logo />
             </li>
             {navContent.map((item, index) => (
-              <li>
+              <li className="title">
                 <a href="#" className="text">
                   {item.nav}
+                  <i className="fa fas-chevron-down"></i>
                 </a>
                 <ul className="submenu">
                   {item.contents.map((item, index) => (
@@ -78,6 +79,18 @@ const Nav = styled.div`
         color: #182239;
       }
     }
+  }
+  .title {
+    :hover {
+      .submenu {
+        max-height: 500px;
+      }
+    }
+  }
+  .submenu {
+    max-height: 0;
+    transition: max-height 0.5s;
+    overflow: hidden;
   }
   @media (max-width: 576px) {
     width: 100%;

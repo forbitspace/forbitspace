@@ -51,6 +51,9 @@ const WrapContainer = styled(Container)`
 `;
 const WrapLiquidity = styled.div`
   width: 50%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 const ImgHalf = styled.div`
   width: 100%;
@@ -72,6 +75,7 @@ const Content = styled.div`
     margin-left: 0;
     margin-top: 20px;
     text-align: center;
+    align-items: center;
   }
 `;
 const Text = styled.p`

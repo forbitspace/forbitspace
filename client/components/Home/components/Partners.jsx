@@ -51,6 +51,9 @@ const WrapLiquidity = styled.div`
   @media (min-width: 2100px) {
     width: 65%;
   }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 const ImgHalf = styled.div`
   width: 100%;

@@ -6,15 +6,15 @@ const Logo = () => {
     <BoxLogo>
       <a href="/">
         <img
-          src="../images/Forbitspace-comming/logo-forbitspace.png"
-          alt="forbitswap"
-          className="logo-dark-mode"
+          src="../images/logo/logo-forbitspace-dark.png"
+          alt="forbitspace"
+          className="logo--desktop"
         />
-        {/* <img
-          src="images/logo-forbitswap-light.svg"
-          alt="forbitswap"
-          className="logo-light-mode"
-        /> */}
+        <img
+          src="../images/logo/logo-sm-dark.png"
+          alt="forbitspace"
+          className="logo--mobile"
+        />
       </a>
     </BoxLogo>
   );
@@ -33,12 +33,18 @@ const BoxLogo = styled.div`
       width: 100%;
     }
   }
-  .logo-dark-mode {
+  .logo--mobile {
     display: none;
+    max-width: 45px;
   }
-
   @media (max-width: 576px) {
     max-width: 120px;
+    .logo--desktop {
+      display: none;
+    }
+    .logo--mobile {
+      display: block;
+    }
   }
 `;
 

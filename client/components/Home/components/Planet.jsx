@@ -69,11 +69,11 @@ const WrapPlanet = styled.div`
     transform: scale(0.75);
   }
   @media (max-width: 576px) {
-    transform: scale(0.5);
+    transform: scale(0.65);
     margin: -170px 0;
   }
   @media (max-width: 400px) {
-    transform: scale(0.37);
+    transform: scale(0.5);
     margin: -220px 0;
   }
 `;
