@@ -50,7 +50,7 @@ const StyledNav = styled.div`
       }
     }
     .text-visi {
-      font-weight: 600;
+      font-weight: 800;
     }
   }
 `;
@@ -66,7 +66,9 @@ const DropdownMenu = styled.div`
   cursor: pointer;
   a {
     margin-bottom: 10px !important;
-    font-weight: 300 !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    font-style: italic;
   }
 `;
 

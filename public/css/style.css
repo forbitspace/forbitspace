@@ -425,7 +425,7 @@ body.dark-mode .header-fixed {
   bottom: -5px;
   left: 50%;
   right: 50%;
-  border-bottom: 2px solid #1346f5;
+  border-bottom: 2px solid #ffffff;
   transition: all 0.4s;
 }
 .main-menu .main-menu-nav li:hover a::after {

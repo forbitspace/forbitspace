@@ -20,7 +20,7 @@ const Network = () => {
         </WrapImg>
         <WrapImg>
           <WrapperButtonApp>
-            <ButtonBanner href="/"> Trade</ButtonBanner>
+            <ButtonBanner href="/">Space Trade</ButtonBanner>
           </WrapperButtonApp>
           <ImgHalf>
             <img src="../images/home-page/network-02.png" alt="" />
@@ -53,7 +53,7 @@ const Title = styled.div`
 `;
 const WrapContainer = styled(Container)`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
   @media (min-width: 1650px) {
@@ -64,14 +64,14 @@ const WrapContainer = styled(Container)`
   }
 `;
 const WrapImg = styled.div`
-  width: 55%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
   :first-child {
-    width: 45%;
+    width: 35%;
   }
   @media (max-width: 768px) {
     width: 100%;
