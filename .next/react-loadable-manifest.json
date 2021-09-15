@@ -879,63 +879,21 @@
       "file": "static/chunks/4.js"
     }
   ],
-  "../client/components/Planets/Planet": [
+  "../client/components/LimitOrder": [
     {
-      "id": "./client/components/Planets/Planet.jsx",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@emotion/memoize/dist/memoize.browser.esm.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@emotion/stylis/dist/stylis.browser.esm.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@emotion/unitless/dist/unitless.browser.esm.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/process/browser.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/shallowequal/index.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/styled-components/dist/styled-components.browser.esm.js",
-      "file": "static/chunks/1.js"
-    }
-  ],
-  "../client/components/SelfCustody": [
-    {
-      "id": "./client/components/SelfCustody/components/Banner.jsx",
+      "id": "./client/components/Footer/constants.js",
       "file": "static/chunks/3.js"
     },
     {
-      "id": "./client/components/SelfCustody/components/MobileWallet.jsx",
+      "id": "./client/components/Footer/index.jsx",
       "file": "static/chunks/3.js"
     },
     {
-      "id": "./client/components/SelfCustody/components/Numbers.jsx",
+      "id": "./client/components/LimitOrder/components/Banner.jsx",
       "file": "static/chunks/3.js"
     },
     {
-      "id": "./client/components/SelfCustody/index.jsx",
+      "id": "./client/components/LimitOrder/index.jsx",
       "file": "static/chunks/3.js"
     },
     {
@@ -1637,6 +1595,48 @@
     {
       "id": "./node_modules/webpack/buildin/global.js",
       "file": "static/chunks/3.js"
+    }
+  ],
+  "../client/components/Planets/Planet": [
+    {
+      "id": "./client/components/Planets/Planet.jsx",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@emotion/memoize/dist/memoize.browser.esm.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@emotion/stylis/dist/stylis.browser.esm.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@emotion/unitless/dist/unitless.browser.esm.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/process/browser.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/shallowequal/index.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/styled-components/dist/styled-components.browser.esm.js",
+      "file": "static/chunks/1.js"
     }
   ],
   "./dev/noop": [

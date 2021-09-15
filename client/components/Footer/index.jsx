@@ -157,6 +157,7 @@ const ListMenu = styled.div`
     }
 
     li {
+      font-size: 12px;
       font-weight: 300;
       a {
         text-decoration: none;

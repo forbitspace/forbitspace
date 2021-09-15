@@ -6,27 +6,27 @@ const MobileWallet = () => {
   return (
     <BoxSection>
       <WrapContainer>
-        <WrapImg>
+        {/* <WrapImg>
           <ImgHalf>
             <img src="../images/self-page/phone-0.png" alt="" />
           </ImgHalf>
-        </WrapImg>
+        </WrapImg> */}
         <Content>
-          <Text>Self-custody</Text>
+          <Text>Mobile wallet</Text>
           <SubText>
-            In DeFi, your money becomes empowered. You can store it, lend it,
+            {/* In DeFi, your money becomes empowered. You can store it, lend it,
             trade it, zap it, and track it in real-time. It’s a bit like a game
-            but at the heart of this is more control, aka self-custody.
+            but at the heart of this is more control, aka self-custody. */}
           </SubText>
         </Content>
         <WrapImg>
           <ImgHalf>
-            <img src="../images/self-page/phone-0.png" alt="" />
+            <img src="../images/self-page/phone-1.png" alt="" />
           </ImgHalf>
         </WrapImg>
       </WrapContainer>
       <WrapWallet>
-        <img src="../images/self-page/wallet-02.png" alt="" />
+        <img src="../images/self-page/wallett1-02.png" alt="" />
       </WrapWallet>
     </BoxSection>
   );
@@ -54,13 +54,13 @@ const WrapContainer = styled(Container)`
   @media (min-width: 3650px) {
     max-width: 80%;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 576px) {
     flex-direction: column-reverse;
   }
 `;
 const WrapImg = styled.div`
-  width: 30%;
-  @media (max-width: 768px) {
+  width: 50%;
+  @media (max-width: 576px) {
     width: 100%;
   }
 `;
@@ -70,14 +70,15 @@ const ImgHalf = styled.div`
   img {
     width: 100%;
     height: auto;
+    transform: scale(0.8);
   }
 `;
 const Content = styled.div`
   margin-left: 80px;
-  width: 40%;
+  width: 50%;
   text-align: left;
   max-width: 600px;
-  @media (max-width: 768px) {
+  @media (max-width: 576px) {
     width: 100%;
     margin-left: 0;
     margin-top: 20px;
@@ -102,7 +103,7 @@ const Text = styled.p`
   }
 `;
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
   @media (min-width: 1441px) {
     font-size: 2rem;
@@ -117,9 +118,10 @@ const SubText = styled.p`
   }
 `;
 const WrapWallet = styled.div`
-  margin-top: 15rem;
+  margin-top: 12rem;
   width: 50%;
-  @media (max-width: 768px) {
+  padding: 0 3rem;
+  @media (max-width: 576px) {
     margin-top: 2rem;
     width: 100%;
   }

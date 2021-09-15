@@ -20,10 +20,10 @@ const Banner = () => {
             A highly protected and innovative solution for storing, receiving,
             sending and swapping crypto assets.
           </SubText>
-          <WrapperButtonApp>
+          {/* <WrapperButtonApp>
             <ButtonBanner href="/">Google Play</ButtonBanner>
             <ButtonBanner href="/">App Store</ButtonBanner>
-          </WrapperButtonApp>
+          </WrapperButtonApp> */}
         </Content>
       </WrapContainer>
     </BoxSection>
@@ -35,7 +35,7 @@ const BoxSection = styled.section`
   /* min-height: 88vh; */
   padding: 10vh 0 0;
   @media (max-width: 770px) {
-    padding-top: 10px;
+    padding-top: 60px;
     /* min-height: 80vh; */
   }
 `;
@@ -47,7 +47,7 @@ const WrapContainer = styled(Container)`
   @media (min-width: 1650px) {
     max-width: 80%;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 576px) {
     flex-direction: column;
   }
 `;
@@ -95,7 +95,7 @@ const Text = styled.p`
   line-height: 40px;
   letter-spacing: 1px;
   @media (max-width: 768px) {
-    font-size: 26px;
+    font-size: 20px;
     letter-spacing: 1px;
     font-weight: 500;
     line-height: 25px;

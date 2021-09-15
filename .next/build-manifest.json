@@ -29,10 +29,10 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/selfcustody": [
+    "/limit": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/selfcustody.js"
+      "static/chunks/pages/limit.js"
     ]
   },
   "ampFirstPages": []
