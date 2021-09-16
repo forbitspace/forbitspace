@@ -38,10 +38,6 @@ export const navContent = [
         link: "",
         content: "Derivative Protocol",
       },
-      {
-        link: "",
-        content: "Aggregation",
-      },
     ],
   },
   {

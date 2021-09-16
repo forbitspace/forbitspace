@@ -130,14 +130,17 @@ export const navContent = [
       {
         link: "",
         content: "Liquidity Protocol",
+        disable: true,
       },
       {
         link: "",
         content: "Limit Order Protocol",
+        disable: true,
       },
       {
         link: "",
         content: "Derivative Protocol",
+        disable: true,
       },
     ],
   },
@@ -151,18 +154,22 @@ export const navContent = [
       {
         link: "",
         content: "Space Dao",
+        disable: true,
       },
       {
         link: "",
         content: "Pools",
+        disable: true,
       },
       {
         link: "",
         content: "Farming",
+        disable: true,
       },
       {
         link: "",
         content: "Stacking",
+        disable: true,
       },
     ],
   },
@@ -176,6 +183,7 @@ export const navContent = [
       {
         link: "",
         content: "Whitepaper",
+        disable: true,
       },
       {
         link: "",
@@ -184,10 +192,12 @@ export const navContent = [
       {
         link: "",
         content: "Audits",
+        disable: true,
       },
       {
         link: "",
         content: "Bug bounty",
+        disable: true,
       },
     ],
   },
@@ -201,11 +211,13 @@ export const navContent = [
       {
         link: "",
         content: "Smart contract wallet",
+        disable: true,
       },
     ],
   },
   {
     nav: "API",
+    disable: true,
     contents: [
       // {
       //   link: "",

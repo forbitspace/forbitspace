@@ -68,9 +68,9 @@ const ImgHalf = styled.div`
   width: 100%;
   text-align: left;
   img {
-    width: 100%;
+    width: 60%;
     height: auto;
-    transform: scale(0.8);
+    /* transform: scale(0.6); */
   }
 `;
 const Content = styled.div`

@@ -425,7 +425,7 @@ body.dark-mode .header-fixed {
   bottom: -5px;
   left: 50%;
   right: 50%;
-  border-bottom: 2px solid #1346f5;
+  border-bottom: 2px solid #ffffff;
   transition: all 0.4s;
 }
 .main-menu .main-menu-nav li:hover a::after {
@@ -1701,7 +1701,8 @@ body.dark-mode .moon-dark {
 }
 
 body.dark-mode .bg-nav-mobile {
-  background-image: linear-gradient(to right, #172543 0%, #020a1a 100%);
+  /* background-image: linear-gradient(to right, #172543 0%, #020a1a 100%); */
+  background-image: linear-gradient(to top left, #00284b 0%, #020a1a 100%);
 }
 
 body.dark-mode .row-bg-darkmode {

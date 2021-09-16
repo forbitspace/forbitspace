@@ -43,6 +43,9 @@ const ButtonBanner = styled.a`
   background-position: right;
   color: white;
   /* } */
+  :hover {
+    color: white;
+  }
 `;
 
 export default AppLink;

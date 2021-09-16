@@ -1,74 +1,94 @@
 import React from "react";
 import styled from "styled-components";
+import { Container } from "reactstrap";
 
 const Banner = () => {
   return (
     <WrapperBanner>
-      <BackgroundBanner>
-        <img
-          src="./images/icon-foundation/earth-background-foundation.png"
-          alt="forbitspace foundation"
-        />
-      </BackgroundBanner>
-      <Content className="title-banner text-dark text-visi">
-        <Title>
-          forbitspace
-          <br />
-          API
-        </Title>
-        {/* <Title></Title> */}
-        <SubText>
-          The forbitspace API is a cutting-edge discovery and routing custodial
-          asset exchanges at the best rates on the biggest Ethereum, Binance
-          Smart Chain and Polygon (Matic).
-          <br />
-          It finds the most efficient token swap paths, splitting swaps
-          protocols and even different market depths within one protocol.
-          <br />
-          Who can integrate our forbitspace API?
-        </SubText>
-        <WrapIntegration>
-          <TopWrap>
-            <SubContent>Wallets</SubContent>
-            <SubContent>dApps</SubContent>
-            <SubContent>any platform that support swaps</SubContent>
-          </TopWrap>
-          <BottomWrap>
-            <ButtonWrap>Start your integration</ButtonWrap>
-          </BottomWrap>
-        </WrapIntegration>
-      </Content>
+      <WrapContainer>
+        <WrapImg>
+          <img
+            src="../images/api-page/api-space.png"
+            alt="forbitspace foundation"
+          />
+        </WrapImg>
+        <Content className="title-banner text-dark text-visi">
+          <Title>
+            forbitspace
+            <br />
+            API
+          </Title>
+          {/* <Title></Title> */}
+          <SubText>
+            The forbitspace API is a cutting-edge discovery and routing
+            custodial asset exchanges at the best rates on the biggest Ethereum,
+            Binance Smart Chain and Polygon (Matic).
+            <br />
+            It finds the most efficient token swap paths, splitting swaps
+            protocols and even different market depths within one protocol.
+            <br />
+            Who can integrate our forbitspace API?
+          </SubText>
+          <WrapIntegration>
+            <TopWrap>
+              <SubContent>
+                <img src="../images/api-page/api-wallet.png" alt="" /> Wallets
+              </SubContent>
+              <SubContent>
+                <img src="../images/api-page/api-dapps.png" alt="" /> dApps
+              </SubContent>
+              <SubContent>
+                <img src="../images/api-page/api-swap.png" alt="" /> any
+                platform that support swaps
+              </SubContent>
+            </TopWrap>
+            <BottomWrap>
+              <ButtonWrap>Start your integration</ButtonWrap>
+            </BottomWrap>
+          </WrapIntegration>
+        </Content>
+      </WrapContainer>
     </WrapperBanner>
   );
 };
 
 const WrapperBanner = styled.div`
-  text-align: left;
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  padding: 10vh 0 0;
   @media (max-width: 576px) {
+    padding: 100px 0;
     text-align: left;
   }
 `;
-const BackgroundBanner = styled.div`
-  position: relative;
-  z-index: -1;
-  max-width: 750px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto 0;
-  img {
-    width: 100%;
+const WrapContainer = styled(Container)`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  @media (min-width: 1650px) {
+    max-width: 80%;
   }
-  @media (max-width: 576px) {
-    position: absolute;
-    opacity: 0.5;
-    max-width: 350px;
-    right: 0;
-    margin: auto;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+const WrapImg = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  :first-child {
+    width: 33%;
+  }
+  @media (max-width: 768px) {
+    /* width: 100%; */
+    /* min-height: 75vh; */
+    justify-content: center;
+    :first-child {
+      width: 100%;
+    }
   }
 `;
 const Content = styled.div`
@@ -87,13 +107,17 @@ const Title = styled.h2`
   font-weight: 600;
   line-height: 1;
   @media (max-width: 768px) {
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 2px;
+    text-align: center;
   }
 `;
 const SubText = styled.p`
   font-size: 1.2rem;
   font-weight: 300;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
   @media (max-width: 576px) {
     font-size: 14px;
   }
@@ -102,8 +126,11 @@ const WrapIntegration = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
   align-items: flex-end;
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `;
 const TopWrap = styled.div`
   width: 70%;
@@ -111,11 +138,22 @@ const TopWrap = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 20px 10px;
+  @media (max-width: 576px) {
+    width: 100%;
+    padding: 8px;
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
 const SubContent = styled.div`
   display: flex;
   align-items: center;
   gap: 5px;
+  img {
+    width: 25px;
+  }
+  @media (max-width: 576px) {
+  }
 `;
 const BottomWrap = styled.div`
   display: flex;

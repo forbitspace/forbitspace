@@ -46,10 +46,11 @@ const WrapImg = styled.div`
 `;
 const ImgHalf = styled.div`
   width: 100%;
-  text-align: left;
+  text-align: center;
   img {
     width: 100%;
     height: auto;
+    max-width: 900px;
   }
 `;
 const Content = styled.div`
@@ -67,11 +68,11 @@ const Content = styled.div`
   }
 `;
 const Title = styled.h2`
-  font-size: 5rem;
+  font-size: 55px;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 500;
   @media (max-width: 576px) {
-    font-size: 45px;
+    font-size: 30px;
     letter-spacing: 2px;
   }
 `;

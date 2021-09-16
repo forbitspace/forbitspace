@@ -11,7 +11,9 @@ const Planet = () => {
           <Planets />
         </WrapPlanet>
         <Content className="title-banner text-dark text-visi">
-          <Title>forbitspace</Title>
+          <Title>
+            <img src="../images/home-page/Logo-1-02.png" alt="" />
+          </Title>
           <Text>Aggregation Protocol</Text>
           <SubText>
             The forbitspace is an aggregator protocols allows traders to benefit
@@ -89,12 +91,18 @@ const Content = styled.div`
   }
 `;
 const Title = styled.h2`
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 600;
   line-height: 1;
-  @media (max-width: 768px) {
+  img {
+    max-width: 350px;
+  }
+  @media (max-width: 576px) {
     font-size: 45px;
     letter-spacing: 2px;
+    img {
+      max-width: 170px;
+    }
   }
 `;
 const SubText = styled.p`

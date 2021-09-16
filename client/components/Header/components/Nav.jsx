@@ -23,9 +23,11 @@ const Nav = () => {
               <DropdownMenu className="dropdown-content">
                 {item.contents.map((item, index) => (
                   <a
+                    key={index}
                     href={item.link}
                     target="_blank"
                     className="text-dark text-visi"
+                    id={item.disable ? "disable" : ""}
                   >
                     {item.content}
                   </a>
@@ -69,6 +71,10 @@ const DropdownMenu = styled.div`
     font-weight: 500 !important;
     font-size: 12px !important;
     font-style: italic;
+  }
+  #disable {
+    opacity: 0.3;
+    z-index: -1;
   }
 `;
 

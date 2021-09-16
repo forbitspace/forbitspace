@@ -37,7 +37,7 @@ const MenuMobile = () => {
                 </a>
                 <ul className="submenu">
                   {item.contents.map((item, index) => (
-                    <li>
+                    <li id={item.disable ? "disable" : ""}>
                       <Link href="#">
                         <a className="text">{item.content}</a>
                       </Link>
@@ -89,8 +89,18 @@ const Nav = styled.div`
   }
   .submenu {
     max-height: 0;
-    transition: max-height 0.5s;
+    transition: max-height 0.5s ease-in-out;
     overflow: hidden;
+    a {
+      margin-bottom: 10px !important;
+      font-weight: 500 !important;
+      font-size: 12px !important;
+      font-style: italic;
+    }
+    #disable {
+      opacity: 0.3;
+      z-index: -1;
+    }
   }
   @media (max-width: 576px) {
     width: 100%;

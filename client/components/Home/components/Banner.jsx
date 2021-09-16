@@ -14,7 +14,9 @@ const Banner = () => {
       </WrapImgBanner>
       <Container>
         <Content className="title-banner text-dark text-visi">
-          <Title>forbitspace</Title>
+          <Title>
+            <img src="../images/home-page/Logo-1-02.png" alt="" />
+          </Title>
           {/* <Title></Title> */}
           <Text>The Decentralized Exchange Aggregator</Text>
           <SubText>
@@ -82,9 +84,15 @@ const Title = styled.h2`
   font-size: 5rem;
   font-weight: 600;
   line-height: 1;
+  img {
+    max-width: 400px;
+  }
   @media (max-width: 576px) {
     font-size: 45px;
     letter-spacing: 2px;
+    img {
+      max-width: 200px;
+    }
   }
 `;
 const SubText = styled.p`

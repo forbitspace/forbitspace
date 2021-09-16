@@ -94,7 +94,7 @@ const SocialLink = styled.div``;
 
 const FooterMenu = styled.section`
   position: relative;
-  padding: 150px 0;
+  padding: 100px 0 0;
   overflow: hidden;
 
   @media (max-width: 576px) {

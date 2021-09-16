@@ -34,10 +34,8 @@ const Network = () => {
 const BoxSection = styled.section`
   position: relative;
   /* min-height: 88vh; */
-  /* padding: 10vh 0 0; */
-  @media (min-width: 768px) {
-    padding: 25px 0;
-  }
+  padding: 12vh 50px 0;
+
   @media (max-width: 770px) {
     padding-top: 10px;
     /* min-height: 80vh; */
@@ -64,14 +62,14 @@ const WrapContainer = styled(Container)`
   }
 `;
 const WrapImg = styled.div`
-  width: 65%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
   :first-child {
-    width: 35%;
+    width: 33%;
   }
   @media (max-width: 768px) {
     width: 100%;
@@ -139,6 +137,9 @@ const ButtonBanner = styled.a`
   &.forbitswap {
     background-size: 110%;
     background-position: 30%;
+  }
+  :hover {
+    color: white;
   }
 `;
 export default Network;
