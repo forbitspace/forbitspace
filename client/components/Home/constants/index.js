@@ -165,3 +165,53 @@ export const DataFBTC = [
       "Scaling and Multi-Chain open the crypto economy is increasingly becoming a cross-chain ecosystem where users want great DeFi services on multiple blockchains and scaling solutions simultaneously.",
   },
 ];
+
+export const ContributorData = [
+  {
+    img: "coingecko",
+  },
+  {
+    img: "chainlink",
+  },
+  {
+    img: "graph",
+  },
+  {
+    img: "metamask",
+  },
+  {
+    img: "dune",
+  },
+  {
+    img: "wallet",
+  },
+  {
+    img: "binance",
+  },
+  {
+    img: "polygon",
+  },
+  {
+    img: "coinbase",
+  },
+];
+export const DataSocialLinkFooter = [
+  {
+    url: "./images/icon-social-footer/1.svg",
+  },
+  {
+    url: "./images/icon-social-footer/2.svg",
+  },
+  {
+    url: "./images/icon-social-footer/3.svg",
+  },
+  {
+    url: "./images/icon-social-footer/4.svg",
+  },
+  {
+    url: "./images/icon-social-footer/5.svg",
+  },
+  {
+    url: "./images/icon-social-footer/6.svg",
+  },
+];
