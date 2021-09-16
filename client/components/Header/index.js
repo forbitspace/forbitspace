@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React, { useState } from "react";
+import styled, { createGlobalStyle } from "styled-components";
 import Darkmode from "./components/Darkmode";
 import Languge from "./components/Languge";
 import Logo from "./components/Logo";
@@ -8,9 +8,19 @@ import MenuMobile from "./components/MenuMobile";
 import AppLink from "./components/AppLink";
 
 export default function Index() {
+  const [showNav, setShowNav] = useState(false);
+  window.addEventListener("scroll", () => {
+    // console.log("scroll -----------> ", window.scrollY);
+    window.scrollY > 100 ? setShowNav(true) : setShowNav(false);
+  });
   return (
     <React.Fragment>
-      <header className="header">
+      <GlobalStyle />
+      <header
+        className={
+          showNav ? "header header--nav header--active" : "header header--nav"
+        }
+      >
         <div className="container">
           <div className="main-header">
             <Logo />
@@ -19,7 +29,7 @@ export default function Index() {
               <WrapperButtonApp>
                 <AppLink />
               </WrapperButtonApp>
-              <Languge />
+              {/* <Languge /> */}
               {/* <Darkmode /> */}
               <MenuMobile />
             </ButtonGroup>
@@ -29,6 +39,19 @@ export default function Index() {
     </React.Fragment>
   );
 }
+const GlobalStyle = createGlobalStyle`
+  .header--active{
+    background: linear-gradient(180deg, #020c1d95 50%, transparent);
+  }
+  .header--nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s;
+    font-family: sans-serif;
+  }
+`;
 
 const WrapperButtonApp = styled.div`
   max-width: 200px;
