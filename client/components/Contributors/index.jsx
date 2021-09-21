@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import Numricals from "./components/Numricals";
 import Members from "./components/Members";
@@ -17,7 +17,7 @@ const Index = () => {
         <Numricals />
         <Members title={"Active core contributors"} data={MemberData} />
         <Members title={"Auditors"} data={AuditorData} />
-        <Footer />
+        {/* <Footer /> */}
       </Container>
       <BackgroundImg src="./images/background-line-min.png"></BackgroundImg>
     </WrapperBackground>

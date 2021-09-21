@@ -6,17 +6,19 @@ const MobileWallet = () => {
   return (
     <BoxSection>
       <WrapContainer>
-        {/* <WrapImg>
-          <ImgHalf>
-            <img src="../images/self-page/phone-0.png" alt="" />
-          </ImgHalf>
-        </WrapImg> */}
         <Content>
-          <Text>Mobile wallet</Text>
+          <Text>Self-custody wallets</Text>
           <SubText>
-            {/* In DeFi, your money becomes empowered. You can store it, lend it,
-            trade it, zap it, and track it in real-time. It’s a bit like a game
-            but at the heart of this is more control, aka self-custody. */}
+            It is of the great importance of self-custody, which is why
+            forbitspace built the overall strategy you safely self-custody your
+            assets with flexible optimal options for our ecosystem.
+          </SubText>
+          <TitleText>Mobile wallet</TitleText>
+          <SubText>
+            Mobile wallets are apps on your iOS or Android phone, convenient
+            because they are always with you. Usually, the private key is
+            generated and stored on your device with backup and recovery
+            options, depending on the app.
           </SubText>
         </Content>
         <WrapImg>
@@ -27,6 +29,19 @@ const MobileWallet = () => {
       </WrapContainer>
       <WrapWallet>
         <img src="../images/self-page/wallett1-02.png" alt="" />
+        <Content>
+          <TitleText>Smart contract wallet</TitleText>
+          <SubText>
+            A smart contract is a program deployed to disparate blockchains like
+            Ethereum, Binance Smart Chain, and has a mobile app or desktop
+            interface. Smart contract wallets are the most functional wallets
+            because they can be programmed in many ways and have additional
+            security measures like daily spend limits, further approval from a
+            trusted party or another wallet if transactions are above a certain
+            limit, and advanced recovery mechanisms. Private keys are generated
+            on the mobile device or browser.
+          </SubText>
+        </Content>
       </WrapWallet>
     </BoxSection>
   );
@@ -66,7 +81,7 @@ const WrapImg = styled.div`
 `;
 const ImgHalf = styled.div`
   width: 100%;
-  text-align: left;
+  text-align: center;
   img {
     width: 60%;
     height: auto;
@@ -86,11 +101,11 @@ const Content = styled.div`
   }
 `;
 const Text = styled.p`
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 1px;
-  text-align: center;
+  text-align: left;
   @media (min-width: 1441px) {
     font-size: 5rem;
     line-height: unset;
@@ -100,7 +115,12 @@ const Text = styled.p`
     letter-spacing: 1px;
     font-weight: 500;
     line-height: 25px;
+    text-align: center;
   }
+`;
+const TitleText = styled.p`
+  font-size: 1.4rem;
+  font-weight: bold;
 `;
 const SubText = styled.p`
   font-size: 1rem;
@@ -119,11 +139,21 @@ const SubText = styled.p`
 `;
 const WrapWallet = styled.div`
   margin-top: 12rem;
-  width: 50%;
+  width: 100%;
   padding: 0 3rem;
+
+  display: flex;
+  align-items: center;
+  img {
+    max-width: 45%;
+  }
   @media (max-width: 576px) {
     margin-top: 2rem;
     width: 100%;
+    flex-direction: column;
+    img {
+      max-width: 100%;
+    }
   }
 `;
 

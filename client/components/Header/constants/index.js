@@ -128,19 +128,16 @@ export const navContent = [
         content: "Aggregation Protocol",
       },
       {
-        link: "",
+        link: "/liquidity",
         content: "Liquidity Protocol",
-        disable: true,
       },
       {
-        link: "",
+        link: "/limit",
         content: "Limit Order Protocol",
-        disable: true,
       },
       {
-        link: "",
+        link: "/derivative",
         content: "Derivative Protocol",
-        disable: true,
       },
     ],
   },
@@ -148,7 +145,7 @@ export const navContent = [
     nav: "Governance",
     contents: [
       {
-        link: "",
+        link: "/token",
         content: "FBS Token",
       },
       {
@@ -203,7 +200,12 @@ export const navContent = [
   },
   {
     nav: "Self-custody",
+    link: "/selfcustody",
     contents: [
+      {
+        link: "",
+        content: "Bridge Space",
+      },
       {
         link: "",
         content: "Mobile wallet",
@@ -213,16 +215,18 @@ export const navContent = [
         content: "Smart contract wallet",
         disable: true,
       },
+      {
+        link: "",
+        content: "Asset management",
+        disable: true,
+      },
     ],
   },
   {
     nav: "API",
     disable: true,
+    link: "/API",
     contents: [
-      // {
-      //   link: "",
-      //   content: "Help Center",
-      // },
       // {
       //   link: "",
       //   content: "Term of Use",
@@ -237,12 +241,16 @@ export const navContent = [
     nav: "More",
     contents: [
       {
-        link: "",
+        link: "/about",
         content: "About",
       },
       {
         link: "",
         content: "Blog",
+      },
+      {
+        link: "",
+        content: "Help Center",
       },
     ],
   },

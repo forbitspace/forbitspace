@@ -2,6 +2,6 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/contributors": "pages/contributors.js",
-  "/": "pages/index.js"
+  "/selfcustody": "pages/selfcustody.js",
+  "/derivative": "pages/derivative.js"
 }

@@ -24,19 +24,20 @@ export const navContent = [
     contents: [
       {
         link: "",
-        content: "Aggregation",
+        content: "Aggregation Protocol",
       },
       {
-        link: "",
+        link: "/liquidity",
         content: "Liquidity Protocol",
       },
       {
-        link: "",
+        link: "/limit",
         content: "Limit Order Protocol",
       },
       {
         link: "",
         content: "Derivative Protocol",
+        disable: true,
       },
     ],
   },
@@ -44,20 +45,28 @@ export const navContent = [
     nav: "Governance",
     contents: [
       {
-        link: "",
+        link: "/token",
         content: "FBS Token",
       },
       {
         link: "",
-        content: "Space Dao Pools",
+        content: "Space Dao",
+        disable: true,
+      },
+      {
+        link: "",
+        content: "Pools",
+        disable: true,
       },
       {
         link: "",
         content: "Farming",
+        disable: true,
       },
       {
         link: "",
         content: "Stacking",
+        disable: true,
       },
     ],
   },
@@ -71,6 +80,7 @@ export const navContent = [
       {
         link: "",
         content: "Whitepaper",
+        disable: true,
       },
       {
         link: "",
@@ -79,10 +89,12 @@ export const navContent = [
       {
         link: "",
         content: "Audits",
+        disable: true,
       },
       {
         link: "",
         content: "Bug bounty",
+        disable: true,
       },
     ],
   },
@@ -90,37 +102,45 @@ export const navContent = [
     nav: "Self-custody",
     contents: [
       {
-        link: "",
+        link: "/selfcustody",
         content: "Mobile wallet",
       },
       {
         link: "",
         content: "Smart contract wallet",
+        disable: true,
+      },
+      {
+        link: "",
+        content: "Asset management",
+        disable: true,
       },
     ],
   },
   {
-    nav: "Support",
+    nav: "API",
+    disable: true,
+    link: "/API",
     contents: [
-      {
-        link: "",
-        content: "Help Center",
-      },
-      {
-        link: "",
-        content: "Term of Use",
-      },
-      {
-        link: "",
-        content: "Privacy Policy",
-      },
+      // {
+      //   link: "",
+      //   content: "Help Center",
+      // },
+      // {
+      //   link: "",
+      //   content: "Term of Use",
+      // },
+      // {
+      //   link: "",
+      //   content: "Privacy Policy",
+      // },
     ],
   },
   {
     nav: "More",
     contents: [
       {
-        link: "",
+        link: "/about",
         content: "About",
       },
       {

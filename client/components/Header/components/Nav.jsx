@@ -17,21 +17,32 @@ const Nav = () => {
           </li>*/}
           {navContent.map((item, index) => (
             <li>
-              <a href="#" className="text-dark text-visi">
+              <a href={item.link} className="text-dark text-visi">
                 {item.nav}
               </a>
               <DropdownMenu className="dropdown-content">
-                {item.contents.map((item, index) => (
-                  <a
-                    key={index}
-                    href={item.link}
-                    target="_blank"
-                    className="text-dark text-visi"
-                    id={item.disable ? "disable" : ""}
-                  >
-                    {item.content}
-                  </a>
-                ))}
+                {item.contents.map((item, index) =>
+                  !item.disable ? (
+                    <a
+                      key={index}
+                      href={item.link}
+                      // target="_blank"
+                      className="text-dark text-visi"
+                      // id={item.disable ? "disable" : ""}
+                    >
+                      {item.content}
+                    </a>
+                  ) : (
+                    <DisableLink
+                      key={index}
+                      // target="_blank"
+                      className="text-dark text-visi"
+                      id="disable"
+                    >
+                      {item.content}
+                    </DisableLink>
+                  )
+                )}
               </DropdownMenu>
             </li>
           ))}
@@ -76,6 +87,12 @@ const DropdownMenu = styled.div`
     opacity: 0.3;
     z-index: -1;
   }
+`;
+const DisableLink = styled.div`
+  margin-bottom: 10px !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  font-style: italic;
 `;
 
 export default Nav;

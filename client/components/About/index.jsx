@@ -10,10 +10,12 @@ import RoadMap from "./components/RoadMap";
 const Foundation = () => {
   return (
     <WrapperBackground>
-      <Banner />
-      <Numbers />
-      <RoadMap />
-      <BackgroundImg src="./images/background-line-min.png"></BackgroundImg>
+      <WrapContent>
+        <Banner />
+        <Numbers />
+        <RoadMap />
+        <BackgroundImg src="./images/background-line-min.png"></BackgroundImg>
+      </WrapContent>
       <Footer />
     </WrapperBackground>
   );
@@ -22,26 +24,24 @@ const Foundation = () => {
 const WrapperBackground = styled.section`
   position: relative;
   overflow-x: hidden;
-  /* background-image: url("./images/background-line-min.png"); */
   background-size: auto;
 `;
 
-const Container = styled.div`
+const WrapContent = styled.div`
   @media (min-width: 1440px) {
-    &.container {
-      max-width: 90% !important;
-    }
+    min-height: 100vh;
   }
 `;
 
 const BackgroundImg = styled.img`
-  position: absolute;
-  top: -100vh;
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
-  height: calc(100% + 100vh);
+  /* height: calc(100% + 100vh); */
+  min-height: 100vh;
   opacity: 0.6;
   z-index: -1;
   @media (max-width: 576px) {

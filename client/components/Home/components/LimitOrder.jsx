@@ -65,7 +65,7 @@ const WrapContainer = styled(Container)`
 `;
 const WrapImg = styled.div`
   width: 50%;
-  /* transform: rotate(-5deg); */
+  transform: rotate(-12deg);
   @media (max-width: 1320px) {
     width: 70%;
   }

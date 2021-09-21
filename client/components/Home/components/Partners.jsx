@@ -10,7 +10,7 @@ const Partners = () => {
           {/* <Title>forbitspace</Title> */}
           <Text>Liquidity Partners</Text>
           <SubText>
-            Users are covered for up to 600 ETH in the event tha funds are lost
+            Users are covered for up to 600 ETH in the event that funds are lost
             during a swap due to an unforeseen bug.
           </SubText>
         </Content>
