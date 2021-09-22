@@ -12,7 +12,7 @@ const Banner = () => {
           </ImgHalf>
         </WrapImg>
         <Content className="title-banner text-dark text-visi">
-          <Title>About</Title>
+          <Title>Market</Title>
           <SubText>
             As the DeFi market continues to boom and expands, new solutions
             emerge to simplify user navigation and improve user experiences. One
