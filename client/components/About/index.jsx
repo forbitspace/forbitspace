@@ -6,11 +6,13 @@ import Banner from "./components/Banner";
 // import Numbers from "./components/Numbers";
 import Footer from "../Footer/index";
 import RoadMap from "./components/RoadMap";
+import AboutUs from "./components/AboutUs";
 
 const Foundation = () => {
   return (
     <WrapperBackground>
       <WrapContent>
+        <AboutUs />
         <Banner />
         {/* <Numbers /> */}
         <RoadMap />
