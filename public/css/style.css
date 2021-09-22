@@ -1295,6 +1295,7 @@ footer {
 }
 body {
   font-family: Roboto !important;
+  overflow-x: hidden;
 }
 
 body.dark-mode .img-dark {

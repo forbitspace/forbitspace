@@ -3,7 +3,10 @@ import styled from "styled-components";
 
 const AppLink = ({ marginRight }) => {
   return (
-    <ButtonBanner href="/" marginRight={marginRight}>
+    <ButtonBanner
+      href="https://app.forbitswap.com/#/swap"
+      marginRight={marginRight}
+    >
       {" "}
       Launch App
     </ButtonBanner>
@@ -21,6 +24,7 @@ const ButtonBanner = styled.a`
   box-sizing: border-box;
   font-weight: 500;
   font-size: 1.125rem;
+  font-style: italic;
   cursor: pointer;
   width: fit-content;
   background-color: rgb(255, 255, 255);

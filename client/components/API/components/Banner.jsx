@@ -93,9 +93,9 @@ const WrapImg = styled.div`
 `;
 const Content = styled.div`
   margin-left: 100px;
-  padding: 0 100px;
+  padding: 0 10px;
   text-align: right;
-  width: 70%;
+  width: 60%;
   align-self: flex-end;
   @media (max-width: 768px) {
     width: 100%;
@@ -127,6 +127,7 @@ const Title = styled.h2`
 const SubText = styled.p`
   font-size: 1.2rem;
   font-weight: 300;
+  font-family: sans-serif;
   @media (max-width: 768px) {
     text-align: center;
   }

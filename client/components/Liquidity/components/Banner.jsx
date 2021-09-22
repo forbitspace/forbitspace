@@ -16,9 +16,10 @@ const Banner = () => {
         <Content className="title-banner text-dark text-visi">
           <Title>Liquidity Pool</Title>
           <SubText>
-            With forbitspace, the decentralized protocol that empowering traders
-            to provide liquidity to pools and collect extra rewards in FBS
-            tokens for participating in liquidity mining programs.
+            With <span>forbitspace</span>, the decentralized protocol that
+            empowering traders to provide liquidity to pools and collect extra
+            rewards in FBS tokens for participating in liquidity mining
+            programs.
             <br />A next-generation automated market maker that protects users
             from front-running attacks and offers capital efficiency to
             liquidity providers. Enables you to deposit digital assets into
@@ -59,8 +60,12 @@ const WrapContainer = styled(Container)`
 `;
 const WrapImg = styled.div`
   width: 50%;
+  transform: scale(0.6);
+  transform-origin: right;
   @media (max-width: 768px) {
     width: 100%;
+    transform: scale(0.8);
+    transform-origin: center;
   }
 `;
 const ImgHalf = styled.div`
@@ -99,7 +104,10 @@ const SubText = styled.div`
   font-size: 1.2rem;
   font-weight: 200;
   font-family: sans-serif;
-  /* max-width: 600px; */
+  span {
+    font-style: italic;
+    font-weight: 900;
+  }
   @media (max-width: 768px) {
     font-size: 14px;
   }

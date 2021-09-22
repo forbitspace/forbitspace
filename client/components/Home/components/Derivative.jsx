@@ -13,8 +13,10 @@ const Derivative = () => {
             options allow the traders to hedge their positions and mitigate
             their risks during highly volatile trading days.
             <br />
+          </SubText>
+          <SubText>
             Synthetic assets on decentralized trading platforms are fetching
-            good trade volume
+            good trade volume.
           </SubText>
 
           <SubText>
@@ -23,7 +25,9 @@ const Derivative = () => {
             market. The principle of hedging goes far beyond Defi or
             cryptocurrencies. It’s applicable to the traditional financial world
             as well.
-            <br />
+          </SubText>
+
+          <SubText>
             Derivatives protocol provider used to create custom assets by using
             forward-looking features of locking the price in and the ability to
             either buy or sell an asset. Like derivatives are a contract that
@@ -45,7 +49,7 @@ const Derivative = () => {
 const BoxSection = styled.section`
   position: relative;
   @media (min-width: 768px) {
-    padding: 6rem 0;
+    padding: 2rem 0;
   }
   @media (max-width: 770px) {
     padding-top: 10px;
@@ -79,7 +83,7 @@ const ImgHalf = styled.div`
 `;
 const Content = styled.div`
   margin-left: 80px;
-  width: 50%;
+  width: 40%;
   /* max-width: 600px; */
   /* text-align: right; */
   @media (max-width: 768px) {

@@ -22,7 +22,7 @@ const Banner = () => {
             cash. Except this is digital cash, and it’s not dependent on a bank
             or other entity to issue it or verify transactions. This is
             precisely why blockchain was such a huge innovation starting with
-            Bitcoin than Ethereum and more crypto assets in the different
+            Bitcoin then Ethereum and more crypto assets in the different
             blockchains.
           </SubText>
           {/* <WrapperButtonApp>
@@ -47,17 +47,17 @@ const BoxSection = styled.section`
 const WrapContainer = styled(Container)`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center;
+  gap: 2rem;
   @media (min-width: 1650px) {
     max-width: 80%;
   }
-  @media (max-width: 576px) {
-    flex-direction: column;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
   }
 `;
 const WrapImg = styled.div`
-  width: 50%;
+  width: 30%;
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -72,7 +72,7 @@ const ImgHalf = styled.div`
 `;
 const Content = styled.div`
   margin-left: 80px;
-  width: 50%;
+  width: 45%;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -95,7 +95,7 @@ const Title = styled.h2`
   }
 `;
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
   font-family: sans-serif;
   @media (max-width: 768px) {

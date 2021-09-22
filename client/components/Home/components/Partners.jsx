@@ -73,6 +73,7 @@ const Content = styled.div`
     margin-left: 0;
     margin-top: 20px;
     text-align: center;
+    max-width: unset;
   }
 `;
 const Text = styled.p`

@@ -23,7 +23,7 @@ export const navContent = [
     nav: "Space Trade",
     contents: [
       {
-        link: "",
+        link: "/aggregation",
         content: "Aggregation Protocol",
       },
       {
@@ -35,9 +35,8 @@ export const navContent = [
         content: "Limit Order Protocol",
       },
       {
-        link: "",
+        link: "/derivative",
         content: "Derivative Protocol",
-        disable: true,
       },
     ],
   },
@@ -49,9 +48,8 @@ export const navContent = [
         content: "FBS Token",
       },
       {
-        link: "",
+        link: "/dao",
         content: "Space Dao",
-        disable: true,
       },
       {
         link: "",
@@ -100,20 +98,23 @@ export const navContent = [
   },
   {
     nav: "Self-custody",
+    link: "/selfcustody",
     contents: [
       {
-        link: "/selfcustody",
+        link: "/bridge",
+        content: "Bridge Space",
+      },
+      {
+        link: "/mobile-wallet",
         content: "Mobile wallet",
       },
       {
-        link: "",
+        link: "/smart-contract",
         content: "Smart contract wallet",
-        disable: true,
       },
       {
-        link: "",
+        link: "/assets",
         content: "Asset management",
-        disable: true,
       },
     ],
   },
@@ -122,10 +123,6 @@ export const navContent = [
     disable: true,
     link: "/API",
     contents: [
-      // {
-      //   link: "",
-      //   content: "Help Center",
-      // },
       // {
       //   link: "",
       //   content: "Term of Use",
@@ -146,6 +143,10 @@ export const navContent = [
       {
         link: "",
         content: "Blog",
+      },
+      {
+        link: "",
+        content: "Help Center",
       },
     ],
   },

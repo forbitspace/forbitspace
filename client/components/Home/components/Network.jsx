@@ -5,20 +5,44 @@ import styled from "styled-components";
 const Network = () => {
   return (
     <BoxSection>
-      <Title>Network</Title>
       <WrapContainer>
-        <WrapContent>
-          <SubText>
-            <img src="../images/home-page/logo-1-02.png" alt="" /> aggregator
-            protocol is now available on Ethereum, Binance Smart Chain, and
-            layer 2 Polygon, Arbitrum, and Optimism we currently launch each
-            blockchain as by stage. We plan to support more EVM chains and
-            non-EVM chains, Solana, Avalanche, and more in the months following
-            launch.
+        <WrapTitle>
+          <Title>Multi Network</Title>
+          <SubText className="subtext__title">
+            <span>forbitspace </span> aggregator protocol is now available on
+            Ethereum, Binance Smart Chain, and layer 2 Polygon, Arbitrum, and
+            Optimism we currently launch each blockchain as by stage.
           </SubText>
+          <SubText className="subtext__title">
+            We plan to support more EVM chains and non-EVM chains, Solana,
+            Avalanche, and more in the months following launch.
+          </SubText>
+        </WrapTitle>
+        <WrapContent>
           <WrapImg>
             <WrapperButtonApp>
-              <ButtonBanner href="/" className="forbitswap">
+              <ButtonBanner href="/">Space Trade</ButtonBanner>
+            </WrapperButtonApp>
+            <ImgHalf>
+              <img src="../images/home-page/network-02.png" alt="" />
+            </ImgHalf>
+          </WrapImg>{" "}
+        </WrapContent>
+        <WrapContent>
+          <SubText className="subtext__content">
+            The <span>forbitspace </span> DEX super aggregator is an
+            interoperability protocol that connects disparate blockchains. That
+            unites decentralized applications across disparate blockchains,
+            simultaneously uniting liquidity across chains and making it
+            possible to transact in, out, and across disparate networks with
+            ease,
+          </SubText>
+          <WrapImg className="img__swap">
+            <WrapperButtonApp>
+              <ButtonBanner
+                href="https://app.forbitswap.com/#/swap"
+                className="forbitswap"
+              >
                 forbitswap
               </ButtonBanner>
             </WrapperButtonApp>
@@ -26,24 +50,6 @@ const Network = () => {
               <img src="../images/home-page/network-01.png" alt="" />
             </ImgHalf>
           </WrapImg>
-        </WrapContent>
-        <WrapContent>
-          <WrapImg>
-            <WrapperButtonApp>
-              <ButtonBanner href="/">Space trade</ButtonBanner>
-            </WrapperButtonApp>
-            <ImgHalf>
-              <img src="../images/home-page/network-02.png" alt="" />
-            </ImgHalf>
-          </WrapImg>
-          <SubText>
-            <img src="../images/home-page/logo-1-02.png" alt="" /> aggregator
-            protocol is now available on Ethereum, Binance Smart Chain, and
-            layer 2 Polygon, Arbitrum, and Optimism we currently launch each
-            blockchain as by stage. We plan to support more EVM chains and
-            non-EVM chains, Solana, Avalanche, and more in the months following
-            launch.
-          </SubText>
         </WrapContent>
       </WrapContainer>
     </BoxSection>
@@ -53,7 +59,7 @@ const Network = () => {
 const BoxSection = styled.section`
   position: relative;
   /* min-height: 88vh; */
-  padding: 12vh 50px 0;
+  padding: 2vh 50px 0;
 
   @media (max-width: 770px) {
     padding: 10px;
@@ -63,33 +69,45 @@ const BoxSection = styled.section`
 const Title = styled.div`
   font-size: 4rem;
   font-weight: 600;
-  text-align: center;
-  padding: 3vh 0;
+  text-align: right;
+  padding: 1vh 0;
   @media (max-width: 768px) {
     font-size: 35px;
     padding: 10px 0 30px;
+    text-align: center;
   }
 `;
 const WrapContainer = styled(Container)`
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
-  flex-direction: column-reverse;
+  justify-content: center;
+  flex-direction: column;
   gap: 20px;
   @media (min-width: 1650px) {
     max-width: 80%;
   }
   @media (max-width: 768px) {
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
+  }
+`;
+const WrapTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  @media (max-width: 768px) {
+    align-items: center;
   }
 `;
 const WrapContent = styled.div`
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+
   @media (max-width: 768px) {
     flex-direction: column;
     :first-child {
-      flex-direction: column-reverse;
+      /* flex-direction: column-reverse; */
     }
   }
 `;
@@ -100,8 +118,11 @@ const WrapImg = styled.div`
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
+  &.img__swap {
+    width: 40%;
+  }
   @media (max-width: 768px) {
-    width: 70%;
+    width: 70% !important;
     /* min-height: 75vh; */
     justify-content: center;
     :first-child {
@@ -123,19 +144,27 @@ const ImgHalf = styled.div`
 const SubText = styled.p`
   font-size: 1.2rem;
   font-weight: 300;
-  width: 40%;
-  img {
-    max-width: 120px;
-    margin-right: 3px;
+  width: 60%;
+  span {
+    font-style: italic;
+    font-weight: 900;
+  }
+  &.subtext__title {
+    text-align: right;
+  }
+  &.subtext__content {
+    width: 45%;
+  }
+  @media (min-width: 1441px) {
+    width: 35%;
+    &.subtext__content {
+      width: 25%;
+    }
   }
   @media (max-width: 768px) {
     font-size: 14px;
-    width: 100%;
-    text-align: center;
-    img {
-      max-width: 80px;
-      margin-right: 3px;
-    }
+    width: 100% !important;
+    text-align: center !important;
   }
   @media (max-width: 576px) {
     font-size: 13px;
@@ -143,8 +172,6 @@ const SubText = styled.p`
 `;
 const WrapperButtonApp = styled.div`
   max-width: 350px;
-  /* margin: 0 auto; */
-  /* width: 90%; */
   text-align: left;
   @media (max-width: 1200px) {
     display: block;

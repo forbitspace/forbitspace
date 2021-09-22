@@ -171,7 +171,7 @@ export const ContributorData = [
     img: "coingecko",
   },
   {
-    img: "chainlink",
+    img: "link",
   },
   {
     img: "graph",
@@ -225,6 +225,9 @@ export const EcosystemData = [
   },
   {
     img: "trust-wallet",
+  },
+  {
+    img: "fire-block",
   },
   {
     img: "wallet-connect",

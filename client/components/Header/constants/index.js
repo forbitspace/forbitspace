@@ -124,7 +124,7 @@ export const navContent = [
     nav: "Space Trade",
     contents: [
       {
-        link: "",
+        link: "/aggregation",
         content: "Aggregation Protocol",
       },
       {
@@ -149,9 +149,8 @@ export const navContent = [
         content: "FBS Token",
       },
       {
-        link: "",
+        link: "/dao",
         content: "Space Dao",
-        disable: true,
       },
       {
         link: "",
@@ -203,22 +202,20 @@ export const navContent = [
     link: "/selfcustody",
     contents: [
       {
-        link: "",
+        link: "/bridge",
         content: "Bridge Space",
       },
       {
-        link: "",
+        link: "/mobile-wallet",
         content: "Mobile wallet",
       },
       {
-        link: "",
+        link: "/smart-contract",
         content: "Smart contract wallet",
-        disable: true,
       },
       {
-        link: "",
+        link: "/assets",
         content: "Asset management",
-        disable: true,
       },
     ],
   },
