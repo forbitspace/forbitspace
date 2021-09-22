@@ -112,7 +112,7 @@ const WrapContent = styled.div`
   }
 `;
 const WrapImg = styled.div`
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,9 +156,9 @@ const SubText = styled.p`
     width: 45%;
   }
   @media (min-width: 1441px) {
-    width: 35%;
+    width: 50%;
     &.subtext__content {
-      width: 25%;
+      width: 35%;
     }
   }
   @media (max-width: 768px) {

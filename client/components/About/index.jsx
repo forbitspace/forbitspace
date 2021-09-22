@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Banner from "./components/Banner";
 // import MobileWallet from "./components/MobileWallet";
-import Numbers from "./components/Numbers";
+// import Numbers from "./components/Numbers";
 import Footer from "../Footer/index";
 import RoadMap from "./components/RoadMap";
 
@@ -12,7 +12,7 @@ const Foundation = () => {
     <WrapperBackground>
       <WrapContent>
         <Banner />
-        <Numbers />
+        {/* <Numbers /> */}
         <RoadMap />
         <BackgroundImg src="./images/background-line-min.png"></BackgroundImg>
       </WrapContent>
