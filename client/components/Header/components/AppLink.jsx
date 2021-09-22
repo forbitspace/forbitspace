@@ -3,10 +3,7 @@ import styled from "styled-components";
 
 const AppLink = ({ marginRight }) => {
   return (
-    <ButtonBanner
-      href="https://app.forbitswap.com/#/swap"
-      marginRight={marginRight}
-    >
+    <ButtonBanner href="https://app.forbitspace.com/" marginRight={marginRight}>
       {" "}
       Launch App
     </ButtonBanner>

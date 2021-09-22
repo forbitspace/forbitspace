@@ -21,7 +21,9 @@ const Network = () => {
         <WrapContent>
           <WrapImg>
             <WrapperButtonApp>
-              <ButtonBanner href="/">Space Trade</ButtonBanner>
+              <ButtonBanner href="https://app.forbitspace.com/">
+                Space Trade
+              </ButtonBanner>
             </WrapperButtonApp>
             <ImgHalf>
               <img src="../images/home-page/network-02.png" alt="" />
