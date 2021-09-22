@@ -10,9 +10,16 @@ const Liquidity = () => {
           {/* <Title>forbitspace</Title> */}
           <Text>Liquidity Pool</Text>
           <SubText>
-            Totle aggregates decentralized exchanges and synthetic asset
-            providers into a suite of tools that makes it easy to access deep
-            liquidity for DeFi assets at the best price.
+            With <span>forbitspace</span>, the decentralized protocol that
+            empowering traders to provide liquidity to pools and collect extra
+            rewards in FBS tokens for participating in liquidity mining
+            programs.
+            <br />A next-generation automated market maker that protects users
+            from front-running attacks and offers capital efficiency to
+            liquidity providers. Enables you to deposit digital assets into
+            liquidity pools while earning interest in real-time in the form of
+            FBS Tokens. Liquidity providers collect rewards on assets locked in
+            pools and extra yield farming rewards in FBS tokens.
           </SubText>
         </Content>
         <WrapLiquidity>
@@ -78,6 +85,15 @@ const Content = styled.div`
     align-items: center;
   }
 `;
+const Title = styled.h2`
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1;
+  @media (max-width: 576px) {
+    font-size: 45px;
+    letter-spacing: 2px;
+  }
+`;
 const Text = styled.p`
   font-size: 2rem;
   font-weight: 500;
@@ -94,6 +110,10 @@ const SubText = styled.p`
   font-size: 1.2rem;
   font-weight: 300;
   max-width: 600px;
+  span {
+    font-style: italic;
+    font-weight: 900;
+  }
   @media (max-width: 768px) {
     font-size: 14px;
   }

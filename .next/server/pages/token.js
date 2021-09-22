@@ -6,7 +6,7 @@ module.exports =
 /******/ 	// object to store loaded chunks
 /******/ 	// "0" means "already loaded"
 /******/ 	var installedChunks = {
-/******/ 		24: 0
+/******/ 		31: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"0":"249e87fa48b97196d16e"}[chunkId] + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"47":"1b80cfaf9e486d74a410"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 20);
+/******/ 	return __webpack_require__(__webpack_require__.s = 27);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -133,7 +133,7 @@ module.exports = require("next/dynamic");
 
 /***/ }),
 
-/***/ 20:
+/***/ 27:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("TPZ+");
@@ -157,22 +157,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("/T1H");
 /* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("Dtiu");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("oL/c");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_3__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // @flow
 
 
-
- // const Aboutcompo = dynamic(import("../client/components/TokensList"), { ssr: false });
-
-const Tokencompo = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 0).then(__webpack_require__.bind(null, "1LJG")), {
+const Tokencompo = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 47).then(__webpack_require__.bind(null, "JoM1")), {
   ssr: false,
   loadableGenerated: {
-    webpack: () => [/*require.resolve*/("1LJG")],
-    modules: ["../client/components/ComingSoon"]
+    webpack: () => [/*require.resolve*/("JoM1")],
+    modules: ["../client/components/Token"]
   }
 });
 
@@ -180,15 +173,6 @@ const Token = () => {
   return __jsx(Tokencompo, null);
 };
 
-const Box_home = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.section`
-  position: relative;
-  overflow: hidden;
-  padding: 45px 0;
-`;
-const BoxTable = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div`
-  position: relative;
-  
-`;
 /* harmony default export */ __webpack_exports__["default"] = (Token);
 
 /***/ }),

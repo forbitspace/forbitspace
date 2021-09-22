@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"29":"9de6e6c801f3e9fbb4c7"}[chunkId] + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"36":"b467df5558ba8c69d81b"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -180,7 +180,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
  // import { Container, Row, Col } from 'reactstrap';
 // const Aboutcompo = dynamic(import("../client/components/About"), { ssr: false });
 
-const Aboutcompo = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 29).then(__webpack_require__.bind(null, "1L5/")), {
+const Aboutcompo = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 36).then(__webpack_require__.bind(null, "1L5/")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("1L5/")],

@@ -31,14 +31,18 @@ const MenuMobile = () => {
             </li>
             {navContent.map((item, index) => (
               <li className="title">
-                <a href="#" className="text">
+                <a
+                  href={item.link}
+                  className="text"
+                  onClick={item.link ? toggle : null}
+                >
                   {item.nav}
-                  <i className="fa fas-chevron-down"></i>
                 </a>
+                <img src="../images/light-icon/chevron.svg" alt="" />
                 <ul className="submenu">
                   {item.contents.map((item, index) => (
-                    <li id={item.disable ? "disable" : ""}>
-                      <Link href="#">
+                    <li id={item.disable ? "disable" : ""} onClick={toggle}>
+                      <Link href={item.link}>
                         <a className="text">{item.content}</a>
                       </Link>
                     </li>
@@ -71,6 +75,10 @@ const Nav = styled.div`
   transition: all ease-in-out 0.5s;
   background-image: linear-gradient(268deg, #c4f1f2 3%, #ffffff 97%);
   overflow-y: auto;
+  img {
+    width: 20px;
+    margin-left: 0.5rem;
+  }
   ul {
     li {
       margin-top: 5px;

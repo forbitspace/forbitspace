@@ -1293,6 +1293,10 @@ footer {
 .img-dark {
   display: none;
 }
+body {
+  font-family: Roboto !important;
+  overflow-x: hidden;
+}
 
 body.dark-mode .img-dark {
   display: block;

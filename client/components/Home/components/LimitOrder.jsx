@@ -17,6 +17,34 @@ const LimitOrder = () => {
           <WrapText>
             <TitleText>DeFi Aggregation</TitleText>
             <SubText>
+              A limit order places a specific price that a trader wants to buy
+              or sell at and is only executed if the market hits that price.
+            </SubText>
+            <SubText>
+              Whereas market orders are executed immediately, limit orders are
+              executed at a predefined price, which is generally better than the
+              current market price.
+            </SubText>
+            <SubText>
+              The <span>forbitspace</span> platforms help users place the limit
+              order which is handled by the order-book feature. We limit order
+              protocol provides the most innovative and optimal. A limit order
+              is a type of buy order which a user can place with a specific buy
+              or sell price whose limit is determined by the user him/herself.
+              The enables the trade to be automatically executed when the market
+              price reaches the users’ target price. It allows users to buy dips
+              or take profits to take benefits of volatility in the marketplace.
+            </SubText>
+            <SubText>
+              A limit order would allow DeFi traders to get their swaps at
+              desired prices by leaving instructions to fill buy or sell orders
+              at specific prices (or better prices). For instance, if you think
+              an asset is too expensive at the moment, or you are expecting
+              prices to drop throughout the day, then you simply set a limit
+              order to buy at a price below the current market price. How much
+              lower is totally up to users.
+            </SubText>
+            {/* <SubText>
               Totle is connected to top decentralized exchanges and synthetic
               asset providers.
               <br />
@@ -31,7 +59,7 @@ const LimitOrder = () => {
             <SubText>
               Users are covered for up to 600 ETH in the event tha funds are
               lost during a swap due to an unforeseen bug.
-            </SubText>
+            </SubText> */}
           </WrapText>
         </Content>
       </WrapContainer>
@@ -65,9 +93,9 @@ const WrapContainer = styled(Container)`
 `;
 const WrapImg = styled.div`
   width: 50%;
-  /* transform: rotate(-5deg); */
+  transform: rotate(-12deg);
   @media (max-width: 1320px) {
-    width: 70%;
+    width: 60%;
   }
   @media (max-width: 768px) {
     width: 100%;
@@ -86,8 +114,8 @@ const Content = styled.div`
   width: 50%;
   max-width: 600px;
   /* text-align: right; */
-  @media (max-width: 1260px) {
-    width: 30%;
+  @media (max-width: 1320px) {
+    width: 40%;
   }
   @media (max-width: 768px) {
     width: 100%;
@@ -120,6 +148,10 @@ const TitleText = styled.p`
 const SubText = styled.p`
   font-size: 1.2rem;
   font-weight: 300;
+  span {
+    font-style: italic;
+    font-weight: 900;
+  }
   @media (max-width: 768px) {
     font-size: 14px;
   }

@@ -16,9 +16,13 @@ const Index = () => {
                 <TitleFooter>{item.nav}</TitleFooter>
                 {item.contents.map((item, index) => (
                   <li>
-                    <a href={item.link} target="_blank">
-                      {item.content}
-                    </a>
+                    {!item.disable ? (
+                      <a href={item.link} target="_blank">
+                        {item.content}
+                      </a>
+                    ) : (
+                      <Blank href="/">{item.content}</Blank>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -94,7 +98,7 @@ const SocialLink = styled.div``;
 
 const FooterMenu = styled.section`
   position: relative;
-  padding: 100px 0 0;
+  padding: 30px 0 0;
   overflow: hidden;
 
   @media (max-width: 576px) {
@@ -142,7 +146,7 @@ const ListMenu = styled.div`
         border-radius: 8px;
         transition: all 0.5s ease-in-out;
         background-size: 200%;
-        background-position: right;
+        background-position: 99%;
 
         i {
           color: #fff;
@@ -198,7 +202,9 @@ const ListMenu = styled.div`
     }
   }
 `;
-
+const Blank = styled.div`
+  font-size: 12px;
+`;
 const TitleFooter = styled.h3`
   font-size: 16px;
   font-size: ${(props) => props.size};

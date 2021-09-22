@@ -14,8 +14,8 @@ const Banner = () => {
         </WrapImg>
         <Content className="title-banner text-dark text-visi">
           <Title>
-            forbitspace
-            <br />
+            {/* <img src="../images/home-page/logo-1-02.png" alt="" />
+            <br /> */}
             API
           </Title>
           {/* <Title></Title> */}
@@ -93,28 +93,41 @@ const WrapImg = styled.div`
 `;
 const Content = styled.div`
   margin-left: 100px;
+  padding: 0 10px;
   text-align: right;
-  width: 50%;
+  width: 60%;
   align-self: flex-end;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
     margin-top: 40px;
+    padding: 10px;
   }
 `;
 const Title = styled.h2`
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 600;
   line-height: 1;
+  img {
+    max-width: 400px;
+  }
   @media (max-width: 768px) {
     font-size: 3rem;
     letter-spacing: 2px;
     text-align: center;
   }
+  @media (max-width: 576px) {
+    font-size: 45px;
+    letter-spacing: 2px;
+    img {
+      max-width: 200px;
+    }
+  }
 `;
 const SubText = styled.p`
   font-size: 1.2rem;
   font-weight: 300;
+  font-family: sans-serif;
   @media (max-width: 768px) {
     text-align: center;
   }
@@ -153,6 +166,7 @@ const SubContent = styled.div`
     width: 25px;
   }
   @media (max-width: 576px) {
+    font-size: 12px;
   }
 `;
 const BottomWrap = styled.div`

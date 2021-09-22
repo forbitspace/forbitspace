@@ -6,7 +6,7 @@ module.exports =
 /******/ 	// object to store loaded chunks
 /******/ 	// "0" means "already loaded"
 /******/ 	var installedChunks = {
-/******/ 		22: 0
+/******/ 		29: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"34":"86e0c875dde6087a6c5d"}[chunkId] + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"44":"192465543ff9b1f9f1e7"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 18);
+/******/ 	return __webpack_require__(__webpack_require__.s = 25);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -133,7 +133,7 @@ module.exports = require("next/dynamic");
 
 /***/ }),
 
-/***/ 18:
+/***/ 25:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("jIao");
@@ -167,7 +167,7 @@ __webpack_require__.r(__webpack_exports__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const SelfCustody = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 34).then(__webpack_require__.bind(null, "1DnQ")), {
+const SelfCustody = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 44).then(__webpack_require__.bind(null, "1DnQ")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("1DnQ")],

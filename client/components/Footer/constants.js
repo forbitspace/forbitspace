@@ -23,19 +23,19 @@ export const navContent = [
     nav: "Space Trade",
     contents: [
       {
-        link: "",
-        content: "Aggregation",
+        link: "/aggregation",
+        content: "Aggregation Protocol",
       },
       {
-        link: "",
+        link: "/liquidity",
         content: "Liquidity Protocol",
       },
       {
-        link: "",
+        link: "/limit",
         content: "Limit Order Protocol",
       },
       {
-        link: "",
+        link: "/derivative",
         content: "Derivative Protocol",
       },
     ],
@@ -44,20 +44,27 @@ export const navContent = [
     nav: "Governance",
     contents: [
       {
-        link: "",
+        link: "/token",
         content: "FBS Token",
       },
       {
+        link: "/dao",
+        content: "Space Dao",
+      },
+      {
         link: "",
-        content: "Space Dao Pools",
+        content: "Pools",
+        disable: true,
       },
       {
         link: "",
         content: "Farming",
+        disable: true,
       },
       {
         link: "",
         content: "Stacking",
+        disable: true,
       },
     ],
   },
@@ -71,6 +78,7 @@ export const navContent = [
       {
         link: "",
         content: "Whitepaper",
+        disable: true,
       },
       {
         link: "",
@@ -79,53 +87,66 @@ export const navContent = [
       {
         link: "",
         content: "Audits",
+        disable: true,
       },
       {
         link: "",
         content: "Bug bounty",
+        disable: true,
       },
     ],
   },
   {
     nav: "Self-custody",
+    link: "/selfcustody",
     contents: [
       {
-        link: "",
+        link: "/bridge",
+        content: "Bridge Space",
+      },
+      {
+        link: "/mobile-wallet",
         content: "Mobile wallet",
       },
       {
-        link: "",
+        link: "/smart-contract",
         content: "Smart contract wallet",
+      },
+      {
+        link: "/assets",
+        content: "Asset management",
       },
     ],
   },
   {
-    nav: "Support",
+    nav: "API",
+    disable: true,
+    link: "/API",
     contents: [
-      {
-        link: "",
-        content: "Help Center",
-      },
-      {
-        link: "",
-        content: "Term of Use",
-      },
-      {
-        link: "",
-        content: "Privacy Policy",
-      },
+      // {
+      //   link: "",
+      //   content: "Term of Use",
+      // },
+      // {
+      //   link: "",
+      //   content: "Privacy Policy",
+      // },
     ],
   },
   {
     nav: "More",
     contents: [
       {
-        link: "",
+        link: "/about",
         content: "About",
       },
       {
         link: "",
         content: "Blog",
+      },
+      {
+        link: "",
+        content: "Help Center",
       },
     ],
   },

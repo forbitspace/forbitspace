@@ -5,19 +5,19 @@ const HomeComp = dynamic(import("../client/components/Home"), { ssr: false });
 
 // const HomeComp = dynamic(import("../client/components/ComingSoon"), { ssr: false });
 export default function Home() {
-    return (
-        <div>
-            <HomeComp />
-            <script
-                dangerouslySetInnerHTML={{
-                    __html: `
+  return (
+    <div>
+      <HomeComp />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
                         new WOW().init();
                   `,
-                }}
-            ></script>
-            <script
-                dangerouslySetInnerHTML={{
-                    __html: `
+        }}
+      ></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
                         $(document).ready(function() {
                             $('.dark-mode').click(function() {
                                 $('.main-wrap').toggleClass('visible');
@@ -39,12 +39,12 @@ export default function Home() {
                             });
                         });
                           `,
-                }}
-            ></script>
-            {/* <span className="pages__BGCard-sc-109t5hg-0 lpuNcM">
+        }}
+      ></script>
+      {/* <span className="pages__BGCard-sc-109t5hg-0 lpuNcM">
         <span className="utils__CardBGImage-jpzfl5-0 hfInar"></span>
       </span> */}
-            {/* <div className="box-sta"></div> */}
-        </div>
-    );
+      {/* <div className="box-sta"></div> */}
+    </div>
+  );
 }
