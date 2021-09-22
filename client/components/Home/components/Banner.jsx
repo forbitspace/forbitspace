@@ -19,7 +19,7 @@ const Banner = () => {
       <Container>
         <Content className="title-banner text-dark text-visi">
           <Title>
-            <img src="../images/home-page/logo-1-02.png" alt="" />
+            <img src="../images/home-page/forbitspace-word.png" alt="" />
           </Title>
           {/* <Title></Title> */}
           <Text>The Decentralized Exchange Super Aggregator</Text>
