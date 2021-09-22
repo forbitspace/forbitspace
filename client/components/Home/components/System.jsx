@@ -1,8 +1,11 @@
 import styled from "styled-components";
-import { ContributorData, DataSocialLinkFooter } from "../constants";
+import {
+  ContributorData,
+  DataSocialLinkFooter,
+  EcosystemData,
+} from "../constants";
 const System = () => {
   const ContributorRender = ({ data, title }) => {
-    console.log(data);
     return (
       <WrapperInner>
         <div className="header">{title}</div>
@@ -22,11 +25,8 @@ const System = () => {
   return (
     <WrapperSystem>
       <div className="container">
-        <ContributorRender
-          data={ContributorData}
-          title={"Ecosystem partners"}
-        />
-        <ContributorRender data={ContributorData} title={"Contributors"} />
+        <ContributorRender data={EcosystemData} title={"Ecosystem partners"} />
+        <ContributorRender data={ContributorData} title={"Stakeholders"} />
         <BecomeBox>
           <div className="content">
             <div className="header-content">Join the community</div>
@@ -80,8 +80,9 @@ const WrapperInner = styled.div`
     padding: 45px;
     gap: 10px;
 
-    @media (max-width: 415px) {
-      padding: 30px 40px;
+    @media (max-width: 576px) {
+      padding: 30px 10px;
+      justify-content: space-between;
     }
   }
   .img-holder {
@@ -105,9 +106,9 @@ const WrapperInner = styled.div`
       width: 45%;
     }
 
-    @media (max-width: 415px) {
+    /* @media (max-width: 415px) {
       width: 70%;
-    }
+    } */
   }
 `;
 
@@ -144,7 +145,7 @@ const Link = styled.a`
 `;
 
 const Icon = styled.img`
-  max-width: 40px;
+  max-width: 30px;
   width: 100%;
   transition: all ease-in-out 0.2s;
   :hover {

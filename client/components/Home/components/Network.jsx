@@ -5,27 +5,52 @@ import styled from "styled-components";
 const Network = () => {
   return (
     <BoxSection>
-      <Title>Network</Title>
       <WrapContainer>
-        <WrapImg>
-          <WrapperButtonApp>
-            <ButtonBanner href="/" className="forbitswap">
-              {" "}
-              forbitswap
-            </ButtonBanner>
-          </WrapperButtonApp>
-          <ImgHalf>
-            <img src="../images/home-page/network-01.png" alt="" />
-          </ImgHalf>
-        </WrapImg>
-        <WrapImg>
-          <WrapperButtonApp>
-            <ButtonBanner href="/">Space Trade</ButtonBanner>
-          </WrapperButtonApp>
-          <ImgHalf>
-            <img src="../images/home-page/network-02.png" alt="" />
-          </ImgHalf>
-        </WrapImg>
+        <WrapTitle>
+          <Title>Multi Network</Title>
+          <SubText className="subtext__title">
+            <span>forbitspace </span> aggregator protocol is now available on
+            Ethereum, Binance Smart Chain, and layer 2 Polygon, Arbitrum, and
+            Optimism we currently launch each blockchain as by stage.
+          </SubText>
+          <SubText className="subtext__title">
+            We plan to support more EVM chains and non-EVM chains, Solana,
+            Avalanche, and more in the months following launch.
+          </SubText>
+        </WrapTitle>
+        <WrapContent>
+          <WrapImg>
+            <WrapperButtonApp>
+              <ButtonBanner href="/">Space Trade</ButtonBanner>
+            </WrapperButtonApp>
+            <ImgHalf>
+              <img src="../images/home-page/network-02.png" alt="" />
+            </ImgHalf>
+          </WrapImg>{" "}
+        </WrapContent>
+        <WrapContent>
+          <SubText className="subtext__content">
+            The <span>forbitspace </span> DEX super aggregator is an
+            interoperability protocol that connects disparate blockchains. That
+            unites decentralized applications across disparate blockchains,
+            simultaneously uniting liquidity across chains and making it
+            possible to transact in, out, and across disparate networks with
+            ease,
+          </SubText>
+          <WrapImg className="img__swap">
+            <WrapperButtonApp>
+              <ButtonBanner
+                href="https://app.forbitswap.com/#/swap"
+                className="forbitswap"
+              >
+                forbitswap
+              </ButtonBanner>
+            </WrapperButtonApp>
+            <ImgHalf>
+              <img src="../images/home-page/network-01.png" alt="" />
+            </ImgHalf>
+          </WrapImg>
+        </WrapContent>
       </WrapContainer>
     </BoxSection>
   );
@@ -34,31 +59,56 @@ const Network = () => {
 const BoxSection = styled.section`
   position: relative;
   /* min-height: 88vh; */
-  padding: 12vh 50px 0;
+  padding: 2vh 50px 0;
 
   @media (max-width: 770px) {
-    padding-top: 10px;
+    padding: 10px;
     /* min-height: 80vh; */
   }
 `;
 const Title = styled.div`
   font-size: 4rem;
   font-weight: 600;
-  text-align: center;
+  text-align: right;
+  padding: 1vh 0;
   @media (max-width: 768px) {
     font-size: 35px;
+    padding: 10px 0 30px;
+    text-align: center;
   }
 `;
 const WrapContainer = styled(Container)`
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
   gap: 20px;
   @media (min-width: 1650px) {
     max-width: 80%;
   }
   @media (max-width: 768px) {
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
+  }
+`;
+const WrapTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  @media (max-width: 768px) {
+    align-items: center;
+  }
+`;
+const WrapContent = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    :first-child {
+      /* flex-direction: column-reverse; */
+    }
   }
 `;
 const WrapImg = styled.div`
@@ -68,12 +118,12 @@ const WrapImg = styled.div`
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
-  :first-child {
-    width: 33%;
+  &.img__swap {
+    width: 40%;
   }
   @media (max-width: 768px) {
-    width: 100%;
-    min-height: 75vh;
+    width: 70% !important;
+    /* min-height: 75vh; */
     justify-content: center;
     :first-child {
       width: 100%;
@@ -87,11 +137,41 @@ const ImgHalf = styled.div`
     width: 100%;
     height: auto;
   }
+  @media (max-width: 768px) {
+    padding: 10px 0 25px;
+  }
+`;
+const SubText = styled.p`
+  font-size: 1.2rem;
+  font-weight: 300;
+  width: 60%;
+  span {
+    font-style: italic;
+    font-weight: 900;
+  }
+  &.subtext__title {
+    text-align: right;
+  }
+  &.subtext__content {
+    width: 45%;
+  }
+  @media (min-width: 1441px) {
+    width: 50%;
+    &.subtext__content {
+      width: 35%;
+    }
+  }
+  @media (max-width: 768px) {
+    font-size: 14px;
+    width: 100% !important;
+    text-align: center !important;
+  }
+  @media (max-width: 576px) {
+    font-size: 13px;
+  }
 `;
 const WrapperButtonApp = styled.div`
   max-width: 350px;
-  /* margin: 0 auto; */
-  /* width: 90%; */
   text-align: left;
   @media (max-width: 1200px) {
     display: block;
@@ -106,6 +186,7 @@ const ButtonBanner = styled.a`
   padding: 0.25rem 0.85rem;
   text-decoration: none;
   text-align: center;
+  font-style: italic;
   border-radius: 12px;
   display: inline-block;
   transform: scale(0.98);
@@ -129,7 +210,7 @@ const ButtonBanner = styled.a`
     #0d00ff 111%
   );
   width: 100%;
-  width: 140px;
+  /* width: 140px; */
   background-size: 200%;
   background-position: 99%;
   color: white;
@@ -140,6 +221,9 @@ const ButtonBanner = styled.a`
   }
   :hover {
     color: white;
+  }
+  @media (max-width: 768px) {
+    font-size: 12px;
   }
 `;
 export default Network;

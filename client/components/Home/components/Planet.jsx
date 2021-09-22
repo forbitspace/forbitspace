@@ -16,11 +16,16 @@ const Planet = () => {
           </Title>
           <Text>Aggregation Protocol</Text>
           <SubText>
-            The forbitspace is an aggregator protocols allows traders to benefit
-            from a large variety of financial tools in a single
-            interface.forbitspace the ability to split a single transaction into
-            multiple orders across various DEX’s, also route orders through
-            multiple assets if determined to provide a user the most liquidity.
+            The <span>forbitspace</span> is an aggregator protocol that allows
+            traders to benefit from a large variety of financial tools in a
+            single interface.
+          </SubText>
+          <SubText>
+            <span>forbitspace</span> use an algorithm smart order routing that
+            split a single transaction into multiple orders across various
+            DEX’s, also route orders through allows crypto traders to tap deep
+            liquidity and receive better pricing low cost & efficient the most
+            liquidity.
           </SubText>
         </Content>
       </WrapContainer>
@@ -30,15 +35,13 @@ const Planet = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  /* min-height: 88vh; */
-  /* padding: 10vh 0 0; */
   @media (min-width: 800px) {
-    /* padding: 25px 0; */
+    margin: -165px 0;
+  }
+  @media (min-width: 1280px) {
     margin: -50px 0;
   }
-  @media (min-width: 1440px) {
-    margin: 150px 0;
-  }
+
   @media (max-width: 770px) {
     padding-top: 10px;
     /* min-height: 80vh; */
@@ -58,9 +61,6 @@ const WrapContainer = styled(Container)`
 const WrapPlanet = styled.div`
   width: 50%;
   transform: scale(1);
-  @media (min-width: 2100px) {
-    transform: scale(1.2);
-  }
   @media (max-width: 1440px) {
     transform: scale(0.75);
   }
@@ -68,21 +68,25 @@ const WrapPlanet = styled.div`
     transform: scale(0.55);
   }
   @media (max-width: 786px) {
-    transform: scale(0.75);
-  }
-  @media (max-width: 576px) {
     transform: scale(0.65);
-    margin: -170px 0;
+    margin: -140px 0;
   }
   @media (max-width: 400px) {
-    transform: scale(0.5);
+    transform: scale(0.45);
     margin: -220px 0;
+  }
+  @media (max-width: 320px) {
+    transform: scale(0.4);
+    margin: -280px 0;
   }
 `;
 const Content = styled.div`
   margin-left: 80px;
   width: 50%;
   max-width: 600px;
+  @media (max-width: 1024px) {
+    margin-left: 0;
+  }
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -108,6 +112,10 @@ const Title = styled.h2`
 const SubText = styled.p`
   font-size: 1.2rem;
   font-weight: 300;
+  span {
+    font-style: italic;
+    font-weight: 900;
+  }
   @media (max-width: 768px) {
     font-size: 14px;
   }
@@ -115,7 +123,7 @@ const SubText = styled.p`
 
 const Text = styled.p`
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 40px;
   letter-spacing: 1px;
   @media (max-width: 768px) {

@@ -6,8 +6,12 @@ import styled from "styled-components";
 // import ButtonApp from "../../Header/components/AppLink";
 
 const Banner = () => {
+  const [scroll, setScroll] = useState(true);
+  window.addEventListener("scroll", function () {
+    window.scrollY > 80 ? setScroll(true) : setScroll(false);
+  });
   return (
-    <BoxSection>
+    <BoxSection height={scroll ? "10vh" : "100vh"}>
       <WrapImgBanner>
         <img src="../images/home-page/banner.png" alt="" />
         <BackgroundBanner />
@@ -15,14 +19,15 @@ const Banner = () => {
       <Container>
         <Content className="title-banner text-dark text-visi">
           <Title>
-            <img src="../images/home-page/Logo-1-02.png" alt="" />
+            <img src="../images/home-page/logo-1-02.png" alt="" />
           </Title>
           {/* <Title></Title> */}
-          <Text>The Decentralized Exchange Aggregator</Text>
+          <Text>The Decentralized Exchange Super Aggregator</Text>
           <SubText>
-            The forbitspace unity Decentralized Protocols that allows crypto
-            traders to tap deep liquidity and receive better pricing one single
-            interface.
+            <span>forbitspace</span> is an interoperability aggregator protocol
+            that unites decentralized applications across disparate blockchains.
+            allows crypto traders to tap deep liquidity and receive better
+            pricing one single interface.
           </SubText>
           {/* <WrapperButtonApp>
             <ButtonApp marginRight="0px" />
@@ -36,11 +41,12 @@ const Banner = () => {
 const BoxSection = styled.section`
   position: relative;
   /* min-height: 88vh; */
-  padding: 10vh 0 0;
+  padding: 2vh 0 0;
+  transition: min-height 0.3s;
 
   @media (max-width: 770px) {
     padding-top: 50px;
-    min-height: 100vh;
+    min-height: ${({ height }) => height};
   }
 `;
 const WrapImgBanner = styled.div`
@@ -69,8 +75,7 @@ const BackgroundBanner = styled.div`
 `;
 const Content = styled.div`
   margin-left: 80px;
-  width: 50%;
-  max-width: 600px;
+  width: 75%;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -81,7 +86,7 @@ const Content = styled.div`
   }
 `;
 const Title = styled.h2`
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 600;
   line-height: 1;
   img {
@@ -98,6 +103,11 @@ const Title = styled.h2`
 const SubText = styled.p`
   font-size: 1.2rem;
   font-weight: 300;
+  font-family: sans-serif;
+  span {
+    font-style: italic;
+    font-weight: 900;
+  }
   @media (max-width: 576px) {
     font-size: 14px;
   }
@@ -108,6 +118,7 @@ const Text = styled.p`
   font-weight: 500;
   line-height: 40px;
   letter-spacing: 1px;
+  font-style: italic;
   @media (max-width: 576px) {
     font-size: 20px;
     letter-spacing: 1px;

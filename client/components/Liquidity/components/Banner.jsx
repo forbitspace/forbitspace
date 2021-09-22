@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "reactstrap";
 import styled from "styled-components";
+import LiquidityAnimation from "./LiquidityAnimation";
 
 const Banner = () => {
   return (
@@ -8,15 +9,23 @@ const Banner = () => {
       <WrapContainer>
         <WrapImg>
           <ImgHalf>
-            <img src="../images/home-page/liquidity.png" alt="" />
+            {/* <img src="../images/home-page/liquidity.png" alt="" /> */}
+            <LiquidityAnimation />
           </ImgHalf>
         </WrapImg>
         <Content className="title-banner text-dark text-visi">
           <Title>Liquidity Pool</Title>
           <SubText>
-            Totle aggregates decentralized exchanges and synthetic asset
-            providers into a suite of tools that makes it easy to access deep
-            liquidity for DeFi assets at the best price.
+            With <span>forbitspace</span>, the decentralized protocol that
+            empowering traders to provide liquidity to pools and collect extra
+            rewards in FBS tokens for participating in liquidity mining
+            programs.
+            <br />A next-generation automated market maker that protects users
+            from front-running attacks and offers capital efficiency to
+            liquidity providers. Enables you to deposit digital assets into
+            liquidity pools while earning interest in real-time in the form of
+            FBS Tokens. Liquidity providers collect rewards on assets locked in
+            pools and extra yield farming rewards in FBS tokens.
           </SubText>
           {/* <WrapperButtonApp>
             <ButtonBanner href="/">Google Play</ButtonBanner>
@@ -51,8 +60,12 @@ const WrapContainer = styled(Container)`
 `;
 const WrapImg = styled.div`
   width: 50%;
+  transform: scale(0.6);
+  transform-origin: right;
   @media (max-width: 768px) {
     width: 100%;
+    transform: scale(0.8);
+    transform-origin: center;
   }
 `;
 const ImgHalf = styled.div`
@@ -87,22 +100,14 @@ const Title = styled.h2`
     letter-spacing: 2px;
   }
 `;
-const Text = styled.p`
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 40px;
-  letter-spacing: 1px;
-  @media (max-width: 768px) {
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 500;
-    line-height: 25px;
-  }
-`;
-const SubText = styled.p`
+const SubText = styled.div`
   font-size: 1.2rem;
-  font-weight: 300;
-  max-width: 600px;
+  font-weight: 200;
+  font-family: sans-serif;
+  span {
+    font-style: italic;
+    font-weight: 900;
+  }
   @media (max-width: 768px) {
     font-size: 14px;
   }

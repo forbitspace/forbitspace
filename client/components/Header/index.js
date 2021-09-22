@@ -49,7 +49,7 @@ const GlobalStyle = createGlobalStyle`
     left: 0;
     right: 0;
     transition: all 0.5s;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
   }
 `;
 

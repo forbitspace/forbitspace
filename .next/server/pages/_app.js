@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"26":"1e7520b1b87f4f9ac5af","36":"d407ab00eaa3e04b9058"}[chunkId] + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"33":"dbbdad6d0ea2d53ce3fe","51":"0665f908d6cdcd1ff508"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -328,14 +328,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const Planet = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpack_require__.e(/* import() */ 36).then(__webpack_require__.bind(null, "n/ku")), {
+const Planet = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpack_require__.e(/* import() */ 51).then(__webpack_require__.bind(null, "n/ku")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("n/ku")],
     modules: ["../client/components/Planets/Planet"]
   }
 });
-const Header = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpack_require__.e(/* import() */ 26).then(__webpack_require__.bind(null, "dFpG")), {
+const Header = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpack_require__.e(/* import() */ 33).then(__webpack_require__.bind(null, "dFpG")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("dFpG")],

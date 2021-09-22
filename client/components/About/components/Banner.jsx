@@ -8,7 +8,7 @@ const Banner = () => {
       <WrapContainer>
         <WrapImg>
           <ImgHalf>
-            <img src="../images/about-page/crypto-space-02.png" alt="" />
+            <img src="../images/about-page/17-9-04.png" alt="" />
           </ImgHalf>
         </WrapImg>
         <Content className="title-banner text-dark text-visi">
@@ -20,13 +20,15 @@ const Banner = () => {
             platforms that unify numerous DEXs in the same merge space and allow
             users to conduct operations on all covered platforms without the
             need to create separate accounts and wallets.
-            <br />
+          </SubText>
+          <SubText>
             While having a wide selection of different protocols is beneficial
             to diversify investments and getting the best yield rates from
             crypto lending, efficiency and convenience are hindered since the
             financial information is spread vastly across multiple protocols.
             That’s where DeFi aggregators thrive.
-            <br />
+          </SubText>
+          <SubText>
             forbitspace DEXs aggregator utilizes the power of blockchain to
             bring together trades across various decentralized finance platforms
             (DeFi) into one space, saving users time and increasing efficiency
@@ -56,19 +58,19 @@ const BoxSection = styled.section`
 const WrapContainer = styled(Container)`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
   @media (min-width: 1650px) {
     max-width: 80%;
   }
-  @media (max-width: 576px) {
-    flex-direction: column;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
   }
 `;
 const WrapImg = styled.div`
-  width: 50%;
+  width: 30%;
   @media (max-width: 768px) {
-    width: 100%;
+    width: 60%;
   }
 `;
 const ImgHalf = styled.div`

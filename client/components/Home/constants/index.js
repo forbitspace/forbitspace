@@ -171,7 +171,7 @@ export const ContributorData = [
     img: "coingecko",
   },
   {
-    img: "chainlink",
+    img: "link",
   },
   {
     img: "graph",
@@ -193,6 +193,74 @@ export const ContributorData = [
   },
   {
     img: "coinbase",
+  },
+];
+export const EcosystemData = [
+  {
+    img: "eth",
+  },
+  {
+    img: "binance",
+  },
+  {
+    img: "solana",
+  },
+  {
+    img: "polygon",
+  },
+  {
+    img: "avalanche",
+  },
+  {
+    img: "arbitrum",
+  },
+  {
+    img: "coinbase",
+  },
+  {
+    img: "metamask",
+  },
+  {
+    img: "near",
+  },
+  {
+    img: "trust-wallet",
+  },
+  {
+    img: "fire-block",
+  },
+  {
+    img: "wallet-connect",
+  },
+  {
+    img: "safepal",
+  },
+  {
+    img: "coin-gecko",
+  },
+  {
+    img: "link",
+  },
+  {
+    img: "the-graph",
+  },
+  {
+    img: "dune",
+  },
+  {
+    img: "phantom",
+  },
+  {
+    img: "zapper",
+  },
+  {
+    img: "de-bank",
+  },
+  {
+    img: "crypto",
+  },
+  {
+    img: "alpha-wallet",
   },
 ];
 export const DataSocialLinkFooter = [

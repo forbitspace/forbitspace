@@ -5,7 +5,7 @@ import Banner from "./components/Banner";
 import Mission from "./components/Mission";
 import Grant from "./components/Grant";
 import Timeline from "./components/Timeline";
-import Footer from "../Footer/index";
+// import Footer from "../Footer/index";
 
 const Foundation = () => {
   return (
@@ -15,7 +15,7 @@ const Foundation = () => {
         <Mission />
         <Grant />
         <Timeline />
-        <Footer />
+        {/* <Footer /> */}
       </Container>
     </WrapperBackground>
   );

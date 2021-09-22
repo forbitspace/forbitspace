@@ -76,9 +76,13 @@ const WrapContent = styled.div`
     background-image: linear-gradient(
       to right,
       #0168ff 0%,
-      rgba(1, 104, 255, 0) 50%,
-      #0ff 100%
+      rgba(1, 104, 255, 0) 25%,
+      #0ff 50%,
+      rgba(1, 104, 255, 0) 75%,
+      #0168ff 100%
     );
+    background-size: 200%;
+    animation: background_move 15s infinite;
     border-radius: 22px;
     z-index: -1;
 
@@ -104,6 +108,14 @@ const WrapContent = styled.div`
       right: -1px;
     }
   }
+  @keyframes background_move {
+    from {
+      background-position: 100%;
+    }
+    to {
+      background-position: -100%;
+    }
+  } ;
 `;
 
 const BoxContent = styled.div`

@@ -12,13 +12,18 @@ const Banner = () => {
           </ImgHalf>
         </WrapImg>
         <Content className="title-banner text-dark text-visi">
-          <Title>Wallet</Title>
-          <Text>
-            Our wallet offers you a user‑friendly entry point to the DeFi space
-          </Text>
+          <Title>Self-custody</Title>
           <SubText>
-            A highly protected and innovative solution for storing, receiving,
-            sending and swapping crypto assets.
+            In the world DeFi, your money becomes empowered. You can store it,
+            lend it, trade it, zap it, and track it in real-time. It’s a bit
+            like a game but at the heart of this is more control, aka
+            self-custody. We clearly see the importance of self-custody refers
+            to individuals being 100% in control of their assets, similar to
+            cash. Except this is digital cash, and it’s not dependent on a bank
+            or other entity to issue it or verify transactions. This is
+            precisely why blockchain was such a huge innovation starting with
+            Bitcoin then Ethereum and more crypto assets in the different
+            blockchains.
           </SubText>
           {/* <WrapperButtonApp>
             <ButtonBanner href="/">Google Play</ButtonBanner>
@@ -42,17 +47,17 @@ const BoxSection = styled.section`
 const WrapContainer = styled(Container)`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center;
+  gap: 2rem;
   @media (min-width: 1650px) {
     max-width: 80%;
   }
-  @media (max-width: 576px) {
-    flex-direction: column;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
   }
 `;
 const WrapImg = styled.div`
-  width: 50%;
+  width: 30%;
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -67,7 +72,7 @@ const ImgHalf = styled.div`
 `;
 const Content = styled.div`
   margin-left: 80px;
-  width: 50%;
+  width: 45%;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -81,7 +86,7 @@ const Content = styled.div`
   }
 `;
 const Title = styled.h2`
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 1;
   font-weight: 700;
   @media (max-width: 576px) {
@@ -89,81 +94,15 @@ const Title = styled.h2`
     letter-spacing: 2px;
   }
 `;
-const Text = styled.p`
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 40px;
-  letter-spacing: 1px;
-  @media (max-width: 768px) {
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 500;
-    line-height: 25px;
-  }
-`;
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
-  max-width: 600px;
+  font-family: sans-serif;
   @media (max-width: 768px) {
     font-size: 14px;
   }
   @media (max-width: 576px) {
     font-size: 13px;
-  }
-`;
-const WrapperButtonApp = styled.div`
-  max-width: 350px;
-  /* margin: 0 auto; */
-  /* width: 90%; */
-  text-align: left;
-  @media (max-width: 1200px) {
-    display: block;
-  }
-  @media (max-width: 576px) {
-    text-align: center;
-    max-width: unset;
-  }
-`;
-
-const ButtonBanner = styled.a`
-  padding: 0.25rem 0.85rem;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 12px;
-  display: inline-block;
-  transform: scale(0.98);
-  transition: transform 0.25s ease 0s;
-  box-sizing: border-box;
-  font-weight: 500;
-  font-size: 1.125rem;
-  cursor: pointer;
-  width: fit-content;
-  background-color: rgb(255, 255, 255);
-  color: white;
-  /* border: 1px solid transparent; */
-  margin-right: 1rem;
-  background-image: linear-gradient(
-    38deg,
-    #00ff36 -10%,
-    #00ee57 3%,
-    #00c5ad 32%,
-    #00a4f1 53%,
-    #0b18fc 102%,
-    #0d00ff 111%
-  );
-  width: 100%;
-  width: 140px;
-  background-size: 200%;
-  background-position: 99%;
-  color: white;
-
-  &.forbitswap {
-    background-size: 110%;
-    background-position: 30%;
-  }
-  @media (max-width: 768px) {
-    margin-top: 10px;
   }
 `;
 export default Banner;
