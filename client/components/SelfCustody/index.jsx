@@ -8,6 +8,7 @@ import MobileWallet from "./components/MobileWallet";
 // import Grant from "./components/Grant";
 // import Timeline from "./components/Timeline";
 import Footer from "../Footer/index";
+import Assets from "./components/Assets";
 
 const SelfCustody = () => {
   return (
@@ -15,10 +16,7 @@ const SelfCustody = () => {
       <Banner />
       {/* <Numbers /> */}
       <MobileWallet />
-      {/* <Mission />
-        <Grant />
-        <Timeline />
-        <Footer /> */}
+      <Assets />
       <BackgroundImg src="./images/background-line-min.png"></BackgroundImg>
       <Footer />
     </WrapperBackground>

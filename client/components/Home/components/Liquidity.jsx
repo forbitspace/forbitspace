@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "reactstrap";
 import styled from "styled-components";
-
+import LiquidityAnimation from "./LiquidityAnimation";
 const Liquidity = () => {
   return (
     <BoxSection>
@@ -14,17 +14,20 @@ const Liquidity = () => {
             empowering traders to provide liquidity to pools and collect extra
             rewards in FBS tokens for participating in liquidity mining
             programs.
-            <br />A next-generation automated market maker that protects users
-            from front-running attacks and offers capital efficiency to
-            liquidity providers. Enables you to deposit digital assets into
-            liquidity pools while earning interest in real-time in the form of
-            FBS Tokens. Liquidity providers collect rewards on assets locked in
-            pools and extra yield farming rewards in FBS tokens.
+          </SubText>
+          <SubText>
+            A next-generation automated market maker that protects users from
+            front-running attacks and offers capital efficiency to liquidity
+            providers. Enables you to deposit digital assets into liquidity
+            pools while earning interest in real-time in the form of FBS Tokens.
+            Liquidity providers collect rewards on assets locked in pools and
+            extra yield farming rewards in FBS tokens.
           </SubText>
         </Content>
         <WrapLiquidity>
           <ImgHalf>
-            <img src="../images/home-page/liquidity.png" alt="" />
+            {/* <img src="../images/home-page/liquidity.png" alt="" /> */}
+            <LiquidityAnimation />
           </ImgHalf>
         </WrapLiquidity>
       </WrapContainer>
@@ -59,6 +62,9 @@ const WrapContainer = styled(Container)`
 const WrapLiquidity = styled.div`
   width: 50%;
   @media (max-width: 768px) {
+    width: 60%;
+  }
+  @media (max-width: 700px) {
     width: 100%;
   }
 `;
@@ -71,27 +77,18 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
+  /* margin-left: 80px; */
   width: 50%;
-  text-align: right;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
     margin-top: 20px;
     text-align: center;
     align-items: center;
-  }
-`;
-const Title = styled.h2`
-  font-size: 4rem;
-  font-weight: 600;
-  line-height: 1;
-  @media (max-width: 576px) {
-    font-size: 45px;
-    letter-spacing: 2px;
   }
 `;
 const Text = styled.p`
@@ -107,15 +104,17 @@ const Text = styled.p`
   }
 `;
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 26px;
   font-weight: 300;
   max-width: 600px;
+  text-align: left;
   span {
     font-style: italic;
     font-weight: 900;
   }
   @media (max-width: 768px) {
     font-size: 14px;
+    text-align: center;
   }
   @media (max-width: 576px) {
     font-size: 13px;

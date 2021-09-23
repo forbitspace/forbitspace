@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "reactstrap";
 import styled from "styled-components";
 
 const Banner = () => {
+  const [open, setOpen] = useState(false);
   return (
     <BoxSection>
       <WrapContainer>
@@ -21,20 +22,29 @@ const Banner = () => {
             users to conduct operations on all covered platforms without the
             need to create separate accounts and wallets.
           </SubText>
-          <SubText>
-            While having a wide selection of different protocols is beneficial
-            to diversify investments and getting the best yield rates from
-            crypto lending, efficiency and convenience are hindered since the
-            financial information is spread vastly across multiple protocols.
-            That’s where DeFi aggregators thrive.
-          </SubText>
-          <SubText>
-            forbitspace DEXs aggregator utilizes the power of blockchain to
-            bring together trades across various decentralized finance platforms
-            (DeFi) into one space, saving users time and increasing efficiency
-            for cryptocurrency trades. We siphon the very best prices from DEXs,
-            swap services, and liquidity pools into one place so that users can
-            optimize their trades.
+          {open ? (
+            <>
+              <SubText>
+                While having a wide selection of different protocols is
+                beneficial to diversify investments and getting the best yield
+                rates from crypto lending, efficiency and convenience are
+                hindered since the financial information is spread vastly across
+                multiple protocols. That’s where DeFi aggregators thrive.
+              </SubText>
+              <SubText>
+                forbitspace DEXs aggregator utilizes the power of blockchain to
+                bring together trades across various decentralized finance
+                platforms (DeFi) into one space, saving users time and
+                increasing efficiency for cryptocurrency trades. We siphon the
+                very best prices from DEXs, swap services, and liquidity pools
+                into one place so that users can optimize their trades.
+              </SubText>
+            </>
+          ) : (
+            <></>
+          )}
+          <SubText onClick={() => setOpen(!open)} className="toggle__btn">
+            {open ? "Hide" : "Read more..."}
           </SubText>
           {/* <WrapperButtonApp>
             <ButtonBanner href="/">Google Play</ButtonBanner>
@@ -49,7 +59,7 @@ const Banner = () => {
 const BoxSection = styled.section`
   position: relative;
   /* min-height: 88vh; */
-  padding: 10vh 0 0;
+  padding: 2vh 0 0;
   @media (max-width: 770px) {
     padding-top: 60px;
     /* min-height: 80vh; */
@@ -68,7 +78,7 @@ const WrapContainer = styled(Container)`
   }
 `;
 const WrapImg = styled.div`
-  width: 30%;
+  width: 40%;
   @media (max-width: 768px) {
     width: 60%;
   }
@@ -82,12 +92,12 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
-  width: 50%;
+  /* margin-left: 80px; */
+  width: 60%;
   text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -106,12 +116,17 @@ const Title = styled.h2`
   }
 `;
 const SubText = styled.p`
-  font-size: 1rem;
+  font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
-  /* max-width: 600px; */
+  text-align: right;
+  &.toggle__btn {
+    font-style: italic;
+    font-weight: 400;
+  }
   @media (max-width: 768px) {
     font-size: 14px;
+    text-align: center;
   }
   @media (max-width: 576px) {
     font-size: 13px;

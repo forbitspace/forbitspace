@@ -111,6 +111,11 @@ const ImgWrap = styled.div`
       transform: scale(0.7);
     }
   }
+  @media (max-width: 768px) {
+    img {
+      transform: scale(1.2);
+    }
+  }
   @media (max-width: 700px) {
     img {
       transform: scale(0.65);

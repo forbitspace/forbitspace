@@ -9,9 +9,9 @@ const Banner = () => {
         <Content className="title-banner text-dark text-visi">
           <Text>FBS Token</Text>
           <SubText>
-            Totle aggregates decentralized exchanges and synthetic asset
+            {/* Totle aggregates decentralized exchanges and synthetic asset
             providers into a suite of tools that makes it easy to access deep
-            liquidity for DeFi assets at the best price.
+            liquidity for DeFi assets at the best price. */}
           </SubText>
         </Content>
         <WrapImg>
@@ -91,7 +91,7 @@ const Text = styled.p`
   }
 `;
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 26px;
   font-weight: 300;
   max-width: 600px;
   @media (max-width: 768px) {

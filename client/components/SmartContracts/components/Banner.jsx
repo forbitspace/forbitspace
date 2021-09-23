@@ -96,7 +96,7 @@ const Title = styled.h2`
 `;
 
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 26px;
   font-weight: 300;
   font-family: sans-serif;
   span {

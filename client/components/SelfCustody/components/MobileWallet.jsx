@@ -102,9 +102,9 @@ const WrapContainer = styled(Container)`
   }
 `;
 const WrapImg = styled.div`
-  width: 20%;
-  @media (max-width: 576px) {
-    width: 100%;
+  width: 40%;
+  @media (max-width: 768px) {
+    width: 60%;
   }
 `;
 const ImgHalf = styled.div`
@@ -131,7 +131,7 @@ const ImgHalf = styled.div`
 `;
 const Content = styled.div`
   margin-left: 80px;
-  width: 40%;
+  width: 60%;
   text-align: left;
   max-width: 750px;
 
@@ -163,7 +163,7 @@ const TitleText = styled.p`
 `;
 
 const SubText = styled.p`
-  font-size: 1rem;
+  font-size: 26px;
   font-weight: 300;
   font-family: sans-serif;
   span {
@@ -195,7 +195,7 @@ const WrapWallet = styled.div`
     width: 100%;
     flex-direction: column;
     img {
-      width: 100%;
+      width: 60%;
     }
   }
 `;

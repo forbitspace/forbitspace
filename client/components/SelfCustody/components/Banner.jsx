@@ -57,9 +57,9 @@ const WrapContainer = styled(Container)`
   }
 `;
 const WrapImg = styled.div`
-  width: 30%;
+  width: 45%;
   @media (max-width: 768px) {
-    width: 100%;
+    width: 60%;
   }
 `;
 const ImgHalf = styled.div`
@@ -72,7 +72,7 @@ const ImgHalf = styled.div`
 `;
 const Content = styled.div`
   margin-left: 80px;
-  width: 45%;
+  width: 55%;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -95,7 +95,7 @@ const Title = styled.h2`
   }
 `;
 const SubText = styled.p`
-  font-size: 1rem;
+  font-size: 26px;
   font-weight: 300;
   font-family: sans-serif;
   @media (max-width: 768px) {

@@ -22,7 +22,7 @@ const RoadMap = () => {
 const BoxSection = styled.section`
   position: relative;
   /* min-height: 88vh; */
-  padding: 10vh 0 0;
+  padding: 2vh 0 0;
   @media (max-width: 770px) {
     padding-top: 60px;
     /* min-height: 80vh; */

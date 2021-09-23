@@ -1,10 +1,11 @@
 import React from "react";
 import { Container } from "reactstrap";
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 const AboutUs = () => {
   return (
     <BoxSection>
+      <GlobalStyle />
       <WrapContainer>
         <Content className="title-banner text-dark text-visi">
           <Title>About us</Title>
@@ -12,7 +13,7 @@ const AboutUs = () => {
         </Content>
         <WrapImg>
           <ImgHalf>
-            <img src="../images/about-page/team-space.png" alt="" />
+            <img src="../images/about-page/team.png" alt="" />
           </ImgHalf>
         </WrapImg>
       </WrapContainer>
@@ -20,10 +21,16 @@ const AboutUs = () => {
   );
 };
 
+const GlobalStyle = createGlobalStyle`
+  body.dark-mode{
+    /* background-image: radial-gradient(#00284b, #030d20 67%); */
+  }
+`;
+
 const BoxSection = styled.section`
   position: relative;
   /* min-height: 88vh; */
-  padding: 10vh 0 0;
+  padding: 4vh 0 0;
   @media (max-width: 770px) {
     padding-top: 60px;
     /* min-height: 80vh; */
@@ -42,7 +49,13 @@ const WrapContainer = styled(Container)`
   }
 `;
 const WrapImg = styled.div`
-  width: 50%;
+  width: 65%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -70px;
+
   @media (max-width: 768px) {
     width: 60%;
   }
@@ -57,7 +70,7 @@ const ImgHalf = styled.div`
 `;
 const Content = styled.div`
   margin-left: 80px;
-  width: 20%;
+  width: 35%;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -81,7 +94,7 @@ const Title = styled.h2`
   }
 `;
 const SubText = styled.p`
-  font-size: 1rem;
+  font-size: 26px;
   font-weight: 300;
   font-family: sans-serif;
   /* max-width: 600px; */

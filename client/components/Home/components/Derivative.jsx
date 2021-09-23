@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "reactstrap";
 import styled from "styled-components";
 
 const Derivative = () => {
+  const [open, setOpen] = useState(false);
   return (
     <BoxSection>
       <WrapContainer>
@@ -18,22 +19,30 @@ const Derivative = () => {
             Synthetic assets on decentralized trading platforms are fetching
             good trade volume.
           </SubText>
+          {open ? (
+            <>
+              <SubText>
+                Derivatives in the Defi world are important because what is
+                being built here is not a trading and speculation market; it’s a
+                use-case market. The principle of hedging goes far beyond Defi
+                or cryptocurrencies. It’s applicable to the traditional
+                financial world as well.
+              </SubText>
 
-          <SubText>
-            Derivatives in the Defi world are important because what is being
-            built here is not a trading and speculation market; it’s a use-case
-            market. The principle of hedging goes far beyond Defi or
-            cryptocurrencies. It’s applicable to the traditional financial world
-            as well.
-          </SubText>
-
-          <SubText>
-            Derivatives protocol provider used to create custom assets by using
-            forward-looking features of locking the price in and the ability to
-            either buy or sell an asset. Like derivatives are a contract that
-            represents an asset bought or sold at a future date for a future
-            price, synthetics are the very underlying asset representative of
-            other assets.
+              <SubText>
+                Derivatives protocol provider used to create custom assets by
+                using forward-looking features of locking the price in and the
+                ability to either buy or sell an asset. Like derivatives are a
+                contract that represents an asset bought or sold at a future
+                date for a future price, synthetics are the very underlying
+                asset representative of other assets.
+              </SubText>
+            </>
+          ) : (
+            <></>
+          )}
+          <SubText onClick={() => setOpen(!open)} className="toggle__btn">
+            {open ? "Hide" : "Read more..."}
           </SubText>
         </Content>
         <WrapImg>
@@ -57,7 +66,7 @@ const BoxSection = styled.section`
 `;
 const WrapContainer = styled(Container)`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 20px;
   @media (min-width: 1650px) {
@@ -82,10 +91,10 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
-  width: 40%;
+  /* margin-left: 80px; */
+  width: 50%;
   /* max-width: 600px; */
-  /* text-align: right; */
+  text-align: left;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -106,8 +115,12 @@ const Text = styled.p`
   }
 `;
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 26px;
   font-weight: 300;
+  &.toggle__btn {
+    font-weight: 400;
+    font-style: italic;
+  }
   @media (max-width: 768px) {
     font-size: 14px;
   }

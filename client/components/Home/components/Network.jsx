@@ -6,18 +6,6 @@ const Network = () => {
   return (
     <BoxSection>
       <WrapContainer>
-        <WrapTitle>
-          <Title>Multi Network</Title>
-          <SubText className="subtext__title">
-            <span>forbitspace </span> aggregator protocol is now available on
-            Ethereum, Binance Smart Chain, and layer 2 Polygon, Arbitrum, and
-            Optimism we currently launch each blockchain as by stage.
-          </SubText>
-          <SubText className="subtext__title">
-            We plan to support more EVM chains and non-EVM chains, Solana,
-            Avalanche, and more in the months following launch.
-          </SubText>
-        </WrapTitle>
         <WrapContent>
           <WrapImg>
             <WrapperButtonApp>
@@ -29,6 +17,18 @@ const Network = () => {
               <img src="../images/home-page/network-02.png" alt="" />
             </ImgHalf>
           </WrapImg>{" "}
+          <WrapTitle>
+            <Title>Multi Network</Title>
+            <SubText className="subtext__title">
+              <span>forbitspace </span> aggregator protocol is now available on
+              Ethereum, Binance Smart Chain, and layer 2 Polygon, Arbitrum, and
+              Optimism we currently launch each blockchain as by stage.
+            </SubText>
+            <SubText className="subtext__title">
+              We plan to support more EVM chains and non-EVM chains, Solana,
+              Avalanche, and more in the months following launch.
+            </SubText>
+          </WrapTitle>
         </WrapContent>
         <WrapContent>
           <SubText className="subtext__content">
@@ -60,12 +60,10 @@ const Network = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  /* min-height: 88vh; */
-  padding: 2vh 50px 0;
+  padding: 6vh 50px 0;
 
-  @media (max-width: 770px) {
-    padding: 10px;
-    /* min-height: 80vh; */
+  @media (max-width: 1024px) {
+    padding: 25px 0;
   }
 `;
 const Title = styled.div`
@@ -84,48 +82,49 @@ const WrapContainer = styled(Container)`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 60px;
   @media (min-width: 1650px) {
     max-width: 80%;
   }
   @media (max-width: 768px) {
-    /* flex-direction: column-reverse; */
   }
 `;
 const WrapTitle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  width: 50%;
   @media (max-width: 768px) {
     align-items: center;
+    width: 80%;
   }
 `;
 const WrapContent = styled.div`
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
   @media (max-width: 768px) {
     flex-direction: column;
+    align-items: center;
     :first-child {
-      /* flex-direction: column-reverse; */
+      flex-direction: column-reverse;
     }
   }
 `;
 const WrapImg = styled.div`
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
   &.img__swap {
-    width: 40%;
+    width: 50%;
   }
   @media (max-width: 768px) {
     width: 70% !important;
-    /* min-height: 75vh; */
     justify-content: center;
     :first-child {
       width: 100%;
@@ -144,9 +143,9 @@ const ImgHalf = styled.div`
   }
 `;
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 26px;
   font-weight: 300;
-  width: 60%;
+  /* width: 60%; */
   span {
     font-style: italic;
     font-weight: 900;
@@ -155,10 +154,11 @@ const SubText = styled.p`
     text-align: right;
   }
   &.subtext__content {
-    width: 45%;
+    width: 50%;
+    padding: 40px 0;
   }
   @media (min-width: 1441px) {
-    width: 50%;
+    width: 80%;
     &.subtext__content {
       width: 35%;
     }
@@ -200,7 +200,6 @@ const ButtonBanner = styled.a`
   width: fit-content;
   background-color: rgb(255, 255, 255);
   color: white;
-  /* border: 1px solid transparent; */
   margin-right: 1rem;
   background-image: linear-gradient(
     38deg,
@@ -212,7 +211,6 @@ const ButtonBanner = styled.a`
     #0d00ff 111%
   );
   width: 100%;
-  /* width: 140px; */
   background-size: 200%;
   background-position: 99%;
   color: white;

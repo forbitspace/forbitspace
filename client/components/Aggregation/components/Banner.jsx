@@ -6,29 +6,22 @@ const Banner = () => {
   return (
     <BoxSection>
       <WrapContainer>
-        <WrapImg>
-          <ImgHalf>
-            {/* <img src="../images/home-page/limit.png" alt="" /> */}
-          </ImgHalf>
-        </WrapImg>
         <Content className="title-banner text-dark text-visi">
-          <Title>forbitspace</Title>
-          <Text>Aggregation Protocol</Text>
-          <WrapText>
+          {/* <Title>forbitspace</Title> */}
+          <Title>Aggregation Protocol</Title>
+          {/* <WrapText>
             <SubText>
               The <span>forbitspace</span> is an aggregator protocol that allows
               traders to benefit from a large variety of financial tools in a
               single interface.
             </SubText>
-            <SubText>
-              <span>forbitspace</span> use an algorithm smart order routing that
-              split a single transaction into multiple orders across various
-              DEX’s, also route orders through allows crypto traders to tap deep
-              liquidity and receive better pricing low cost & efficient the most
-              liquidity.
-            </SubText>
-          </WrapText>
+          </WrapText> */}
         </Content>
+        <WrapImg>
+          <ImgHalf>
+            <img src="../images/home-page/aggregation.png" alt="" />
+          </ImgHalf>
+        </WrapImg>
       </WrapContainer>
     </BoxSection>
   );
@@ -47,19 +40,19 @@ const WrapContainer = styled(Container)`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
   gap: 20px;
   @media (min-width: 1650px) {
     max-width: 80%;
   }
   @media (max-width: 576px) {
-    flex-direction: column;
   }
 `;
 const WrapImg = styled.div`
-  width: 50%;
-  transform: rotate(-5deg);
+  width: 60%;
+  /* transform: rotate(-5deg); */
   @media (max-width: 768px) {
-    width: 100%;
+    width: 80%;
   }
 `;
 const ImgHalf = styled.div`
@@ -71,12 +64,12 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
-  width: 50%;
-  text-align: left;
+  /* margin-left: 80px; */
+  width: 70%;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -89,7 +82,7 @@ const Title = styled.h2`
   font-size: 4rem;
   line-height: 1;
   font-weight: 700;
-  font-style: italic;
+  /* font-style: italic; */
   @media (max-width: 576px) {
     font-size: 45px;
     letter-spacing: 2px;
@@ -110,7 +103,7 @@ const Text = styled.p`
 const WrapText = styled.div``;
 
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 26px;
   font-weight: 300;
   font-family: sans-serif;
   span {

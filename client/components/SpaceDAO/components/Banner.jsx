@@ -5,17 +5,12 @@ import styled from "styled-components";
 const Banner = () => {
   return (
     <BoxSection>
+      {/* <WrapContainer>
+      </WrapContainer> */}
       <WrapContainer>
-        <Title>Governance</Title>
-      </WrapContainer>
-      <WrapContainer>
-        <WrapImg>
-          <ImgHalf>
-            <img src="../images/home-page/holder.png" alt="" />
-          </ImgHalf>
-        </WrapImg>
         <Content className="title-banner text-dark text-visi">
           <WrapText>
+            <Title>Governance</Title>
             <SubText>
               <span>Space Dao Governance</span> consists of the proposition and
               decision-making process for the different risk parameter changes,
@@ -27,6 +22,11 @@ const Banner = () => {
             </SubText>
           </WrapText>
         </Content>
+        <WrapImg>
+          <ImgHalf>
+            <img src="../images/home-page/holder.png" alt="" />
+          </ImgHalf>
+        </WrapImg>
       </WrapContainer>
     </BoxSection>
   );
@@ -46,11 +46,11 @@ const WrapContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   gap: 20px;
+  flex-direction: column;
   @media (min-width: 1650px) {
     max-width: 80%;
   }
   @media (max-width: 576px) {
-    flex-direction: column;
   }
 `;
 const WrapImg = styled.div`
@@ -69,12 +69,13 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
-  width: 40%;
+  padding: 0 20px;
+  width: 100%;
   text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
+  justify-content: center;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -92,22 +93,13 @@ const Title = styled.h2`
     letter-spacing: 2px;
   }
 `;
-const Text = styled.p`
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 40px;
-  letter-spacing: 1px;
-  @media (max-width: 768px) {
-    font-size: 26px;
-    letter-spacing: 1px;
-    font-weight: 500;
-    line-height: 25px;
-  }
+const WrapText = styled.div`
+  width: 55%;
+  max-width: 900px;
 `;
-const WrapText = styled.div``;
 
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 26px;
   font-weight: 300;
   /* max-width: 600px; */
   font-family: sans-serif;
@@ -120,60 +112,6 @@ const SubText = styled.p`
   }
   @media (max-width: 576px) {
     font-size: 13px;
-  }
-`;
-const WrapperButtonApp = styled.div`
-  max-width: 350px;
-  /* margin: 0 auto; */
-  /* width: 90%; */
-  text-align: left;
-  @media (max-width: 1200px) {
-    display: block;
-  }
-  @media (max-width: 576px) {
-    text-align: center;
-    max-width: unset;
-  }
-`;
-
-const ButtonBanner = styled.a`
-  padding: 0.25rem 0.85rem;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 12px;
-  display: inline-block;
-  transform: scale(0.98);
-  transition: transform 0.25s ease 0s;
-  box-sizing: border-box;
-  font-weight: 500;
-  font-size: 1.125rem;
-  cursor: pointer;
-  width: fit-content;
-  background-color: rgb(255, 255, 255);
-  color: white;
-  /* border: 1px solid transparent; */
-  margin-right: 1rem;
-  background-image: linear-gradient(
-    38deg,
-    #00ff36 -10%,
-    #00ee57 3%,
-    #00c5ad 32%,
-    #00a4f1 53%,
-    #0b18fc 102%,
-    #0d00ff 111%
-  );
-  width: 100%;
-  width: 140px;
-  background-size: 200%;
-  background-position: 99%;
-  color: white;
-
-  &.forbitswap {
-    background-size: 110%;
-    background-position: 30%;
-  }
-  @media (max-width: 768px) {
-    margin-top: 10px;
   }
 `;
 export default Banner;

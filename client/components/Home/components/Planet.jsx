@@ -10,7 +10,7 @@ const Planet = () => {
         <WrapPlanet>
           <Planets />
         </WrapPlanet>
-        <Content className="title-banner text-dark text-visi">
+        <Content className="title-banner text-dark">
           <Title>
             <img src="../images/home-page/forbitspace-word.png" alt="" />
           </Title>
@@ -43,14 +43,13 @@ const BoxSection = styled.section`
   }
 
   @media (max-width: 770px) {
-    padding-top: 10px;
-    /* min-height: 80vh; */
+    padding: 10px;
   }
 `;
 const WrapContainer = styled(Container)`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   @media (min-width: 1650px) {
     max-width: 80%;
   }
@@ -83,7 +82,8 @@ const WrapPlanet = styled.div`
 const Content = styled.div`
   margin-left: 80px;
   width: 50%;
-  max-width: 600px;
+  text-align: right;
+  max-width: 800px;
   @media (max-width: 1024px) {
     margin-left: 0;
   }
@@ -110,7 +110,7 @@ const Title = styled.h2`
   }
 `;
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 26px;
   font-weight: 300;
   span {
     font-style: italic;

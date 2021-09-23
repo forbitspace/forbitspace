@@ -48,7 +48,10 @@ const WrapContainer = styled(Container)`
   }
 `;
 const WrapImg = styled.div`
-  width: 40%;
+  width: 30%;
+  @media (min-width: 1441px) {
+    width: 20%;
+  }
   @media (max-width: 768px) {
     width: 60%;
   }
@@ -88,7 +91,7 @@ const Title = styled.h2`
 `;
 
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 26px;
   font-weight: 300;
   font-family: sans-serif;
   span {

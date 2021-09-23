@@ -72,6 +72,9 @@ const WrapImg = styled.div`
   width: 50%;
   transform: rotate(-5deg);
   @media (max-width: 768px) {
+    width: 60%;
+  }
+  @media (max-width: 576px) {
     width: 100%;
   }
 `;
@@ -90,6 +93,9 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  @media (min-width: 1440px) {
+    margin-top: 8rem;
+  }
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -102,7 +108,7 @@ const Title = styled.h2`
   font-size: 4rem;
   line-height: 1;
   font-weight: 700;
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     font-size: 45px;
     letter-spacing: 2px;
   }
@@ -122,7 +128,7 @@ const Text = styled.p`
 const WrapText = styled.div``;
 
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 26px;
   font-weight: 300;
   font-family: sans-serif;
   span {

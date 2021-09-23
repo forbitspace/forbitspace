@@ -239,6 +239,9 @@ export const EcosystemData = [
     img: "coin-gecko",
   },
   {
+    img: "defillama",
+  },
+  {
     img: "link",
   },
   {

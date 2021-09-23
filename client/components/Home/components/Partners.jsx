@@ -10,15 +10,15 @@ const Partners = () => {
           {/* <Title>forbitspace</Title> */}
           <Text>Liquidity Partners</Text>
           <SubText>
-            Users are covered for up to 600 ETH in the event that funds are lost
-            during a swap due to an unforeseen bug.
+            {/* Users are covered for up to 600 ETH in the event that funds are lost
+            during a swap due to an unforeseen bug. */}
           </SubText>
         </Content>
-        <WrapLiquidity>
+        <WrapImg>
           <ImgHalf>
             <img src="../images/home-page/partners.png" alt="" />
           </ImgHalf>
-        </WrapLiquidity>
+        </WrapImg>
       </WrapContainer>
     </BoxSection>
   );
@@ -46,8 +46,8 @@ const WrapContainer = styled(Container)`
     flex-direction: column;
   }
 `;
-const WrapLiquidity = styled.div`
-  width: 80%;
+const WrapImg = styled.div`
+  width: 60%;
   @media (min-width: 2100px) {
     width: 65%;
   }
@@ -64,10 +64,10 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
-  /* width: 50%; */
+  /* margin-left: 80px; */
+  width: 40%;
   text-align: left;
-  max-width: 600px;
+  /* max-width: 600px; */
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -89,7 +89,7 @@ const Text = styled.p`
   }
 `;
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 26px;
   font-weight: 300;
   @media (max-width: 768px) {
     font-size: 14px;

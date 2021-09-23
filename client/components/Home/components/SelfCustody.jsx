@@ -14,9 +14,10 @@ const SelfCustody = () => {
         <Content>
           <Text>Self-custody</Text>
           <SubText>
-            In DeFi, your money becomes empowered. You can store it, lend it,
-            trade it, zap it, and track it in real-time. It’s a bit like a game
-            but at the heart of this is more control, aka self-custody.
+            In the world DeFi, your money becomes empowered. You can store it,
+            lend it, trade it, zap it, and track it in real-time. It’s a bit
+            like a game but at the heart of this is more control, aka
+            self-custody.
           </SubText>
           <SubText>
             Self-custody refers to individuals being 100% in control of their
@@ -33,11 +34,12 @@ const SelfCustody = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  @media (min-width: 768px) {
-    padding: 25px 0;
+  padding: 25px 0px;
+  @media (min-width: 1025px) {
+    padding: 25px 50px;
   }
 
-  @media (max-width: 770px) {
+  @media (max-width: 768px) {
     padding-top: 10px;
     /* min-height: 80vh; */
   }
@@ -71,7 +73,7 @@ const ImgHalf = styled.div`
 const Content = styled.div`
   margin-left: 80px;
   width: 50%;
-  text-align: left;
+  text-align: right;
   max-width: 600px;
   @media (max-width: 768px) {
     width: 100%;
@@ -85,16 +87,17 @@ const Text = styled.p`
   font-weight: 500;
   line-height: 40px;
   letter-spacing: 1px;
-  text-align: center;
+  text-align: right;
   @media (max-width: 768px) {
     font-size: 26px;
     letter-spacing: 1px;
     font-weight: 500;
     line-height: 25px;
+    text-align: center;
   }
 `;
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 26px;
   font-weight: 300;
   @media (max-width: 768px) {
     font-size: 14px;
