@@ -96,20 +96,8 @@ const ImgWrap = styled.div`
     width: 80px;
     animation: moving 6.9s infinite;
   }
-  @media (min-width: 1440px) {
-    img {
-      transform: scale(1.2);
-    }
-  }
-  @media (min-width: 2560px) {
-    img {
-      transform: scale(1.6);
-    }
-  }
-  @media (max-width: 1440px) {
-    img {
-      transform: scale(1);
-    }
+  img {
+    transform: scale(0.9);
   }
   @media (max-width: 1024px) {
     img {

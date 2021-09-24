@@ -13,14 +13,13 @@ const Derivative = () => {
             Crypto derivatives trading is on the rise today. The futures and
             options allow the traders to hedge their positions and mitigate
             their risks during highly volatile trading days.
-            <br />
-          </SubText>
-          <SubText>
-            Synthetic assets on decentralized trading platforms are fetching
-            good trade volume.
           </SubText>
           {open ? (
             <>
+              <SubText>
+                Synthetic assets on decentralized trading platforms are fetching
+                good trade volume.
+              </SubText>
               <SubText>
                 Derivatives in the Defi world are important because what is
                 being built here is not a trading and speculation market; it’s a
@@ -57,11 +56,9 @@ const Derivative = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  @media (min-width: 768px) {
-    padding: 2rem 0;
-  }
+  padding: 25px 0;
   @media (max-width: 770px) {
-    padding-top: 10px;
+    padding: 10px;
   }
 `;
 const WrapContainer = styled(Container)`
@@ -69,9 +66,7 @@ const WrapContainer = styled(Container)`
   align-items: flex-start;
   justify-content: center;
   gap: 20px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
+
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -115,14 +110,18 @@ const Text = styled.p`
   }
 `;
 const SubText = styled.p`
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 300;
   &.toggle__btn {
     font-weight: 400;
     font-style: italic;
+    font-size: 16px;
   }
   @media (max-width: 768px) {
     font-size: 14px;
+    &.toggle__btn {
+      font-size: 12px;
+    }
   }
   @media (max-width: 576px) {
     font-size: 13px;

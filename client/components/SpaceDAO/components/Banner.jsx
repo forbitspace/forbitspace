@@ -8,6 +8,11 @@ const Banner = () => {
       {/* <WrapContainer>
       </WrapContainer> */}
       <WrapContainer>
+        <WrapImg>
+          <ImgHalf>
+            <img src="../images/home-page/holder.png" alt="" />
+          </ImgHalf>
+        </WrapImg>
         <Content className="title-banner text-dark text-visi">
           <WrapText>
             <Title>Governance</Title>
@@ -22,11 +27,6 @@ const Banner = () => {
             </SubText>
           </WrapText>
         </Content>
-        <WrapImg>
-          <ImgHalf>
-            <img src="../images/home-page/holder.png" alt="" />
-          </ImgHalf>
-        </WrapImg>
       </WrapContainer>
     </BoxSection>
   );
@@ -34,11 +34,9 @@ const Banner = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  /* min-height: 88vh; */
   padding: 10vh 0 0;
   @media (max-width: 770px) {
     padding-top: 60px;
-    /* min-height: 80vh; */
   }
 `;
 const WrapContainer = styled(Container)`
@@ -46,18 +44,18 @@ const WrapContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  flex-direction: column;
   @media (min-width: 1650px) {
     max-width: 80%;
   }
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
   }
 `;
 const WrapImg = styled.div`
   width: 50%;
-  transform: rotate(-5deg);
+  /* transform: rotate(-5deg); */
   @media (max-width: 768px) {
-    width: 100%;
+    width: 80%;
   }
 `;
 const ImgHalf = styled.div`
@@ -70,7 +68,7 @@ const ImgHalf = styled.div`
 `;
 const Content = styled.div`
   padding: 0 20px;
-  width: 100%;
+  width: 50%;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -94,12 +92,12 @@ const Title = styled.h2`
   }
 `;
 const WrapText = styled.div`
-  width: 55%;
-  max-width: 900px;
+  /* width: 55%; */
+  /* max-width: 900px; */
 `;
 
 const SubText = styled.p`
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 300;
   /* max-width: 600px; */
   font-family: sans-serif;
@@ -108,10 +106,11 @@ const SubText = styled.p`
     font-weight: 900;
   }
   @media (max-width: 768px) {
-    font-size: 14px;
+    font-size: 16px;
+    text-align: justify;
   }
   @media (max-width: 576px) {
-    font-size: 13px;
+    font-size: 14px;
   }
 `;
 export default Banner;

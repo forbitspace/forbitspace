@@ -35,43 +35,41 @@ const Planet = () => {
 
 const BoxSection = styled.section`
   position: relative;
+  padding: 25px 0;
   @media (min-width: 800px) {
-    margin: -165px 0;
+    margin: -120px 0;
   }
   @media (min-width: 1280px) {
     margin: -50px 0;
   }
 
   @media (max-width: 770px) {
-    padding: 10px;
+    padding-top: 10px;
   }
 `;
 const WrapContainer = styled(Container)`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
 `;
 const WrapPlanet = styled.div`
   width: 50%;
-  transform: scale(1);
+  transform: scale(0.75);
   @media (max-width: 1440px) {
-    transform: scale(0.75);
+    transform: scale(0.65);
   }
   @media (max-width: 1024px) {
     transform: scale(0.55);
   }
-  @media (max-width: 786px) {
+  @media (max-width: 768px) {
     transform: scale(0.65);
     margin: -140px 0;
   }
-  @media (max-width: 400px) {
-    transform: scale(0.45);
+  @media (max-width: 415px) {
+    transform: scale(0.6);
     margin: -220px 0;
   }
   @media (max-width: 320px) {
@@ -80,7 +78,7 @@ const WrapPlanet = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
+  /* margin-left: 80px; */
   width: 50%;
   text-align: right;
   max-width: 800px;
@@ -110,7 +108,7 @@ const Title = styled.h2`
   }
 `;
 const SubText = styled.p`
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 300;
   span {
     font-style: italic;

@@ -42,9 +42,9 @@ const WrapContainer = styled(Container)`
   justify-content: space-between;
   flex-direction: column;
   gap: 20px;
-  @media (min-width: 1650px) {
+  /* @media (min-width: 1650px) {
     max-width: 80%;
-  }
+  } */
   @media (max-width: 576px) {
   }
 `;
@@ -78,16 +78,7 @@ const Content = styled.div`
     align-items: center;
   }
 `;
-const Title = styled.h2`
-  font-size: 4rem;
-  line-height: 1;
-  font-weight: 700;
-  /* font-style: italic; */
-  @media (max-width: 576px) {
-    font-size: 45px;
-    letter-spacing: 2px;
-  }
-`;
+
 const Text = styled.p`
   font-size: 2rem;
   font-weight: 500;
@@ -98,6 +89,23 @@ const Text = styled.p`
     letter-spacing: 1px;
     font-weight: 500;
     line-height: 25px;
+  }
+`;
+const SubText = styled.p`
+  font-size: 22px;
+  font-weight: 300;
+  font-family: sans-serif;
+  text-align: right;
+  &.toggle__btn {
+    font-style: italic;
+    font-weight: 400;
+  }
+  @media (max-width: 768px) {
+    font-size: 14px;
+    text-align: center;
+  }
+  @media (max-width: 576px) {
+    font-size: 13px;
   }
 `;
 export default HowItWorks;

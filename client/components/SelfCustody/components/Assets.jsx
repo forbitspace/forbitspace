@@ -35,7 +35,7 @@ const Assets = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  padding: 10vh 0 0;
+  padding: 1vh 0 0;
   @media (max-width: 770px) {
     padding-top: 60px;
   }
@@ -45,15 +45,13 @@ const WrapContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
+
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
 `;
 const WrapImg = styled.div`
-  width: 40%;
+  width: 50%;
   @media (max-width: 768px) {
     width: 60%;
   }
@@ -67,12 +65,12 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
+  /* margin-left: 80px; */
   width: 50%;
   text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -93,14 +91,16 @@ const Title = styled.h2`
 const WrapText = styled.div``;
 
 const SubText = styled.p`
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
-  @media (max-width: 768px) {
-    font-size: 14px;
+  text-align: right;
+  @media (max-width: 1024px) {
+    font-size: 18px;
+    text-align: justify;
   }
   @media (max-width: 576px) {
-    font-size: 13px;
+    font-size: 14px;
   }
 `;
 export default Assets;

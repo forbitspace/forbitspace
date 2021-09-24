@@ -60,14 +60,14 @@ const Network = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  padding: 6vh 50px 0;
+  padding: 6vh 0px 0;
 
   @media (max-width: 1024px) {
-    padding: 25px 0;
+    padding: 25px 15px 0;
   }
 `;
 const Title = styled.div`
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   text-align: right;
   padding: 1vh 0;
@@ -83,10 +83,9 @@ const WrapContainer = styled(Container)`
   justify-content: center;
   flex-direction: column;
   gap: 60px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
+
   @media (max-width: 768px) {
+    gap: 0;
   }
 `;
 const WrapTitle = styled.div`
@@ -96,7 +95,7 @@ const WrapTitle = styled.div`
   width: 50%;
   @media (max-width: 768px) {
     align-items: center;
-    width: 80%;
+    width: 100%;
   }
 `;
 const WrapContent = styled.div`
@@ -114,7 +113,7 @@ const WrapContent = styled.div`
   }
 `;
 const WrapImg = styled.div`
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,6 +129,9 @@ const WrapImg = styled.div`
       width: 100%;
     }
   }
+  @media (max-width: 576px) {
+    width: 100% !important;
+  }
 `;
 const ImgHalf = styled.div`
   width: 100%;
@@ -143,7 +145,7 @@ const ImgHalf = styled.div`
   }
 `;
 const SubText = styled.p`
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 300;
   /* width: 60%; */
   span {
@@ -157,12 +159,12 @@ const SubText = styled.p`
     width: 50%;
     padding: 40px 0;
   }
-  @media (min-width: 1441px) {
-    width: 80%;
+  /* @media (min-width: 1441px) {
+    width: 50%;
     &.subtext__content {
       width: 35%;
     }
-  }
+  } */
   @media (max-width: 768px) {
     font-size: 14px;
     width: 100% !important;
@@ -170,6 +172,9 @@ const SubText = styled.p`
   }
   @media (max-width: 576px) {
     font-size: 13px;
+    &.subtext__content {
+      padding: 0;
+    }
   }
 `;
 const WrapperButtonApp = styled.div`

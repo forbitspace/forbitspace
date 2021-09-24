@@ -69,9 +69,6 @@ const WrapImg = styled.div`
   @media (max-width: 768px) {
     width: 60%;
   }
-  @media (max-width: 768px) {
-    width: 100%;
-  }
 `;
 const ImgHalf = styled.div`
   width: 100%;
@@ -108,7 +105,7 @@ const Title = styled.h2`
 const WrapText = styled.div``;
 
 const SubText = styled.p`
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 300;
   /* max-width: 600px; */
   font-family: sans-serif;
@@ -117,10 +114,11 @@ const SubText = styled.p`
     font-style: italic;
   }
   @media (max-width: 768px) {
-    font-size: 14px;
+    text-align: justify;
+    font-size: 16px;
   }
   @media (max-width: 576px) {
-    font-size: 13px;
+    font-size: 14px;
   }
 `;
 export default Banner;

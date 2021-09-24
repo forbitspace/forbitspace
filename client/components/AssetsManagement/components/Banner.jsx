@@ -93,14 +93,16 @@ const Title = styled.h2`
 const WrapText = styled.div``;
 
 const SubText = styled.p`
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
   @media (max-width: 768px) {
     font-size: 14px;
+    text-align: justify;
   }
   @media (max-width: 576px) {
     font-size: 13px;
+    text-align: center;
   }
 `;
 export default Banner;

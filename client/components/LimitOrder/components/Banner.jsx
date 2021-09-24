@@ -61,9 +61,6 @@ const WrapContainer = styled(Container)`
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
@@ -87,7 +84,7 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
+  margin-left: 20px;
   width: 50%;
   text-align: left;
   display: flex;
@@ -113,33 +110,23 @@ const Title = styled.h2`
     letter-spacing: 2px;
   }
 `;
-const Text = styled.p`
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 40px;
-  letter-spacing: 1px;
-  @media (max-width: 768px) {
-    font-size: 26px;
-    letter-spacing: 1px;
-    font-weight: 500;
-    line-height: 25px;
-  }
-`;
 const WrapText = styled.div``;
 
 const SubText = styled.p`
   font-size: 26px;
   font-weight: 300;
   font-family: sans-serif;
+
   span {
     font-style: italic;
     font-weight: 900;
   }
   @media (max-width: 768px) {
-    font-size: 14px;
+    text-align: justify;
+    font-size: 16px;
   }
   @media (max-width: 576px) {
-    font-size: 13px;
+    font-size: 14px;
   }
 `;
 export default Banner;

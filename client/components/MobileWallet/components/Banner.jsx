@@ -91,18 +91,20 @@ const Title = styled.h2`
 `;
 
 const SubText = styled.p`
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
+  text-align: justify;
   span {
     font-style: italic;
     font-weight: 900;
   }
   @media (max-width: 768px) {
-    font-size: 14px;
+    font-size: 16px;
+    text-align: center;
   }
   @media (max-width: 576px) {
-    font-size: 13px;
+    font-size: 14px;
   }
 `;
 export default Banner;

@@ -51,9 +51,6 @@ const WrapContainer = styled(Container)`
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
@@ -109,10 +106,11 @@ const SubText = styled.div`
     font-weight: 900;
   }
   @media (max-width: 768px) {
-    font-size: 14px;
+    text-align: justify;
+    font-size: 16px;
   }
   @media (max-width: 576px) {
-    font-size: 13px;
+    font-size: 14px;
   }
 `;
 export default Banner;

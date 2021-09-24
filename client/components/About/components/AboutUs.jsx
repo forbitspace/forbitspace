@@ -41,11 +41,9 @@ const WrapContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
+  flex-direction: column;
+
   @media (max-width: 768px) {
-    flex-direction: column-reverse;
   }
 `;
 const WrapImg = styled.div`
@@ -94,7 +92,7 @@ const Title = styled.h2`
   }
 `;
 const SubText = styled.p`
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
   /* max-width: 600px; */

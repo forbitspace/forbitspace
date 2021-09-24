@@ -26,11 +26,9 @@ const Partners = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  @media (min-width: 768px) {
-    padding: 25px 0;
-  }
+  padding: 25px 0;
   @media (max-width: 770px) {
-    padding-top: 10px;
+    padding: 15px;
     /* min-height: 80vh; */
   }
 `;
@@ -39,9 +37,6 @@ const WrapContainer = styled(Container)`
   align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -89,7 +84,7 @@ const Text = styled.p`
   }
 `;
 const SubText = styled.p`
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 300;
   @media (max-width: 768px) {
     font-size: 14px;

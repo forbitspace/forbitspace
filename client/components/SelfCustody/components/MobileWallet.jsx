@@ -7,7 +7,7 @@ const MobileWallet = () => {
     <BoxSection>
       <WrapContainer className="container__bridge">
         <Content>
-          <Text>Bridge Space</Text>
+          <TitleText>Bridge Space</TitleText>
           <SubText>
             {" "}
             <span>forbitspace</span> will have extended the Cross-Chain Bridge,
@@ -29,19 +29,13 @@ const MobileWallet = () => {
       </WrapContainer>
       <WrapContainer>
         <WrapImg>
-          <ImgHalf>
+          <ImgHalf className="img__phone">
             <img src="../images/self-page/phone-1.png" alt="" />
           </ImgHalf>
         </WrapImg>
-        <Content>
-          {/* <Text>Self-custody wallets</Text>
-          <SubText>
-            It is of the great importance of self-custody, which is why
-            forbitspace built the overall strategy you safely self-custody your
-            assets with flexible optimal options for our ecosystem.
-          </SubText> */}
+        <Content className="text__mobile-wallet">
           <TitleText>Mobile wallet</TitleText>
-          <SubText>
+          <SubText className="text__mobile-wallet">
             Mobile wallets are apps on your iOS or Android phone, convenient
             because they are always with you. Usually, the private key is
             generated and stored on your device with backup and recovery
@@ -75,7 +69,6 @@ const BoxSection = styled.section`
   @media (min-width: 768px) {
     padding: 25px 0;
   }
-
   @media (max-width: 770px) {
     padding-top: 10px;
     /* min-height: 80vh; */
@@ -87,12 +80,6 @@ const WrapContainer = styled(Container)`
   justify-content: center;
   gap: 3rem;
   margin-bottom: 3rem;
-  @media (min-width: 1400px) {
-    max-width: 100% !important;
-  }
-  @media (min-width: 3650px) {
-    max-width: 80%;
-  }
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     gap: 1rem;
@@ -102,23 +89,21 @@ const WrapContainer = styled(Container)`
   }
 `;
 const WrapImg = styled.div`
-  width: 40%;
+  /* width: 50%; */
   @media (max-width: 768px) {
-    width: 60%;
+    /* width: 60%; */
   }
 `;
 const ImgHalf = styled.div`
   width: 100%;
   text-align: center;
   img {
-    /* width: 50%; */
+    max-width: 550px;
     height: auto;
   }
-  &.img__bridge {
-    text-align: center;
+  @media (max-width: 1024px) {
     img {
-      /* width: 60%; */
-      height: auto;
+      max-width: 350px;
     }
   }
   @media (max-width: 768px) {
@@ -130,54 +115,42 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
-  width: 60%;
+  width: 50%;
   text-align: left;
-  max-width: 750px;
+  &.text__mobile-wallet {
+    text-align: right;
+  }
 
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
     margin-top: 20px;
-    text-align: center;
-  }
-`;
-const Text = styled.p`
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: 1px;
-  text-align: left;
-
-  @media (max-width: 768px) {
-    font-size: 26px;
-    letter-spacing: 1px;
-    font-weight: 500;
-    line-height: 25px;
-    text-align: center;
+    text-align: center !important;
   }
 `;
 const TitleText = styled.p`
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: bold;
 `;
 
 const SubText = styled.p`
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
+  text-align: right;
   span {
     font-style: italic;
     font-weight: 900;
   }
-  @media (max-width: 768px) {
-    font-size: 14px;
+  @media (max-width: 1024px) {
+    font-size: 18px;
+    text-align: justify !important;
   }
   @media (max-width: 576px) {
-    font-size: 13px;
+    font-size: 14px;
   }
 `;
-const WrapWallet = styled.div`
+const WrapWallet = styled(Container)`
   margin-top: 4rem;
   width: 100%;
   padding: 0 3rem;
@@ -187,7 +160,7 @@ const WrapWallet = styled.div`
   justify-content: center;
   gap: 3rem;
   img {
-    width: 35%;
+    width: 50%;
     max-width: 760px;
   }
   @media (max-width: 768px) {

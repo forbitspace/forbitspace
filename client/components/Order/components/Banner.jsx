@@ -82,7 +82,7 @@ const Title = styled.h2`
 `;
 
 const SubText = styled.p`
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 300;
   @media (max-width: 576px) {
     font-size: 14px;

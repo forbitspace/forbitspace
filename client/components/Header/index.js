@@ -41,7 +41,7 @@ export default function Index() {
 }
 const GlobalStyle = createGlobalStyle`
   .header--active{
-    background: linear-gradient(180deg, #020c1d95 50%, transparent);
+    background: linear-gradient(180deg, #020c1d95 65%, transparent);
   }
   .header--nav{
     position: fixed;

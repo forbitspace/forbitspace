@@ -123,10 +123,14 @@ const SubText = styled.p`
   &.toggle__btn {
     font-style: italic;
     font-weight: 400;
+    font-size: 16px;
   }
   @media (max-width: 768px) {
     font-size: 14px;
     text-align: center;
+    &.toggle__btn {
+      font-size: 12px;
+    }
   }
   @media (max-width: 576px) {
     font-size: 13px;

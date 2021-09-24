@@ -13,22 +13,17 @@ const Banner = () => {
           />
         </WrapImg>
         <Content className="title-banner text-dark text-visi">
-          <Title>
-            {/* <img src="../images/home-page/logo-1-02.png" alt="" />
-            <br /> */}
-            API
-          </Title>
-          {/* <Title></Title> */}
+          <Title>API</Title>
           <SubText>
             The forbitspace API is a cutting-edge discovery and routing
             custodial asset exchanges at the best rates on the biggest Ethereum,
             Binance Smart Chain and Polygon (Matic).
-            <br />
+          </SubText>
+          <SubText>
             It finds the most efficient token swap paths, splitting swaps
             protocols and even different market depths within one protocol.
-            <br />
-            Who can integrate our forbitspace API?
           </SubText>
+          <SubText>Who can integrate our forbitspace API?</SubText>
           <WrapIntegration>
             <TopWrap>
               <SubContent>
@@ -65,9 +60,9 @@ const WrapContainer = styled(Container)`
   justify-content: space-between;
   flex-direction: column;
   gap: 20px;
-  @media (min-width: 1650px) {
+  /* @media (min-width: 1650px) {
     max-width: 80%;
-  }
+  } */
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -79,9 +74,6 @@ const WrapImg = styled.div`
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
-  :first-child {
-    width: 33%;
-  }
   @media (max-width: 768px) {
     /* width: 100%; */
     /* min-height: 75vh; */
@@ -97,7 +89,7 @@ const Content = styled.div`
   text-align: right;
   width: 60%;
   align-self: flex-end;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     width: 100%;
     margin-left: 0;
     margin-top: 40px;
@@ -125,7 +117,7 @@ const Title = styled.h2`
   }
 `;
 const SubText = styled.p`
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 300;
   font-family: sans-serif;
   @media (max-width: 768px) {

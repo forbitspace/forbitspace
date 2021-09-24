@@ -38,7 +38,7 @@ const BoxSection = styled.section`
   /* min-height: 88vh; */
   padding: 2vh 0 0;
   transition: min-height 0.3s;
-  margin-top: -60px;
+  margin-top: -40px;
 
   @media (max-width: 770px) {
     margin-top: 0px;
@@ -50,7 +50,7 @@ const WrapImgBanner = styled.div`
   width: 100vw;
   height: auto;
   max-width: 100%;
-  margin-bottom: -120px;
+  margin-bottom: -80px;
   img {
     width: 100%;
     height: auto;
@@ -60,7 +60,7 @@ const WrapImgBanner = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
+  /* margin-left: 80px; */
   width: 75%;
   @media (max-width: 768px) {
     width: 100%;
@@ -87,7 +87,7 @@ const Title = styled.h2`
   }
 `;
 const SubText = styled.p`
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
   span {

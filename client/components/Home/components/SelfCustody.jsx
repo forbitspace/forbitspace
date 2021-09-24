@@ -34,10 +34,7 @@ const SelfCustody = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  padding: 25px 0px;
-  @media (min-width: 1025px) {
-    padding: 25px 50px;
-  }
+  padding: 25px 0;
 
   @media (max-width: 768px) {
     padding-top: 10px;
@@ -49,9 +46,7 @@ const WrapContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
+
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
@@ -97,7 +92,7 @@ const Text = styled.p`
   }
 `;
 const SubText = styled.p`
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 300;
   @media (max-width: 768px) {
     font-size: 14px;

@@ -37,27 +37,22 @@ const Banner = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  /* min-height: 88vh; */
   padding: 10vh 0 0;
   @media (max-width: 770px) {
     padding-top: 60px;
-    /* min-height: 80vh; */
   }
 `;
 const WrapContainer = styled(Container)`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
+  gap: 1rem;
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
 `;
 const WrapImg = styled.div`
-  width: 45%;
+  width: 50%;
   @media (max-width: 768px) {
     width: 60%;
   }
@@ -72,11 +67,11 @@ const ImgHalf = styled.div`
 `;
 const Content = styled.div`
   margin-left: 80px;
-  width: 55%;
+  width: 50%;
   text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -89,20 +84,22 @@ const Title = styled.h2`
   font-size: 4rem;
   line-height: 1;
   font-weight: 700;
-  @media (max-width: 576px) {
-    font-size: 45px;
+  @media (max-width: 768px) {
+    font-size: 35px;
     letter-spacing: 2px;
   }
 `;
 const SubText = styled.p`
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
-  @media (max-width: 768px) {
-    font-size: 14px;
+  text-align: right;
+  @media (max-width: 1024px) {
+    font-size: 18px;
+    text-align: justify;
   }
   @media (max-width: 576px) {
-    font-size: 13px;
+    font-size: 14px;
   }
 `;
 export default Banner;

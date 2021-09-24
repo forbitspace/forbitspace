@@ -63,12 +63,7 @@ const LimitOrder = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  /* min-height: 88vh; */
-  /* padding: 10vh 0 0; */
-  padding: 25px 0px;
-  @media (min-width: 1025px) {
-    padding: 25px 50px;
-  }
+  padding: 25px 0;
   @media (max-width: 770px) {
     padding-top: 10px;
     /* min-height: 80vh; */
@@ -79,9 +74,6 @@ const WrapContainer = styled(Container)`
   align-items: flex-start;
   justify-content: center;
   gap: 20px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
@@ -135,7 +127,7 @@ const Text = styled.p`
 `;
 const WrapText = styled.div``;
 const SubText = styled.p`
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 300;
   text-align: right;
   span {
@@ -145,10 +137,14 @@ const SubText = styled.p`
   &.toggle__btn {
     font-weight: 400;
     font-style: italic;
+    font-size: 16px;
   }
   @media (max-width: 768px) {
     text-align: center;
     font-size: 14px;
+    &.toggle__btn {
+      font-size: 12px;
+    }
   }
   @media (max-width: 576px) {
     font-size: 13px;
