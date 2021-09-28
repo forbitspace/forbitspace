@@ -1,9 +1,5 @@
 import styled from "styled-components";
-import {
-  ContributorData,
-  DataSocialLinkFooter,
-  EcosystemData,
-} from "../constants";
+import { DataSocialLinkFooter, EcosystemData } from "../constants";
 const System = () => {
   const ContributorRender = ({ data, title }) => {
     return (

@@ -268,21 +268,27 @@ export const EcosystemData = [
 ];
 export const DataSocialLinkFooter = [
   {
+    link: "https://medium.com/@forbitspace",
     url: "./images/icon-social-footer/1.svg",
   },
   {
+    link: "https://www.reddit.com/r/forbitspace/",
     url: "./images/icon-social-footer/2.svg",
   },
   {
+    link: "https://discord.gg/8tBuBPeZ",
     url: "./images/icon-social-footer/3.svg",
   },
   {
+    link: "https://github.com/forbitspace",
     url: "./images/icon-social-footer/4.svg",
   },
   {
+    link: "https://t.me/forbitspace",
     url: "./images/icon-social-footer/5.svg",
   },
   {
+    link: "https://twitter.com/forbitspace",
     url: "./images/icon-social-footer/6.svg",
   },
 ];

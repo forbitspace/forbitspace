@@ -1,26 +1,26 @@
 export const DataSocialLinkFooter = [
   {
-    link: "",
+    link: "https://medium.com/@forbitspace",
     url: "./images/icon-social-footer/1.svg",
   },
   {
-    link: "",
+    link: "https://www.reddit.com/r/forbitspace/",
     url: "./images/icon-social-footer/2.svg",
   },
   {
-    link: "",
+    link: "https://discord.gg/8tBuBPeZ",
     url: "./images/icon-social-footer/3.svg",
   },
   {
-    link: "",
+    link: "https://github.com/forbitspace",
     url: "./images/icon-social-footer/4.svg",
   },
   {
-    link: "",
+    link: "https://t.me/forbitspace",
     url: "./images/icon-social-footer/5.svg",
   },
   {
-    link: "",
+    link: "https://twitter.com/forbitspace",
     url: "./images/icon-social-footer/6.svg",
   },
 ];
