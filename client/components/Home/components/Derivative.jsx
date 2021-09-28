@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "reactstrap";
 import styled from "styled-components";
 
 const Derivative = () => {
+  const [open, setOpen] = useState(false);
   return (
     <BoxSection>
       <WrapContainer>
@@ -12,28 +13,35 @@ const Derivative = () => {
             Crypto derivatives trading is on the rise today. The futures and
             options allow the traders to hedge their positions and mitigate
             their risks during highly volatile trading days.
-            <br />
           </SubText>
-          <SubText>
-            Synthetic assets on decentralized trading platforms are fetching
-            good trade volume.
-          </SubText>
+          {open ? (
+            <>
+              <SubText>
+                Synthetic assets on decentralized trading platforms are fetching
+                good trade volume.
+              </SubText>
+              <SubText>
+                Derivatives in the Defi world are important because what is
+                being built here is not a trading and speculation market; it’s a
+                use-case market. The principle of hedging goes far beyond Defi
+                or cryptocurrencies. It’s applicable to the traditional
+                financial world as well.
+              </SubText>
 
-          <SubText>
-            Derivatives in the Defi world are important because what is being
-            built here is not a trading and speculation market; it’s a use-case
-            market. The principle of hedging goes far beyond Defi or
-            cryptocurrencies. It’s applicable to the traditional financial world
-            as well.
-          </SubText>
-
-          <SubText>
-            Derivatives protocol provider used to create custom assets by using
-            forward-looking features of locking the price in and the ability to
-            either buy or sell an asset. Like derivatives are a contract that
-            represents an asset bought or sold at a future date for a future
-            price, synthetics are the very underlying asset representative of
-            other assets.
+              <SubText>
+                Derivatives protocol provider used to create custom assets by
+                using forward-looking features of locking the price in and the
+                ability to either buy or sell an asset. Like derivatives are a
+                contract that represents an asset bought or sold at a future
+                date for a future price, synthetics are the very underlying
+                asset representative of other assets.
+              </SubText>
+            </>
+          ) : (
+            <></>
+          )}
+          <SubText onClick={() => setOpen(!open)} className="toggle__btn">
+            {open ? "Hide" : "Read more..."}
           </SubText>
         </Content>
         <WrapImg>
@@ -48,27 +56,24 @@ const Derivative = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  @media (min-width: 768px) {
-    padding: 2rem 0;
-  }
+  padding: 25px 0;
   @media (max-width: 770px) {
-    padding-top: 10px;
+    padding: 10px;
   }
 `;
 const WrapContainer = styled(Container)`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  gap: 20px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
+  gap: 0px;
+
   @media (max-width: 768px) {
     flex-direction: column;
   }
 `;
 const WrapImg = styled.div`
   width: 50%;
+  padding: 0 30px 0 0;
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -82,10 +87,10 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
-  width: 40%;
+  /* margin-left: 80px; */
+  width: 50%;
   /* max-width: 600px; */
-  /* text-align: right; */
+  text-align: left;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -106,10 +111,18 @@ const Text = styled.p`
   }
 `;
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 22px;
   font-weight: 300;
+  &.toggle__btn {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+  }
   @media (max-width: 768px) {
     font-size: 14px;
+    &.toggle__btn {
+      font-size: 12px;
+    }
   }
   @media (max-width: 576px) {
     font-size: 13px;

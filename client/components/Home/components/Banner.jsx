@@ -14,24 +14,19 @@ const Banner = () => {
     <BoxSection height={scroll ? "10vh" : "100vh"}>
       <WrapImgBanner>
         <img src="../images/home-page/banner.png" alt="" />
-        <BackgroundBanner />
       </WrapImgBanner>
       <Container>
         <Content className="title-banner text-dark text-visi">
           <Title>
             <img src="../images/home-page/forbitspace-word.png" alt="" />
           </Title>
-          {/* <Title></Title> */}
           <Text>The Decentralized Exchange Super Aggregator</Text>
           <SubText>
             <span>forbitspace</span> is an interoperability aggregator protocol
             that unites decentralized applications across disparate blockchains.
-            allows crypto traders to tap deep liquidity and receive better
+            Allows crypto traders to tap deep liquidity and receive better
             pricing one single interface.
           </SubText>
-          {/* <WrapperButtonApp>
-            <ButtonApp marginRight="0px" />
-          </WrapperButtonApp> */}
         </Content>
       </Container>
     </BoxSection>
@@ -43,8 +38,10 @@ const BoxSection = styled.section`
   /* min-height: 88vh; */
   padding: 2vh 0 0;
   transition: min-height 0.3s;
+  margin-top: -40px;
 
   @media (max-width: 770px) {
+    margin-top: 0px;
     padding-top: 50px;
     min-height: ${({ height }) => height};
   }
@@ -53,28 +50,17 @@ const WrapImgBanner = styled.div`
   width: 100vw;
   height: auto;
   max-width: 100%;
+  margin-bottom: -80px;
   img {
     width: 100%;
     height: auto;
   }
-`;
-const BackgroundBanner = styled.div`
-  background: url("./images/background-banner-01-min.png");
-  background-size: cover;
-  background-position: center;
-  /* position: absolute; */
-  top: -190px;
-  left: 0;
-  width: 100%;
-  /* height: 100vh; */
-  z-index: -1;
-  opacity: 0.4;
   @media (max-width: 768px) {
-    display: none;
+    margin-bottom: 0px;
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
+  /* margin-left: 80px; */
   width: 75%;
   @media (max-width: 768px) {
     width: 100%;
@@ -101,7 +87,7 @@ const Title = styled.h2`
   }
 `;
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
   span {
@@ -126,41 +112,5 @@ const Text = styled.p`
     line-height: 25px;
   }
 `;
-// const WrapperButtonApp = styled.div`
-//   max-width: 350px;
-//   /* margin: 0 auto; */
-//   /* width: 90%; */
-//   text-align: left;
-//   @media (max-width: 1200px) {
-//     display: block;
-//   }
-//   @media (max-width: 576px) {
-//     text-align: center;
-//     max-width: unset;
-//   }
-// `;
-
-// const TitleBanner = styled.h2`
-//   font-size: 40px;
-//   font-weight: bold;
-//   text-align: right;
-//   font-family: "Prompt", sans-serif;
-//   color: #3a3939;
-//   margin-bottom: 30vh;
-//   line-height: 50px;
-
-//   animation: animationTextBanner 3s 1;
-
-//   @media (max-width: 770px) {
-//     font-size: 35px;
-//     margin-bottom: 50px;
-//     text-align: center;
-//   }
-
-//   @media (max-width: 576px) {
-//     font-size: 1.6rem;
-//     text-align: left;
-//   }
-// `;
 
 export default Banner;

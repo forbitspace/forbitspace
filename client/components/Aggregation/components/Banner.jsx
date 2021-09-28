@@ -8,26 +8,19 @@ const Banner = () => {
       <WrapContainer>
         <WrapImg>
           <ImgHalf>
-            {/* <img src="../images/home-page/limit.png" alt="" /> */}
+            <img src="../images/home-page/aggregation.png" alt="" />
           </ImgHalf>
         </WrapImg>
         <Content className="title-banner text-dark text-visi">
-          <Title>forbitspace</Title>
+          {/* <Title>forbitspace</Title> */}
           <Text>Aggregation Protocol</Text>
-          <WrapText>
-            <SubText>
-              The <span>forbitspace</span> is an aggregator protocol that allows
-              traders to benefit from a large variety of financial tools in a
-              single interface.
-            </SubText>
-            <SubText>
-              <span>forbitspace</span> use an algorithm smart order routing that
-              split a single transaction into multiple orders across various
-              DEX’s, also route orders through allows crypto traders to tap deep
-              liquidity and receive better pricing low cost & efficient the most
-              liquidity.
-            </SubText>
-          </WrapText>
+          <SubText>
+            <span>forbitspace</span> use an algorithm smart order routing that
+            split a single transaction into multiple orders across various
+            DEX’s, also route orders through allows crypto traders to tap deep
+            liquidity and receive better pricing low cost & efficient the most
+            liquidity.
+          </SubText>
         </Content>
       </WrapContainer>
     </BoxSection>
@@ -36,30 +29,26 @@ const Banner = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  /* min-height: 88vh; */
-  padding: 10vh 0 0;
+  padding: 8vh 0 0;
+  margin: 0 0 4rem;
   @media (max-width: 770px) {
     padding-top: 60px;
-    /* min-height: 80vh; */
+    margin: 0 0 1rem;
   }
 `;
 const WrapContainer = styled(Container)`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
   gap: 20px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
   @media (max-width: 576px) {
-    flex-direction: column;
   }
 `;
 const WrapImg = styled.div`
-  width: 50%;
-  transform: rotate(-5deg);
+  width: 60%;
   @media (max-width: 768px) {
-    width: 100%;
+    width: 80%;
   }
 `;
 const ImgHalf = styled.div`
@@ -71,9 +60,8 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
-  width: 50%;
-  text-align: left;
+  width: 70%;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -85,16 +73,7 @@ const Content = styled.div`
     align-items: center;
   }
 `;
-const Title = styled.h2`
-  font-size: 4rem;
-  line-height: 1;
-  font-weight: 700;
-  font-style: italic;
-  @media (max-width: 576px) {
-    font-size: 45px;
-    letter-spacing: 2px;
-  }
-`;
+
 const Text = styled.p`
   font-size: 2rem;
   font-weight: 500;
@@ -107,18 +86,18 @@ const Text = styled.p`
     line-height: 25px;
   }
 `;
-const WrapText = styled.div``;
-
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
+  text-align: left;
   span {
     font-style: italic;
     font-weight: 900;
   }
   @media (max-width: 768px) {
     font-size: 14px;
+    text-align: center;
   }
   @media (max-width: 576px) {
     font-size: 13px;

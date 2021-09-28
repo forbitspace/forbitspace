@@ -12,7 +12,7 @@ const Banner = () => {
           </ImgHalf>
         </WrapImg>
         <Content className="title-banner text-dark text-visi">
-          <Title>Mobile Wallet</Title>
+          <Text>Mobile Wallet</Text>
           <SubText>
             {" "}
             Mobile wallets are apps on your iOS or Android phone, convenient
@@ -31,8 +31,10 @@ const BoxSection = styled.section`
   /* min-height: 88vh; */
   padding: 10vh 0 0;
   @media (max-width: 770px) {
-    padding-top: 60px;
-    /* min-height: 80vh; */
+    padding-top: 140px;
+  }
+  @media (max-width: 576px) {
+    padding-top: 80px;
   }
 `;
 const WrapContainer = styled(Container)`
@@ -40,15 +42,15 @@ const WrapContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
 `;
 const WrapImg = styled.div`
-  width: 40%;
+  width: 50%;
+  @media (min-width: 1441px) {
+    width: 30%;
+  }
   @media (max-width: 768px) {
     width: 60%;
   }
@@ -62,12 +64,11 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
   width: 50%;
   text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -76,30 +77,33 @@ const Content = styled.div`
     align-items: center;
   }
 `;
-const Title = styled.h2`
-  font-size: 4rem;
-  line-height: 1;
-  font-weight: 700;
-  /* font-style: italic; */
-  @media (max-width: 576px) {
-    font-size: 45px;
-    letter-spacing: 2px;
+const Text = styled.p`
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 1px;
+  @media (max-width: 768px) {
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 25px;
   }
 `;
-
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
+  text-align: right;
   span {
     font-style: italic;
     font-weight: 900;
   }
   @media (max-width: 768px) {
-    font-size: 14px;
+    font-size: 16px;
+    text-align: center;
   }
   @media (max-width: 576px) {
-    font-size: 13px;
+    font-size: 14px;
   }
 `;
 export default Banner;

@@ -5,9 +5,8 @@ import styled from "styled-components";
 const Banner = () => {
   return (
     <BoxSection>
-      <WrapContainer>
-        <Title>Governance</Title>
-      </WrapContainer>
+      {/* <WrapContainer>
+      </WrapContainer> */}
       <WrapContainer>
         <WrapImg>
           <ImgHalf>
@@ -15,17 +14,19 @@ const Banner = () => {
           </ImgHalf>
         </WrapImg>
         <Content className="title-banner text-dark text-visi">
-          <WrapText>
-            <SubText>
-              <span>Space Dao Governance</span> consists of the proposition and
-              decision-making process for the different risk parameter changes,
-              improvements and incentives that constitute the policies, and
-              upgrades to governance itself. All future decisions governing the
-              protocol will be enacted through this procedure. The FBS token
-              empowers holders to collectively act as governors of the protocol
-              by enabling them with the capability to vote and propose.
-            </SubText>
-          </WrapText>
+          <Text>Governance</Text>
+          <SubText>
+            <span>Space Dao Governance</span> consists of the proposition and
+            decision-making process for the different risk parameter changes,
+            improvements and incentives that constitute the policies, and
+            upgrades to governance itself.
+            <br />
+            <br />
+            All future decisions governing the protocol will be enacted through
+            this procedure. The <span className="fbs">FBS</span> token empowers
+            holders to collectively act as governors of the protocol by enabling
+            them with the capability to vote and propose.
+          </SubText>
         </Content>
       </WrapContainer>
     </BoxSection>
@@ -34,11 +35,9 @@ const Banner = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  /* min-height: 88vh; */
   padding: 10vh 0 0;
   @media (max-width: 770px) {
     padding-top: 60px;
-    /* min-height: 80vh; */
   }
 `;
 const WrapContainer = styled(Container)`
@@ -46,18 +45,15 @@ const WrapContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
-  @media (max-width: 576px) {
-    flex-direction: column;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
   }
 `;
 const WrapImg = styled.div`
   width: 50%;
-  transform: rotate(-5deg);
+  /* transform: rotate(-5deg); */
   @media (max-width: 768px) {
-    width: 100%;
+    width: 80%;
   }
 `;
 const ImgHalf = styled.div`
@@ -69,12 +65,13 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
-  width: 40%;
+  padding: 0 20px;
+  width: 50%;
   text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
+  justify-content: center;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -83,15 +80,7 @@ const Content = styled.div`
     align-items: center;
   }
 `;
-const Title = styled.h2`
-  font-size: 4rem;
-  line-height: 1;
-  font-weight: 700;
-  @media (max-width: 576px) {
-    font-size: 45px;
-    letter-spacing: 2px;
-  }
-`;
+
 const Text = styled.p`
   font-size: 2rem;
   font-weight: 500;
@@ -104,76 +93,25 @@ const Text = styled.p`
     line-height: 25px;
   }
 `;
-const WrapText = styled.div``;
-
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 22px;
   font-weight: 300;
   /* max-width: 600px; */
   font-family: sans-serif;
+  text-align: right;
   span {
     font-style: italic;
     font-weight: 900;
   }
+  .fbs {
+    font-style: normal;
+  }
   @media (max-width: 768px) {
+    font-size: 16px;
+    text-align: justify;
+  }
+  @media (max-width: 576px) {
     font-size: 14px;
-  }
-  @media (max-width: 576px) {
-    font-size: 13px;
-  }
-`;
-const WrapperButtonApp = styled.div`
-  max-width: 350px;
-  /* margin: 0 auto; */
-  /* width: 90%; */
-  text-align: left;
-  @media (max-width: 1200px) {
-    display: block;
-  }
-  @media (max-width: 576px) {
-    text-align: center;
-    max-width: unset;
-  }
-`;
-
-const ButtonBanner = styled.a`
-  padding: 0.25rem 0.85rem;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 12px;
-  display: inline-block;
-  transform: scale(0.98);
-  transition: transform 0.25s ease 0s;
-  box-sizing: border-box;
-  font-weight: 500;
-  font-size: 1.125rem;
-  cursor: pointer;
-  width: fit-content;
-  background-color: rgb(255, 255, 255);
-  color: white;
-  /* border: 1px solid transparent; */
-  margin-right: 1rem;
-  background-image: linear-gradient(
-    38deg,
-    #00ff36 -10%,
-    #00ee57 3%,
-    #00c5ad 32%,
-    #00a4f1 53%,
-    #0b18fc 102%,
-    #0d00ff 111%
-  );
-  width: 100%;
-  width: 140px;
-  background-size: 200%;
-  background-position: 99%;
-  color: white;
-
-  &.forbitswap {
-    background-size: 110%;
-    background-position: 30%;
-  }
-  @media (max-width: 768px) {
-    margin-top: 10px;
   }
 `;
 export default Banner;

@@ -6,13 +6,8 @@ const Banner = () => {
   return (
     <BoxSection>
       <WrapContainer>
-        <WrapImg>
-          <ImgHalf>
-            <img src="../images/home-page/limit.png" alt="" />
-          </ImgHalf>
-        </WrapImg>
         <Content className="title-banner text-dark text-visi">
-          <Title>Limit Order Protocol</Title>
+          <Text>Limit Order Protocol</Text>
           <WrapText>
             <SubText>
               A limit order places a specific price that a trader wants to buy
@@ -29,21 +24,29 @@ const Banner = () => {
               protocol provides the most innovative and optimal. A limit order
               is a type of buy order which a user can place with a specific buy
               or sell price whose limit is determined by the user him/herself.
-              The enables the trade to be automatically executed when the market
-              price reaches the users’ target price. It allows users to buy dips
-              or take profits to take benefits of volatility in the marketplace.
-            </SubText>
-            <SubText>
-              A limit order would allow DeFi traders to get their swaps at
-              desired prices by leaving instructions to fill buy or sell orders
-              at specific prices (or better prices). For instance, if you think
-              an asset is too expensive at the moment, or you are expecting
-              prices to drop throughout the day, then you simply set a limit
-              order to buy at a price below the current market price. How much
-              lower is totally up to users.
             </SubText>
           </WrapText>
         </Content>
+        <WrapImg>
+          <ImgHalf>
+            <img src="../images/home-page/limit.png" alt="" />
+          </ImgHalf>
+        </WrapImg>
+      </WrapContainer>
+      <WrapContainer>
+        <SubText>
+          The enables the trade to be automatically executed when the market
+          price reaches the users’ target price. It allows users to buy dips or
+          take profits to take benefits of volatility in the marketplace.
+          <br />
+          <br />A limit order would allow DeFi traders to get their swaps at
+          desired prices by leaving instructions to fill buy or sell orders at
+          specific prices (or better prices). For instance, if you think an
+          asset is too expensive at the moment, or you are expecting prices to
+          drop throughout the day, then you simply set a limit order to buy at a
+          price below the current market price. How much lower is totally up to
+          users.
+        </SubText>
       </WrapContainer>
     </BoxSection>
   );
@@ -51,7 +54,7 @@ const Banner = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  padding: 10vh 0 0;
+  padding: 8rem 0 0;
   @media (max-width: 770px) {
     padding-top: 60px;
   }
@@ -61,9 +64,6 @@ const WrapContainer = styled(Container)`
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
@@ -72,6 +72,9 @@ const WrapImg = styled.div`
   width: 50%;
   transform: rotate(-5deg);
   @media (max-width: 768px) {
+    width: 60%;
+  }
+  @media (max-width: 576px) {
     width: 100%;
   }
 `;
@@ -84,7 +87,7 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
+  /* margin-left: 20px; */
   width: 50%;
   text-align: left;
   display: flex;
@@ -98,15 +101,7 @@ const Content = styled.div`
     align-items: center;
   }
 `;
-const Title = styled.h2`
-  font-size: 4rem;
-  line-height: 1;
-  font-weight: 700;
-  @media (max-width: 576px) {
-    font-size: 45px;
-    letter-spacing: 2px;
-  }
-`;
+
 const Text = styled.p`
   font-size: 2rem;
   font-weight: 500;
@@ -122,18 +117,22 @@ const Text = styled.p`
 const WrapText = styled.div``;
 
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
+  /* text-align: right; */
+  margin-bottom: 3rem;
+
   span {
     font-style: italic;
     font-weight: 900;
   }
   @media (max-width: 768px) {
-    font-size: 14px;
+    text-align: justify;
+    font-size: 16px;
   }
   @media (max-width: 576px) {
-    font-size: 13px;
+    font-size: 14px;
   }
 `;
 export default Banner;

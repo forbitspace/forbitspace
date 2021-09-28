@@ -10,15 +10,15 @@ const Partners = () => {
           {/* <Title>forbitspace</Title> */}
           <Text>Liquidity Partners</Text>
           <SubText>
-            Users are covered for up to 600 ETH in the event that funds are lost
-            during a swap due to an unforeseen bug.
+            {/* Users are covered for up to 600 ETH in the event that funds are lost
+            during a swap due to an unforeseen bug. */}
           </SubText>
         </Content>
-        <WrapLiquidity>
+        <WrapImg>
           <ImgHalf>
             <img src="../images/home-page/partners.png" alt="" />
           </ImgHalf>
-        </WrapLiquidity>
+        </WrapImg>
       </WrapContainer>
     </BoxSection>
   );
@@ -26,33 +26,31 @@ const Partners = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  @media (min-width: 768px) {
-    padding: 25px 0;
-  }
+  padding: 25px 0;
   @media (max-width: 770px) {
-    padding-top: 10px;
+    padding: 15px;
     /* min-height: 80vh; */
   }
 `;
 const WrapContainer = styled(Container)`
-  display: flex;
+  /* display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 20px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
+  gap: 20px; */
   @media (max-width: 768px) {
     flex-direction: column;
   }
 `;
-const WrapLiquidity = styled.div`
-  width: 80%;
+const WrapImg = styled.div`
+  width: 60%;
+  margin: 0 4rem 0 auto;
   @media (min-width: 2100px) {
     width: 65%;
+    margin: 0 10rem 0 auto;
   }
   @media (max-width: 768px) {
     width: 100%;
+    margin: 0 auto;
   }
 `;
 const ImgHalf = styled.div`
@@ -64,10 +62,10 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
-  /* width: 50%; */
+  /* margin-left: 80px; */
+  width: 40%;
   text-align: left;
-  max-width: 600px;
+  /* max-width: 600px; */
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -89,7 +87,7 @@ const Text = styled.p`
   }
 `;
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 22px;
   font-weight: 300;
   @media (max-width: 768px) {
     font-size: 14px;
