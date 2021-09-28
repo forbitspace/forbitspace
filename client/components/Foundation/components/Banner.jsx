@@ -85,7 +85,7 @@ const Text = styled.p`
   }
 `;
 const SubText = styled.p`
-  font-size: 1.2rem;
+  font-size: 22px;
   font-weight: 300;
   @media (max-width: 576px) {
     font-size: 14px;

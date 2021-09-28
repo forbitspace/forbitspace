@@ -241,26 +241,4 @@ const WrapperInput = styled.div`
   border-radius: 10px;
   margin-right: 5px;
 `;
-
-const BorderInput = styled.div`
-  position: absolute;
-  z-index: -1;
-  background: white;
-  top: -1px;
-  left: -1px;
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-  border-radius: 11px;
-  background-color: #0047b2;
-  /* background-image: linear-gradient(
-    38deg,
-    #00ff36 -10%,
-    #00ee57 3%,
-    #00c5ad 32%,
-    #00a4f1 53%,
-    #0b18fc 102%,
-    #0d00ff 111%
-  ); */
-`;
-
 export default Index;

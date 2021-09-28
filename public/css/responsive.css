@@ -2,9 +2,6 @@
   .main-menu {
     margin-right: 40px;
   }
-  .container {
-    max-width: 100% !important;
-  }
 }
 
 @media screen and (max-width: 1024px) {

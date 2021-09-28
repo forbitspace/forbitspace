@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "reactstrap";
 import styled from "styled-components";
 
 const Banner = () => {
+  const [open, setOpen] = useState(false);
   return (
     <BoxSection>
       <WrapContainer>
@@ -12,7 +13,7 @@ const Banner = () => {
           </ImgHalf>
         </WrapImg>
         <Content className="title-banner text-dark text-visi">
-          <Title>Market</Title>
+          <Text>Market</Text>
           <SubText>
             As the DeFi market continues to boom and expands, new solutions
             emerge to simplify user navigation and improve user experiences. One
@@ -21,20 +22,29 @@ const Banner = () => {
             users to conduct operations on all covered platforms without the
             need to create separate accounts and wallets.
           </SubText>
-          <SubText>
-            While having a wide selection of different protocols is beneficial
-            to diversify investments and getting the best yield rates from
-            crypto lending, efficiency and convenience are hindered since the
-            financial information is spread vastly across multiple protocols.
-            That’s where DeFi aggregators thrive.
-          </SubText>
-          <SubText>
-            forbitspace DEXs aggregator utilizes the power of blockchain to
-            bring together trades across various decentralized finance platforms
-            (DeFi) into one space, saving users time and increasing efficiency
-            for cryptocurrency trades. We siphon the very best prices from DEXs,
-            swap services, and liquidity pools into one place so that users can
-            optimize their trades.
+          {open ? (
+            <>
+              <SubText>
+                While having a wide selection of different protocols is
+                beneficial to diversify investments and getting the best yield
+                rates from crypto lending, efficiency and convenience are
+                hindered since the financial information is spread vastly across
+                multiple protocols. That’s where DeFi aggregators thrive.
+              </SubText>
+              <SubText>
+                forbitspace DEXs aggregator utilizes the power of blockchain to
+                bring together trades across various decentralized finance
+                platforms (DeFi) into one space, saving users time and
+                increasing efficiency for cryptocurrency trades. We siphon the
+                very best prices from DEXs, swap services, and liquidity pools
+                into one place so that users can optimize their trades.
+              </SubText>
+            </>
+          ) : (
+            <></>
+          )}
+          <SubText onClick={() => setOpen(!open)} className="toggle__btn">
+            {open ? "Hide" : "Read more..."}
           </SubText>
           {/* <WrapperButtonApp>
             <ButtonBanner href="/">Google Play</ButtonBanner>
@@ -48,11 +58,11 @@ const Banner = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  /* min-height: 88vh; */
-  padding: 10vh 0 0;
-  @media (max-width: 770px) {
-    padding-top: 60px;
-    /* min-height: 80vh; */
+  padding: 2vh 0 0;
+  margin-top: -6rem;
+  @media (max-width: 1024px) {
+    padding-top: 20px;
+    margin-top: 0;
   }
 `;
 const WrapContainer = styled(Container)`
@@ -60,15 +70,12 @@ const WrapContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
 `;
 const WrapImg = styled.div`
-  width: 30%;
+  width: 40%;
   @media (max-width: 768px) {
     width: 60%;
   }
@@ -82,12 +89,12 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
-  width: 50%;
+  /* margin-left: 80px; */
+  width: 60%;
   text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -96,22 +103,35 @@ const Content = styled.div`
     align-items: center;
   }
 `;
-const Title = styled.h2`
-  font-size: 55px;
-  line-height: 1;
+
+const Text = styled.p`
+  font-size: 2rem;
   font-weight: 500;
-  @media (max-width: 576px) {
-    font-size: 39px;
-    letter-spacing: 2px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  @media (max-width: 768px) {
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 25px;
   }
 `;
 const SubText = styled.p`
-  font-size: 1rem;
+  font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
-  /* max-width: 600px; */
+  text-align: right;
+  &.toggle__btn {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+  }
   @media (max-width: 768px) {
     font-size: 14px;
+    text-align: center;
+    &.toggle__btn {
+      font-size: 12px;
+    }
   }
   @media (max-width: 576px) {
     font-size: 13px;

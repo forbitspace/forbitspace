@@ -2,12 +2,17 @@ import React from "react";
 import styled from "styled-components";
 import Banner from "./components/Banner";
 import Footer from "../Footer/index";
+import Swap from "./components/Swap";
+import Features from "./components/Features";
+// import About from "./components/About";
 
 const API = () => {
   return (
     <WrapperBackground>
       <WrapContent>
         <Banner />
+        <Features />
+        <Swap />
         <BackgroundImg src="./images/background-line-min.png"></BackgroundImg>
       </WrapContent>
       <Footer />

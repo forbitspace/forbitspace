@@ -8,7 +8,7 @@ const MobileWallet = () => {
       <WrapContainer className="container__bridge">
         <Content>
           <Text>Bridge Space</Text>
-          <SubText>
+          <SubText className="text-left">
             {" "}
             <span>forbitspace</span> will have extended the Cross-Chain Bridge,
             allowing users to swap tokens on different blockchains easily and
@@ -16,9 +16,12 @@ const MobileWallet = () => {
             currently supports on different blockchain Bridge Space is a
             blockchain bridge that enables users to access the benefits of
             different blockchain technologies without having to choose between
-            platforms. This not only helps take pressure off of Ethereum, but
-            This is also particularly important as congestion issues persist on
-            Ethereum, where the most popular DeFi network.
+            platforms.
+            <br />
+            <br />
+            This not only helps take pressure off of Ethereum, but this is also
+            particularly important as congestion issues persist on Ethereum,
+            where the most popular DeFi network.
           </SubText>
         </Content>
         <WrapImg>
@@ -29,19 +32,13 @@ const MobileWallet = () => {
       </WrapContainer>
       <WrapContainer>
         <WrapImg>
-          <ImgHalf>
+          <ImgHalf className="img__phone">
             <img src="../images/self-page/phone-1.png" alt="" />
           </ImgHalf>
         </WrapImg>
-        <Content>
-          {/* <Text>Self-custody wallets</Text>
-          <SubText>
-            It is of the great importance of self-custody, which is why
-            forbitspace built the overall strategy you safely self-custody your
-            assets with flexible optimal options for our ecosystem.
-          </SubText> */}
-          <TitleText>Mobile wallet</TitleText>
-          <SubText>
+        <Content className="text__mobile-wallet">
+          <Text>Mobile wallet</Text>
+          <SubText className="text__mobile-wallet">
             Mobile wallets are apps on your iOS or Android phone, convenient
             because they are always with you. Usually, the private key is
             generated and stored on your device with backup and recovery
@@ -52,16 +49,19 @@ const MobileWallet = () => {
 
       <WrapWallet>
         <Content>
-          <TitleText>Smart contract wallet</TitleText>
-          <SubText>
+          <Text>Smart contract wallet</Text>
+          <SubText className="text-left">
             A smart contract is a program deployed to disparate blockchains like
             Ethereum, Binance Smart Chain, and has a mobile app or desktop
-            interface. Smart contract wallets are the most functional wallets
-            because they can be programmed in many ways and have additional
-            security measures like daily spend limits, further approval from a
-            trusted party or another wallet if transactions are above a certain
-            limit, and advanced recovery mechanisms. Private keys are generated
-            on the mobile device or browser.
+            interface.
+            <br />
+            <br />
+            Smart contract wallets are the most functional wallets because they
+            can be programmed in many ways and have additional security measures
+            like daily spend limits, further approval from a trusted party or
+            another wallet if transactions are above a certain limit, and
+            advanced recovery mechanisms. Private keys are generated on the
+            mobile device or browser.
           </SubText>
         </Content>
         <img src="../images/self-page/wallett1-02.png" alt="" />
@@ -75,7 +75,6 @@ const BoxSection = styled.section`
   @media (min-width: 768px) {
     padding: 25px 0;
   }
-
   @media (max-width: 770px) {
     padding-top: 10px;
     /* min-height: 80vh; */
@@ -85,14 +84,8 @@ const WrapContainer = styled(Container)`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
-  margin-bottom: 3rem;
-  @media (min-width: 1400px) {
-    max-width: 100% !important;
-  }
-  @media (min-width: 3650px) {
-    max-width: 80%;
-  }
+  gap: 1rem;
+  margin: 2rem auto 3rem;
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     gap: 1rem;
@@ -102,23 +95,21 @@ const WrapContainer = styled(Container)`
   }
 `;
 const WrapImg = styled.div`
-  width: 20%;
-  @media (max-width: 576px) {
-    width: 100%;
+  width: 50%;
+  @media (max-width: 768px) {
+    /* width: 60%; */
   }
 `;
 const ImgHalf = styled.div`
   width: 100%;
   text-align: center;
   img {
-    /* width: 50%; */
+    max-width: 450px;
     height: auto;
   }
-  &.img__bridge {
-    text-align: center;
+  @media (max-width: 1024px) {
     img {
-      /* width: 60%; */
-      height: auto;
+      max-width: 350px;
     }
   }
   @media (max-width: 768px) {
@@ -130,64 +121,64 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
-  width: 40%;
+  width: 50%;
   text-align: left;
-  max-width: 750px;
+  &.text__mobile-wallet {
+    text-align: right;
+  }
 
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
     margin-top: 20px;
-    text-align: center;
+    text-align: center !important;
   }
 `;
+
 const Text = styled.p`
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 500;
   line-height: 40px;
   letter-spacing: 1px;
-  text-align: left;
-
   @media (max-width: 768px) {
     font-size: 26px;
     letter-spacing: 1px;
     font-weight: 500;
     line-height: 25px;
-    text-align: center;
   }
-`;
-const TitleText = styled.p`
-  font-size: 1.4rem;
-  font-weight: bold;
 `;
 
 const SubText = styled.p`
-  font-size: 1rem;
+  font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
+  text-align: right;
   span {
     font-style: italic;
     font-weight: 900;
   }
+  &.text-left {
+    text-align: left;
+  }
   @media (max-width: 768px) {
-    font-size: 14px;
+    font-size: 18px;
+    text-align: center !important;
   }
   @media (max-width: 576px) {
-    font-size: 13px;
+    font-size: 14px;
   }
 `;
-const WrapWallet = styled.div`
+const WrapWallet = styled(Container)`
   margin-top: 4rem;
   width: 100%;
-  padding: 0 3rem;
+  /* padding: 0 3rem; */
 
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 3rem;
   img {
-    width: 35%;
+    width: 50%;
     max-width: 760px;
   }
   @media (max-width: 768px) {
@@ -195,7 +186,7 @@ const WrapWallet = styled.div`
     width: 100%;
     flex-direction: column;
     img {
-      width: 100%;
+      width: 60%;
     }
   }
 `;

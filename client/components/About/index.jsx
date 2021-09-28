@@ -7,6 +7,7 @@ import Banner from "./components/Banner";
 import Footer from "../Footer/index";
 import RoadMap from "./components/RoadMap";
 import AboutUs from "./components/AboutUs";
+import BallonCrypto from "./components/BallonCrypto";
 
 const Foundation = () => {
   return (
@@ -14,6 +15,7 @@ const Foundation = () => {
       <WrapContent>
         <AboutUs />
         <Banner />
+        <BallonCrypto />
         {/* <Numbers /> */}
         <RoadMap />
         <BackgroundImg src="./images/background-line-min.png"></BackgroundImg>

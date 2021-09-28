@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Container } from "reactstrap";
 // import Pramaster from "./components/Pramaster";
 // import Growing from "./components/Growing";
 // import Suite from "./components/Suite";
@@ -24,14 +25,16 @@ const Index = () => {
     <React.Fragment>
       <Banner />
       <WrapperBackground>
-        <Network />
-        <Planet />
-        <Liquidity />
-        <LimitOrder />
-        <Derivative />
-        <SelfCustody />
-        <Partners />
-        <System />
+        <Container>
+          <Network />
+          <Planet />
+          <Liquidity />
+          <LimitOrder />
+          <Derivative />
+          <SelfCustody />
+          <Partners />
+          <System />
+        </Container>
         {/* <Pramaster />
         <Growing />
         <Suite />

@@ -2,12 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import Banner from "./components/Banner";
 import Footer from "../Footer/index";
+import HowItWorks from "./components/HowItWorks";
+import Finder from "./components/Finder";
 
 const Aggregation = () => {
   return (
     <WrapperBackground>
       <WrapContent>
         <Banner />
+        <HowItWorks />
+        <Finder />
         <BackgroundImg src="./images/background-line-min.png"></BackgroundImg>
       </WrapContent>
       <Footer />

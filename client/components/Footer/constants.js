@@ -1,20 +1,26 @@
 export const DataSocialLinkFooter = [
   {
+    link: "",
     url: "./images/icon-social-footer/1.svg",
   },
   {
+    link: "",
     url: "./images/icon-social-footer/2.svg",
   },
   {
+    link: "",
     url: "./images/icon-social-footer/3.svg",
   },
   {
+    link: "",
     url: "./images/icon-social-footer/4.svg",
   },
   {
+    link: "",
     url: "./images/icon-social-footer/5.svg",
   },
   {
+    link: "",
     url: "./images/icon-social-footer/6.svg",
   },
 ];
