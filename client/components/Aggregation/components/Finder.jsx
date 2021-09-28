@@ -19,7 +19,7 @@ const Finder = () => {
         </Content>
         <WrapImg>
           <ImgHalf>
-            <img src="../images/home-page/parfider.png" alt="" />
+            <img src="../images/home-page/pafider.png" alt="" />
           </ImgHalf>
         </WrapImg>
       </WrapContainer>

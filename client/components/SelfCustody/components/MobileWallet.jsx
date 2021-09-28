@@ -7,8 +7,8 @@ const MobileWallet = () => {
     <BoxSection>
       <WrapContainer className="container__bridge">
         <Content>
-          <TitleText>Bridge Space</TitleText>
-          <SubText>
+          <Text>Bridge Space</Text>
+          <SubText className="text-left">
             {" "}
             <span>forbitspace</span> will have extended the Cross-Chain Bridge,
             allowing users to swap tokens on different blockchains easily and
@@ -16,9 +16,12 @@ const MobileWallet = () => {
             currently supports on different blockchain Bridge Space is a
             blockchain bridge that enables users to access the benefits of
             different blockchain technologies without having to choose between
-            platforms. This not only helps take pressure off of Ethereum, but
-            This is also particularly important as congestion issues persist on
-            Ethereum, where the most popular DeFi network.
+            platforms.
+            <br />
+            <br />
+            This not only helps take pressure off of Ethereum, but this is also
+            particularly important as congestion issues persist on Ethereum,
+            where the most popular DeFi network.
           </SubText>
         </Content>
         <WrapImg>
@@ -34,7 +37,7 @@ const MobileWallet = () => {
           </ImgHalf>
         </WrapImg>
         <Content className="text__mobile-wallet">
-          <TitleText>Mobile wallet</TitleText>
+          <Text>Mobile wallet</Text>
           <SubText className="text__mobile-wallet">
             Mobile wallets are apps on your iOS or Android phone, convenient
             because they are always with you. Usually, the private key is
@@ -46,16 +49,19 @@ const MobileWallet = () => {
 
       <WrapWallet>
         <Content>
-          <TitleText>Smart contract wallet</TitleText>
-          <SubText>
+          <Text>Smart contract wallet</Text>
+          <SubText className="text-left">
             A smart contract is a program deployed to disparate blockchains like
             Ethereum, Binance Smart Chain, and has a mobile app or desktop
-            interface. Smart contract wallets are the most functional wallets
-            because they can be programmed in many ways and have additional
-            security measures like daily spend limits, further approval from a
-            trusted party or another wallet if transactions are above a certain
-            limit, and advanced recovery mechanisms. Private keys are generated
-            on the mobile device or browser.
+            interface.
+            <br />
+            <br />
+            Smart contract wallets are the most functional wallets because they
+            can be programmed in many ways and have additional security measures
+            like daily spend limits, further approval from a trusted party or
+            another wallet if transactions are above a certain limit, and
+            advanced recovery mechanisms. Private keys are generated on the
+            mobile device or browser.
           </SubText>
         </Content>
         <img src="../images/self-page/wallett1-02.png" alt="" />
@@ -78,8 +84,8 @@ const WrapContainer = styled(Container)`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
-  margin-bottom: 3rem;
+  gap: 1rem;
+  margin: 2rem auto 3rem;
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     gap: 1rem;
@@ -89,7 +95,7 @@ const WrapContainer = styled(Container)`
   }
 `;
 const WrapImg = styled.div`
-  /* width: 50%; */
+  width: 50%;
   @media (max-width: 768px) {
     /* width: 60%; */
   }
@@ -98,7 +104,7 @@ const ImgHalf = styled.div`
   width: 100%;
   text-align: center;
   img {
-    max-width: 550px;
+    max-width: 450px;
     height: auto;
   }
   @media (max-width: 1024px) {
@@ -128,9 +134,18 @@ const Content = styled.div`
     text-align: center !important;
   }
 `;
-const TitleText = styled.p`
+
+const Text = styled.p`
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 1px;
+  @media (max-width: 768px) {
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 25px;
+  }
 `;
 
 const SubText = styled.p`
@@ -142,9 +157,12 @@ const SubText = styled.p`
     font-style: italic;
     font-weight: 900;
   }
-  @media (max-width: 1024px) {
+  &.text-left {
+    text-align: left;
+  }
+  @media (max-width: 768px) {
     font-size: 18px;
-    text-align: justify !important;
+    text-align: center !important;
   }
   @media (max-width: 576px) {
     font-size: 14px;
@@ -153,7 +171,7 @@ const SubText = styled.p`
 const WrapWallet = styled(Container)`
   margin-top: 4rem;
   width: 100%;
-  padding: 0 3rem;
+  /* padding: 0 3rem; */
 
   display: flex;
   align-items: center;

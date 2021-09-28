@@ -33,7 +33,8 @@ const WrapContainer = styled(Container)`
   }
 `;
 const WrapImg = styled.div`
-  width: 100%;
+  width: 60%;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,8 +42,7 @@ const WrapImg = styled.div`
   gap: 20px;
 
   @media (max-width: 768px) {
-    /* width: 100%; */
-    /* min-height: 75vh; */
+    width: 100%;
     justify-content: center;
     :first-child {
       width: 100%;

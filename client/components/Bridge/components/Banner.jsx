@@ -12,18 +12,23 @@ const Banner = () => {
           </ImgHalf>
         </WrapImg>
         <Content className="title-banner text-dark text-visi">
-          <Title>Bridge Space</Title>
+          <Text>Bridge Space</Text>
           <SubText>
             {" "}
             <span>forbitspace</span> will have extended the Cross-Chain Bridge,
             allowing users to swap tokens on different blockchains easily and
             conveniently with the release of Bridge Space Cross-Chain Bridge
-            currently supports on different blockchain Bridge Space is a
-            blockchain bridge that enables users to access the benefits of
-            different blockchain technologies without having to choose between
-            platforms. This not only helps take pressure off of Ethereum, but
-            This is also particularly important as congestion issues persist on
-            Ethereum, where the most popular DeFi network.
+            currently supports on different blockchain.
+            <br />
+            <br />
+            Bridge Space is a blockchain bridge that enables users to access the
+            benefits of different blockchain technologies without having to
+            choose between platforms.
+            <br />
+            <br />
+            This not only helps take pressure off of Ethereum, but This is also
+            particularly important as congestion issues persist on Ethereum,
+            where the most popular DeFi network.
           </SubText>
         </Content>
       </WrapContainer>
@@ -33,11 +38,12 @@ const Banner = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  /* min-height: 88vh; */
-  padding: 10vh 0 0;
+  padding: 15vh 0 0;
   @media (max-width: 770px) {
-    padding-top: 60px;
-    /* min-height: 80vh; */
+    padding-top: 140px;
+  }
+  @media (max-width: 576px) {
+    padding-top: 80px;
   }
 `;
 const WrapContainer = styled(Container)`
@@ -45,15 +51,13 @@ const WrapContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
 `;
 const WrapImg = styled.div`
   width: 40%;
+  max-width: 450px;
   @media (max-width: 768px) {
     width: 60%;
   }
@@ -67,28 +71,17 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
   width: 50%;
   text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
     margin-top: 20px;
     text-align: center;
     align-items: center;
-  }
-`;
-const Title = styled.h2`
-  font-size: 4rem;
-  line-height: 1;
-  font-weight: 700;
-  /* font-style: italic; */
-  @media (max-width: 576px) {
-    font-size: 45px;
-    letter-spacing: 2px;
   }
 `;
 const Text = styled.p`
@@ -108,13 +101,14 @@ const SubText = styled.p`
   font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
-  text-align: justify;
+  text-align: right;
   span {
     font-style: italic;
     font-weight: 900;
   }
   @media (max-width: 768px) {
     font-size: 16px;
+    text-align: center;
   }
   @media (max-width: 576px) {
     font-size: 13px;

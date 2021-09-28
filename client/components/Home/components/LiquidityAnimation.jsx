@@ -3,14 +3,14 @@ import styled from "styled-components";
 
 const LiquidityAnimation = () => {
   const dataTokens = [
-    { name: "fbs", range: "95px" },
-    { name: "usdt", range: "26px" },
-    { name: "aave", range: "32px" },
-    { name: "dai", range: "27px" },
-    { name: "eth", range: "35px" },
-    { name: "sushi", range: "36px" },
-    { name: "uni", range: "42px" },
-    { name: "usdc", range: "25px" },
+    { name: "fbs" },
+    { name: "usdt" },
+    { name: "aave" },
+    { name: "dai" },
+    { name: "eth" },
+    { name: "sushi" },
+    { name: "uni" },
+    { name: "usdc" },
   ];
   return (
     <WrapContent>
@@ -19,7 +19,7 @@ const LiquidityAnimation = () => {
       </BackgroundImg>
       <ItemImg>
         {dataTokens.map((item, index) => (
-          <ImgWrap className={`img-${index}`} range={item.range}>
+          <ImgWrap className={`img-${index}`}>
             <img
               src={`../images/liquidity Pool/icon-${item.name}.png`}
               alt=""
@@ -106,7 +106,7 @@ const ImgWrap = styled.div`
   }
   @media (max-width: 768px) {
     img {
-      transform: scale(0.9);
+      transform: scale(0.8);
     }
   }
   @media (max-width: 700px) {
@@ -118,17 +118,23 @@ const ImgWrap = styled.div`
     img {
       transform: scale(0.5);
     }
+    &.img-0 {
+      top: 28%;
+      left: calc(50% - 70px);
+      width: 140px;
+      animation: moving 7s infinite;
+    }
   }
 
   @keyframes moving {
     0% {
-      transform: translateY(${({ range }) => range});
+      transform: translateY(25px);
     }
     50% {
       transform: translateY(0px);
     }
     100% {
-      transform: translateY(${({ range }) => range});
+      transform: translateY(25px);
     }
   }
 `;

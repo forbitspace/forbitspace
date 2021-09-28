@@ -30,9 +30,9 @@ const HowItWorks = () => {
 const BoxSection = styled.section`
   position: relative;
   /* min-height: 88vh; */
-  padding: 2vh 0 0;
+  padding: 6vh 0 0;
   @media (max-width: 770px) {
-    padding-top: 60px;
+    padding-top: 40px;
     /* min-height: 80vh; */
   }
 `;

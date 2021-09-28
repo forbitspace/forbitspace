@@ -23,7 +23,7 @@ const Banner = () => {
             It finds the most efficient token swap paths, splitting swaps
             protocols and even different market depths within one protocol.
           </SubText>
-          <SubText>Who can integrate our forbitspace API?</SubText>
+          {/* <SubText>Who can integrate our forbitspace API?</SubText>
           <WrapIntegration>
             <TopWrap>
               <SubContent>
@@ -40,7 +40,7 @@ const Banner = () => {
             <BottomWrap>
               <ButtonWrap>Start your integration</ButtonWrap>
             </BottomWrap>
-          </WrapIntegration>
+          </WrapIntegration> */}
         </Content>
       </WrapContainer>
     </WrapperBanner>
@@ -74,6 +74,7 @@ const WrapImg = styled.div`
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
+  max-width: 900px;
   @media (max-width: 768px) {
     /* width: 100%; */
     /* min-height: 75vh; */
@@ -97,14 +98,14 @@ const Content = styled.div`
   }
 `;
 const Title = styled.h2`
-  font-size: 5rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 1;
   img {
     max-width: 400px;
   }
   @media (max-width: 768px) {
-    font-size: 3rem;
+    font-size: 26px;
     letter-spacing: 2px;
     text-align: center;
   }

@@ -42,6 +42,9 @@ const BoxSection = styled.section`
   @media (min-width: 1280px) {
     margin: -50px 0;
   }
+  @media (min-width: 1440px) {
+    margin: -200px 0;
+  }
 
   @media (max-width: 770px) {
     padding-top: 10px;
@@ -66,7 +69,7 @@ const WrapPlanet = styled.div`
   }
   @media (max-width: 768px) {
     transform: scale(0.65);
-    margin: -140px 0;
+    margin: -60px 0;
   }
   @media (max-width: 415px) {
     transform: scale(0.6);

@@ -65,7 +65,7 @@ const WrapContainer = styled(Container)`
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 20px;
+  gap: 0px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -73,6 +73,7 @@ const WrapContainer = styled(Container)`
 `;
 const WrapImg = styled.div`
   width: 50%;
+  padding: 0 30px 0 0;
   @media (max-width: 768px) {
     width: 100%;
   }

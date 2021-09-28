@@ -15,6 +15,9 @@ const RoadMap = () => {
           </ImgHalf>
         </WrapImg>
       </WrapContainer>
+      <WrapContainer>
+        <img src="../images/about-page/go-to-space.png" alt="" />
+      </WrapContainer>
     </BoxSection>
   );
 };
@@ -22,9 +25,9 @@ const RoadMap = () => {
 const BoxSection = styled.section`
   position: relative;
   /* min-height: 88vh; */
-  padding: 2vh 0 0;
+  padding: 2vh 0 6vh;
   @media (max-width: 770px) {
-    padding-top: 60px;
+    padding-top: 10px;
     /* min-height: 80vh; */
   }
 `;
@@ -34,8 +37,8 @@ const WrapContainer = styled(Container)`
   justify-content: space-between;
   gap: 20px;
   flex-direction: column;
-  @media (min-width: 1650px) {
-    max-width: 80%;
+  :last-child {
+    padding: 4rem 0;
   }
   @media (max-width: 576px) {
     align-items: center;
@@ -50,11 +53,11 @@ const ImgHalf = styled.div`
   img {
     width: 100%;
     height: auto;
-    max-width: 900px;
+    max-width: 1200px;
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
+  /* margin-left: 80px; */
   width: 100%;
   text-align: left;
   display: flex;

@@ -33,21 +33,24 @@ const BoxSection = styled.section`
   }
 `;
 const WrapContainer = styled(Container)`
-  display: flex;
+  /* display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 20px;
+  gap: 20px; */
   @media (max-width: 768px) {
     flex-direction: column;
   }
 `;
 const WrapImg = styled.div`
   width: 60%;
+  margin: 0 4rem 0 auto;
   @media (min-width: 2100px) {
     width: 65%;
+    margin: 0 10rem 0 auto;
   }
   @media (max-width: 768px) {
     width: 100%;
+    margin: 0 auto;
   }
 `;
 const ImgHalf = styled.div`

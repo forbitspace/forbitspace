@@ -26,7 +26,7 @@ const System = () => {
     <WrapperSystem>
       <div className="container">
         <ContributorRender data={EcosystemData} title={"Ecosystem partners"} />
-        <ContributorRender data={ContributorData} title={"Stakeholders"} />
+        {/* <ContributorRender data={ContributorData} title={"Stakeholders"} /> */}
         <BecomeBox>
           <div className="content">
             <div className="header-content">Join the community</div>
@@ -63,14 +63,14 @@ const WrapperSystem = styled.section`
 `;
 const WrapperInner = styled.div`
   .header {
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 1.5;
-    text-align: left;
+    text-align: center;
     color: #fff;
 
     @media (max-width: 415px) {
-      font-size: 30px;
+      font-size: 26px;
     }
   }
   .img-content {
@@ -117,18 +117,18 @@ const BecomeBox = styled.div`
     text-align: center;
   }
   .header-content {
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 500;
   }
   .inner-content {
-    font-size: 24px;
+    font-size: 22px;
   }
   @media (max-width: 786px) {
     .header-content {
-      font-size: 30px;
+      font-size: 26px;
     }
     .inner-content {
-      font-size: 18px;
+      font-size: 14px;
     }
   }
 `;

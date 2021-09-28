@@ -24,7 +24,7 @@ const Banner = () => {
           <SubText>
             <span>forbitspace</span> is an interoperability aggregator protocol
             that unites decentralized applications across disparate blockchains.
-            allows crypto traders to tap deep liquidity and receive better
+            Allows crypto traders to tap deep liquidity and receive better
             pricing one single interface.
           </SubText>
         </Content>

@@ -1,15 +1,19 @@
 import React from "react";
 import { Container } from "reactstrap";
-import styled, { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 
 const AboutUs = () => {
   return (
     <BoxSection>
-      <GlobalStyle />
       <WrapContainer>
         <Content className="title-banner text-dark text-visi">
-          <Title>About us</Title>
-          <SubText></SubText>
+          <Text>About us</Text>
+          <SubText>
+            We are a team that combines experienced professionals across
+            financial markets, and a young, dynamic, open-minded, and strong
+            focused on research in the blockchain and decentralized finance
+            ecosystem aim to bring DeFi space to the wider community.
+          </SubText>
         </Content>
         <WrapImg>
           <ImgHalf>
@@ -21,19 +25,11 @@ const AboutUs = () => {
   );
 };
 
-const GlobalStyle = createGlobalStyle`
-  body.dark-mode{
-    /* background-image: radial-gradient(#00284b, #030d20 67%); */
-  }
-`;
-
 const BoxSection = styled.section`
   position: relative;
-  /* min-height: 88vh; */
-  padding: 4vh 0 0;
+  padding: 6vh 0 0;
   @media (max-width: 770px) {
     padding-top: 60px;
-    /* min-height: 80vh; */
   }
 `;
 const WrapContainer = styled(Container)`
@@ -41,18 +37,17 @@ const WrapContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  flex-direction: column;
 
   @media (max-width: 768px) {
+    flex-direction: column;
   }
 `;
 const WrapImg = styled.div`
-  width: 65%;
+  width: 55%;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 -70px;
 
   @media (max-width: 768px) {
     width: 60%;
@@ -64,15 +59,17 @@ const ImgHalf = styled.div`
   img {
     width: 100%;
     height: auto;
+    transform: scale(1.4);
+    transform-origin: top;
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
-  width: 35%;
+  /* margin-left: 80px; */
+  width: 45%;
   text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -81,23 +78,28 @@ const Content = styled.div`
     align-items: center;
   }
 `;
-const Title = styled.h2`
-  font-size: 55px;
-  line-height: 1;
+
+const Text = styled.p`
+  font-size: 2rem;
   font-weight: 500;
-  text-align: right;
-  @media (max-width: 576px) {
-    font-size: 39px;
-    letter-spacing: 2px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-align: left;
+  @media (max-width: 768px) {
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 25px;
   }
 `;
 const SubText = styled.p`
   font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
-  /* max-width: 600px; */
+  text-align: left;
   @media (max-width: 768px) {
     font-size: 14px;
+    text-align: center;
   }
   @media (max-width: 576px) {
     font-size: 13px;

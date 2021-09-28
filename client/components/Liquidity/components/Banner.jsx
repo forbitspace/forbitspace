@@ -14,18 +14,24 @@ const Banner = () => {
           </ImgHalf>
         </WrapImg>
         <Content className="title-banner text-dark text-visi">
-          <Title>Liquidity Pool</Title>
+          <Text>Liquidity Pool</Text>
           <SubText>
             With <span>forbitspace</span>, the decentralized protocol that
             empowering traders to provide liquidity to pools and collect extra
-            rewards in FBS tokens for participating in liquidity mining
-            programs.
-            <br />A next-generation automated market maker that protects users
-            from front-running attacks and offers capital efficiency to
-            liquidity providers. Enables you to deposit digital assets into
-            liquidity pools while earning interest in real-time in the form of
-            FBS Tokens. Liquidity providers collect rewards on assets locked in
-            pools and extra yield farming rewards in FBS tokens.
+            rewards in <span className="fbs">FBS</span> tokens for participating
+            in liquidity mining programs.
+            <br />
+            <br />
+            A next-generation automated market maker that protects users from
+            front-running attacks and offers capital efficiency to liquidity
+            providers.
+            <br />
+            <br />
+            Enables you to deposit digital assets into liquidity pools while
+            earning interest in real-time in the form of{" "}
+            <span className="fbs">FBS</span> tokens. Liquidity providers collect
+            rewards on assets locked in pools and extra yield farming rewards in{" "}
+            <span className="fbs">FBS</span> tokens.
           </SubText>
           {/* <WrapperButtonApp>
             <ButtonBanner href="/">Google Play</ButtonBanner>
@@ -40,7 +46,7 @@ const Banner = () => {
 const BoxSection = styled.section`
   position: relative;
   /* min-height: 88vh; */
-  padding: 10vh 0 0;
+  padding: 12vh 0 0;
   @media (max-width: 770px) {
     padding-top: 60px;
     /* min-height: 80vh; */
@@ -74,12 +80,12 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 40px;
-  width: 50%;
+  /* margin-left: 40px; */
+  width: 60%;
   text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -88,25 +94,32 @@ const Content = styled.div`
     align-items: center;
   }
 `;
-const Title = styled.h2`
-  font-size: 4rem;
-  line-height: 1;
-  font-weight: 700;
-  @media (max-width: 576px) {
-    font-size: 45px;
-    letter-spacing: 2px;
+const Text = styled.p`
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 1px;
+  @media (max-width: 768px) {
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 25px;
   }
 `;
 const SubText = styled.div`
   font-size: 26px;
   font-weight: 200;
   font-family: sans-serif;
+  text-align: right;
   span {
     font-style: italic;
     font-weight: 900;
   }
+  .fbs {
+    font-style: normal;
+  }
   @media (max-width: 768px) {
-    text-align: justify;
+    text-align: center;
     font-size: 16px;
   }
   @media (max-width: 576px) {

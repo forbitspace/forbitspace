@@ -13,7 +13,7 @@ const Banner = () => {
           </ImgHalf>
         </WrapImg>
         <Content className="title-banner text-dark text-visi">
-          <Title>Market</Title>
+          <Text>Market</Text>
           <SubText>
             As the DeFi market continues to boom and expands, new solutions
             emerge to simplify user navigation and improve user experiences. One
@@ -58,11 +58,11 @@ const Banner = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  /* min-height: 88vh; */
   padding: 2vh 0 0;
-  @media (max-width: 770px) {
-    padding-top: 60px;
-    /* min-height: 80vh; */
+  margin-top: -6rem;
+  @media (max-width: 1024px) {
+    padding-top: 20px;
+    margin-top: 0;
   }
 `;
 const WrapContainer = styled(Container)`
@@ -70,9 +70,6 @@ const WrapContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
@@ -106,13 +103,17 @@ const Content = styled.div`
     align-items: center;
   }
 `;
-const Title = styled.h2`
-  font-size: 55px;
-  line-height: 1;
+
+const Text = styled.p`
+  font-size: 2rem;
   font-weight: 500;
-  @media (max-width: 576px) {
-    font-size: 39px;
-    letter-spacing: 2px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  @media (max-width: 768px) {
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 25px;
   }
 `;
 const SubText = styled.p`

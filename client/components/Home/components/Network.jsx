@@ -18,7 +18,7 @@ const Network = () => {
             </ImgHalf>
           </WrapImg>{" "}
           <WrapTitle>
-            <Title>Multi Network</Title>
+            <Text>Multi Network</Text>
             <SubText className="subtext__title">
               <span>forbitspace </span> aggregator protocol is now available on
               Ethereum, Binance Smart Chain, and layer 2 Polygon, Arbitrum, and
@@ -66,13 +66,13 @@ const BoxSection = styled.section`
     padding: 25px 15px 0;
   }
 `;
-const Title = styled.div`
-  font-size: 3rem;
-  font-weight: 600;
+const Text = styled.div`
+  font-size: 2rem;
+  font-weight: 500;
   text-align: right;
   padding: 1vh 0;
   @media (max-width: 768px) {
-    font-size: 35px;
+    font-size: 26px;
     padding: 10px 0 30px;
     text-align: center;
   }

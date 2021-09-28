@@ -12,17 +12,20 @@ const Banner = () => {
           </ImgHalf>
         </WrapImg>
         <Content className="title-banner text-dark text-visi">
-          <Title>Smart Contract Wallet</Title>
+          <Text>Smart Contract Wallet</Text>
           <SubText>
             {" "}
             A smart contract is a program deployed to disparate blockchains like
             Ethereum, Binance Smart Chain, and has a mobile app or desktop
-            interface. Smart contract wallets are the most functional wallets
-            because they can be programmed in many ways and have additional
-            security measures like daily spend limits, further approval from a
-            trusted party or another wallet if transactions are above a certain
-            limit, and advanced recovery mechanisms. Private keys are generated
-            on the mobile device or browser.
+            interface.
+            <br />
+            <br />
+            Smart contract wallets are the most functional wallets because they
+            can be programmed in many ways and have additional security measures
+            like daily spend limits, further approval from a trusted party or
+            another wallet if transactions are above a certain limit, and
+            advanced recovery mechanisms. Private keys are generated on the
+            mobile device or browser.
           </SubText>
         </Content>
       </WrapContainer>
@@ -35,8 +38,10 @@ const BoxSection = styled.section`
   /* min-height: 88vh; */
   padding: 10vh 0 0;
   @media (max-width: 770px) {
-    padding-top: 60px;
-    /* min-height: 80vh; */
+    padding-top: 140px;
+  }
+  @media (max-width: 576px) {
+    padding-top: 80px;
   }
 `;
 const WrapContainer = styled(Container)`
@@ -44,15 +49,13 @@ const WrapContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
 `;
 const WrapImg = styled.div`
   width: 40%;
+  max-width: 450px;
   @media (max-width: 768px) {
     width: 60%;
   }
@@ -71,7 +74,7 @@ const Content = styled.div`
   text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -80,18 +83,16 @@ const Content = styled.div`
     align-items: center;
   }
 `;
-const Title = styled.h2`
-  font-size: 4rem;
-  line-height: 1;
-  font-weight: 700;
-  /* font-style: italic; */
-  @media (max-width: 576px) {
-    font-size: 45px;
-    letter-spacing: 2px;
-  }
-  @media (max-width: 320px) {
-    font-size: 35px;
-    letter-spacing: 2px;
+const Text = styled.p`
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 1px;
+  @media (max-width: 768px) {
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 25px;
   }
 `;
 
@@ -99,12 +100,14 @@ const SubText = styled.p`
   font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
+  text-align: right;
   span {
     font-style: italic;
     font-weight: 900;
   }
   @media (max-width: 768px) {
     font-size: 14px;
+    text-align: center;
   }
   @media (max-width: 576px) {
     font-size: 13px;

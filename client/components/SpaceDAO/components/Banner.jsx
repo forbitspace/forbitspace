@@ -14,18 +14,19 @@ const Banner = () => {
           </ImgHalf>
         </WrapImg>
         <Content className="title-banner text-dark text-visi">
-          <WrapText>
-            <Title>Governance</Title>
-            <SubText>
-              <span>Space Dao Governance</span> consists of the proposition and
-              decision-making process for the different risk parameter changes,
-              improvements and incentives that constitute the policies, and
-              upgrades to governance itself. All future decisions governing the
-              protocol will be enacted through this procedure. The FBS token
-              empowers holders to collectively act as governors of the protocol
-              by enabling them with the capability to vote and propose.
-            </SubText>
-          </WrapText>
+          <Text>Governance</Text>
+          <SubText>
+            <span>Space Dao Governance</span> consists of the proposition and
+            decision-making process for the different risk parameter changes,
+            improvements and incentives that constitute the policies, and
+            upgrades to governance itself.
+            <br />
+            <br />
+            All future decisions governing the protocol will be enacted through
+            this procedure. The <span className="fbs">FBS</span> token empowers
+            holders to collectively act as governors of the protocol by enabling
+            them with the capability to vote and propose.
+          </SubText>
         </Content>
       </WrapContainer>
     </BoxSection>
@@ -44,9 +45,6 @@ const WrapContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  @media (min-width: 1650px) {
-    max-width: 80%;
-  }
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
@@ -82,28 +80,31 @@ const Content = styled.div`
     align-items: center;
   }
 `;
-const Title = styled.h2`
-  font-size: 4rem;
-  line-height: 1;
-  font-weight: 700;
-  @media (max-width: 576px) {
-    font-size: 45px;
-    letter-spacing: 2px;
+
+const Text = styled.p`
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 1px;
+  @media (max-width: 768px) {
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 25px;
   }
 `;
-const WrapText = styled.div`
-  /* width: 55%; */
-  /* max-width: 900px; */
-`;
-
 const SubText = styled.p`
   font-size: 22px;
   font-weight: 300;
   /* max-width: 600px; */
   font-family: sans-serif;
+  text-align: right;
   span {
     font-style: italic;
     font-weight: 900;
+  }
+  .fbs {
+    font-style: normal;
   }
   @media (max-width: 768px) {
     font-size: 16px;

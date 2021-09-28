@@ -6,22 +6,22 @@ const Banner = () => {
   return (
     <BoxSection>
       <WrapContainer>
-        <Content className="title-banner text-dark text-visi">
-          {/* <Title>forbitspace</Title> */}
-          <Title>Aggregation Protocol</Title>
-          {/* <WrapText>
-            <SubText>
-              The <span>forbitspace</span> is an aggregator protocol that allows
-              traders to benefit from a large variety of financial tools in a
-              single interface.
-            </SubText>
-          </WrapText> */}
-        </Content>
         <WrapImg>
           <ImgHalf>
             <img src="../images/home-page/aggregation.png" alt="" />
           </ImgHalf>
         </WrapImg>
+        <Content className="title-banner text-dark text-visi">
+          {/* <Title>forbitspace</Title> */}
+          <Text>Aggregation Protocol</Text>
+          <SubText>
+            <span>forbitspace</span> use an algorithm smart order routing that
+            split a single transaction into multiple orders across various
+            DEX’s, also route orders through allows crypto traders to tap deep
+            liquidity and receive better pricing low cost & efficient the most
+            liquidity.
+          </SubText>
+        </Content>
       </WrapContainer>
     </BoxSection>
   );
@@ -29,9 +29,11 @@ const Banner = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  padding: 4vh 0 0;
+  padding: 8vh 0 0;
+  margin: 0 0 4rem;
   @media (max-width: 770px) {
     padding-top: 60px;
+    margin: 0 0 1rem;
   }
 `;
 const WrapContainer = styled(Container)`
@@ -62,7 +64,7 @@ const Content = styled.div`
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -71,24 +73,27 @@ const Content = styled.div`
     align-items: center;
   }
 `;
-const Title = styled.h2`
-  font-size: 3rem;
-  line-height: 1;
-  font-weight: 700;
-  @media (max-width: 576px) {
-    font-size: 30px;
-    font-weight: 400;
-    letter-spacing: 2px;
+
+const Text = styled.p`
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 1px;
+  @media (max-width: 768px) {
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 25px;
   }
 `;
 const SubText = styled.p`
   font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
-  text-align: right;
-  &.toggle__btn {
+  text-align: left;
+  span {
     font-style: italic;
-    font-weight: 400;
+    font-weight: 900;
   }
   @media (max-width: 768px) {
     font-size: 14px;

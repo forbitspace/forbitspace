@@ -10,18 +10,19 @@ const Liquidity = () => {
           {/* <Title>forbitspace</Title> */}
           <Text>Liquidity Pool</Text>
           <SubText>
-            With <span>forbitspace</span>, the decentralized protocol that
-            empowering traders to provide liquidity to pools and collect extra
-            rewards in FBS tokens for participating in liquidity mining
-            programs.
+            With <span className="space">forbitspace</span>, the decentralized
+            protocol that empowering traders to provide liquidity to pools and
+            collect extra rewards in <span className="fbs">FBS</span> tokens for
+            participating in liquidity mining programs.
           </SubText>
           <SubText>
             A next-generation automated market maker that protects users from
             front-running attacks and offers capital efficiency to liquidity
             providers. Enables you to deposit digital assets into liquidity
-            pools while earning interest in real-time in the form of FBS Tokens.
-            Liquidity providers collect rewards on assets locked in pools and
-            extra yield farming rewards in FBS tokens.
+            pools while earning interest in real-time in the form of{" "}
+            <span className="fbs"> FBS</span> tokens. Liquidity providers
+            collect rewards on assets locked in pools and extra yield farming
+            rewards in <span className="fbs">FBS</span> tokens.
           </SubText>
         </Content>
         <WrapLiquidity>
@@ -105,9 +106,13 @@ const SubText = styled.p`
   font-weight: 300;
   max-width: 600px;
   text-align: left;
-  span {
+  .space {
     font-style: italic;
     font-weight: 900;
+  }
+  .fbs {
+    font-style: normal;
+    font-weight: 500;
   }
   @media (max-width: 768px) {
     font-size: 14px;
