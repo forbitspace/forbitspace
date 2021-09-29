@@ -17,7 +17,7 @@ const Index = () => {
                 {item.contents.map((item, index) => (
                   <li>
                     {!item.disable ? (
-                      <a href={item.link} target="_blank">
+                      <a href={item.link} target={item.outLink ? "_blank" : ""}>
                         {item.content}
                       </a>
                     ) : (

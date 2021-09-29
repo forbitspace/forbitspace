@@ -5,8 +5,6 @@ import styled from "styled-components";
 const Banner = () => {
   return (
     <BoxSection>
-      {/* <WrapContainer>
-      </WrapContainer> */}
       <WrapContainer>
         <WrapImg>
           <ImgHalf>
@@ -108,7 +106,7 @@ const SubText = styled.p`
   }
   @media (max-width: 768px) {
     font-size: 16px;
-    text-align: justify;
+    text-align: center;
   }
   @media (max-width: 576px) {
     font-size: 14px;
