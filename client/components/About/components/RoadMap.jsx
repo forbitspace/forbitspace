@@ -16,7 +16,7 @@ const RoadMap = () => {
         </WrapImg>
       </WrapContainer>
       <WrapContainer>
-        <img src="../images/about-page/go-to-space.png" alt="" />
+        <img src="../images/about-page/spaceship.png" alt="" />
       </WrapContainer>
     </BoxSection>
   );
@@ -25,7 +25,7 @@ const RoadMap = () => {
 const BoxSection = styled.section`
   position: relative;
   /* min-height: 88vh; */
-  padding: 2vh 0 6vh;
+  padding: 2vh 0 1vh;
   @media (max-width: 770px) {
     padding-top: 10px;
     /* min-height: 80vh; */
