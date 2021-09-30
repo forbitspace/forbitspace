@@ -118,7 +118,7 @@ const ListMenu = styled.div`
 
   ul {
     padding-left: 0;
-    width: calc(100% / 7);
+    width: calc(100% / 6);
     // text-align:right;
 
     form {
