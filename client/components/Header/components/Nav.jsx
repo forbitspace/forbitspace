@@ -27,6 +27,7 @@ const Nav = () => {
                       key={index}
                       href={item.link}
                       // target="_blank"
+                      target={item.outLink ? "_blank" : ""}
                       className="text-dark text-visi"
                       // id={item.disable ? "disable" : ""}
                     >

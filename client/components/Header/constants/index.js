@@ -223,16 +223,7 @@ export const navContent = [
     nav: "API",
     disable: true,
     link: "/API",
-    contents: [
-      // {
-      //   link: "",
-      //   content: "Term of Use",
-      // },
-      // {
-      //   link: "",
-      //   content: "Privacy Policy",
-      // },
-    ],
+    contents: [],
   },
   {
     nav: "More",
@@ -242,12 +233,14 @@ export const navContent = [
         content: "About",
       },
       {
-        link: "",
+        link: "https://blog.forbitspace.com/",
         content: "Blog",
+        outLink: true,
       },
       {
-        link: "",
+        link: "https://help.forbitspace.com/",
         content: "Help Center",
+        outLink: true,
       },
     ],
   },
