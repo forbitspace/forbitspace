@@ -30,7 +30,7 @@ const Banner = () => {
 const BoxSection = styled.section`
   position: relative;
   padding: 8vh 0 0;
-  margin: 0 0 4rem;
+  margin: 0 0 2rem;
   @media (max-width: 770px) {
     padding-top: 60px;
     margin: 0 0 1rem;
@@ -60,7 +60,7 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  width: 70%;
+  /* width: 70%; */
   text-align: center;
   display: flex;
   flex-direction: column;

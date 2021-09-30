@@ -9,13 +9,13 @@ const Finder = () => {
         <Content className="title-banner text-dark text-visi">
           {/* <Title>forbitspace</Title> */}
           {/* <Text>How it works</Text> */}
-          {/* <WrapText>
-            <SubText>
-              The <span>forbitspace</span> is an aggregator protocol that allows
-              traders to benefit from a large variety of financial tools in a
-              single interface.
-            </SubText>
-          </WrapText> */}
+          <SubText>
+            <span>forbitspace</span> use an algorithm smart order routing that
+            split a single transaction into multiple orders across various
+            DEX’s, also route orders through allows crypto traders to tap deep
+            liquidity and receive better pricing low cost & efficient the most
+            liquidity
+          </SubText>
         </Content>
         <WrapImg>
           <ImgHalf>
@@ -29,27 +29,30 @@ const Finder = () => {
 
 const BoxSection = styled.section`
   position: relative;
-  margin: 10rem 0; //temporary margin
-  padding: 2vh 0 0;
+  margin: 0rem 0 3rem; //temporary margin
+  padding: 10vh 0 5rem;
+  @media (max-width: 1440px) {
+    padding: 3rem 0 1rem;
+  }
   @media (max-width: 770px) {
-    padding-top: 60px;
+    padding: 20px 0 0;
     /* min-height: 80vh; */
   }
 `;
 const WrapContainer = styled(Container)`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  flex-direction: column;
   gap: 20px;
   /* @media (min-width: 1650px) {
     max-width: 80%;
   } */
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 `;
 const WrapImg = styled.div`
-  width: 50%;
+  width: 65%;
   /* transform: rotate(-5deg); */
   @media (max-width: 768px) {
     width: 80%;
@@ -58,14 +61,21 @@ const WrapImg = styled.div`
 const ImgHalf = styled.div`
   width: 100%;
   text-align: left;
+  transform: scale(1.5) translate(-6rem);
   img {
     width: 100%;
     height: auto;
   }
+  @media (max-width: 1440px) {
+    transform: scale(1) translate(-8rem);
+  }
+  @media (max-width: 768px) {
+    transform: scale(1);
+  }
 `;
 const Content = styled.div`
   /* margin-left: 80px; */
-  width: 70%;
+  width: 50%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -82,10 +92,14 @@ const SubText = styled.p`
   font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
-  text-align: right;
+  text-align: left;
   &.toggle__btn {
     font-style: italic;
     font-weight: 400;
+  }
+  span {
+    font-style: italic;
+    font-weight: 900;
   }
   @media (max-width: 768px) {
     font-size: 14px;

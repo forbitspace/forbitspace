@@ -125,34 +125,24 @@ export const navContent = [
     ],
   },
   {
-    nav: "API",
-    disable: true,
-    link: "/API",
-    contents: [
-      // {
-      //   link: "",
-      //   content: "Term of Use",
-      // },
-      // {
-      //   link: "",
-      //   content: "Privacy Policy",
-      // },
-    ],
-  },
-  {
-    nav: "More",
+    nav: "Support",
+    // disable: true,
+    link: "",
     contents: [
       {
-        link: "/about",
-        content: "About",
-      },
-      {
-        link: "",
-        content: "Blog",
-      },
-      {
-        link: "",
+        link: "https://help.forbitspace.com/",
         content: "Help Center",
+        outLink: true,
+      },
+      {
+        link: "../images/pdf/terms-of-service.pdf",
+        content: "Term of Service",
+        outLink: true,
+      },
+      {
+        link: "../images/pdf/privacy-policy.pdf",
+        content: "Privacy Policy",
+        outLink: true,
       },
     ],
   },

@@ -8,20 +8,22 @@ const HowItWorks = () => {
       <WrapContainer>
         <Content className="title-banner text-dark text-visi">
           {/* <Title>forbitspace</Title> */}
-          <Text>How it works</Text>
-          {/* <WrapText>
-            <SubText>
-              The <span>forbitspace</span> is an aggregator protocol that allows
-              traders to benefit from a large variety of financial tools in a
-              single interface.
-            </SubText>
-          </WrapText> */}
+          <Text>How Do DEX Aggregators Work</Text>
         </Content>
         <WrapImg>
           <ImgHalf>
             <img src="../images/home-page/howitwork.png" alt="" />
           </ImgHalf>
         </WrapImg>
+        <Content>
+          <SubText>
+            <span>forbitspace</span>'s aggregators source liquidity from
+            different DEXs and thus offer users better token swap rates than
+            they could get on any single DEX. DEX aggregators have the ability
+            to optimize slippage, swap fees and token prices which, when done
+            right, offer a better rate for users.
+          </SubText>
+        </Content>
       </WrapContainer>
     </BoxSection>
   );
@@ -30,7 +32,7 @@ const HowItWorks = () => {
 const BoxSection = styled.section`
   position: relative;
   /* min-height: 88vh; */
-  padding: 6vh 0 0;
+  padding: 0vh 0 0;
   @media (max-width: 770px) {
     padding-top: 40px;
     /* min-height: 80vh; */
@@ -65,11 +67,11 @@ const ImgHalf = styled.div`
 `;
 const Content = styled.div`
   /* margin-left: 80px; */
-  width: 70%;
+  /* width: 70%; */
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -95,10 +97,14 @@ const SubText = styled.p`
   font-size: 22px;
   font-weight: 300;
   font-family: sans-serif;
-  text-align: right;
+  text-align: left;
   &.toggle__btn {
     font-style: italic;
     font-weight: 400;
+  }
+  span {
+    font-style: italic;
+    font-weight: 900;
   }
   @media (max-width: 768px) {
     font-size: 14px;

@@ -7,7 +7,7 @@ const RoadMap = () => {
     <BoxSection>
       <WrapContainer>
         <Content className="title-banner text-dark text-visi">
-          <Title>Road map</Title>
+          <Text>Road map</Text>
         </Content>
         <WrapImg>
           <ImgHalf>
@@ -16,7 +16,7 @@ const RoadMap = () => {
         </WrapImg>
       </WrapContainer>
       <WrapContainer>
-        <img src="../images/about-page/go-to-space.png" alt="" />
+        <img src="../images/about-page/spaceship.png" alt="" />
       </WrapContainer>
     </BoxSection>
   );
@@ -25,7 +25,7 @@ const RoadMap = () => {
 const BoxSection = styled.section`
   position: relative;
   /* min-height: 88vh; */
-  padding: 2vh 0 6vh;
+  padding: 2vh 0 1vh;
   @media (max-width: 770px) {
     padding-top: 10px;
     /* min-height: 80vh; */
@@ -70,13 +70,16 @@ const Content = styled.div`
     align-items: center;
   }
 `;
-const Title = styled.h2`
-  font-size: 55px;
-  line-height: 1;
+const Text = styled.p`
+  font-size: 2rem;
   font-weight: 500;
-  @media (max-width: 576px) {
-    font-size: 30px;
-    letter-spacing: 2px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  @media (max-width: 768px) {
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 25px;
   }
 `;
 export default RoadMap;
