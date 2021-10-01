@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"42":"aea4c0ac208a373bd032"}[chunkId] + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"40":"8bd44a9cfb1fe7e88585"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -148,6 +148,13 @@ module.exports = require("styled-components");
 
 /***/ }),
 
+/***/ "Osoz":
+/***/ (function(module, exports) {
+
+module.exports = require("next/dist/next-server/lib/router-context.js");
+
+/***/ }),
+
 /***/ "RAOx":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -160,7 +167,7 @@ __webpack_require__.r(__webpack_exports__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Liquidity = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 42).then(__webpack_require__.bind(null, "2sDF")), {
+const Liquidity = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 40).then(__webpack_require__.bind(null, "2sDF")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("2sDF")],
@@ -173,6 +180,13 @@ const LiquidityPage = () => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (LiquidityPage);
+
+/***/ }),
+
+/***/ "UhrY":
+/***/ (function(module, exports) {
+
+module.exports = require("next/dist/next-server/lib/router/utils/get-asset-path-from-route.js");
 
 /***/ }),
 

@@ -26,6 +26,7 @@ export const DataSocialLinkFooter = [
 ];
 export const navContent = [
   {
+    link: "",
     nav: "Space Trade",
     contents: [
       {
@@ -47,10 +48,11 @@ export const navContent = [
     ],
   },
   {
+    link: "",
     nav: "Governance",
     contents: [
       {
-        // link: "../images/pdf/fbs-token-1.pdf",
+        link: "/token", //../images/pdf/fbs-token-1.pdf
         content: "FBS Token",
         outLink: true,
         disable: true,
@@ -77,6 +79,7 @@ export const navContent = [
     ],
   },
   {
+    link: "",
     nav: "Developers",
     contents: [
       {

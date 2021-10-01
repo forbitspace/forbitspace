@@ -121,6 +121,7 @@ export const supportedLanguge = [
 
 export const navContent = [
   {
+    link: "",
     nav: "Space Trade",
     contents: [
       {
@@ -142,6 +143,7 @@ export const navContent = [
     ],
   },
   {
+    link: "",
     nav: "Governance",
     contents: [
       {
@@ -171,6 +173,7 @@ export const navContent = [
     ],
   },
   {
+    link: "",
     nav: "Developers",
     contents: [
       {
@@ -227,6 +230,7 @@ export const navContent = [
     contents: [],
   },
   {
+    link: "",
     nav: "More",
     contents: [
       {

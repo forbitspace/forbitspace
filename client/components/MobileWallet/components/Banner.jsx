@@ -16,9 +16,11 @@ const Banner = () => {
           <SubText>
             {" "}
             Mobile wallets are apps on your iOS or Android phone, convenient
-            because they are always with you. Usually, the private key is
-            generated and stored on your device with backup and recovery
-            options, depending on the app.
+            because they are always with you.
+            <br />
+            <br />
+            Usually, the private key is generated and stored on your device with
+            backup and recovery options, depending on the app.
           </SubText>
         </Content>
       </WrapContainer>
@@ -47,12 +49,12 @@ const WrapContainer = styled(Container)`
   }
 `;
 const WrapImg = styled.div`
-  width: 50%;
+  width: 35%;
   @media (min-width: 1441px) {
     width: 30%;
   }
   @media (max-width: 768px) {
-    width: 60%;
+    width: 40%;
   }
 `;
 const ImgHalf = styled.div`
