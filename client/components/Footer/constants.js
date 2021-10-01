@@ -87,7 +87,7 @@ export const navContent = [
         content: "Documentation",
       },
       {
-        link: "../images/pdf/white-paper.pdf",
+        link: "../white-paper.pdf",
         content: "Whitepaper",
         outLink: true,
       },
@@ -140,12 +140,12 @@ export const navContent = [
         outLink: true,
       },
       {
-        link: "../images/pdf/terms-of-service.pdf",
+        link: "../documents/terms-of-service.pdf",
         content: "Term of Service",
         outLink: true,
       },
       {
-        link: "../images/pdf/privacy-policy.pdf",
+        link: "../documents/privacy-policy.pdf",
         content: "Privacy Policy",
         outLink: true,
       },
