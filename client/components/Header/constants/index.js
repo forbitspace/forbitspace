@@ -181,7 +181,7 @@ export const navContent = [
         content: "Documentation",
       },
       {
-        link: "../images/pdf/white-paper.pdf",
+        link: "../white-paper.pdf",
         content: "Whitepaper",
         outLink: true,
       },
