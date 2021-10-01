@@ -90,7 +90,7 @@ const Nav = styled.div`
       margin-top: 5px;
       a {
         text-decoration: none;
-        color: #182239;
+        color: #ffffff;
       }
     }
   }
