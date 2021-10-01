@@ -31,20 +31,26 @@ const MenuMobile = () => {
             </li>
             {navContent.map((item, index) => (
               <li className="title">
-                <a
+                <Link
                   href={item.link}
                   className="text"
                   onClick={item.link ? toggle : null}
                 >
                   {item.nav}
-                </a>
+                </Link>
                 <img src="../images/light-icon/chevron.svg" alt="" />
                 <ul className="submenu">
                   {item.contents.map((item, index) => (
                     <li id={item.disable ? "disable" : ""} onClick={toggle}>
-                      <Link href={item.link}>
-                        <a className="text">{item.content}</a>
-                      </Link>
+                      {!item.outLink ? (
+                        <Link href={item.link}>
+                          <a className="text">{item.content}</a>
+                        </Link>
+                      ) : (
+                        <a href={item.link} target="_blank">
+                          <span className="text">{item.content}</span>
+                        </a>
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -84,7 +90,7 @@ const Nav = styled.div`
       margin-top: 5px;
       a {
         text-decoration: none;
-        color: #182239;
+        color: #ffffff;
       }
     }
   }

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import Link from "next/link";
 import { Container } from "reactstrap";
 
 import { DataSocialLinkFooter, navContent } from "./constants";
@@ -13,13 +13,24 @@ const Index = () => {
           <ListMenu>
             {navContent.map((item, index) => (
               <ul className="text-visi">
-                <TitleFooter>{item.nav}</TitleFooter>
+                <TitleFooter>
+                  {" "}
+                  {item.link ? (
+                    <Link href={item.link}>{item.nav}</Link>
+                  ) : (
+                    item.nav
+                  )}{" "}
+                </TitleFooter>
                 {item.contents.map((item, index) => (
                   <li>
                     {!item.disable ? (
-                      <a href={item.link} target={item.outLink ? "_blank" : ""}>
-                        {item.content}
-                      </a>
+                      item.outLink ? (
+                        <a href={item.link} target="_blank">
+                          {item.content}
+                        </a>
+                      ) : (
+                        <Link href={item.link}>{item.content}</Link>
+                      )
                     ) : (
                       <Blank href="/">{item.content}</Blank>
                     )}
@@ -28,9 +39,9 @@ const Index = () => {
               </ul>
             ))}
             <ul className="text-visi">
-              <TitleFooter size="16px">
+              <SubTitleFooter>
                 Subscribe to our newsletter for updates
-              </TitleFooter>
+              </SubTitleFooter>
               <form action="">
                 <WrapperInput>
                   <Input
@@ -78,13 +89,6 @@ const BackgroundFooter = styled.div`
   z-index: -1;
 `;
 
-const Link = styled.a`
-  margin-right: 10px;
-  :hover {
-    cursor: pointer;
-  }
-`;
-
 const Icon = styled.img`
   max-width: 20px;
   width: 100%;
@@ -94,7 +98,12 @@ const Icon = styled.img`
   }
 `;
 
-const SocialLink = styled.div``;
+const SocialLink = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+`;
 
 const FooterMenu = styled.section`
   position: relative;
@@ -164,6 +173,7 @@ const ListMenu = styled.div`
       font-size: 12px;
       font-weight: 300;
       font-family: sans-serif;
+      margin-bottom: 4px;
       a {
         text-decoration: none;
         color: #4e4f50;
@@ -206,12 +216,22 @@ const ListMenu = styled.div`
 const Blank = styled.div`
   font-size: 12px;
 `;
-const TitleFooter = styled.h3`
-  font-size: 16px;
-  font-size: ${(props) => props.size};
+const TitleFooter = styled.div`
   margin-bottom: 10px;
-  color: #182239;
-  font-weight: bold;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  a {
+    text-decoration: none;
+  }
+`;
+const SubTitleFooter = styled.div`
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 100;
 `;
 
 const Copyright = styled.p`
