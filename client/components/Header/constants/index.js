@@ -181,13 +181,14 @@ export const navContent = [
         content: "Documentation",
       },
       {
-        link: "../white-paper.pdf",
+        link: "../forbitspace-whitepaper.pdf",
         content: "Whitepaper",
         outLink: true,
       },
       {
-        link: "",
+        link: "https://github.com/forbitspace",
         content: "Github",
+        outLink: true,
       },
       {
         link: "",
