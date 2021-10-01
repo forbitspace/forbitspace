@@ -145,8 +145,9 @@ export const navContent = [
     nav: "Governance",
     contents: [
       {
-        link: "/token",
+        link: "/token", //../images/pdf/fbs-token-1.pdf
         content: "FBS Token",
+        // outLink: true,
       },
       {
         link: "/dao",
@@ -177,9 +178,9 @@ export const navContent = [
         content: "Documentation",
       },
       {
-        link: "",
+        link: "../images/pdf/white-paper.pdf",
         content: "Whitepaper",
-        disable: true,
+        outLink: true,
       },
       {
         link: "",
