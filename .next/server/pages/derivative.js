@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"40":"f3968447990b8c6e5923"}[chunkId] + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"38":"9830c5adb6f11ec8dee9"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -148,6 +148,13 @@ module.exports = require("styled-components");
 
 /***/ }),
 
+/***/ "Osoz":
+/***/ (function(module, exports) {
+
+module.exports = require("next/dist/next-server/lib/router-context.js");
+
+/***/ }),
+
 /***/ "T+v0":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -160,7 +167,7 @@ __webpack_require__.r(__webpack_exports__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Derivative = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 40).then(__webpack_require__.bind(null, "IhfZ")), {
+const Derivative = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 38).then(__webpack_require__.bind(null, "IhfZ")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("IhfZ")],
@@ -173,6 +180,13 @@ const DerivativePage = () => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (DerivativePage);
+
+/***/ }),
+
+/***/ "UhrY":
+/***/ (function(module, exports) {
+
+module.exports = require("next/dist/next-server/lib/router/utils/get-asset-path-from-route.js");
 
 /***/ }),
 

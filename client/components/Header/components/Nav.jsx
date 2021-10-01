@@ -1,5 +1,5 @@
 import React from "react";
-// import Link from "next/link";
+import Link from "next/link";
 import { navContent } from "../constants/index";
 import styled from "styled-components";
 
@@ -17,22 +17,34 @@ const Nav = () => {
           </li>*/}
           {navContent.map((item, index) => (
             <li>
-              <a href={item.link} className="text-dark text-visi">
-                {item.nav}
-              </a>
+              {item.link ? (
+                <Link href={item.link} className="text-dark text-visi">
+                  {item.nav}
+                </Link>
+              ) : (
+                item.nav
+              )}
               <DropdownMenu className="dropdown-content">
                 {item.contents.map((item, index) =>
                   !item.disable ? (
-                    <a
-                      key={index}
-                      href={item.link}
-                      // target="_blank"
-                      target={item.outLink ? "_blank" : ""}
-                      className="text-dark text-visi"
-                      // id={item.disable ? "disable" : ""}
-                    >
-                      {item.content}
-                    </a>
+                    item.outLink ? (
+                      <a
+                        key={index}
+                        href={item.link}
+                        target="_blank"
+                        className="text-dark text-visi"
+                      >
+                        {item.content}
+                      </a>
+                    ) : (
+                      <Link
+                        key={index}
+                        href={item.link}
+                        className="text-dark text-visi"
+                      >
+                        {item.content}
+                      </Link>
+                    )
                   ) : (
                     <DisableLink
                       key={index}
