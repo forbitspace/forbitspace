@@ -118,7 +118,7 @@ const ListMenu = styled.div`
 
   ul {
     padding-left: 0;
-    width: calc(100% / 7);
+    width: calc(100% / 6);
     // text-align:right;
 
     form {
@@ -163,6 +163,7 @@ const ListMenu = styled.div`
     li {
       font-size: 12px;
       font-weight: 300;
+      font-family: sans-serif;
       a {
         text-decoration: none;
         color: #4e4f50;
@@ -174,7 +175,7 @@ const ListMenu = styled.div`
     }
 
     @media (max-width: 1024px) {
-      width: calc(100% / 6);
+      width: calc(100% / 5);
       margin-right: 0;
       text-align: left;
       form {
@@ -186,7 +187,7 @@ const ListMenu = styled.div`
       }
     }
     @media (max-width: 768px) {
-      width: calc(100% / 6);
+      /* width: calc(100% / 6); */
       margin-right: 0;
       text-align: left;
       form {
