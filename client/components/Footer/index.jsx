@@ -98,7 +98,12 @@ const Icon = styled.img`
   }
 `;
 
-const SocialLink = styled.div``;
+const SocialLink = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+`;
 
 const FooterMenu = styled.section`
   position: relative;
