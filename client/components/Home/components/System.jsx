@@ -8,9 +8,9 @@ const System = () => {
         <div className="img-content">
           {data.map((item) => (
             <div className="img-holder">
-              <a href="/#">
-                <img src={`./images/logo-contributor/${item.img}.svg`} alt="" />
-              </a>
+              {/* <a href="/#"> */}
+              <img src={`./images/logo-contributor/${item.img}.svg`} alt="" />
+              {/* </a> */}
             </div>
           ))}
         </div>

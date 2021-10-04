@@ -7,7 +7,7 @@ export default class extends Document {
   }
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <link rel="shortcut icon" href="images/logo-space.png" />
           <link rel="stylesheet" href="/js/WOW-master/animate.css" />

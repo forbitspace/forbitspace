@@ -43,7 +43,10 @@ const Index = () => {
         <FBTCToken />
         <Ecosystem />
         <Community /> */}
-        <BackgroundImg src="./images/background-line-min.png"></BackgroundImg>
+        <BackgroundImg
+          src="./images/background-line-min.png"
+          alt=""
+        ></BackgroundImg>
         <Footer />
       </WrapperBackground>
     </React.Fragment>
