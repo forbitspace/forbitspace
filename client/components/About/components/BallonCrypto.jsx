@@ -12,26 +12,26 @@ const BallonCrypto = () => {
             “We believe that crypto is just getting started. We have an
             optimistic view of the future and believe in crypto’s potential and
             the use of the blockchain as the main underlying technology.
+            <br />
+            <br />
+            To succeed in this nascent and accelerating space requires active
+            management and deep, multi-disciplinary knowledge across financial
+            markets, economics, early-stage investing, community building, and
+            technology — all qualities that we believe the team always positive
+            energy continuous learning.
           </SubText>
         </WrapText>
       </WrapContainer>
       <WrapContainer>
         <Content className="title-banner text-dark text-visi">
           <SubText className="w-90">
-            To succeed in this nascent and accelerating space requires active
-            management and deep, multi-disciplinary knowledge across financial
-            markets, economics, early-stage investing, community building, and
-            technology — all qualities that we believe the team always positive
-            energy continuous learning.
-            <br />
-            <br />
             We are determined to co-create solutions and improve scaling
             solutions to enable the system to expand. A scaling solution is a
             method of enable a system to expand.
           </SubText>
           <Text>Core Value</Text>
 
-          <SubText>
+          <SubText className="w-98">
             We build and leverage technology to decode market dynamics.
             <br />
             <br />
