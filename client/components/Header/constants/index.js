@@ -191,11 +191,11 @@ export const navContent = [
         content: "Github",
         outLink: true,
       },
-      {
-        link: "",
-        content: "Audits",
-        disable: true,
-      },
+      // {
+      //   link: "",
+      //   content: "Audits",
+      //   disable: true,
+      // },
       {
         link: "",
         content: "Bug bounty",
