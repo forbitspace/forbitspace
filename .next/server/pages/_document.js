@@ -843,7 +843,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   }
 
   render() {
-    return __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Html"], null, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Head"], null, __jsx("link", {
+    return __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Html"], {
+      lang: "en"
+    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Head"], null, __jsx("link", {
       rel: "shortcut icon",
       href: "images/logo-space.png"
     }), __jsx("link", {

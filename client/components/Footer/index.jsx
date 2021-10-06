@@ -53,7 +53,7 @@ const Index = () => {
                   />
                   {/* <BorderInput /> */}
                 </WrapperInput>
-                <button type="submit">
+                <button type="submit" aria-label="send-email-address">
                   <i className="fa fa-arrow-right"></i>
                 </button>
               </form>

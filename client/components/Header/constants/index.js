@@ -150,26 +150,27 @@ export const navContent = [
         link: "/token", //../images/pdf/fbs-token-1.pdf
         content: "FBS Token",
         // outLink: true,
+        disable: true,
       },
       {
         link: "/dao",
         content: "Space Dao",
       },
-      {
-        link: "",
-        content: "Pools",
-        disable: true,
-      },
-      {
-        link: "",
-        content: "Farming",
-        disable: true,
-      },
-      {
-        link: "",
-        content: "Stacking",
-        disable: true,
-      },
+      // {
+      //   link: "",
+      //   content: "Pools",
+      //   disable: true,
+      // },
+      // {
+      //   link: "",
+      //   content: "Farming",
+      //   disable: true,
+      // },
+      // {
+      //   link: "",
+      //   content: "Stacking",
+      //   disable: true,
+      // },
     ],
   },
   {
@@ -190,11 +191,11 @@ export const navContent = [
         content: "Github",
         outLink: true,
       },
-      {
-        link: "",
-        content: "Audits",
-        disable: true,
-      },
+      // {
+      //   link: "",
+      //   content: "Audits",
+      //   disable: true,
+      // },
       {
         link: "",
         content: "Bug bounty",
@@ -237,6 +238,11 @@ export const navContent = [
       {
         link: "/about",
         content: "About",
+      },
+      {
+        link: "",
+        content: "Core Contributors",
+        disabled: true,
       },
       {
         link: "https://blog.forbitspace.com/",
