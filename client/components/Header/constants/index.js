@@ -240,8 +240,8 @@ export const navContent = [
         content: "About",
       },
       {
-        link: "",
-        content: "Core Contributors",
+        link: "/contributors",
+        content: "Contributors",
         disabled: true,
       },
       {

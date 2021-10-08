@@ -15,9 +15,9 @@ const RoadMap = () => {
           </ImgHalf>
         </WrapImg>
       </WrapContainer>
-      <WrapContainer>
+      {/* <WrapContainer>
         <img src="../images/about-page/spaceship.png" alt="" />
-      </WrapContainer>
+      </WrapContainer> */}
     </BoxSection>
   );
 };
