@@ -38,7 +38,7 @@ const BoxSection = styled.section`
   /* min-height: 88vh; */
   padding: 10vh 0 0;
   @media (max-width: 770px) {
-    padding-top: 140px;
+    padding-top: 60px;
   }
   @media (max-width: 576px) {
     padding-top: 80px;

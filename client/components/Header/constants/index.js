@@ -240,9 +240,9 @@ export const navContent = [
         content: "About",
       },
       {
-        link: "",
-        content: "Core Contributors",
-        disabled: true,
+        link: "", ///contributors
+        content: "Contributors",
+        // disabled: true,
       },
       {
         link: "https://blog.forbitspace.com/",

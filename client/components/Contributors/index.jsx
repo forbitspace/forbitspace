@@ -1,23 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 
-// import Footer from "./components/Footer";
+import FooterContributor from "./components/Footer";
 import Banner from "./components/Banner";
-import Numricals from "./components/Numricals";
 import Members from "./components/Members";
-import { AuditorData, MemberData } from "./constants";
-
-// import {}
+import Footer from "../Footer";
+import { MemberData } from "./constants";
+// import Numricals from "./components/Numricals";
 
 const Index = () => {
   return (
     <WrapperBackground>
       <Container className="container">
         <Banner />
-        <Numricals />
+        {/* <Numricals /> */}
         <Members title={"Active core contributors"} data={MemberData} />
-        <Members title={"Auditors"} data={AuditorData} />
-        {/* <Footer /> */}
+        {/* <Members title={"Auditors"} data={AuditorData} /> */}
+        <FooterContributor />
+        <Footer />
       </Container>
       <BackgroundImg src="./images/background-line-min.png"></BackgroundImg>
     </WrapperBackground>

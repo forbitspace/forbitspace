@@ -66,7 +66,7 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  margin-left: 80px;
+  margin-left: 55px;
   width: 50%;
   text-align: right;
   max-width: 600px;
