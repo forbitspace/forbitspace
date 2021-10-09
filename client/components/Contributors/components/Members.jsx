@@ -3,7 +3,7 @@ import styled from "styled-components";
 // import { MemberData } from "../constants";
 
 const Members = (props) => {
-  const RenderMemberItem = ({ thumb, name, job, lang }) => {
+  const RenderMemberItem = ({ thumb, name, job, lang, linked, twitter }) => {
     return (
       <StyledMemberItem>
         <WrapperIfo>
@@ -12,9 +12,12 @@ const Members = (props) => {
             <p>{job}</p>
             <p>{lang}</p>
             <Social>
-              <i className="fab fa-twitter"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-facebook-f"></i>
+              <a href={twitter} target="_blank">
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a href={linked} target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
             </Social>
           </FlexItem>
           <Thumb>
@@ -22,7 +25,7 @@ const Members = (props) => {
           </Thumb>
         </WrapperIfo>
         <Background>
-          <img src="./images/orbit-background-1.svg" alt="" />
+          <img src="../images/contributor-page/orbit-background.svg" alt="" />
         </Background>
       </StyledMemberItem>
     );
@@ -39,6 +42,8 @@ const Members = (props) => {
               name={item.name}
               job={item.job}
               lang={item.lang}
+              linked={item.linked}
+              twitter={item.twitter}
             />
           );
         })}
@@ -49,6 +54,12 @@ const Members = (props) => {
 
 const Social = styled.div`
   display: flex;
+  a {
+    color: #fff;
+    :hover {
+      color: #0168ff;
+    }
+  }
   i {
     margin-right: 5px;
   }
@@ -63,6 +74,7 @@ const Background = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: -1;
 `;
 
 const WrapperMembers = styled.div`
@@ -70,9 +82,9 @@ const WrapperMembers = styled.div`
 `;
 
 const Title = styled.p`
-  font-size: 3rem;
+  font-size: 2rem;
   @media (max-width: 576px) {
-    font-size: 1.2rem;
+    font-size: 26px;
   }
 `;
 
@@ -81,18 +93,23 @@ const GroupMembers = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @media (min-width: 1075px){
+  @media (min-width: 1075px) {
     justify-content: flex-start;
   }
 `;
 const StyledMemberItem = styled.div`
   position: relative;
-  width: 350px;
+  max-width: 350px;
+  width: 30%;
   height: 350px;
   margin: 0 auto;
 
-  @media (min-width: 1075px){
-    margin: 0 calc((100% - 1050px)/6);
+  @media (min-width: 1200px) {
+    margin: 0 calc((100% - 1050px) / 6);
+  }
+  @media (max-width: 768px) {
+    width: 300px;
+    height: 300px;
   }
 `;
 
@@ -119,8 +136,8 @@ const Thumb = styled.div`
   width: 100px;
   height: 100px;
   position: absolute;
-  right: 6px;
-  top: 4px;
+  right: 2px;
+  top: -15px;
 `;
 
 export default Members;

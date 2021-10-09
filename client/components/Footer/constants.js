@@ -8,7 +8,7 @@ export const DataSocialLinkFooter = [
     url: "./images/icon-social-footer/2.svg",
   },
   {
-    link: "https://discord.gg/8tBuBPeZ",
+    link: "https://discord.com/invite/RzgqsXaPpK",
     url: "./images/icon-social-footer/3.svg",
   },
   {
@@ -61,21 +61,21 @@ export const navContent = [
         link: "/dao",
         content: "Space Dao",
       },
-      {
-        link: "",
-        content: "Pools",
-        disable: true,
-      },
-      {
-        link: "",
-        content: "Farming",
-        disable: true,
-      },
-      {
-        link: "",
-        content: "Stacking",
-        disable: true,
-      },
+      // {
+      //   link: "",
+      //   content: "Pools",
+      //   disable: true,
+      // },
+      // {
+      //   link: "",
+      //   content: "Farming",
+      //   disable: true,
+      // },
+      // {
+      //   link: "",
+      //   content: "Stacking",
+      //   disable: true,
+      // },
     ],
   },
   {
@@ -96,11 +96,11 @@ export const navContent = [
         content: "Github",
         outLink: true,
       },
-      {
-        link: "",
-        content: "Audits",
-        disable: true,
-      },
+      // {
+      //   link: "",
+      //   content: "Audits",
+      //   disable: true,
+      // },
       {
         link: "",
         content: "Bug bounty",

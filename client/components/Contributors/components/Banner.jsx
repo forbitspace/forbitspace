@@ -6,7 +6,7 @@ const Banner = () => {
     <WrapperBanner>
       <BackgroundBanner>
         <img
-          src="./images/orbit-contributors-min.png"
+          src="../images/contributor-page/spaceship.png"
           alt="orbit contributors"
         />
       </BackgroundBanner>
@@ -15,10 +15,6 @@ const Banner = () => {
         <Text>
           Efficiency in decentralized <br /> finance is just forbitswap away
         </Text>
-        <SubText>
-          forbitswap offers the most innovative solutions in de DeFi space,
-          focusing <br /> primarily on security, speed and efficiency.
-        </SubText>
       </Content>
     </WrapperBanner>
   );
@@ -29,14 +25,13 @@ const WrapperBanner = styled.div`
   position: relative;
   display: flex;
   align-items: center;
+  flex-direction: column;
   @media (max-width: 576px) {
     text-align: left;
   }
 `;
 const BackgroundBanner = styled.div`
   position: relative;
-  z-index: -1;
-  max-width: 750px;
   img {
     width: 100%;
   }
@@ -44,33 +39,27 @@ const BackgroundBanner = styled.div`
   bottom: 0;
   left: 0;
   margin: auto 0;
-  @media (max-width: 576px) {
-    position: absolute;
-    opacity: 0.5;
-    max-width: 350px;
-    right: 0;
-    margin: auto;
-  }
 `;
 const Content = styled.div`
-  margin-left: -100px;
   @media (max-width: 576px) {
     margin-left: 0;
     margin-top: 40px;
   }
 `;
 const Title = styled.h2`
-  font-size: 6rem;
+  font-size: 4rem;
+  text-align: center;
   @media (max-width: 576px) {
-    font-size: 45px;
+    font-size: 30px;
     letter-spacing: 2px;
   }
 `;
 const Text = styled.p`
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: 40px;
   letter-spacing: 1px;
+  text-align: center;
   @media (max-width: 576px) {
     font-size: 20px;
     letter-spacing: 1px;
@@ -78,12 +67,4 @@ const Text = styled.p`
     line-height: 25px;
   }
 `;
-const SubText = styled.p`
-  font-size: 22px;
-  font-weight: 300;
-  @media (max-width: 576px) {
-    font-size: 14px;
-  }
-`;
-
 export default Banner;

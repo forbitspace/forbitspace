@@ -40,7 +40,7 @@ const BoxSection = styled.section`
   position: relative;
   padding: 15vh 0 0;
   @media (max-width: 770px) {
-    padding-top: 140px;
+    padding-top: 60px;
   }
   @media (max-width: 576px) {
     padding-top: 80px;
@@ -59,7 +59,7 @@ const WrapImg = styled.div`
   width: 40%;
   max-width: 450px;
   @media (max-width: 768px) {
-    width: 60%;
+    width: 50%;
   }
 `;
 const ImgHalf = styled.div`

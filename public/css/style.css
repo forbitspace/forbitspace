@@ -418,7 +418,7 @@ body.dark-mode .header-fixed {
   position: relative;
   margin: 0 15px;
 }
-.main-menu .main-menu-nav > li > a::after {
+.main-menu .main-menu-nav > li::after {
   content: "";
   display: block;
   position: absolute;
@@ -428,7 +428,7 @@ body.dark-mode .header-fixed {
   border-bottom: 2px solid #ffffff;
   transition: all 0.4s;
 }
-.main-menu .main-menu-nav li:hover a::after {
+.main-menu .main-menu-nav li:hover::after {
   left: 0;
   right: 0;
 }

@@ -61,9 +61,9 @@ const Index = () => {
               <SocialLink>
                 {DataSocialLinkFooter.map((item, index) => {
                   return (
-                    <Link href={item.link} target="_blank" key={index}>
+                    <a href={item.link} target="_blank" key={index}>
                       <Icon src={item.url} alt="icon social media"></Icon>
-                    </Link>
+                    </a>
                   );
                 })}
               </SocialLink>
@@ -209,6 +209,9 @@ const ListMenu = styled.div`
       }
     }
     @media (max-width: 576px) {
+      width: 32%;
+    }
+    @media (max-width: 320px) {
       width: 50%;
     }
   }

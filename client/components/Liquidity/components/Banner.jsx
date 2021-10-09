@@ -107,7 +107,7 @@ const Text = styled.p`
   }
 `;
 const SubText = styled.div`
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 200;
   font-family: sans-serif;
   text-align: right;
