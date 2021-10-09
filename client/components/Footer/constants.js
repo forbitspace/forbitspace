@@ -8,7 +8,7 @@ export const DataSocialLinkFooter = [
     url: "./images/icon-social-footer/2.svg",
   },
   {
-    link: "https://discord.gg/8tBuBPeZ",
+    link: "https://discord.com/invite/RzgqsXaPpK",
     url: "./images/icon-social-footer/3.svg",
   },
   {
