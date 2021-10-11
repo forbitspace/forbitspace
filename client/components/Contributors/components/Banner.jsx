@@ -11,9 +11,12 @@ const Banner = () => {
         />
       </BackgroundBanner>
       <Content className="title-banner text-dark text-visi">
-        <Title>Contributors</Title>
+        <Title>Financial Orbit Space</Title>
         <Text>
-          Efficiency in decentralized <br /> finance is just forbitswap away
+          We are a team that combines experienced professionals in financial
+          markets, and young, dynamic, open-minded, and strong focused on
+          research in the blockchain and decentralized finance ecosystem that
+          aims to bring DeFi space to the wider community.
         </Text>
       </Content>
     </WrapperBanner>
@@ -41,14 +44,18 @@ const BackgroundBanner = styled.div`
   margin: auto 0;
 `;
 const Content = styled.div`
+  margin-top: 3rem;
   @media (max-width: 576px) {
     margin-left: 0;
     margin-top: 40px;
   }
 `;
 const Title = styled.h2`
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-style: italic;
+  font-weight: 500;
   @media (max-width: 576px) {
     font-size: 30px;
     letter-spacing: 2px;
@@ -58,6 +65,7 @@ const Text = styled.p`
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 40px;
+  font-family: Montserrat, sans-serif;
   letter-spacing: 1px;
   text-align: center;
   @media (max-width: 576px) {

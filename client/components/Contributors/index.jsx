@@ -5,19 +5,22 @@ import FooterContributor from "./components/Footer";
 import Banner from "./components/Banner";
 import Members from "./components/Members";
 import Footer from "../Footer";
-import { MemberData } from "./constants";
-// import Numricals from "./components/Numricals";
+import { MemberData, AdvisorData } from "./constants";
 
 const Index = () => {
   return (
     <WrapperBackground>
       <Container className="container">
         <Banner />
-        {/* <Numricals /> */}
-        <Members title={"Active core contributors"} data={MemberData} />
-        {/* <Members title={"Auditors"} data={AuditorData} /> */}
+        <Members title={"Our Team"} data={MemberData} />
+        <Members
+          title={"Advisors"}
+          data={AdvisorData}
+          isAdvisor={true}
+          gap={"10%"}
+          imgCenter={true}
+        />
         <FooterContributor />
-        <Footer />
       </Container>
       <BackgroundImg src="./images/background-line-min.png"></BackgroundImg>
     </WrapperBackground>
@@ -27,8 +30,8 @@ const Index = () => {
 const WrapperBackground = styled.section`
   position: relative;
   overflow-x: hidden;
-  /* background-image: url(./images/background-line-min.png); */
   background-size: auto;
+  font-family: Montserrat, sans-serif;
 `;
 const Container = styled.div``;
 
@@ -39,7 +42,7 @@ const BackgroundImg = styled.img`
   bottom: 0;
   width: 100%;
   height: calc(100% + 100vh);
-  opacity: 0.6;
+  opacity: 0.3;
   z-index: -1;
   @media (max-width: 576px) {
     position: fixed;

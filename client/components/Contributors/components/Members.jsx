@@ -1,26 +1,38 @@
 import React from "react";
 import styled from "styled-components";
-// import { MemberData } from "../constants";
 
 const Members = (props) => {
-  const RenderMemberItem = ({ thumb, name, job, lang, linked, twitter }) => {
+  const RenderMemberItem = ({
+    thumb,
+    name,
+    job,
+    jobb,
+    lang,
+    linked,
+    twitter,
+  }) => {
     return (
-      <StyledMemberItem>
+      <StyledMemberItem width={props.width}>
         <WrapperIfo>
           <FlexItem>
-            <Name>{name}</Name>
-            <p>{job}</p>
+            <Name isAdvisor={props.isAdvisor}>{name}</Name>
+            <p style={{ marginLeft: "-18px" }}>{job}</p>
+            {jobb ? <p style={{ marginLeft: "-13px" }}>{jobb}</p> : ""}
             <p>{lang}</p>
             <Social>
-              <a href={twitter} target="_blank">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href={linked} target="_blank">
-                <i class="fab fa-linkedin"></i>
-              </a>
+              {twitter ? (
+                <a href={twitter} target="_blank">
+                  <i className="fab fa-twitter"></i>
+                </a>
+              ) : null}
+              {linked ? (
+                <a href={linked} target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              ) : null}
             </Social>
           </FlexItem>
-          <Thumb>
+          <Thumb isAdvisor={props.isAdvisor}>
             <img src={thumb} alt="icon member" />
           </Thumb>
         </WrapperIfo>
@@ -34,13 +46,14 @@ const Members = (props) => {
   return (
     <WrapperMembers>
       <Title>{props.title}</Title>
-      <GroupMembers>
+      <GroupMembers gap={props.gap}>
         {props.data.map((item) => {
           return (
             <RenderMemberItem
               thumb={item.thumb}
               name={item.name}
               job={item.job}
+              jobb={item.jobb}
               lang={item.lang}
               linked={item.linked}
               twitter={item.twitter}
@@ -68,6 +81,11 @@ const Social = styled.div`
 const FlexItem = styled.div`
   margin-top: 50px;
   margin-right: 40px;
+  @media (max-width: 420px) {
+    margin-top: 54px;
+    margin-right: 40px;
+    margin-left: 24px;
+  }
 `;
 
 const Background = styled.div`
@@ -82,7 +100,8 @@ const WrapperMembers = styled.div`
 `;
 
 const Title = styled.p`
-  font-size: 2rem;
+  font-size: 3rem;
+  text-align: center;
   @media (max-width: 576px) {
     font-size: 26px;
   }
@@ -91,16 +110,14 @@ const Title = styled.p`
 const GroupMembers = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-
-  @media (min-width: 1075px) {
-    justify-content: flex-start;
-  }
+  justify-content: center;
+  gap: ${({ gap }) => (gap ? gap : 0)};
 `;
+
 const StyledMemberItem = styled.div`
   position: relative;
-  max-width: 350px;
-  width: 30%;
+  max-width: ${({ width }) => (width ? "500px" : "350px")};
+  width: ${({ width }) => (width ? width : "30%")};
   height: 350px;
   margin: 0 auto;
 
@@ -130,14 +147,35 @@ const WrapperIfo = styled.div`
   display: flex;
 `;
 const Name = styled.h3`
-  font-size: 14px;
+  font-size: ${({ isAdvisor }) => (isAdvisor ? "18px" : "14px")};
+  position: ${({ isAdvisor }) => (isAdvisor ? "absolute" : "")};
+  bottom: 30px;
+  left: -60px;
+  right: 0;
+  margin: ${({ isAdvisor }) => (isAdvisor ? "0 auto" : "0 0 0 -10px")};
+  width: fit-content;
+
+  @media (max-width: 576px) {
+    left: -8px;
+  }
 `;
 const Thumb = styled.div`
-  width: 100px;
-  height: 100px;
+  width: ${({ isAdvisor }) => (isAdvisor ? "130px" : "100px")};
+  height: ${({ isAdvisor }) => (isAdvisor ? "130px" : "100px")};
   position: absolute;
-  right: 2px;
-  top: -15px;
+  right: ${({ isAdvisor }) => (isAdvisor ? 0 : "-11px")};
+  top: ${({ isAdvisor }) => (isAdvisor ? "-50px" : "-16px")};
+  bottom: ${({ isAdvisor }) => (isAdvisor ? 0 : "")};
+  left: ${({ isAdvisor }) => (isAdvisor ? "-55px" : "")};
+  margin: ${({ isAdvisor }) => (isAdvisor ? "auto" : "0")};
+
+  @media (max-width: 576px) {
+    left: ${({ isAdvisor }) => (isAdvisor ? "-13px" : "")};
+    top: ${({ isAdvisor }) => (isAdvisor ? "-50px" : "0")};
+    right: ${({ isAdvisor }) => (isAdvisor ? 0 : "-16px")};
+    width: ${({ isAdvisor }) => (isAdvisor ? "130px" : "80px")};
+    height: ${({ isAdvisor }) => (isAdvisor ? "130px" : "80px")};
+  }
 `;
 
 export default Members;

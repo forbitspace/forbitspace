@@ -1,1 +1,0 @@
-{"ast":null,"code":"export { default } from './ComingSoon';","map":{"version":3,"sources":["/Users/spacefintechbe02/Desktop/document/forbitspace-home/forbitspace/client/components/ComingSoon/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT,QAAwB,cAAxB","sourcesContent":["export { default } from './ComingSoon'"]},"metadata":{},"sourceType":"module"}
