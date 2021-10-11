@@ -241,7 +241,7 @@ export const navContent = [
       },
       {
         link: "", ///contributors
-        content: "Contributors",
+        content: "Our Team",
         // disabled: true,
       },
       {

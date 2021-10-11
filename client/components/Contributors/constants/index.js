@@ -17,110 +17,138 @@ export const NumData = [
   },
 ];
 
+// export const DirectorMemberData = [
+
 export const MemberData = [
+  {
+    name: "Menardo QuiÑosa",
+    thumb: "../images/contributor-page/menardo.png",
+    job: "CO - Founder",
+    jobb: "Head Strategist",
+    linked: "https://www.linkedin.com/in/menardo-quinosa-823498222",
+    twitter: "https://twitter.com/MenardoQuinosa",
+  },
+  {
+    name: "Baroda Hoang",
+    thumb: "../images/contributor-page/baroda.png",
+    job: "CO - Founder",
+    jobb: "Lead Blockchain Engineer & Architect",
+    linked: "https://www.linkedin.com/in/barodahoang/",
+    twitter: "https://twitter.com/barodahoang",
+  },
+  {
+    name: "Stella Vo",
+    thumb: "../images/contributor-page/stella-vo.png",
+    job: "Business Development",
+    linked: "https://www.linkedin.com/in/stella-vo-276627222",
+  },
   {
     name: "Joseph Miller",
     thumb: "../images/contributor-page/miller.png",
-    job: "Project Manager",
-    lang: "En, Vi",
+    job: "Lead Blockchain Engineer",
     linked: "/",
-    twitter: "/",
   },
-  // {
-  //   name: "Brian Kim",
-  //   thumb: "../images/contributor-page/brian.png",
-  //   job: "Software Engineer",
-  //   lang: "En, Vi",
-  //   linked: "/",
-  //   twitter: "/",
-  // },
   {
     name: "Mat Luu",
     thumb: "../images/contributor-page/mat-mind.png",
-    job: "Software Engineer",
-    lang: "En, Vi",
+    job: "Lead Blockchain Engineer",
     linked: "https://www.linkedin.com/in/mat-luu/",
-    twitter: "/",
-  },
-  {
-    name: "Mars III",
-    thumb: "../images/contributor-page/mars-iii.png",
-    job: "Software Engineer",
-    lang: "En, Vi",
-    linked: "https://www.linkedin.com/in/mars-iii-phan/",
-    twitter: "/",
-  },
-  {
-    name: "Peter Tran",
-    thumb: "../images/contributor-page/peter.png",
-    job: "Software Engineer",
-    lang: "En, Vi",
-    linked: "https://www.linkedin.com/in/space-peter-tran/",
-    twitter: "/",
-  },
-  {
-    name: "Richard Nguyen",
-    thumb: "../images/contributor-page/richard.png",
-    job: "Software Engineer",
-    lang: "En, Vi",
-    linked: "https://www.linkedin.com/in/-richard-nguyen",
-    twitter: "https://twitter.com/_richard_nguyen",
   },
   {
     name: "Pantinho Vo",
     thumb: "../images/contributor-page/pantinho.png",
-    job: "Software Engineer",
-    lang: "En, Vi",
+    job: "Lead Blockchain Engineer",
     linked: "https://www.linkedin.com/in/pantinho-vo/",
-    twitter: "/",
+  },
+  {
+    name: "Mars III",
+    thumb: "../images/contributor-page/mars-iii.png",
+    job: "Blockchain Engineer",
+    linked: "https://www.linkedin.com/in/mars-iii-phan/",
+  },
+  {
+    name: "Richard Nguyen",
+    thumb: "../images/contributor-page/richard.png",
+    job: "Blockchain Engineer",
+    linked: "www.linkedin.com/in/richardnguyen25",
+  },
+  {
+    name: "Peter Tran",
+    thumb: "../images/contributor-page/peter.png",
+    job: "Blockchain Engineer",
+    linked: "https://www.linkedin.com/in/space-peter-tran/",
   },
   {
     name: "Jason Ly",
     thumb: "../images/contributor-page/jason.png",
-    job: "Software Engineer",
-    lang: "En, Vi",
+    job: "Software Engineer (FE)",
     linked: "https://www.linkedin.com/in/jasonlyy/",
-    twitter: "https://twitter.com/JasonFallon265",
   },
-  // {
-  //   name: "Escanor",
-  //   thumb: "../images/contributor-page/escanor.png",
-  //   job: "Software Engineer",
-  //   lang: "En, Vi",
-  //   linked: "https://www.linkedin.com/in/nguyenvanhai/",
-  //   twitter: "",
-  // },
-  // {
-  //   name: "Earth05",
-  //   thumb: "../images/contributor-page/avt-new-10.png",
-  //   job: "Software Engineer",
-  //   lang: "En, Vi",
-  //   linked: "/",
-  //   twitter: "/",
-  // },
-  // {
-  //   name: "Steven",
-  //   thumb: "../images/contributor-page/avt-new-06.png",
-  //   job: "Software Engineer",
-  //   lang: "En, Vi",
-  //   linked: "https://www.linkedin.com/in/phuoc-phan-ab3b981ba/",
-  //   twitter: "/",
-  // },
-  // {
-  //   name: "Mr Lee",
-  //   thumb: "../images/contributor-page/lee.png",
-  //   job: "Software Engineer",
-  //   lang: "En, Vi",
-  //   linked: "https://www.linkedin.com/in/mr-lee-930745222/",
-  //   twitter: "/",
-  // },
+  {
+    name: "Mr Lee",
+    thumb: "../images/contributor-page/lee.png",
+    job: "Software Engineer (FE)",
+    linked: "https://www.linkedin.com/in/mr-lee-930745222/",
+  },
   {
     name: "Meliora Lily",
     thumb: "../images/contributor-page/lily.png",
     job: "Designer",
-    lang: "En, Vi",
     linked: "https://www.linkedin.com/in/meliora-lily-103663222/",
-    twitter: "https://twitter.com/Lilydang_20",
+  },
+  {
+    name: "Almira Nhu",
+    thumb: "../images/contributor-page/almira.png",
+    job: "Business Development ",
+    linked: "",
+  },
+  {
+    name: "DiDy Nguyen",
+    thumb: "../images/contributor-page/didy-nguyen.png",
+    job: "R&D",
+    linked: "",
+  },
+  {
+    name: "Ai Co",
+    thumb: "../images/contributor-page/ai-co.png",
+    job: "Marketing Manager",
+    linked: "",
+  },
+  {
+    name: "Rawinda India",
+    thumb: "../images/contributor-page/rawinda.png",
+    job: "Business Development",
+    linked: "",
+  },
+  {
+    name: "Jacka Chanthy",
+    thumb: "../images/contributor-page/jacka.png",
+    job: "Business Development Lead",
+    linked: "",
+  },
+  {
+    name: "Jacky Weerati",
+    thumb: "../images/contributor-page/jacky.png",
+    job: "Business Development",
+    linked: "",
+  },
+  {
+    name: "Sim Sokheng",
+    thumb: "../images/contributor-page/sokheng.png",
+    job: "Business Development ",
+    linked: "",
+  },
+  {
+    name: "Heena Madan",
+    thumb: "../images/contributor-page/heena.png",
+    job: "Business Development",
+    linked: "",
+  },
+  {
+    name: "Anthea Le",
+    thumb: "../images/contributor-page/anthea-le.png",
+    job: "Support and Community",
+    linked: "https://www.linkedin.com/in/anthea-le-83b663222/",
   },
 ];
 
@@ -143,32 +171,21 @@ export const AuditorData = [
   },
 ];
 
-export const ContributorData = [
+export const AdvisorData = [
   {
-    img: "coingecko",
+    thumb: "../images/logo-contributor/123-16.png",
+    name: "Choki Dorji",
   },
   {
-    img: "chainlink",
+    thumb: "../images/logo-contributor/123-19.png",
+    name: "Chard Lie",
   },
   {
-    img: "graph",
+    thumb: "../images/logo-contributor/123-18.png",
+    name: "Mr Oliver",
   },
   {
-    img: "metamask",
-  },
-  {
-    img: "dune",
-  },
-  {
-    img: "wallet",
-  },
-  {
-    img: "binance",
-  },
-  {
-    img: "polygon",
-  },
-  {
-    img: "coinbase",
+    thumb: "../images/logo-contributor/123-17.png",
+    name: "Denis Joris",
   },
 ];
