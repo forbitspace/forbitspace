@@ -129,7 +129,7 @@ const ImgHalf = styled.div`
     height: auto;
     transform: scale(1.6);
     transform-origin: left;
-    margin: 0 0 0 -3rem;
+    margin: 0 0 0 -2rem;
   }
   @media (max-width: 1440px) {
     img {

@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Banner = () => {
   const [open, setOpen] = useState(false);
   return (
-    <BoxSection>
+    <BoxSection open={open}>
       <WrapContainer>
         <WrapImg>
           <ImgHalf>
@@ -59,7 +59,7 @@ const Banner = () => {
 const BoxSection = styled.section`
   position: relative;
   padding: 2vh 0 0;
-  margin-top: -6rem;
+  margin-top: ${({ open }) => (open ? "0" : "-6rem")};
   @media (max-width: 1024px) {
     padding-top: 20px;
     margin-top: 0;
