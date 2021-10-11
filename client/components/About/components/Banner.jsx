@@ -9,7 +9,7 @@ const Banner = () => {
       <WrapContainer>
         <WrapImg>
           <ImgHalf>
-            <img src="../images/about-page/17-9-04.png" alt="" />
+            <img src="../images/about-page/crypto-space.png" alt="" />
           </ImgHalf>
         </WrapImg>
         <Content className="title-banner text-dark text-visi">

@@ -68,7 +68,7 @@ const ImgHalf = styled.div`
   }
 `;
 const Content = styled.div`
-  width: 50%;
+  width: 55%;
   text-align: left;
   display: flex;
   flex-direction: column;

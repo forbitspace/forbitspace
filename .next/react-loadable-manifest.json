@@ -638,7 +638,7 @@
     },
     {
       "id": "1L5/",
-      "file": "static/chunks/40.622903897170ebfb0b48.js"
+      "file": "static/chunks/40.1fc8c0b1cda95d9eecb4.js"
     }
   ],
   "../client/components/Aggregation": [
@@ -1138,7 +1138,7 @@
     },
     {
       "id": "HbpZ",
-      "file": "static/chunks/42.1c61487bb8c46eeb222b.js"
+      "file": "static/chunks/42.fb4a11621eceb0932577.js"
     }
   ],
   "../client/components/Bridge": [
@@ -2196,11 +2196,11 @@
     },
     {
       "id": "kSri",
-      "file": "static/chunks/38.5496e7f8507e8860c04e.js"
+      "file": "static/chunks/38.32ad5ffe7c4285cc2902.js"
     },
     {
       "id": "n/ku",
-      "file": "static/chunks/38.5496e7f8507e8860c04e.js"
+      "file": "static/chunks/38.32ad5ffe7c4285cc2902.js"
     }
   ],
   "../client/components/LimitOrder": [
