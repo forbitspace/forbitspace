@@ -61,7 +61,7 @@ const WrapImgBanner = styled.div`
 `;
 const Content = styled.div`
   /* margin-left: 80px; */
-  width: 75%;
+  width: 85%;
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
