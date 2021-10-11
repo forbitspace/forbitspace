@@ -37,7 +37,7 @@ const Network = () => {
             unites decentralized applications across disparate blockchains,
             simultaneously uniting liquidity across chains and making it
             possible to transact in, out, and across disparate networks with
-            ease,
+            ease.
           </SubText>
           <WrapImg className="img__swap">
             <WrapperButtonApp>
