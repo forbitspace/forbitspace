@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { ContributorData } from "../constants";
+import { AdvisorData } from "../constants";
+import Members from "./Members";
 const FooterContributor = () => {
   const ContributorRender = ({ data, title }) => {
     return (
@@ -7,11 +8,16 @@ const FooterContributor = () => {
         <div className="header">{title}</div>
         <div className="img-content">
           {data.map((item) => (
-            <div className="img-holder">
-              <a href="/#">
-                <img src={`./images/logo-contributor/${item.img}.svg`} alt="" />
-              </a>
-            </div>
+            <a href="/#">
+              <div className="img-holder">
+                <img src={`./images/logo-contributor/${item.img}.png`} alt="" />
+                <img
+                  className="background"
+                  src="../images/contributor-page/orbit-background.svg"
+                  alt=""
+                />
+              </div>
+            </a>
           ))}
         </div>
       </WrapperInner>
@@ -21,11 +27,8 @@ const FooterContributor = () => {
   return (
     <WrapperFooter>
       <div className="container">
-        <ContributorRender data={ContributorData} title={"Auditors"} />
-        <ContributorRender
-          data={ContributorData}
-          title={"Ecosystem partners"}
-        />
+        {/* <ContributorRender data={AdvisorData} title={"Advisors"} /> */}
+
         <BecomeBox>
           <div className="content">
             <div className="header-content">Become a contributor</div>
@@ -46,11 +49,12 @@ const WrapperFooter = styled.section`
   padding: 45px 0;
 `;
 const WrapperInner = styled.div`
+  position: relative;
   .header {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 500;
     line-height: 1.5;
-    text-align: left;
+    text-align: center;
     color: #fff;
 
     @media (max-width: 415px) {
@@ -61,6 +65,7 @@ const WrapperInner = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     padding: 45px;
     gap: 10px;
 
@@ -69,10 +74,22 @@ const WrapperInner = styled.div`
     }
   }
   .img-holder {
-    width: 19%;
+    width: 100%;
     padding: 25px 0;
+    max-width: 300px;
+    position: absolute;
 
-    img {
+    img:nth-child(1) {
+      height: 80px;
+      width: 80px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    img:nth-child(2) {
       height: auto;
       width: auto;
     }
@@ -96,6 +113,7 @@ const WrapperInner = styled.div`
 `;
 
 const BecomeBox = styled.div`
+  font-family: Montserrat, sans-serif;
   .content {
     text-align: center;
   }
@@ -104,7 +122,9 @@ const BecomeBox = styled.div`
     font-weight: 500;
   }
   .inner-content {
-    font-size: 24px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 40px;
   }
   .apply-btn {
     text-align: center;
