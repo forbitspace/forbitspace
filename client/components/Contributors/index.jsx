@@ -4,7 +4,7 @@ import styled from "styled-components";
 import FooterContributor from "./components/Footer";
 import Banner from "./components/Banner";
 import Members from "./components/Members";
-// import Footer from "../Footer";
+import Footer from "../Footer";
 import { MemberData, AdvisorData } from "./constants";
 
 const Index = () => {
@@ -21,6 +21,7 @@ const Index = () => {
           imgCenter={true}
         />
         <FooterContributor />
+        <Footer />
       </Container>
       <BackgroundImg src="./images/background-line-min.png"></BackgroundImg>
     </WrapperBackground>

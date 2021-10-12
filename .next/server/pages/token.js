@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"45":"65cef91615540617b9df"}[chunkId] + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"46":"860fb33c7b430c32e6a1"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -168,7 +168,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // @flow
 
 
-const Tokencompo = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 45).then(__webpack_require__.bind(null, "JoM1")), {
+const Tokencompo = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 46).then(__webpack_require__.bind(null, "JoM1")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("JoM1")],

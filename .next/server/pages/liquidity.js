@@ -6,7 +6,7 @@ module.exports =
 /******/ 	// object to store loaded chunks
 /******/ 	// "0" means "already loaded"
 /******/ 	var installedChunks = {
-/******/ 		27: 0
+/******/ 		26: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"40":"d2b1324208c27a8ecb72"}[chunkId] + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"41":"5d911f2a393b8e4e646b"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 23);
+/******/ 	return __webpack_require__(__webpack_require__.s = 22);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -133,7 +133,7 @@ module.exports = require("next/dynamic");
 
 /***/ }),
 
-/***/ 23:
+/***/ 22:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("RAOx");
@@ -167,7 +167,7 @@ __webpack_require__.r(__webpack_exports__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Liquidity = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 40).then(__webpack_require__.bind(null, "2sDF")), {
+const Liquidity = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 41).then(__webpack_require__.bind(null, "2sDF")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("2sDF")],
