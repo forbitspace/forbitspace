@@ -26,9 +26,15 @@ const Members = (props) => {
                 </a>
               ) : null}
               {linked ? (
-                <a href={linked} target="_blank">
-                  <i class="fab fa-linkedin"></i>
-                </a>
+                linked !== "/" ? (
+                  <a href={linked} target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                ) : (
+                  <span href={linked} target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                  </span>
+                )
               ) : null}
             </Social>
           </FlexItem>
@@ -68,6 +74,12 @@ const Members = (props) => {
 const Social = styled.div`
   display: flex;
   a {
+    color: #fff;
+    :hover {
+      color: #0168ff;
+    }
+  }
+  span {
     color: #fff;
     :hover {
       color: #0168ff;

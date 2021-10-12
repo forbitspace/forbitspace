@@ -37,7 +37,7 @@ const FooterContributor = () => {
             </div>
           </div>
           <div className="apply-btn">
-            <a href="/#">Apply</a>
+            <a href="mailto:contacts@forbitspace.com">Apply</a>
           </div>
         </BecomeBox>
       </div>
