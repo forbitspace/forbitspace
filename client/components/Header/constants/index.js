@@ -196,11 +196,11 @@ export const navContent = [
       //   content: "Audits",
       //   disable: true,
       // },
-      {
-        link: "",
-        content: "Bug bounty",
-        disable: true,
-      },
+      // {
+      //   link: "",
+      //   content: "Bug bounty",
+      //   disable: true,
+      // },
     ],
   },
   {
@@ -240,8 +240,8 @@ export const navContent = [
         content: "About",
       },
       {
-        link: "/contributors", //
-        content: "Our Team",
+        link: "/team", //
+        content: "Team",
         // disabled: true,
       },
       {

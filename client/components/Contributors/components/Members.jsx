@@ -79,7 +79,7 @@ const Social = styled.div`
 `;
 
 const FlexItem = styled.div`
-  margin-top: 50px;
+  margin-top: 75px;
   margin-right: 40px;
   @media (max-width: 420px) {
     margin-top: 54px;
@@ -163,8 +163,8 @@ const Thumb = styled.div`
   width: ${({ isAdvisor }) => (isAdvisor ? "130px" : "100px")};
   height: ${({ isAdvisor }) => (isAdvisor ? "130px" : "100px")};
   position: absolute;
-  right: ${({ isAdvisor }) => (isAdvisor ? 0 : "-5px")};
-  top: ${({ isAdvisor }) => (isAdvisor ? "-50px" : "-30px")};
+  right: ${({ isAdvisor }) => (isAdvisor ? 0 : "15px")};
+  top: ${({ isAdvisor }) => (isAdvisor ? "-50px" : "-10px")};
   bottom: ${({ isAdvisor }) => (isAdvisor ? 0 : "")};
   left: ${({ isAdvisor }) => (isAdvisor ? "-55px" : "")};
   margin: ${({ isAdvisor }) => (isAdvisor ? "auto" : "0")};
