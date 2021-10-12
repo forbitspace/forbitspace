@@ -163,8 +163,8 @@ const Thumb = styled.div`
   width: ${({ isAdvisor }) => (isAdvisor ? "130px" : "100px")};
   height: ${({ isAdvisor }) => (isAdvisor ? "130px" : "100px")};
   position: absolute;
-  right: ${({ isAdvisor }) => (isAdvisor ? 0 : "-11px")};
-  top: ${({ isAdvisor }) => (isAdvisor ? "-50px" : "-16px")};
+  right: ${({ isAdvisor }) => (isAdvisor ? 0 : "-5px")};
+  top: ${({ isAdvisor }) => (isAdvisor ? "-50px" : "-30px")};
   bottom: ${({ isAdvisor }) => (isAdvisor ? 0 : "")};
   left: ${({ isAdvisor }) => (isAdvisor ? "-55px" : "")};
   margin: ${({ isAdvisor }) => (isAdvisor ? "auto" : "0")};
