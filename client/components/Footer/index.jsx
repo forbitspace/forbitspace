@@ -42,7 +42,7 @@ const Index = () => {
               <SubTitleFooter>
                 Subscribe to our newsletter for updates
               </SubTitleFooter>
-              <form action="">
+              <form action="submit">
                 <WrapperInput>
                   <Input
                     type="text"
