@@ -276,7 +276,7 @@ export const DataSocialLinkFooter = [
     url: "./images/icon-social-footer/2.svg",
   },
   {
-    link: "https://discord.com/invite/RzgqsXaPpK",
+    link: "https://discord.com/invite/forbitspace",
     url: "./images/icon-social-footer/3.svg",
   },
   {
