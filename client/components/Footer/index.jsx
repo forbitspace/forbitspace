@@ -1,11 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import { Container } from "reactstrap";
 
 import { DataSocialLinkFooter, navContent } from "./constants";
+import axios from "axios";
 
 const Index = () => {
+  const [email, setEmail] = useState("");
+
+  const sendMail = async () => {
+    await axios({
+      method: "GET",
+      url: `http://192.168.31.132:1234/v1/mailer?email=${email}`,
+    });
+  };
+
+  const handleChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  function validateEmail(email) {
+    const re =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+
+  const handleSubmit = () => {
+    // console.log(validateEmail(email));
+    if (validateEmail(email)) {
+      sendMail();
+      alert("Success! Thank you for joining us!");
+    } else {
+      alert("Your email is invalid. Please try again!");
+    }
+  };
+
   return (
     <footer className="footer">
       <FooterMenu>
@@ -42,7 +72,7 @@ const Index = () => {
               <SubTitleFooter>
                 Subscribe to our newsletter for updates
               </SubTitleFooter>
-              <form action="submit">
+              <div className="form-wrap" action="">
                 <WrapperInput>
                   <Input
                     type="text"
@@ -50,13 +80,21 @@ const Index = () => {
                     placeholder="your@email.com"
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                     required
+                    onChange={(e) => handleChange(e)}
+                    onSubmit={(e) => {
+                      sendMail(), e.preventDefault();
+                    }}
                   />
                   {/* <BorderInput /> */}
                 </WrapperInput>
-                <button type="submit" aria-label="send-email-address">
+                <button
+                  type="button"
+                  aria-label="send-email-address"
+                  onClick={handleSubmit}
+                >
                   <i className="fa fa-arrow-right"></i>
                 </button>
-              </form>
+              </div>
               <Copyright className="text-dark">© 2021 forbitspace</Copyright>
               <SocialLink>
                 {DataSocialLinkFooter.map((item, index) => {
@@ -130,7 +168,7 @@ const ListMenu = styled.div`
     width: calc(100% / 6);
     // text-align:right;
 
-    form {
+    .form-wrap {
       display: flex;
       align-items: center;
       margin-bottom: 25px;
@@ -155,7 +193,7 @@ const ListMenu = styled.div`
         border-radius: 8px;
         transition: all 0.5s ease-in-out;
         background-size: 200%;
-        background-position: 99%;
+        background-position: 95%;
 
         i {
           color: #fff;
