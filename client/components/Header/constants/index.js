@@ -176,6 +176,7 @@ export const navContent = [
   {
     link: "",
     nav: "Developers",
+    show: true,
     contents: [
       {
         link: "",
@@ -206,6 +207,7 @@ export const navContent = [
   {
     nav: "Self-custody",
     link: "/selfcustody",
+    clickable: true,
     contents: [
       {
         link: "/bridge",
@@ -234,6 +236,7 @@ export const navContent = [
   {
     link: "",
     nav: "More",
+    show: true,
     contents: [
       {
         link: "/about",

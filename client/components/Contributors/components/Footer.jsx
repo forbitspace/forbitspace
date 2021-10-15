@@ -47,6 +47,9 @@ const FooterContributor = () => {
 
 const WrapperFooter = styled.section`
   padding: 45px 0;
+  @media (max-width: 576px) {
+    padding: 10px 0;
+  }
 `;
 const WrapperInner = styled.div`
   position: relative;
@@ -165,6 +168,9 @@ const BecomeBox = styled.div`
     .inner-content {
       font-size: 14px;
       font-weight: 200;
+    }
+    .apply-btn {
+      padding: 10px 0;
     }
   }
 `;
