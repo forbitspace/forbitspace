@@ -229,6 +229,9 @@ const ListMenu = styled.div`
       form {
         justify-content: center;
       }
+      .form-wrap {
+        justify-content: center;
+      }
       :last-child {
         width: 100%;
         text-align: center;

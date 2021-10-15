@@ -1,17 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container } from "reactstrap";
 import styled from "styled-components";
+import AppLink from "../../Header/components/AppLink";
 // import Title from "../../Title";
 // import DecentralizedText from "./DecentralizedText";
 // import ButtonApp from "../../Header/components/AppLink";
 
 const Banner = () => {
-  const [scroll, setScroll] = useState(true);
-  window.addEventListener("scroll", function () {
-    window.scrollY > 80 ? setScroll(true) : setScroll(false);
-  });
   return (
-    <BoxSection height={scroll ? "10vh" : "100vh"}>
+    <BoxSection>
       <WrapImgBanner>
         <img src="../images/home-page/banner.png" alt="" />
       </WrapImgBanner>
@@ -27,6 +24,10 @@ const Banner = () => {
             Allows crypto traders to tap deep liquidity and receive better
             pricing one single interface.
           </SubText>
+          <ButtonBanner href="https://app.forbitspace.com/" target="_blank">
+            {" "}
+            Launch App <img src="../images/chevron-right.svg" alt="" />
+          </ButtonBanner>
         </Content>
       </Container>
     </BoxSection>
@@ -43,7 +44,7 @@ const BoxSection = styled.section`
   @media (max-width: 770px) {
     margin-top: 0px;
     padding-top: 50px;
-    min-height: ${({ height }) => height};
+    /* min-height: ${({ height }) => height}; */
   }
 `;
 const WrapImgBanner = styled.div`
@@ -113,4 +114,46 @@ const Text = styled.p`
   }
 `;
 
+const ButtonBanner = styled.a`
+  padding: 0.35rem 0.85rem;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 12px;
+  display: inline-block;
+  transform: scale(0.98);
+  transition: transform 0.25s ease 0s;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 1.125rem;
+  font-style: italic;
+  cursor: pointer;
+  width: fit-content;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  /* border: 1px solid transparent; */
+  margin-right: 1rem;
+  background-image: linear-gradient(
+    38deg,
+    #00ff36 -10%,
+    #00ee57 3%,
+    #00c5ad 32%,
+    #00a4f1 53%,
+    #0b18fc 102%,
+    #0d00ff 111%
+  );
+  width: 100%;
+  /* max-width: 210px; */
+  /* &:hover { */
+  background-size: 200%;
+  background-position: right;
+  color: white;
+  /* } */
+  :hover {
+    color: white;
+  }
+
+  img {
+    max-width: 12px;
+  }
+`;
 export default Banner;

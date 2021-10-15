@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"48":"ff412f73dec2ca42d0c3","51":"0665f908d6cdcd1ff508"}[chunkId] + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"47":"b0bc9b1bf0a9d4c62875","51":"0665f908d6cdcd1ff508"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -335,7 +335,7 @@ const Planet = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpa
     modules: ["../client/components/Planets/Planet"]
   }
 });
-const Header = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpack_require__.e(/* import() */ 48).then(__webpack_require__.bind(null, "dFpG")), {
+const Header = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpack_require__.e(/* import() */ 47).then(__webpack_require__.bind(null, "dFpG")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("dFpG")],

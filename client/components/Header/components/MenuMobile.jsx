@@ -3,6 +3,7 @@ import styled, { createGlobalStyle } from "styled-components";
 import Link from "next/link";
 import Logo from "./Logo";
 import { navContent } from "../constants/index";
+import AppLink from "./AppLink";
 
 const MenuMobile = () => {
   const [menu, setMenu] = useState(false);
@@ -13,6 +14,10 @@ const MenuMobile = () => {
   return (
     <StyledMenu>
       {menu ? <GlobalStyle /> : <></>}
+      <ButtonBanner href="https://app.forbitspace.com/" target="_blank">
+        {" "}
+        Launch App
+      </ButtonBanner>
       <ButtonMenu onClick={toggle} isOpen={menu}>
         <div className="logo-light-mode">
           <span></span>
@@ -30,7 +35,7 @@ const MenuMobile = () => {
               <Logo />
             </li>
             {navContent.map((item, index) => (
-              <li className="title">
+              <li className="title" key={index}>
                 <Link
                   href={item.link}
                   className="text"
@@ -39,9 +44,13 @@ const MenuMobile = () => {
                   {item.nav}
                 </Link>
                 <img src="../images/light-icon/chevron.svg" alt="" />
-                <ul className="submenu">
+                <Ul className="submenu" show={item.show}>
                   {item.contents.map((item, index) => (
-                    <li id={item.disable ? "disable" : ""} onClick={toggle}>
+                    <li
+                      id={item.disable ? "disable" : ""}
+                      onClick={toggle}
+                      key={index}
+                    >
                       {!item.outLink ? (
                         <Link href={item.link}>
                           <a className="text">{item.content}</a>
@@ -53,7 +62,7 @@ const MenuMobile = () => {
                       )}
                     </li>
                   ))}
-                </ul>
+                </Ul>
               </li>
             ))}
           </ul>
@@ -101,7 +110,7 @@ const Nav = styled.div`
       }
     }
   }
-  .submenu {
+  /* .submenu {
     max-height: 0;
     transition: max-height 0.5s ease-in-out;
     overflow: hidden;
@@ -115,15 +124,33 @@ const Nav = styled.div`
       opacity: 0.3;
       z-index: -1;
     }
-  }
+  } */
   @media (max-width: 576px) {
     width: 100%;
   }
 `;
 
 const StyledMenu = styled.div`
+  display: flex;
+  align-items: center;
   @media (min-width: 770px) {
     display: none;
+  }
+`;
+
+const Ul = styled.ul`
+  max-height: ${({ show }) => (show ? "500px" : "0")};
+  transition: max-height 0.5s ease-in-out;
+  overflow: hidden;
+  a {
+    margin-bottom: 10px !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    font-style: italic;
+  }
+  #disable {
+    opacity: 0.3;
+    z-index: -1;
   }
 `;
 
@@ -249,6 +276,44 @@ const BlurDiv = styled.div`
     100% {
       opacity: 1;
     }
+  }
+`;
+const ButtonBanner = styled.a`
+  padding: 0.35rem 0.85rem;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 12px;
+  display: inline-block;
+  transform: scale(0.98);
+  transition: transform 0.25s ease 0s;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: italic;
+  cursor: pointer;
+  width: fit-content;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  /* border: 1px solid transparent; */
+  margin-right: 1rem;
+  background-image: linear-gradient(
+    38deg,
+    #00ff36 -10%,
+    #00ee57 3%,
+    #00c5ad 32%,
+    #00a4f1 53%,
+    #0b18fc 102%,
+    #0d00ff 111%
+  );
+  width: 100%;
+  max-width: 210px;
+  /* &:hover { */
+  background-size: 200%;
+  background-position: 95%;
+  color: white;
+  /* } */
+  :hover {
+    color: white;
   }
 `;
 

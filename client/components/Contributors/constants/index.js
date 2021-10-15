@@ -91,16 +91,16 @@ export const MemberData = [
     linked: "https://www.linkedin.com/in/mr-lee-930745222/",
   },
   {
-    name: "Chris Nguyen",
-    thumb: "../images/contributor-page/chris.png",
-    job: "Editor",
-    linked: "/",
-  },
-  {
     name: "Meliora Lily",
     thumb: "../images/contributor-page/lily.png",
-    job: "Designer",
+    job: "Art & Design Lead",
     linked: "https://www.linkedin.com/in/meliora-lily-103663222/",
+  },
+  {
+    name: "Chris Nguyen",
+    thumb: "../images/contributor-page/chris.png",
+    job: "Designer & Editor",
+    linked: "/",
   },
   {
     name: "Almira Nhu",

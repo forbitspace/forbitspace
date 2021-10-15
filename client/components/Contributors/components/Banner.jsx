@@ -26,28 +26,27 @@ const Banner = () => {
 const WrapperBanner = styled.div`
   text-align: right;
   position: relative;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: flex-start;
+  flex-direction: column; */
   @media (max-width: 576px) {
     text-align: left;
+    min-height: 83vh;
+    padding-top: 3rem;
   }
 `;
 const BackgroundBanner = styled.div`
-  position: relative;
   img {
     width: 100%;
   }
-  top: 0;
-  bottom: 0;
-  left: 0;
   margin: auto 0;
 `;
 const Content = styled.div`
   margin-top: 3rem;
   @media (max-width: 576px) {
     margin-left: 0;
-    margin-top: 40px;
+    margin-top: 80px;
   }
 `;
 const Title = styled.h2`
@@ -69,7 +68,7 @@ const Text = styled.p`
   letter-spacing: 1px;
   text-align: center;
   @media (max-width: 576px) {
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 1px;
     font-weight: 200;
     line-height: 25px;
