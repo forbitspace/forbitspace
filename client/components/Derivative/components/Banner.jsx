@@ -124,7 +124,8 @@ const SubText = styled.p`
     font-size: 16px;
   }
   @media (max-width: 576px) {
-    font-size: 14px;
+    text-align: center;
+    font-size: 16px;
   }
 `;
 export default Banner;

@@ -122,8 +122,5 @@ const SubText = styled.div`
     text-align: center;
     font-size: 16px;
   }
-  @media (max-width: 576px) {
-    font-size: 14px;
-  }
 `;
 export default Banner;
