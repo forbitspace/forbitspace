@@ -892,41 +892,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       rel: "stylesheet",
       integrity: "sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1",
       crossOrigin: "anonymous"
-    }), __jsx("script", {
-      // Prevent element inspect
-      dangerouslySetInnerHTML: {
-        __html: `
-                                document.addEventListener("contextmenu", function(e) {
-                                    e.preventDefault();
-                                }, false);
-                                document.onkeydown = function (e) {
-                                    if (event.keyCode == 123) {
-                                        return false;
-                                    }
-                                    if ((event.keyCode == 91 || event.keyCode == 93) && (event.keyCode == 18) && e.keyCode == "I".charCodeAt(0) ) {
-                                        return false;
-                                    }
-                                    if ((event.keyCode == 91 || event.keyCode == 93) && e.shiftKey && e.keyCode == "C".charCodeAt(0) ) {
-                                        return false;
-                                    }
-                                    if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
-                                        return false;
-                                    }
-                                    if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
-                                        return false;
-                                    }
-                                    if (e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
-                                        return false;
-                                    }
-                                    if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
-                                        return false;
-                                    }
-                                };
-                            `
-      }
-    })), __jsx("body", {
-      className: "dark-mode",
-      onContextMenu: "return false;"
+    }), __jsx("script", null)), __jsx("body", {
+      className: "dark-mode"
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], null), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], null), __jsx("script", {
       src: "js/jquery-3.4.1.min.js"
     }), __jsx("script", {
