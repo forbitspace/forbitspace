@@ -120,6 +120,9 @@ const SubText = styled.p`
   @media (max-width: 768px) {
     font-size: 14px;
   }
+  @media (max-width: 576px) {
+    font-size: 16px;
+  }
 `;
 
 const Text = styled.p`

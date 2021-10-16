@@ -96,7 +96,8 @@ const SubText = styled.p`
     font-weight: 900;
   }
   @media (max-width: 576px) {
-    font-size: 14px;
+    font-size: 16px;
+    margin-top: 2rem;
   }
 `;
 
@@ -107,7 +108,7 @@ const Text = styled.p`
   letter-spacing: 1px;
   font-style: italic;
   @media (max-width: 576px) {
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 1px;
     font-weight: 200;
     line-height: 25px;
@@ -154,6 +155,9 @@ const ButtonBanner = styled.a`
 
   img {
     max-width: 12px;
+  }
+  @media (min-width: 576px) {
+    display: none;
   }
 `;
 export default Banner;
