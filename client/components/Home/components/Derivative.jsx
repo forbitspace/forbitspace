@@ -125,7 +125,7 @@ const SubText = styled.p`
     }
   }
   @media (max-width: 576px) {
-    font-size: 13px;
+    font-size: 16px;
   }
 `;
 

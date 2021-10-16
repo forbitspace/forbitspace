@@ -102,7 +102,7 @@ const SubText = styled.p`
     text-align: center;
   }
   @media (max-width: 576px) {
-    font-size: 13px;
+    font-size: 16px;
   }
 `;
 export default AboutUs;
