@@ -52,40 +52,38 @@ export default class extends Document {
             crossOrigin="anonymous"
           ></link>
           <script
-            // Prevent element inspect
-            dangerouslySetInnerHTML={{
-              __html: `
-                                document.addEventListener("contextmenu", function(e) {
-                                    e.preventDefault();
-                                }, false);
-                                document.onkeydown = function (e) {
-                                    if (event.keyCode == 123) {
-                                        return false;
-                                    }
-                                    if ((event.keyCode == 91 || event.keyCode == 93) && (event.keyCode == 18) && e.keyCode == "I".charCodeAt(0) ) {
-                                        return false;
-                                    }
-                                    if ((event.keyCode == 91 || event.keyCode == 93) && e.shiftKey && e.keyCode == "C".charCodeAt(0) ) {
-                                        return false;
-                                    }
-                                    if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
-                                        return false;
-                                    }
-                                    if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
-                                        return false;
-                                    }
-                                    if (e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
-                                        return false;
-                                    }
-                                    if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
-                                        return false;
-                                    }
-                                };
-                            `,
-            }}
+          // Prevent element inspect
+          // dangerouslySetInnerHTML={{
+          //   __html: `
+
+          //                     document.onkeydown = function (e) {
+          //                         if (event.keyCode == 123) {
+          //                             return false;
+          //                         }
+          //                         if ((event.keyCode == 91 || event.keyCode == 93) && (event.keyCode == 18) && e.keyCode == "I".charCodeAt(0) ) {
+          //                             return false;
+          //                         }
+          //                         if ((event.keyCode == 91 || event.keyCode == 93) && e.shiftKey && e.keyCode == "C".charCodeAt(0) ) {
+          //                             return false;
+          //                         }
+          //                         if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+          //                             return false;
+          //                         }
+          //                         if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+          //                             return false;
+          //                         }
+          //                         if (e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
+          //                             return false;
+          //                         }
+          //                         if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+          //                             return false;
+          //                         }
+          //                     };
+          //                 `,
+          // }}
           ></script>
         </Head>
-        <body className="dark-mode" onContextMenu="return false;">
+        <body className="dark-mode">
           <Main />
           <NextScript />
           <script src="js/jquery-3.4.1.min.js"></script>
