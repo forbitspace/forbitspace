@@ -157,7 +157,7 @@ const DAO = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("ra3j")],
-    modules: ["../client/components/SpaceDao"]
+    modules: ["../client/components/SpaceDao/index.jsx"]
   }
 });
 

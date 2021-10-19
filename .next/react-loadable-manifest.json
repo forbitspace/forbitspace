@@ -5157,7 +5157,7 @@
       "file": "static/chunks/54.7fef432640927f3de6f9.js"
     }
   ],
-  "../client/components/SpaceDao": [
+  "../client/components/SpaceDao/index.jsx": [
     {
       "id": "+wdc",
       "file": "static/chunks/framework.75dadf01f4e69239410b.js"
