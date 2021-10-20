@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import { Link } from "../../route/index.js";
 import { navContent } from "../constants/index";
 import styled from "styled-components";
 

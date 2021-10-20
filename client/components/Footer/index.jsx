@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Link from "next/link";
+import { Link } from "../route/index.js";
 import { Container } from "reactstrap";
 
 import { DataSocialLinkFooter, navContent } from "./constants";
