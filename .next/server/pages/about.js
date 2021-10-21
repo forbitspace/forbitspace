@@ -6,7 +6,7 @@ module.exports =
 /******/ 	// object to store loaded chunks
 /******/ 	// "0" means "already loaded"
 /******/ 	var installedChunks = {
-/******/ 		8: 0
+/******/ 		9: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"34":"8515cefa1d0dbb50556f"}[chunkId] + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"36":"e5eb254942fda73d880d"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -133,7 +133,7 @@ module.exports = require("next/dynamic");
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("vBwC");
@@ -141,24 +141,17 @@ module.exports = __webpack_require__("vBwC");
 
 /***/ }),
 
+/***/ "90Kz":
+/***/ (function(module, exports) {
+
+module.exports = require("next-routes");
+
+/***/ }),
+
 /***/ "Dtiu":
 /***/ (function(module, exports) {
 
 module.exports = require("styled-components");
-
-/***/ }),
-
-/***/ "Osoz":
-/***/ (function(module, exports) {
-
-module.exports = require("next/dist/next-server/lib/router-context.js");
-
-/***/ }),
-
-/***/ "UhrY":
-/***/ (function(module, exports) {
-
-module.exports = require("next/dist/next-server/lib/router/utils/get-asset-path-from-route.js");
 
 /***/ }),
 
@@ -194,7 +187,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
  // import { Container, Row, Col } from 'reactstrap';
 // const Aboutcompo = dynamic(import("../client/components/About"), { ssr: false });
 
-const Aboutcompo = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 34).then(__webpack_require__.bind(null, "1L5/")), {
+const Aboutcompo = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 36).then(__webpack_require__.bind(null, "1L5/")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("1L5/")],

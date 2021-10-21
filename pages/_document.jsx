@@ -9,7 +9,7 @@ export default class extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="shortcut icon" href="images/logo-space.png" />
+          <link rel="shortcut icon" href="../images/logo-space.png" />
           <link rel="stylesheet" href="/js/WOW-master/animate.css" />
           <link rel="stylesheet" href="/js/Slick-Js/slick.css" />
           <link rel="stylesheet" href="/js/Slick-Js/slick-theme.css" />
@@ -94,13 +94,13 @@ export default class extends Document {
           <script src="js/main.js"></script>
           <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
           <script>AOS.init();</script>
-          <script
+          {/* <script
             dangerouslySetInnerHTML={{
               __html: `
                                 new WOW().init();
                             `,
             }}
-          ></script>
+          ></script> */}
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -120,7 +120,7 @@ export default class extends Document {
                             `,
             }}
           ></script>
-          <script
+          {/* <script
             dangerouslySetInnerHTML={{
               __html: `
                                 $(document).ready(function() {
@@ -145,7 +145,7 @@ export default class extends Document {
                                 });
                             `,
             }}
-          ></script>
+          ></script> */}
         </body>
       </Html>
     );

@@ -6,7 +6,7 @@ module.exports =
 /******/ 	// object to store loaded chunks
 /******/ 	// "0" means "already loaded"
 /******/ 	var installedChunks = {
-/******/ 		26: 0
+/******/ 		27: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"41":"adc570049de79b6b6f03"}[chunkId] + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"43":"5821a715a7ffbd4aa1fd"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 22);
+/******/ 	return __webpack_require__(__webpack_require__.s = 23);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -133,7 +133,7 @@ module.exports = require("next/dynamic");
 
 /***/ }),
 
-/***/ 22:
+/***/ 23:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("RAOx");
@@ -141,17 +141,17 @@ module.exports = __webpack_require__("RAOx");
 
 /***/ }),
 
+/***/ "90Kz":
+/***/ (function(module, exports) {
+
+module.exports = require("next-routes");
+
+/***/ }),
+
 /***/ "Dtiu":
 /***/ (function(module, exports) {
 
 module.exports = require("styled-components");
-
-/***/ }),
-
-/***/ "Osoz":
-/***/ (function(module, exports) {
-
-module.exports = require("next/dist/next-server/lib/router-context.js");
 
 /***/ }),
 
@@ -167,7 +167,7 @@ __webpack_require__.r(__webpack_exports__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Liquidity = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 41).then(__webpack_require__.bind(null, "2sDF")), {
+const Liquidity = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 43).then(__webpack_require__.bind(null, "2sDF")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("2sDF")],
@@ -180,13 +180,6 @@ const LiquidityPage = () => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (LiquidityPage);
-
-/***/ }),
-
-/***/ "UhrY":
-/***/ (function(module, exports) {
-
-module.exports = require("next/dist/next-server/lib/router/utils/get-asset-path-from-route.js");
 
 /***/ }),
 

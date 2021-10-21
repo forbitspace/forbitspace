@@ -17,7 +17,7 @@ const SelfCustody = () => {
       {/* <Numbers /> */}
       <MobileWallet />
       <Assets />
-      <BackgroundImg src="./images/background-line-min.png"></BackgroundImg>
+      <BackgroundImg src="../images/background-line-min.png"></BackgroundImg>
       <Footer />
     </WrapperBackground>
   );

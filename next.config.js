@@ -30,5 +30,6 @@ module.exports = withSass({
     // Will be available on both server and client
     backendUrl: "",
   },
+
   trailingSlash: true,
 });
