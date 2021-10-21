@@ -12,7 +12,7 @@ const Aggregation = () => {
         <Banner />
         <HowItWorks />
         <Finder />
-        <BackgroundImg src="./images/background-line-min.png"></BackgroundImg>
+        <BackgroundImg src="../images/background-line-min.png"></BackgroundImg>
       </WrapContent>
       <Footer />
     </WrapperBackground>

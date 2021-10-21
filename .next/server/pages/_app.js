@@ -6,7 +6,7 @@ module.exports =
 /******/ 	// object to store loaded chunks
 /******/ 	// "0" means "already loaded"
 /******/ 	var installedChunks = {
-/******/ 		5: 0
+/******/ 		6: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"47":"8d4fcefeb287514eb0e1","51":"0665f908d6cdcd1ff508"}[chunkId] + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"33":"5a9039847c9db52f022a","51":"1978d0c729cdf31238c9"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -146,6 +146,13 @@ module.exports = __webpack_require__("YNMu");
 
 module.exports = __webpack_require__("B5Ud")
 
+
+/***/ }),
+
+/***/ "90Kz":
+/***/ (function(module, exports) {
+
+module.exports = require("next-routes");
 
 /***/ }),
 
@@ -301,13 +308,6 @@ module.exports = require("next/dist/next-server/lib/router-context.js");
 
 /***/ }),
 
-/***/ "UhrY":
-/***/ (function(module, exports) {
-
-module.exports = require("next/dist/next-server/lib/router/utils/get-asset-path-from-route.js");
-
-/***/ }),
-
 /***/ "YNMu":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -335,7 +335,7 @@ const Planet = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpa
     modules: ["../client/components/Planets/Planet"]
   }
 });
-const Header = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpack_require__.e(/* import() */ 47).then(__webpack_require__.bind(null, "dFpG")), {
+const Header = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpack_require__.e(/* import() */ 33).then(__webpack_require__.bind(null, "dFpG")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("dFpG")],

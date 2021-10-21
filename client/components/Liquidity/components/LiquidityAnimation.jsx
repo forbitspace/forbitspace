@@ -97,7 +97,7 @@ const ImgWrap = styled.div`
     animation: moving 6.9s infinite;
   }
   img {
-    transform: scale(1.2);
+    transform: scale(1);
   }
   @media (max-width: 1024px) {
     img {

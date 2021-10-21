@@ -229,9 +229,14 @@ export const navContent = [
   },
   {
     nav: "API",
-    disable: true,
-    link: "/API",
-    contents: [],
+    // disable: true,
+    link: "",
+    contents: [
+      {
+        link: "/API",
+        content: "API",
+      },
+    ],
   },
   {
     link: "",

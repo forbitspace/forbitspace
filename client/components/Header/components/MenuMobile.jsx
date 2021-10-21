@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import styled, { createGlobalStyle } from "styled-components";
-import Link from "next/link";
+import { Link } from "../../route/index.js";
 import Logo from "./Logo";
 import { navContent } from "../constants/index";
-import AppLink from "./AppLink";
 
 const MenuMobile = () => {
   const [menu, setMenu] = useState(false);

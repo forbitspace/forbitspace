@@ -1,0 +1,1 @@
+{"ast":null,"code":"const routes = module.exports = require(\"next-routes\")();\n\nroutes.add(\"/:username\", \"profilepage\");","map":null,"metadata":{},"sourceType":"script"}

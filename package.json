@@ -22,6 +22,7 @@
     "jquery": "^3.5.1",
     "lodash": "^4.17.20",
     "next": "latest",
+    "next-routes": "^1.4.2",
     "next-seo": "^4.17.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

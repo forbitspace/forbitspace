@@ -8,7 +8,7 @@ const Derivative = () => {
     <WrapperBackground>
       <WrapContent>
         <Banner />
-        <BackgroundImg src="./images/background-line-min.png"></BackgroundImg>
+        <BackgroundImg src="../images/background-line-min.png"></BackgroundImg>
       </WrapContent>
       <Footer />
     </WrapperBackground>
