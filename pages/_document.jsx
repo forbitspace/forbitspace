@@ -9,7 +9,7 @@ export default class extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="shortcut icon" href="images/logo-space.png" />
+          <link rel="shortcut icon" href="../images/logo-space.png" />
           <link rel="stylesheet" href="/js/WOW-master/animate.css" />
           <link rel="stylesheet" href="/js/Slick-Js/slick.css" />
           <link rel="stylesheet" href="/js/Slick-Js/slick-theme.css" />

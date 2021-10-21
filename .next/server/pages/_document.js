@@ -808,7 +808,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       lang: "en"
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Head"], null, __jsx("link", {
       rel: "shortcut icon",
-      href: "images/logo-space.png"
+      href: "../images/logo-space.png"
     }), __jsx("link", {
       rel: "stylesheet",
       href: "/js/WOW-master/animate.css"
