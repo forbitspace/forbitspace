@@ -10,12 +10,15 @@ const Banner = () => {
   return (
     <BoxSection>
       <WrapImgBanner>
-        <img src="../images/home-page/banner.png" alt="" />
+        <img src="../images/home-page/banner.png" alt="banner-picture" />
       </WrapImgBanner>
       <Container>
         <Content className="title-banner text-dark text-visi">
           <Title>
-            <img src="../images/home-page/forbitspace-word.png" alt="" />
+            <img
+              src="../images/home-page/forbitspace-word.png"
+              alt="forbitspace-dex-name"
+            />
           </Title>
           <Text>The Decentralized Exchange Super Aggregator</Text>
           <SubText>

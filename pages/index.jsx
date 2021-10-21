@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <HomeComp />
-      <script
+      {/* <script
         dangerouslySetInnerHTML={{
           __html: `
                         new WOW().init();
@@ -40,7 +40,7 @@ export default function Home() {
                         });
                           `,
         }}
-      ></script>
+      ></script> */}
       {/* <span className="pages__BGCard-sc-109t5hg-0 lpuNcM">
         <span className="utils__CardBGImage-jpzfl5-0 hfInar"></span>
       </span> */}

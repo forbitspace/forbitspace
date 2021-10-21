@@ -42,7 +42,7 @@ const Index = () => {
         <Container>
           <ListMenu>
             {navContent.map((item, index) => (
-              <ul className="text-visi">
+              <ul className="text-visi" key={index}>
                 <TitleFooter>
                   {" "}
                   {item.link ? (
@@ -52,7 +52,7 @@ const Index = () => {
                   )}{" "}
                 </TitleFooter>
                 {item.contents.map((item, index) => (
-                  <li>
+                  <li key={index}>
                     {!item.disable ? (
                       item.outLink ? (
                         <a href={item.link} target="_blank">

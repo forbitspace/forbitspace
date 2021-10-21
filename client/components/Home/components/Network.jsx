@@ -14,7 +14,10 @@ const Network = () => {
               </ButtonBanner>
             </WrapperButtonApp>
             <ImgHalf>
-              <img src="../images/home-page/network-02.png" alt="" />
+              <img
+                src="../images/home-page/network-02.png"
+                alt="space-network"
+              />
             </ImgHalf>
           </WrapImg>{" "}
           <WrapTitle>
@@ -50,7 +53,10 @@ const Network = () => {
               </ButtonBanner>
             </WrapperButtonApp>
             <ImgHalf>
-              <img src="../images/home-page/network-01.png" alt="" />
+              <img
+                src="../images/home-page/network-01.png"
+                alt="swap-network"
+              />
             </ImgHalf>
           </WrapImg>
         </WrapContent>

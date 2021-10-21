@@ -23,7 +23,7 @@ const Index = () => {
         <FooterContributor />
         <Footer />
       </Container>
-      <BackgroundImg src="../images/background-line-min.png"></BackgroundImg>
+      {/* <BackgroundImg src="../images/background-line-min.png"></BackgroundImg> */}
     </WrapperBackground>
   );
 };
@@ -49,19 +49,19 @@ const Container = styled.div``;
 //     position: fixed;
 //   }
 // `;
-const BackgroundImg = styled.img`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  /* height: calc(100% + 100vh); */
-  min-height: 100vh;
-  opacity: 0.6;
-  z-index: -1;
-  @media (max-width: 576px) {
-    position: fixed;
-  }
-`;
+// const BackgroundImg = styled.img`
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   width: 100%;
+//   /* height: calc(100% + 100vh); */
+//   min-height: 100vh;
+//   opacity: 0.6;
+//   z-index: -1;
+//   @media (max-width: 576px) {
+//     position: fixed;
+//   }
+// `;
 export default Index;

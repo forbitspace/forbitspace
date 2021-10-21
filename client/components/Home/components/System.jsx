@@ -6,10 +6,13 @@ const System = () => {
       <WrapperInner>
         <div className="header">{title}</div>
         <div className="img-content">
-          {data.map((item) => (
-            <div className="img-holder">
+          {data.map((item, index) => (
+            <div className="img-holder" key={index}>
               {/* <a href="/#"> */}
-              <img src={`./images/logo-contributor/${item.img}.svg`} alt="" />
+              <img
+                src={`./images/logo-contributor/${item.img}.svg`}
+                alt={`logo-${item.img}`}
+              />
               {/* </a> */}
             </div>
           ))}

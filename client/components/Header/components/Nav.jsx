@@ -16,7 +16,7 @@ const Nav = () => {
             </Link>
           </li>*/}
           {navContent.map((item, index) => (
-            <li>
+            <li key={index}>
               {item.link ? (
                 <Link href={item.link} className="text-dark text-visi">
                   {item.nav}

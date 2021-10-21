@@ -33,7 +33,10 @@ const Planet = () => {
       <System>
         {data.map((item, index) => (
           <Planets key={index}>
-            <img src={`../images/space-planets/${item.img}.svg`} alt="" />
+            <img
+              src={`../images/space-planets/${item.img}.svg`}
+              alt={item.img}
+            />
           </Planets>
         ))}
       </System>
@@ -52,13 +55,16 @@ const Planet = () => {
         <WrapperPlanet>
           <Circle>
             <Logo>
-              <img src="../images/space-planets/logo.png" alt="" />
+              <img
+                src="../images/space-planets/logo.png"
+                alt="logo-forbitspace"
+              />
             </Logo>
             <RenderSystem data={DataRender} />
             <Earth>
-              <img src="../images/space-planets/earth.svg" alt="" />
+              <img src="../images/space-planets/earth.svg" alt="earth-image" />
               <Moon>
-                <img src="../images/space-planets/moon.svg" alt="" />
+                <img src="../images/space-planets/moon.svg" alt="moon-image" />
               </Moon>
             </Earth>
           </Circle>

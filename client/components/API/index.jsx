@@ -13,7 +13,7 @@ const API = () => {
         <Banner />
         <Features />
         <Swap />
-        <BackgroundImg src="../images/background-line-min.png"></BackgroundImg>
+        {/* <BackgroundImg src="../images/background-line-min.png"></BackgroundImg> */}
       </WrapContent>
       <Footer />
     </WrapperBackground>
@@ -29,19 +29,19 @@ const WrapContent = styled.div`
   min-height: calc(100vh - 330px);
 `;
 
-const BackgroundImg = styled.img`
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  /* height: calc(100% + 100vh); */
-  min-height: 100vh;
-  opacity: 0.6;
-  z-index: -1;
-  @media (max-width: 576px) {
-    position: fixed;
-  }
-`;
+// const BackgroundImg = styled.img`
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   width: 100%;
+//   /* height: calc(100% + 100vh); */
+//   min-height: 100vh;
+//   opacity: 0.6;
+//   z-index: -1;
+//   @media (max-width: 576px) {
+//     position: fixed;
+//   }
+// `;
 
 export default API;

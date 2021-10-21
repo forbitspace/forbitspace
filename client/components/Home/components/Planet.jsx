@@ -12,7 +12,10 @@ const Planet = () => {
         </WrapPlanet>
         <Content className="title-banner text-dark">
           <Title>
-            <img src="../images/home-page/forbitspace-word.png" alt="" />
+            <img
+              src="../images/home-page/forbitspace-word.png"
+              alt="forbitspace-dex-name"
+            />
           </Title>
           <Text>Aggregation Protocol</Text>
           <SubText>
