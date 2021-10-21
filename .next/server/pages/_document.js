@@ -872,12 +872,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     }), __jsx("script", null, "AOS.init();"), __jsx("script", {
       dangerouslySetInnerHTML: {
         __html: `
-                                new WOW().init();
-                            `
-      }
-    }), __jsx("script", {
-      dangerouslySetInnerHTML: {
-        __html: `
                                 AOS.init({
                                     duration: 1200,
                                 })
@@ -890,31 +884,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                                     duration: 1200,
                                 })
                                 
-                            `
-      }
-    }), __jsx("script", {
-      dangerouslySetInnerHTML: {
-        __html: `
-                                $(document).ready(function() {
-                                    $('.dark-mode').click(function() {
-                                        $('.main-wrap').toggleClass('visible');
-                                    });
-                                });
-                                $(document).ready(function() {
-                                    $('.dark-mode').click(function() {
-                                        $('.header').toggleClass('visible');
-                                    });
-                                });
-                                $(document).ready(function() {
-                                    $('.dark-mode').click(function() {
-                                        $('.footer').toggleClass('visible');
-                                    });
-                                });
-                                $(document).ready(function() {
-                                    $('.dark-mode').click(function() {
-                                        $('body').toggleClass('visible');
-                                    });
-                                });
                             `
       }
     })));

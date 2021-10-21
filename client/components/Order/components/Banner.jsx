@@ -19,7 +19,7 @@ const Banner = () => {
       </Content>
       <BackgroundBanner>
         <img
-          src="./images/icon-foundation/earth-background-foundation.png"
+          src="../images/icon-foundation/earth-background-foundation.png"
           alt="forbitspace foundation"
         />
       </BackgroundBanner>

@@ -33,7 +33,7 @@ const Planet = () => {
       <System>
         {data.map((item, index) => (
           <Planets key={index}>
-            <img src={`./images/space-planets/${item.img}.svg`} alt="" />
+            <img src={`../images/space-planets/${item.img}.svg`} alt="" />
           </Planets>
         ))}
       </System>
@@ -44,7 +44,7 @@ const Planet = () => {
     <Main>
       {/* <HeaderContent>
         <LogoSpace>
-          <img src="./images/Forbitspace-comming/logo-forbitspace.svg" alt="" />
+          <img src="../images/Forbitspace-comming/logo-forbitspace.svg" alt="" />
         </LogoSpace>
         <UseBtn href="/#">Use App</UseBtn>
       </HeaderContent> */}
@@ -52,13 +52,13 @@ const Planet = () => {
         <WrapperPlanet>
           <Circle>
             <Logo>
-              <img src="./images/space-planets/logo.png" alt="" />
+              <img src="../images/space-planets/logo.png" alt="" />
             </Logo>
             <RenderSystem data={DataRender} />
             <Earth>
-              <img src="./images/space-planets/earth.svg" alt="" />
+              <img src="../images/space-planets/earth.svg" alt="" />
               <Moon>
-                <img src="./images/space-planets/moon.svg" alt="" />
+                <img src="../images/space-planets/moon.svg" alt="" />
               </Moon>
             </Earth>
           </Circle>
@@ -71,7 +71,7 @@ const Planet = () => {
 const Main = styled.div`
   /* height: 100vh; */
   display: flex;
-  /* background-image: url("./images/Forbitspace-comming/background.jpg"); */
+  /* background-image: url("../images/Forbitspace-comming/background.jpg"); */
   background-size: cover;
   align-items: center;
   justify-content: flex-start;
@@ -138,7 +138,7 @@ const Circle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("./images/space-planets/circle-line.png");
+  background-image: url("../images/space-planets/circle-line.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

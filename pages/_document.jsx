@@ -94,13 +94,13 @@ export default class extends Document {
           <script src="js/main.js"></script>
           <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
           <script>AOS.init();</script>
-          <script
+          {/* <script
             dangerouslySetInnerHTML={{
               __html: `
                                 new WOW().init();
                             `,
             }}
-          ></script>
+          ></script> */}
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -120,7 +120,7 @@ export default class extends Document {
                             `,
             }}
           ></script>
-          <script
+          {/* <script
             dangerouslySetInnerHTML={{
               __html: `
                                 $(document).ready(function() {
@@ -145,7 +145,7 @@ export default class extends Document {
                                 });
                             `,
             }}
-          ></script>
+          ></script> */}
         </body>
       </Html>
     );

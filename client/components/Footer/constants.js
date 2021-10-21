@@ -1,27 +1,27 @@
 export const DataSocialLinkFooter = [
   {
     link: "https://twitter.com/forbitspace",
-    url: "./images/icon-social-footer/6.svg",
+    url: "../images/icon-social-footer/6.svg",
   },
   {
     link: "https://t.me/forbitspace",
-    url: "./images/icon-social-footer/5.svg",
+    url: "../images/icon-social-footer/5.svg",
   },
   {
     link: "https://github.com/forbitspace",
-    url: "./images/icon-social-footer/4.svg",
+    url: "../images/icon-social-footer/4.svg",
   },
   {
     link: "https://medium.com/@forbitspace",
-    url: "./images/icon-social-footer/1.svg",
+    url: "../images/icon-social-footer/1.svg",
   },
   {
     link: "https://discord.com/invite/forbitspace",
-    url: "./images/icon-social-footer/3.svg",
+    url: "../images/icon-social-footer/3.svg",
   },
   {
     link: "https://www.reddit.com/r/forbitspace/",
-    url: "./images/icon-social-footer/2.svg",
+    url: "../images/icon-social-footer/2.svg",
   },
 ];
 export const navContent = [
@@ -52,7 +52,7 @@ export const navContent = [
     nav: "Governance",
     contents: [
       // {
-      //   link: "/token", //../images/pdf/fbs-token-1.pdf
+      //   link: "/token", //.../images/pdf/fbs-token-1.pdf
       //   content: "FBS Token",
       //   outLink: true,
       //   disable: true,
