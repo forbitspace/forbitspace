@@ -9,7 +9,7 @@ const SelfCustody = () => {
         <WrapLiquidity>
           <ImgHalf>
             <img
-              src="../images/home-page/self-custody.png"
+              src="../images/home-page/self-custody-min.png"
               alt="self-custody"
             />
           </ImgHalf>

@@ -42,11 +42,11 @@ const Index = () => {
         <SpaceNFTs />
         <FBTCToken />
         <Ecosystem />
-        <Community /> 
+        <Community />
         <BackgroundImg
-          src="./images/background-line-min.jpg"
+          src="./images/background-line-min.png"
           alt=""
-        ></BackgroundImg>*/}
+        ></BackgroundImg> */}
         <Footer />
       </WrapperBackground>
     </React.Fragment>
@@ -68,7 +68,7 @@ const BackgroundImg = styled.img`
   bottom: 0;
   width: auto;
   height: 100vh;
-  opacity: 0.6;
+  opacity: 0.15;
   z-index: -1;
   @media (max-width: 576px) {
     position: fixed;

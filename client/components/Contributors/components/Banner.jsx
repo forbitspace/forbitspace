@@ -6,7 +6,7 @@ const Banner = () => {
     <WrapperBanner>
       <BackgroundBanner>
         <img
-          src="../images/contributor-page/spaceship.png"
+          src="../images/contributor-page/spaceship-min.png"
           alt="orbit contributors"
         />
       </BackgroundBanner>

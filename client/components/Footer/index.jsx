@@ -276,18 +276,21 @@ const SubTitleFooter = styled.div`
   font-family: sans-serif;
   font-size: 13px;
   font-weight: 100;
+  font-style: italic;
 `;
 
 const Copyright = styled.p`
   font-size: 14px;
   font-weight: 300;
+  font-style: italic;
 `;
 
 const Input = styled.input`
   width: 100%;
   height: 30px;
   margin-right: 5px;
-  font-family: "Averta";
+  font-style: italic;
+  /* font-family: "Averta"; */
   font-size: 14px;
   padding: 10px 15px;
   line-height: 20px;

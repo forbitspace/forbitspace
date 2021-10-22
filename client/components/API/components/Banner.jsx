@@ -8,7 +8,7 @@ const Banner = () => {
       <WrapContainer>
         <WrapImg>
           <img
-            src="../images/api-page/api-space.png"
+            src="../images/api-page/api-space-min.png"
             alt="forbitspace foundation"
           />
         </WrapImg>
