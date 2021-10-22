@@ -13,7 +13,11 @@ const MenuMobile = () => {
   return (
     <StyledMenu>
       {menu ? <GlobalStyle /> : <></>}
-      <ButtonBanner href="https://app.forbitspace.com/" target="_blank">
+      <ButtonBanner
+        href="https://app.forbitspace.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {" "}
         Launch App
       </ButtonBanner>
@@ -55,7 +59,7 @@ const MenuMobile = () => {
                           <a className="text">{item.content}</a>
                         </Link>
                       ) : (
-                        <a href={item.link} target="_blank">
+                        <a href={item.link} target="_blank" rel="noreferrer">
                           <span className="text">{item.content}</span>
                         </a>
                       )}

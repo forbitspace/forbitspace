@@ -27,7 +27,11 @@ const Banner = () => {
             Allows crypto traders to tap deep liquidity and receive better
             pricing one single interface.
           </SubText>
-          <ButtonBanner href="https://app.forbitspace.com/" target="_blank">
+          <ButtonBanner
+            href="https://app.forbitspace.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {" "}
             Launch App <img src="../images/chevron-right.svg" alt="" />
           </ButtonBanner>

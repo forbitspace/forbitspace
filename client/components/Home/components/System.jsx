@@ -40,7 +40,12 @@ const System = () => {
         <SocialLink>
           {DataSocialLinkFooter.map((item, index) => {
             return (
-              <Link href={item.link} target="_blank" key={index}>
+              <Link
+                href={item.link}
+                target="_blank"
+                rel="noreferrer"
+                key={index}
+              >
                 <Icon src={item.url} alt="icon social media"></Icon>
               </Link>
             );

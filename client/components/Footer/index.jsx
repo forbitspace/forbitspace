@@ -55,7 +55,7 @@ const Index = () => {
                   <li key={index}>
                     {!item.disable ? (
                       item.outLink ? (
-                        <a href={item.link} target="_blank">
+                        <a href={item.link} target="_blank" rel="noreferrer">
                           {item.content}
                         </a>
                       ) : (
@@ -99,7 +99,12 @@ const Index = () => {
               <SocialLink>
                 {DataSocialLinkFooter.map((item, index) => {
                   return (
-                    <a href={item.link} target="_blank" key={index}>
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      key={index}
+                    >
                       <Icon src={item.url} alt="icon social media"></Icon>
                     </a>
                   );

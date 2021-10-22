@@ -123,15 +123,17 @@ const BecomeBox = styled.div`
   .header-content {
     font-size: 2rem;
     font-weight: 500;
+    font-style: italic;
   }
   .inner-content {
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 40px;
+    font-style: italic;
   }
   .apply-btn {
     text-align: center;
-    padding: 60px 0;
+    padding: 10px 0 60px;
     a {
       padding: 5px 30px;
       text-align: center;

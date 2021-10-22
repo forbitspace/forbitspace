@@ -32,6 +32,7 @@ const Nav = () => {
                         key={index}
                         href={item.link}
                         target="_blank"
+                        rel="noreferrer"
                         className="text-dark text-visi"
                       >
                         {item.content}
@@ -70,6 +71,7 @@ const StyledNav = styled.div`
   li {
     display: flex;
     align-items: center;
+    cursor: default;
     :hover {
       .dropdown-content {
         max-height: 300px;

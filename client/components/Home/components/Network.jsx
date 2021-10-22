@@ -9,7 +9,11 @@ const Network = () => {
         <WrapContent>
           <WrapImg>
             <WrapperButtonApp>
-              <ButtonBanner href="https://app.forbitspace.com/" target="_blank">
+              <ButtonBanner
+                href="https://app.forbitspace.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Space Trade
               </ButtonBanner>
             </WrapperButtonApp>
@@ -47,6 +51,7 @@ const Network = () => {
               <ButtonBanner
                 href="https://app.forbitswap.com/#/swap"
                 target="_blank"
+                rel="noreferrer"
                 className="forbitswap"
               >
                 forbitswap
