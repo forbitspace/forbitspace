@@ -10,12 +10,15 @@ const Banner = () => {
   return (
     <BoxSection>
       <WrapImgBanner>
-        <img src="../images/home-page/banner.png" alt="" />
+        <img src="../images/home-page/banner.png" alt="banner-picture" />
       </WrapImgBanner>
       <Container>
         <Content className="title-banner text-dark text-visi">
           <Title>
-            <img src="../images/home-page/forbitspace-word.png" alt="" />
+            <img
+              src="../images/home-page/forbitspace-word.png"
+              alt="forbitspace-dex-name"
+            />
           </Title>
           <Text>The Decentralized Exchange Super Aggregator</Text>
           <SubText>
@@ -24,7 +27,11 @@ const Banner = () => {
             Allows crypto traders to tap deep liquidity and receive better
             pricing one single interface.
           </SubText>
-          <ButtonBanner href="https://app.forbitspace.com/" target="_blank">
+          <ButtonBanner
+            href="https://app.forbitspace.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {" "}
             Launch App <img src="../images/chevron-right.svg" alt="" />
           </ButtonBanner>

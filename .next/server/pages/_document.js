@@ -810,15 +810,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       rel: "shortcut icon",
       href: "../images/logo-space.png"
     }), __jsx("link", {
-      rel: "stylesheet",
-      href: "/js/WOW-master/animate.css"
-    }), __jsx("link", {
-      rel: "stylesheet",
-      href: "/js/Slick-Js/slick.css"
-    }), __jsx("link", {
-      rel: "stylesheet",
-      href: "/js/Slick-Js/slick-theme.css"
-    }), __jsx("link", {
       href: "https://unpkg.com/aos@2.3.1/dist/aos.css",
       rel: "stylesheet"
     }), __jsx("link", {
@@ -856,18 +847,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     }), __jsx("script", null)), __jsx("body", {
       className: "dark-mode"
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], null), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], null), __jsx("script", {
-      src: "js/jquery-3.4.1.min.js"
-    }), __jsx("script", {
-      src: "js/Slick-Js/slick.min.js"
-    }), __jsx("script", {
-      src: "js/WOW-master/wow.min.js"
-    }), __jsx("script", {
-      src: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-    }), __jsx("script", {
-      src: "js/Magnific-Popup-master/jquery.magnific-popup.min.js"
-    }), __jsx("script", {
-      src: "js/main.js"
-    }), __jsx("script", {
       src: "https://unpkg.com/aos@next/dist/aos.js"
     }), __jsx("script", null, "AOS.init();"), __jsx("script", {
       dangerouslySetInnerHTML: {

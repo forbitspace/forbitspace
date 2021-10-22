@@ -42,7 +42,7 @@ const Index = () => {
         <Container>
           <ListMenu>
             {navContent.map((item, index) => (
-              <ul className="text-visi">
+              <ul className="text-visi" key={index}>
                 <TitleFooter>
                   {" "}
                   {item.link ? (
@@ -52,10 +52,10 @@ const Index = () => {
                   )}{" "}
                 </TitleFooter>
                 {item.contents.map((item, index) => (
-                  <li>
+                  <li key={index}>
                     {!item.disable ? (
                       item.outLink ? (
-                        <a href={item.link} target="_blank">
+                        <a href={item.link} target="_blank" rel="noreferrer">
                           {item.content}
                         </a>
                       ) : (
@@ -99,7 +99,12 @@ const Index = () => {
               <SocialLink>
                 {DataSocialLinkFooter.map((item, index) => {
                   return (
-                    <a href={item.link} target="_blank" key={index}>
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      key={index}
+                    >
                       <Icon src={item.url} alt="icon social media"></Icon>
                     </a>
                   );
@@ -276,18 +281,21 @@ const SubTitleFooter = styled.div`
   font-family: sans-serif;
   font-size: 13px;
   font-weight: 100;
+  font-style: italic;
 `;
 
 const Copyright = styled.p`
   font-size: 14px;
   font-weight: 300;
+  font-style: italic;
 `;
 
 const Input = styled.input`
   width: 100%;
   height: 30px;
   margin-right: 5px;
-  font-family: "Averta";
+  font-style: italic;
+  /* font-family: "Averta"; */
   font-size: 14px;
   padding: 10px 15px;
   line-height: 20px;

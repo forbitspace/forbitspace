@@ -16,7 +16,7 @@ const Partners = () => {
         </Content>
         <WrapImg>
           <ImgHalf>
-            <img src="../images/home-page/partners.png" alt="" />
+            <img src="../images/home-page/partners.png" alt="partner-img" />
           </ImgHalf>
         </WrapImg>
       </WrapContainer>

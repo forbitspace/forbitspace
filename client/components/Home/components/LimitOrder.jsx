@@ -9,7 +9,7 @@ const LimitOrder = () => {
       <WrapContainer>
         <WrapImg>
           <ImgHalf>
-            <img src="../images/home-page/limit.png" alt="" />
+            <img src="../images/home-page/limit.png" alt="limit-order" />
           </ImgHalf>
         </WrapImg>
         <Content className="title-banner text-dark text-visi">

@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"34":"42b75643423560459bdc"}[chunkId] + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"34":"d7812538210375f76a2d"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -185,38 +185,7 @@ const HomeComp = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __web
 }); // const HomeComp = dynamic(import("../client/components/ComingSoon"), { ssr: false });
 
 function Home() {
-  return __jsx("div", null, __jsx(HomeComp, null), __jsx("script", {
-    dangerouslySetInnerHTML: {
-      __html: `
-                        new WOW().init();
-                  `
-    }
-  }), __jsx("script", {
-    dangerouslySetInnerHTML: {
-      __html: `
-                        $(document).ready(function() {
-                            $('.dark-mode').click(function() {
-                                $('.main-wrap').toggleClass('visible');
-                            });
-                        });
-                        $(document).ready(function() {
-                            $('.dark-mode').click(function() {
-                                $('.header').toggleClass('visible');
-                            });
-                        });
-                        $(document).ready(function() {
-                            $('.dark-mode').click(function() {
-                                $('.footer').toggleClass('visible');
-                            });
-                        });
-                        $(document).ready(function() {
-                            $('.dark-mode').click(function() {
-                                $('body').toggleClass('visible');
-                            });
-                        });
-                          `
-    }
-  }));
+  return __jsx("div", null, __jsx(HomeComp, null));
 }
 
 /***/ }),
