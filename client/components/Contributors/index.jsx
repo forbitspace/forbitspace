@@ -5,14 +5,23 @@ import FooterContributor from "./components/Footer";
 import Banner from "./components/Banner";
 import Members from "./components/Members";
 import Footer from "../Footer";
-import { MemberData, AdvisorData } from "./constants";
+import {
+  MemberData,
+  MemberData_1,
+  AdvisorData,
+  MemberData_2,
+} from "./constants";
+import Leaders from "./components/Leader";
 
 const Index = () => {
   return (
     <WrapperBackground>
       <Container className="container">
         <Banner />
-        <Members title={"Our Team"} data={MemberData} />
+        <Leaders />
+        <Members title={""} data={MemberData} />
+        <Members title={""} data={MemberData_1} />
+        <Members title={""} data={MemberData_2} />
         <Members
           title={"Advisors"}
           data={AdvisorData}
