@@ -12,7 +12,7 @@ const HowItWorks = () => {
         </Content>
         <WrapImg>
           <ImgHalf>
-            <img src="../images/home-page/howitwork.png" alt="" />
+            <img src="../images/home-page/howitwork-min.png" alt="" />
           </ImgHalf>
         </WrapImg>
         <Content>

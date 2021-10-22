@@ -46,7 +46,7 @@ const Derivative = () => {
         </Content>
         <WrapImg>
           <ImgHalf>
-            <img src="../images/home-page/derivative.png" alt="" />
+            <img src="../images/home-page/derivative.png" alt="derivative" />
           </ImgHalf>
         </WrapImg>
       </WrapContainer>

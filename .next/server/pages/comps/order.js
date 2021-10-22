@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../../" + ({}[chunkId]||chunkId) + "." + {"50":"17c788cbc0c88ba06abc"}[chunkId] + ".js");
+/******/ 			var chunk = require("../../" + ({}[chunkId]||chunkId) + "." + {"51":"a79cafd4ce29d343e53c"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -160,7 +160,7 @@ __webpack_require__.r(__webpack_exports__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Order = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 50).then(__webpack_require__.bind(null, "Uelo")), {
+const Order = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 51).then(__webpack_require__.bind(null, "Uelo")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("Uelo")],

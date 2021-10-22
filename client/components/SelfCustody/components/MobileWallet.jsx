@@ -33,7 +33,7 @@ const MobileWallet = () => {
       <WrapContainer>
         <WrapImg>
           <ImgHalf className="img__phone">
-            <img src="../images/self-page/phone-1.png" alt="" />
+            <img src="../images/self-page/phone-1-min.png" alt="" />
           </ImgHalf>
         </WrapImg>
         <Content className="text__mobile-wallet">

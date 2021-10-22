@@ -10,9 +10,9 @@ export default class extends Document {
       <Html lang="en">
         <Head>
           <link rel="shortcut icon" href="../images/logo-space.png" />
-          <link rel="stylesheet" href="/js/WOW-master/animate.css" />
-          <link rel="stylesheet" href="/js/Slick-Js/slick.css" />
-          <link rel="stylesheet" href="/js/Slick-Js/slick-theme.css" />
+          {/* <link rel="stylesheet" href="/js/WOW-master/animate.css" /> */}
+          {/* <link rel="stylesheet" href="/js/Slick-Js/slick.css" /> */}
+          {/* <link rel="stylesheet" href="/js/Slick-Js/slick-theme.css" /> */}
           <link
             href="https://unpkg.com/aos@2.3.1/dist/aos.css"
             rel="stylesheet"
@@ -86,12 +86,12 @@ export default class extends Document {
         <body className="dark-mode">
           <Main />
           <NextScript />
-          <script src="js/jquery-3.4.1.min.js"></script>
-          <script src="js/Slick-Js/slick.min.js"></script>
-          <script src="js/WOW-master/wow.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-          <script src="js/Magnific-Popup-master/jquery.magnific-popup.min.js"></script>
-          <script src="js/main.js"></script>
+          {/* <script src="js/jquery-3.4.1.min.js"></script> */}
+          {/* <script src="js/Slick-Js/slick.min.js"></script> */}
+          {/* <script src="js/WOW-master/wow.min.js"></script> */}
+          {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> */}
+          {/* <script src="js/Magnific-Popup-master/jquery.magnific-popup.min.js"></script> */}
+          {/* <script src="js/main.js"></script> */}
           <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
           <script>AOS.init();</script>
           {/* <script

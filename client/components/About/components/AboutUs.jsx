@@ -17,7 +17,7 @@ const AboutUs = () => {
         </Content>
         <WrapImg>
           <ImgHalf>
-            <img src="../images/about-page/team.png" alt="" />
+            <img src="../images/about-page/team-min.png" alt="" />
           </ImgHalf>
         </WrapImg>
       </WrapContainer>

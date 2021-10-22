@@ -6,10 +6,13 @@ const System = () => {
       <WrapperInner>
         <div className="header">{title}</div>
         <div className="img-content">
-          {data.map((item) => (
-            <div className="img-holder">
+          {data.map((item, index) => (
+            <div className="img-holder" key={index}>
               {/* <a href="/#"> */}
-              <img src={`./images/logo-contributor/${item.img}.svg`} alt="" />
+              <img
+                src={`./images/logo-contributor/${item.img}.svg`}
+                alt={`logo-${item.img}`}
+              />
               {/* </a> */}
             </div>
           ))}
@@ -37,7 +40,12 @@ const System = () => {
         <SocialLink>
           {DataSocialLinkFooter.map((item, index) => {
             return (
-              <Link href={item.link} target="_blank" key={index}>
+              <Link
+                href={item.link}
+                target="_blank"
+                rel="noreferrer"
+                key={index}
+              >
                 <Icon src={item.url} alt="icon social media"></Icon>
               </Link>
             );

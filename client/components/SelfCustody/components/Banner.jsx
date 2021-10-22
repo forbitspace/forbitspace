@@ -8,7 +8,7 @@ const Banner = () => {
       <WrapContainer>
         <WrapImg>
           <ImgHalf>
-            <img src="../images/self-page/wallet-01.png" alt="" />
+            <img src="../images/self-page/wallet-01-min.png" alt="" />
           </ImgHalf>
         </WrapImg>
         <Content className="title-banner text-dark text-visi">

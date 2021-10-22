@@ -17,7 +17,7 @@ const SelfCustody = () => {
       {/* <Numbers /> */}
       <MobileWallet />
       <Assets />
-      <BackgroundImg src="../images/background-line-min.png"></BackgroundImg>
+      {/* <BackgroundImg src="../images/background-line-min.png"></BackgroundImg> */}
       <Footer />
     </WrapperBackground>
   );
@@ -29,18 +29,18 @@ const WrapperBackground = styled.section`
   background-size: auto;
 `;
 
-const BackgroundImg = styled.img`
-  position: fixed;
-  top: -100vh;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  min-height: 200vh;
-  opacity: 0.6;
-  z-index: -1;
-  @media (max-width: 576px) {
-    position: fixed;
-  }
-`;
+// const BackgroundImg = styled.img`
+//   position: fixed;
+//   top: -100vh;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   width: 100%;
+//   min-height: 200vh;
+//   opacity: 0.6;
+//   z-index: -1;
+//   @media (max-width: 576px) {
+//     position: fixed;
+//   }
+// `;
 export default SelfCustody;

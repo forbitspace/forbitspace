@@ -1,18 +1,26 @@
-import React from "react";
+import React, { Suspense } from "react";
 import styled from "styled-components";
-import Banner from "./components/Banner";
+// import Banner from "./components/Banner";
 import Footer from "../Footer/index";
 import HowItWorks from "./components/HowItWorks";
 import Finder from "./components/Finder";
+
+const Banner = React.lazy(() => import("./components/Banner"));
 
 const Aggregation = () => {
   return (
     <WrapperBackground>
       <WrapContent>
-        <Banner />
+        <Suspense
+          fallback={() => {
+            return <></>;
+          }}
+        >
+          <Banner />
+        </Suspense>
         <HowItWorks />
         <Finder />
-        <BackgroundImg src="../images/background-line-min.png"></BackgroundImg>
+        {/* <BackgroundImg src="../images/background-line-min.png"></BackgroundImg> */}
       </WrapContent>
       <Footer />
     </WrapperBackground>
@@ -29,19 +37,19 @@ const WrapContent = styled.div`
   min-height: calc(100vh - 330px);
 `;
 
-const BackgroundImg = styled.img`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  /* height: calc(100% + 100vh); */
-  min-height: 100vh;
-  opacity: 0.6;
-  z-index: -1;
-  @media (max-width: 576px) {
-    position: fixed;
-  }
-`;
+// const BackgroundImg = styled.img`
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   width: 100%;
+//   /* height: calc(100% + 100vh); */
+//   min-height: 100vh;
+//   opacity: 0.6;
+//   z-index: -1;
+//   @media (max-width: 576px) {
+//     position: fixed;
+//   }
+// `;
 export default Aggregation;

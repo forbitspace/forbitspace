@@ -1362,7 +1362,7 @@ body.dark-mode h3 {
 } */
 
 body.dark-mode {
-  background: url(../images/sta.png);
+  /* background: url(../images/sta.png); */
   transition: ease-in-out 0.5s all;
   color: #fff;
   background-repeat: no-repeat;
@@ -1373,6 +1373,39 @@ body.dark-mode {
     #00284b 50%,
     #020a1a 100%
   );
+}
+body.dark-mode::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  background-color: #000;
+  opacity: 0.22;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+body.dark-mode::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  background-image: linear-gradient(
+    to right,
+    #020a1a 0%,
+    #00284b 50%,
+    #020a1a 100%
+  );
+  background-image: url("../images/background-line-min.png");
+  background-size: cover;
+  opacity: 0.08;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
 
 body.visible p {

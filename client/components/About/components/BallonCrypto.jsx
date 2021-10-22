@@ -59,7 +59,7 @@ const BallonCrypto = () => {
         </Content>
         <WrapImg>
           <ImgHalf>
-            <img src="../images/about-page/abloutus.png" alt="" />
+            <img src="../images/about-page/abloutus-min.png" alt="" />
           </ImgHalf>
         </WrapImg>
       </WrapContainer>

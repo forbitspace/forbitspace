@@ -6,6 +6,7 @@ const AppLink = ({ marginRight }) => {
     <ButtonBanner
       href="https://app.forbitspace.com/"
       target="_blank"
+      rel="noreferrer"
       marginRight={marginRight}
     >
       {" "}
