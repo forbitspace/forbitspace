@@ -1,25 +1,24 @@
 import React, { Suspense } from "react";
 import styled from "styled-components";
 // import Banner from "./components/Banner";
+// import HowItWorks from "./components/HowItWorks";
+// import Finder from "./components/Finder";
 import Footer from "../Footer/index";
-import HowItWorks from "./components/HowItWorks";
-import Finder from "./components/Finder";
+import Loading from "../Loading/index";
 
 const Banner = React.lazy(() => import("./components/Banner"));
+const HowItWorks = React.lazy(() => import("./components/HowItWorks"));
+const Finder = React.lazy(() => import("./components/Finder"));
 
 const Aggregation = () => {
   return (
     <WrapperBackground>
       <WrapContent>
-        <Suspense
-          fallback={() => {
-            return <></>;
-          }}
-        >
+        <Suspense fallback={<Loading />}>
           <Banner />
+          <HowItWorks />
+          <Finder />
         </Suspense>
-        <HowItWorks />
-        <Finder />
         {/* <BackgroundImg src="../images/background-line-min.png"></BackgroundImg> */}
       </WrapContent>
       <Footer />

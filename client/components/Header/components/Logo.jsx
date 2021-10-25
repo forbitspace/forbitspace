@@ -1,22 +1,24 @@
 import React from "react";
-import Link from "next/link";
+import { Link } from "../../route/index.js";
 import styled from "styled-components";
 
 const Logo = () => {
   return (
     <BoxLogo>
-      <a href="/">
-        <img
-          src="../images/logo/logo-forbitspace-dark.png"
-          alt="forbitspace"
-          className="logo--desktop"
-        />
-        <img
-          src="../images/logo/logo-sm-dark.png"
-          alt="forbitspace"
-          className="logo--mobile"
-        />
-      </a>
+      <Link href="/">
+        <a>
+          <img
+            src="../images/logo/logo-forbitspace-dark.png"
+            alt="forbitspace"
+            className="logo--desktop"
+          />
+          <img
+            src="../images/logo/logo-sm-dark.png"
+            alt="forbitspace"
+            className="logo--mobile"
+          />
+        </a>
+      </Link>
     </BoxLogo>
   );
 };

@@ -265,7 +265,7 @@ const ListMenu = styled.div`
 const Blank = styled.div`
   font-size: 12px;
 `;
-const TitleFooter = styled.div`
+const TitleFooter = styled.li`
   margin-bottom: 10px;
   color: #ffffff;
   font-family: sans-serif;

@@ -28,11 +28,11 @@ const Members = (props) => {
               {linked ? (
                 linked !== "/" ? (
                   <a href={linked} target="_blank">
-                    <i class="fab fa-linkedin"></i>
+                    <i className="fab fa-linkedin"></i>
                   </a>
                 ) : (
                   <span href={linked} target="_blank">
-                    <i class="fab fa-linkedin"></i>
+                    <i className="fab fa-linkedin"></i>
                   </span>
                 )
               ) : null}
@@ -53,7 +53,7 @@ const Members = (props) => {
     <WrapperMembers>
       <Title>{props.title}</Title>
       <GroupMembers gap={props.gap}>
-        {props.data.map((item) => {
+        {props.data.map((item, index) => {
           return (
             <RenderMemberItem
               thumb={item.thumb}
@@ -63,6 +63,7 @@ const Members = (props) => {
               lang={item.lang}
               linked={item.linked}
               twitter={item.twitter}
+              key={index}
             />
           );
         })}

@@ -29,7 +29,7 @@ const Leaders = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i class="fab fa-linkedin"></i>
+                    <i className="fab fa-linkedin"></i>
                   </a>
                 </Social>
               </FlexItem>
@@ -80,7 +80,7 @@ const Leaders = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i class="fab fa-linkedin"></i>
+                    <i className="fab fa-linkedin"></i>
                   </a>
                 </Social>
               </FlexItem>
@@ -124,7 +124,7 @@ const Leaders = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fab fa-linkedin"></i>
+                  <i className="fab fa-linkedin"></i>
                 </a>
               </Social>
             </FlexItem>
