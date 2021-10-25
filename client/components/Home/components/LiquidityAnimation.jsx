@@ -3,14 +3,15 @@ import styled from "styled-components";
 
 const LiquidityAnimation = () => {
   const dataTokens = [
-    { name: "fbs" },
-    { name: "usdt" },
-    { name: "aave" },
-    { name: "dai" },
-    { name: "eth" },
-    { name: "sushi" },
-    { name: "uni" },
-    { name: "usdc" },
+    { name: "fbs", range: "95px" },
+    { name: "usdt", range: "26px" },
+    { name: "aave", range: "32px" },
+    { name: "dai", range: "27px" },
+    { name: "eth", range: "35px" },
+    { name: "sushi", range: "36px" },
+    { name: "uni", range: "42px" },
+    { name: "usdc", range: "20px" },
+    { name: "polygon", range: "20px" },
   ];
   return (
     <WrapContent>
@@ -19,10 +20,10 @@ const LiquidityAnimation = () => {
       </BackgroundImg>
       <ItemImg>
         {dataTokens.map((item, index) => (
-          <ImgWrap className={`img-${index}`} key={index}>
+          <ImgWrap className={`img-${index}`} range={item.range}>
             <img
               src={`../images/liquidity Pool/icon-${item.name}.png`}
-              alt={`liquidity-${item.name}-icon`}
+              alt=""
             />
           </ImgWrap>
         ))}
@@ -49,55 +50,61 @@ const ItemImg = styled.div`
 const ImgWrap = styled.div`
   position: absolute;
   &.img-0 {
-    top: 35%;
+    top: 32%;
     left: calc(50% - 70px);
     width: 140px;
     animation: moving 7s infinite;
   }
   &.img-1 {
-    top: 10%;
+    top: 7%;
     left: calc(25% - 40px);
     width: 80px;
     animation: moving 5.3s infinite;
   }
   &.img-2 {
-    top: 23%;
-    left: calc(77% - 40px);
+    top: 15%;
+    left: calc(75% - 40px);
     width: 80px;
-    animation: moving 8.9s infinite;
+    animation: moving 6.9s infinite;
   }
   &.img-3 {
-    top: 0%;
+    top: -3%;
     left: calc(40% - 37px);
     width: 74px;
     animation: moving 5.6s infinite;
   }
   &.img-4 {
-    top: 10%;
+    top: 7%;
     left: calc(60% - 40px);
     width: 74px;
     animation: moving 4.3s infinite;
   }
   &.img-5 {
-    top: 25%;
+    top: 22%;
     left: calc(37% - 35px);
     width: 70px;
     animation: moving 7.5s infinite;
   }
   &.img-6 {
-    top: -10%;
+    top: -13%;
     left: calc(60% - 40px);
     width: 65px;
     animation: moving 5.4s infinite;
   }
   &.img-7 {
-    top: -1%;
+    top: -4%;
     left: calc(75% - 40px);
     width: 80px;
     animation: moving 6.9s infinite;
   }
+  &.img-8 {
+    top: 32%;
+    left: calc(73% - 40px);
+    width: 80px;
+    animation: moving 3.9s infinite;
+  }
   img {
-    transform: scale(0.9);
+    transform: scale(1);
   }
   @media (max-width: 1024px) {
     img {
@@ -106,7 +113,7 @@ const ImgWrap = styled.div`
   }
   @media (max-width: 768px) {
     img {
-      transform: scale(0.8);
+      transform: scale(1.2);
     }
   }
   @media (max-width: 700px) {
@@ -118,23 +125,17 @@ const ImgWrap = styled.div`
     img {
       transform: scale(0.5);
     }
-    &.img-0 {
-      top: 28%;
-      left: calc(50% - 70px);
-      width: 140px;
-      animation: moving 7s infinite;
-    }
   }
 
   @keyframes moving {
     0% {
-      transform: translateY(25px);
+      transform: translateY(${({ range }) => range});
     }
     50% {
       transform: translateY(0px);
     }
     100% {
-      transform: translateY(25px);
+      transform: translateY(${({ range }) => range});
     }
   }
 `;

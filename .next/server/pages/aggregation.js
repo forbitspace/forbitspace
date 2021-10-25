@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"37":"e5c4b9802b308015d49c","49":"bf002d2fbc3def99e2cc"}[chunkId] + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"36":"688b864ec900cd8aca9f","49":"bf002d2fbc3def99e2cc","50":"3bc643ba668513344cdd","51":"4c24eb5c785ca30a3a82"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -145,7 +145,7 @@ __webpack_require__.r(__webpack_exports__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Aggregation = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 37).then(__webpack_require__.bind(null, "gKn3")), {
+const Aggregation = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 36).then(__webpack_require__.bind(null, "gKn3")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("gKn3")],

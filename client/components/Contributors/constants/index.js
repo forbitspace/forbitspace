@@ -20,38 +20,40 @@ export const NumData = [
 // export const DirectorMemberData = [
 
 export const MemberData = [
-  {
-    name: "Menardo QuiÑosa",
-    thumb: "../images/contributor-page/menardo.png",
-    job: "CO - Founder",
-    jobb: "Head Strategist",
-    linked: "https://www.linkedin.com/in/menardo-quinosa-823498222",
-    twitter: "https://twitter.com/MenardoQuinosa",
-  },
-  {
-    name: "Baroda Hoang",
-    thumb: "../images/contributor-page/baroda.png",
-    job: "CO - Founder",
-    jobb: "Lead Blockchain Engineer & Architect",
-    linked: "https://www.linkedin.com/in/barodahoang/",
-    twitter: "https://twitter.com/barodahoang",
-  },
-  {
-    name: "Stella Vo",
-    thumb: "../images/contributor-page/stella-vo.png",
-    job: "Business Development",
-    linked: "https://www.linkedin.com/in/stella-vo-276627222",
-  },
+  // {
+  //   name: "Menardo QuiÑosa",
+  //   thumb: "../images/contributor-page/menardo.png",
+  //   job: "CO - Founder",
+  //   jobb: "Head Strategist",
+  //   linked: "https://www.linkedin.com/in/menardo-quinosa-823498222",
+  //   twitter: "https://twitter.com/MenardoQuinosa",
+  // },
+  // {
+  //   name: "Baroda Hoang",
+  //   thumb: "../images/contributor-page/baroda.png",
+  //   job: "CO - Founder",
+  //   jobb: "Lead Blockchain Engineer & Architect",
+  //   linked: "https://www.linkedin.com/in/barodahoang/",
+  //   twitter: "https://twitter.com/barodahoang",
+  // },
+  // {
+  //   name: "Stella Vo",
+  //   thumb: "../images/contributor-page/stella-vo.png",
+  //   job: "Head Strategist",
+  //   jobb: "Business Development",
+  //   linked: "https://www.linkedin.com/in/stella-vo-276627222",
+  // },
   {
     name: "Joseph Miller",
     thumb: "../images/contributor-page/miller.png",
-    job: "Lead Blockchain Engineer",
+    job: "Technical Manager",
+    jobb: "Lead Blockchain Engineer",
     linked: "/",
   },
   {
     name: "Mat Luu",
     thumb: "../images/contributor-page/mat-mind.png",
-    job: "Lead Blockchain Engineer",
+    jobb: "Lead Blockchain Engineer",
     linked: "https://www.linkedin.com/in/mat-luu/",
   },
   {
@@ -103,6 +105,14 @@ export const MemberData = [
     linked: "/",
   },
   {
+    name: "Anthea Le",
+    thumb: "../images/contributor-page/anthea-le.png",
+    job: "Support and Community",
+    linked: "https://www.linkedin.com/in/anthea-le-83b663222/",
+  },
+];
+export const MemberData_1 = [
+  {
     name: "Almira Nhu",
     thumb: "../images/contributor-page/almira.png",
     job: "Business Development ",
@@ -132,6 +142,9 @@ export const MemberData = [
     job: "Business Development Lead",
     linked: "/",
   },
+];
+
+export const MemberData_2 = [
   {
     name: "Jacky Weerati",
     thumb: "../images/contributor-page/jacky.png",
@@ -149,12 +162,6 @@ export const MemberData = [
     thumb: "../images/contributor-page/heena.png",
     job: "Business Development",
     linked: "/",
-  },
-  {
-    name: "Anthea Le",
-    thumb: "../images/contributor-page/anthea-le.png",
-    job: "Support and Community",
-    linked: "https://www.linkedin.com/in/anthea-le-83b663222/",
   },
 ];
 
