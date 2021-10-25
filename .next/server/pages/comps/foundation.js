@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../../" + ({}[chunkId]||chunkId) + "." + {"50":"8318432cb54cf62e08a9"}[chunkId] + ".js");
+/******/ 			var chunk = require("../../" + ({}[chunkId]||chunkId) + "." + {"52":"eab420ed6fabb07ab096"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -153,7 +153,7 @@ __webpack_require__.r(__webpack_exports__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Foundation = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 50).then(__webpack_require__.bind(null, "Nnsu")), {
+const Foundation = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 52).then(__webpack_require__.bind(null, "Nnsu")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("Nnsu")],

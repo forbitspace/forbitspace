@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"33":"b73d2a89ba88d52ea5c5","52":"7233e3a884c5ac0633b7"}[chunkId] + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"48":"fdd579a2c9124d0128dd","54":"c1b4824e67d57130e89e"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -301,13 +301,6 @@ module.exports = require("styled-components");
 
 /***/ }),
 
-/***/ "Osoz":
-/***/ (function(module, exports) {
-
-module.exports = require("next/dist/next-server/lib/router-context.js");
-
-/***/ }),
-
 /***/ "YNMu":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -328,14 +321,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const Planet = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpack_require__.e(/* import() */ 52).then(__webpack_require__.bind(null, "n/ku")), {
+const Planet = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpack_require__.e(/* import() */ 54).then(__webpack_require__.bind(null, "n/ku")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("n/ku")],
     modules: ["../client/components/Planets/Planet"]
   }
 });
-const Header = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpack_require__.e(/* import() */ 33).then(__webpack_require__.bind(null, "dFpG")), {
+const Header = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpack_require__.e(/* import() */ 48).then(__webpack_require__.bind(null, "dFpG")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("dFpG")],

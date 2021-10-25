@@ -265,6 +265,9 @@ export const EcosystemData = [
   {
     img: "alpha-wallet",
   },
+  {
+    img: "intotheblock",
+  },
 ];
 export const DataSocialLinkFooter = [
   {

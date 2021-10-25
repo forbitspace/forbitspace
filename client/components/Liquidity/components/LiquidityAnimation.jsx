@@ -11,6 +11,7 @@ const LiquidityAnimation = () => {
     { name: "sushi", range: "36px" },
     { name: "uni", range: "42px" },
     { name: "usdc", range: "20px" },
+    { name: "polygon", range: "20px" },
   ];
   return (
     <WrapContent>
@@ -49,52 +50,58 @@ const ItemImg = styled.div`
 const ImgWrap = styled.div`
   position: absolute;
   &.img-0 {
-    top: 35%;
+    top: 32%;
     left: calc(50% - 70px);
     width: 140px;
     animation: moving 7s infinite;
   }
   &.img-1 {
-    top: 10%;
+    top: 7%;
     left: calc(25% - 40px);
     width: 80px;
     animation: moving 5.3s infinite;
   }
   &.img-2 {
-    top: 23%;
-    left: calc(77% - 40px);
+    top: 15%;
+    left: calc(75% - 40px);
     width: 80px;
-    animation: moving 8.9s infinite;
+    animation: moving 6.9s infinite;
   }
   &.img-3 {
-    top: 0%;
+    top: -3%;
     left: calc(40% - 37px);
     width: 74px;
     animation: moving 5.6s infinite;
   }
   &.img-4 {
-    top: 10%;
+    top: 7%;
     left: calc(60% - 40px);
     width: 74px;
     animation: moving 4.3s infinite;
   }
   &.img-5 {
-    top: 25%;
+    top: 22%;
     left: calc(37% - 35px);
     width: 70px;
     animation: moving 7.5s infinite;
   }
   &.img-6 {
-    top: -10%;
+    top: -13%;
     left: calc(60% - 40px);
     width: 65px;
     animation: moving 5.4s infinite;
   }
   &.img-7 {
-    top: -1%;
+    top: -4%;
     left: calc(75% - 40px);
     width: 80px;
     animation: moving 6.9s infinite;
+  }
+  &.img-8 {
+    top: 32%;
+    left: calc(80% - 40px);
+    width: 80px;
+    animation: moving 3.9s infinite;
   }
   img {
     transform: scale(1);
