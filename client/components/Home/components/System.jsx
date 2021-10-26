@@ -125,7 +125,7 @@ const BecomeBox = styled.div`
     font-weight: 500;
   }
   .inner-content {
-    font-size: 22px;
+    font-size: 1rem;
   }
   @media (max-width: 786px) {
     .header-content {

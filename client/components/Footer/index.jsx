@@ -68,7 +68,7 @@ const Index = () => {
                 ))}
               </ul>
             ))}
-            <ul className="text-visi">
+            <ul className="text-visi input-field">
               <SubTitleFooter>
                 Subscribe to our newsletter for updates
               </SubTitleFooter>
@@ -95,7 +95,12 @@ const Index = () => {
                   <i className="fa fa-arrow-right"></i>
                 </button>
               </div>
-              <Copyright className="text-dark">© 2021 forbitspace</Copyright>
+              <Copyright className="text-dark foundation">
+                forbitspace foundation LLC
+              </Copyright>
+              <Copyright className="text-dark">
+                © 2021 @forbitspace, All Rights Reserved
+              </Copyright>
               <SocialLink>
                 {DataSocialLinkFooter.map((item, index) => {
                   return (
@@ -146,6 +151,9 @@ const SocialLink = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
+  @media (min-width: 1025px) {
+    justify-content: flex-start;
+  }
 `;
 
 const FooterMenu = styled.section`
@@ -167,10 +175,12 @@ const ListMenu = styled.div`
   width: 100%;
   flex-wrap: wrap;
   padding-top: 25px;
-
+  .input-field {
+    width: 23%;
+  }
   ul {
     padding-left: 0;
-    width: calc(100% / 6);
+    width: 15%;
     // text-align:right;
 
     .form-wrap {
@@ -288,6 +298,15 @@ const Copyright = styled.p`
   font-size: 14px;
   font-weight: 300;
   font-style: italic;
+  &.foundation {
+    padding-left: 1.5rem;
+    margin-bottom: 3px;
+  }
+  @media (max-width: 1024px) {
+    &.foundation {
+      padding-left: unset;
+    }
+  }
 `;
 
 const Input = styled.input`
@@ -307,6 +326,9 @@ const Input = styled.input`
   border: none;
   background: #cff3f4;
   border: 1px solid #0047b2;
+  ::placeholder {
+    font-weight: 100;
+  }
 `;
 
 const WrapperInput = styled.div`
