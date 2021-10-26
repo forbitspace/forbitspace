@@ -28,7 +28,7 @@ export default class extends App {
         <NextSeo
           title={"forbitspace"}
           description={
-            "forbitspace The future of decentralized finance Defi space is the next evolution of the financial system"
+            "forbitspace is an interoperability aggregator protocol that unites decentralized applications across disparate blockchains. Allows crypto traders to tap deep liquidity and receive better pricing one single interface."
           }
         />
         {show ? (
