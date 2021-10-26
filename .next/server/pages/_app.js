@@ -361,7 +361,7 @@ const Header = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpa
     } = this.props;
     return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_seo__WEBPACK_IMPORTED_MODULE_2__["NextSeo"], {
       title: "forbitspace",
-      description: "forbitspace The future of decentralized finance Defi space is the next evolution of the financial system"
+      description: "forbitspace is an interoperability aggregator protocol that unites decentralized applications across disparate blockchains. Allows crypto traders to tap deep liquidity and receive better pricing one single interface."
     }), show ? __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(Header, null), __jsx("div", {
       className: "main"
     }, __jsx(Component, pageProps))) : __jsx(Planet, null));
