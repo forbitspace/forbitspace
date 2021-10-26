@@ -25,21 +25,31 @@ const Network = () => {
             </ImgHalf>
           </WrapImg>{" "}
           <WrapTitle>
-            <Text>Multi Network</Text>
+            <Text>Spread across Multiple Networks</Text>
             <SubText className="subtext__title">
-              <span>forbitspace </span> aggregator protocol is now available on
+              {/* <span>forbitspace </span> aggregator protocol is now available on
               Ethereum, Binance Smart Chain, and layer 2 Polygon, Arbitrum, and
-              Optimism we currently launch each blockchain as by stage.
-            </SubText>
-            <SubText className="subtext__title">
-              We plan to support more EVM chains and non-EVM chains, Solana,
-              Avalanche, and more in the months following launch.
+              Optimism we currently launch each blockchain as by stage. */}
+              <span>forbitspace</span> aggregator protocol is now available on
+              Ethereum, Binance Smart Chain, and layer 2 Polygon, Avalanche,
+              Arbitrum, and Optimism we currently launch each blockchain as by
+              stage.
+              <br /> As the decentralized space is growing at lightning speed.
+              <br />
+              <br />
+              <span>forbitspace</span> connects multiple blockchains, making the
+              network’s transaction from one chain to another seamless becomes
+              that the additional functionality, usability, and scalability are
+              blazingly fast, low cost, & eco-friendly, brings is contributes to
+              the benefit of users. <br /> <br />
+              We plan to support more EVM chains and non-EVM chains, Solana, and
+              more in the months following launch.
             </SubText>
           </WrapTitle>
         </WrapContent>
         <WrapContent>
           <SubText className="subtext__content">
-            The <span>forbitspace </span> DEX super aggregator is an
+            The <span>forbitspace</span> DEX super aggregator is an
             interoperability protocol that connects disparate blockchains. That
             unites decentralized applications across disparate blockchains,
             simultaneously uniting liquidity across chains and making it

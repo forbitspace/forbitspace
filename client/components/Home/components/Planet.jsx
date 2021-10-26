@@ -19,7 +19,7 @@ const Planet = () => {
           </Title>
           <Text>Aggregation Protocol</Text>
           <SubText>
-            The <span>forbitspace</span> is an aggregator protocol that allows
+            <span>forbitspace</span> is an aggregator protocol that allows
             traders to benefit from a large variety of financial tools in a
             single interface.
           </SubText>
