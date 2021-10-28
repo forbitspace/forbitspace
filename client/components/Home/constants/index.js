@@ -294,4 +294,8 @@ export const DataSocialLinkFooter = [
     link: "https://www.reddit.com/r/forbitspace/",
     url: "./images/icon-social-footer/2.svg",
   },
+  {
+    link: "https://www.youtube.com/channel/UCU9ejvfmL6p2Pdwp2-q163w",
+    url: "../images/icon-social-footer/7.svg",
+  },
 ];
