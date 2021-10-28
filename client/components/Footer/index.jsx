@@ -99,7 +99,7 @@ const Index = () => {
                 forbitspace foundation LLC
               </Copyright>
               <Copyright className="text-dark">
-                © 2021 @forbitspace, All Rights Reserved
+                © 2021 @forbitspace, All Rights Reserved, Disclaimer
               </Copyright>
               <SocialLink>
                 {DataSocialLinkFooter.map((item, index) => {
@@ -176,11 +176,11 @@ const ListMenu = styled.div`
   flex-wrap: wrap;
   padding-top: 25px;
   .input-field {
-    width: 23%;
+    width: 30%;
   }
   ul {
     padding-left: 0;
-    width: 15%;
+    width: 14%;
     // text-align:right;
 
     .form-wrap {
@@ -276,11 +276,11 @@ const Blank = styled.div`
   font-size: 12px;
 `;
 const TitleFooter = styled.li`
-  margin-bottom: 10px;
+  margin-bottom: 10px !important;
   color: #ffffff;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+  font-family: sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
   a {
     text-decoration: none;
   }
