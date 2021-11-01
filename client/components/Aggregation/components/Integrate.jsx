@@ -126,7 +126,7 @@ const Content = styled.div`
 `;
 
 const Text = styled.p`
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 40px;
     letter-spacing: 1px;
