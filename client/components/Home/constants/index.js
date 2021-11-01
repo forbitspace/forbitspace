@@ -166,33 +166,9 @@ export const DataFBTC = [
     },
 ];
 
-export const ContributorData = [
+export const AuditData = [
     {
-        img: "coingecko",
-    },
-    {
-        img: "link",
-    },
-    {
-        img: "graph",
-    },
-    {
-        img: "metamask",
-    },
-    {
-        img: "dune",
-    },
-    {
-        img: "wallet",
-    },
-    {
-        img: "binance",
-    },
-    {
-        img: "polygon",
-    },
-    {
-        img: "coinbase",
+        img: "certik.svg",
     },
 ];
 export const EcosystemData = [

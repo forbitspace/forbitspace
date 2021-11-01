@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DataSocialLinkFooter, EcosystemData } from "../constants";
+import { AuditData, DataSocialLinkFooter, EcosystemData } from "../constants";
 const System = () => {
     const ContributorRender = ({ data, title }) => {
         return (
@@ -14,12 +14,23 @@ const System = () => {
                             />
                         </div>
                     ))}
-                    {/* <div className="img-holder">
-                        <img
-                            src={`./images/logo-contributor/boarc.png`}
-                            alt={`logo-boarc`}
-                        />
-                    </div> */}
+                </div>
+            </WrapperInner>
+        );
+    };
+    const AuditorRender = ({ data, title }) => {
+        return (
+            <WrapperInner className="auditor">
+                <div className="header">{title}</div>
+                <div className="img-content">
+                    {data.map((item, index) => (
+                        <div className="img-holder" key={index}>
+                            <img
+                                src={`./images/logo-contributor/${item.img}`}
+                                alt={`logo-${item.img}`}
+                            />
+                        </div>
+                    ))}
                 </div>
             </WrapperInner>
         );
@@ -32,6 +43,7 @@ const System = () => {
                     data={EcosystemData}
                     title={"Ecosystem partners"}
                 />
+                <AuditorRender data={AuditData} title={"Audit partners"} />
                 {/* <ContributorRender data={ContributorData} title={"Stakeholders"} /> */}
                 <BecomeBox>
                     <div className="content">
@@ -77,6 +89,12 @@ const WrapperSystem = styled.section`
     }
 `;
 const WrapperInner = styled.div`
+    &.auditor {
+        .img-content {
+            justify-content: center;
+            padding: 15px 0 45px;
+        }
+    }
     .header {
         font-size: 2rem;
         font-weight: 500;
