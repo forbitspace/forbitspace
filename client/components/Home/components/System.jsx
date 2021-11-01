@@ -92,6 +92,7 @@ const WrapperInner = styled.div`
     &.auditor {
         .img-content {
             justify-content: center;
+            padding: 15px 0 45px;
         }
     }
     .header {

@@ -101,9 +101,9 @@ export const navContent = [
                 outLink: true,
             },
             {
-                link: "",
+                link: "https://github.com/forbitspace/forbitspace-audits",
                 content: "Audit",
-                disable: true,
+                outLink: true,
             },
             {
                 link: "",

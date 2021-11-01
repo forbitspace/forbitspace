@@ -60,13 +60,13 @@ const ImgWrap = styled.div`
     }
     &.img-1 {
         top: 7%;
-        left: calc(22% - 40px);
+        left: calc(24% - 40px);
         width: 80px;
         animation: moving 5.3s infinite;
     }
     &.img-2 {
         top: 12%;
-        left: calc(75% - 40px);
+        left: calc(73% - 40px);
         width: 80px;
         animation: moving 6.9s infinite;
     }
@@ -77,8 +77,8 @@ const ImgWrap = styled.div`
         animation: moving 5.6s infinite;
     }
     &.img-4 {
-        top: 10%;
-        left: calc(52% - 40px);
+        top: 8%;
+        left: calc(50% - 40px);
         width: 74px;
         animation: moving 4.3s infinite;
     }
@@ -89,20 +89,20 @@ const ImgWrap = styled.div`
         animation: moving 7.5s infinite;
     }
     &.img-6 {
-        top: -10%;
+        top: -14%;
         left: calc(53% - 40px);
         width: 65px;
         animation: moving 4.4s infinite;
     }
     &.img-7 {
-        top: -4%;
-        left: calc(70% - 40px);
+        top: -5%;
+        left: calc(67% - 40px);
         width: 80px;
         animation: moving 6.9s infinite;
     }
     &.img-8 {
-        top: 26%;
-        left: calc(73% - 40px);
+        top: 25%;
+        left: calc(70% - 40px);
         width: 80px;
         animation: moving 3.9s infinite;
     }
@@ -117,6 +117,9 @@ const ImgWrap = styled.div`
     @media (max-width: 768px) {
         img {
             transform: scale(0.8);
+        }
+        &.img-6 {
+            top: -10%;
         }
     }
     @media (max-width: 700px) {
