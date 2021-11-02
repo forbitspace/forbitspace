@@ -4,11 +4,17 @@ const NetworkAnimation = () => {
     return (
         <WrapContent>
             <BackgroundImg>
-                <img src="../images/network-animation/bg.png" alt="" />
+                <img
+                    src="../images/network-animation/bg.png"
+                    alt="network-circle-background"
+                />
             </BackgroundImg>
             <ItemImg>
                 <ImgWrap>
-                    <img src="../images/network-animation/arb.png" alt="" />
+                    <img
+                        src="../images/network-animation/arb.png"
+                        alt="arb-icon"
+                    />
                 </ImgWrap>
             </ItemImg>
         </WrapContent>

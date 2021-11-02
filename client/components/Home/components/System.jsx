@@ -43,7 +43,10 @@ const System = () => {
                     data={EcosystemData}
                     title={"Ecosystem partners"}
                 />
-                <AuditorRender data={AuditData} title={"Audit partners"} />
+                <AuditorRender
+                    data={AuditData}
+                    title={"Security Audit Partner"}
+                />
                 {/* <ContributorRender data={ContributorData} title={"Stakeholders"} /> */}
                 <BecomeBox>
                     <div className="content">
@@ -93,6 +96,7 @@ const WrapperInner = styled.div`
         .img-content {
             justify-content: center;
             padding: 15px 0 45px;
+            gap: 6rem;
         }
     }
     .header {
@@ -143,6 +147,20 @@ const WrapperInner = styled.div`
         /* @media (max-width: 415px) {
       width: 70%;
     } */
+    }
+    @media (max-width: 1024px) {
+        &.auditor {
+            .img-content {
+                gap: 3rem;
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        &.auditor {
+            .img-content {
+                gap: 10px;
+            }
+        }
     }
 `;
 

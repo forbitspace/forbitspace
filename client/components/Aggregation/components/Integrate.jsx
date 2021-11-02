@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Integrate = () => {
     const network = [
-        { networkName: "eth" },
+        // { networkName: "eth" },
         { networkName: "bsc" },
         { networkName: "plg" },
         { networkName: "ava" },
@@ -16,13 +16,31 @@ const Integrate = () => {
                     <Text>Integrated protocols</Text>
                 </Content>
                 <WrapNetwork>
+                    <Network>
+                        <NetworkIcon className="eth-gif">
+                            <WrapIcon>
+                                <img
+                                    src={`../images/aggregation-page/network/eth-network.png`}
+                                    alt="eth-network"
+                                />
+                            </WrapIcon>
+                        </NetworkIcon>
+                        <NetworkOrbit>
+                            <WrapOrbit>
+                                <img
+                                    src={`../gif/gif-network.gif`}
+                                    alt="gif-eth-orbit"
+                                />
+                            </WrapOrbit>
+                        </NetworkOrbit>
+                    </Network>
                     {network.map((item, index) => (
                         <Network>
                             <NetworkIcon>
                                 <WrapIcon>
                                     <img
                                         src={`../images/aggregation-page/network/${item.networkName}-network.png`}
-                                        alt=""
+                                        alt={item.networkName + "-network"}
                                     />
                                 </WrapIcon>
                             </NetworkIcon>
@@ -30,7 +48,7 @@ const Integrate = () => {
                                 <WrapOrbit>
                                     <img
                                         src={`../images/aggregation-page/network/${item.networkName}-orbit.png`}
-                                        alt=""
+                                        alt={item.networkName + "-orbit"}
                                     />
                                 </WrapOrbit>
                             </NetworkOrbit>
@@ -79,6 +97,9 @@ const NetworkIcon = styled.div`
     width: 100%;
     @media (min-width: 768px) {
         width: 40%;
+        &.eth-gif {
+            margin-right: -4rem;
+        }
     }
 `;
 const WrapIcon = styled.div`

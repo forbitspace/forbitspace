@@ -21,21 +21,21 @@ import Partners from "./components/Partners";
 import Network from "./components/Network";
 
 const Index = () => {
-  return (
-    <React.Fragment>
-      <Banner />
-      <WrapperBackground>
-        <Container>
-          <Network />
-          <Planet />
-          <Liquidity />
-          <LimitOrder />
-          <Derivative />
-          <SelfCustody />
-          <Partners />
-          <System />
-        </Container>
-        {/* <Pramaster />
+    return (
+        <React.Fragment>
+            <Banner />
+            <WrapperBackground>
+                <Container>
+                    <Network />
+                    <Planet />
+                    <Liquidity />
+                    <LimitOrder />
+                    <Derivative />
+                    <SelfCustody />
+                    <Partners />
+                    <System />
+                </Container>
+                {/* <Pramaster />
         <Growing />
         <Suite />
         <Superpowers />
@@ -45,34 +45,34 @@ const Index = () => {
         <Community />
         <BackgroundImg
           src="./images/background-line-min.png"
-          alt=""
+          alt="background"
         ></BackgroundImg> */}
-        <Footer />
-      </WrapperBackground>
-    </React.Fragment>
-  );
+                <Footer />
+            </WrapperBackground>
+        </React.Fragment>
+    );
 };
 const WrapperBackground = styled.div`
-  position: relative;
-  font-family: helvetica neue;
-  /* background-image: url("../images/background-line-min.jpg"); */
-  @media (max-width: 576px) {
-    overflow-x: hidden;
-  }
+    position: relative;
+    font-family: helvetica neue;
+    /* background-image: url("../images/background-line-min.jpg"); */
+    @media (max-width: 576px) {
+        overflow-x: hidden;
+    }
 `;
 
 const BackgroundImg = styled.img`
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: auto;
-  height: 100vh;
-  opacity: 0.15;
-  z-index: -1;
-  @media (max-width: 576px) {
     position: fixed;
-  }
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: auto;
+    height: 100vh;
+    opacity: 0.15;
+    z-index: -1;
+    @media (max-width: 576px) {
+        position: fixed;
+    }
 `;
 // const BackgroundImgMobile = styled.img`
 //   display: none;

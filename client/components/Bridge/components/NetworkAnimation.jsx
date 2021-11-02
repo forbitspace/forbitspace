@@ -14,14 +14,17 @@ const NetworkAnimation = () => {
     return (
         <WrapContent>
             <BackgroundImg>
-                <img src="../images/network-animation/bg.png" alt="" />
+                <img
+                    src="../images/network-animation/bg.png"
+                    alt="network-circles"
+                />
             </BackgroundImg>
             <ItemImg>
                 {network.map((item, index) => (
                     <ImgWrap className={`img-${index}`} key={index}>
                         <img
                             src={`../images/network-animation/${item.name}.png`}
-                            alt=""
+                            alt={item.name + "-network"}
                         />
                     </ImgWrap>
                 ))}
