@@ -1,31 +1,24 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
-
-
-
 const Index = () => {
-
-
     return (
         <StyledPage>
             <Img1>
-                <img src="./images/comingsoontext.png" alt="" />
+                <img src="./images/comingsoontext.png" alt="coming-soon-text" />
             </Img1>
             <Img2>
-                <img src="./images/comming-earth.png" alt="" />
+                <img src="./images/comming-earth.png" alt="coming-soon" />
             </Img2>
             <Img3>
-                <img src="./images/commingbackground.png" alt="" />
+                <img src="./images/commingbackground.png" alt="coming-soon" />
             </Img3>
             <ImgMobile>
-                <img src="./images/bg_phone-05.png" alt="" />
+                <img src="./images/bg_phone-05.png" alt="coming-soon" />
             </ImgMobile>
         </StyledPage>
     );
 };
-
-
 
 const Img1 = styled.div`
     position: fixed;
@@ -46,11 +39,11 @@ const Img1 = styled.div`
         bottom: 0;
         left: 0;
         margin: auto;
-        @media(max-width: 576px) {
+        @media (max-width: 576px) {
             width: 90%;
         }
     }
-`
+`;
 const Img2 = styled.div`
     position: fixed;
     width: 100%;
@@ -61,7 +54,7 @@ const Img2 = styled.div`
     right: 0;
     bottom: 0;
     margin: auto;
-    opacity: .8;
+    opacity: 0.8;
     animation: linear spinner 60s infinite;
     img {
         max-width: 700px;
@@ -72,16 +65,20 @@ const Img2 = styled.div`
         bottom: 0;
         left: 0;
         margin: auto;
-        @media(max-width: 576px) {
+        @media (max-width: 576px) {
             width: 90%;
         }
     }
 
     @keyframes spinner {
-        0% { transform: rotate(0deg) }
-        100% { transform: rotate(360deg) }
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
     }
-`
+`;
 const Img3 = styled.div`
     position: fixed;
     width: 100vw;
@@ -93,10 +90,10 @@ const Img3 = styled.div`
         width: 100%;
         height: 100%;
     }
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
         display: none;
     }
-`
+`;
 
 const ImgMobile = styled.div`
     display: none;
@@ -110,13 +107,11 @@ const ImgMobile = styled.div`
         width: 100%;
         height: 100%;
     }
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
         display: block;
     }
-`
+`;
 
-
-const StyledPage = styled.div`
-`
+const StyledPage = styled.div``;
 
 export default Index;

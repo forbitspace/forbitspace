@@ -18,7 +18,7 @@ const LiquidityAnimation = () => {
             <BackgroundImg>
                 <img
                     src="../images/liquidity Pool/background-forbit.png"
-                    alt=""
+                    alt="background-liquidity"
                 />
             </BackgroundImg>
             <ItemImg>
@@ -26,7 +26,7 @@ const LiquidityAnimation = () => {
                     <ImgWrap className={`img-${index}`}>
                         <img
                             src={`../images/liquidity Pool/icon-${item.name}.png`}
-                            alt=""
+                            alt={item.name + "-icon"}
                         />
                     </ImgWrap>
                 ))}

@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"48":"4dd2b7e9048c771a836f","54":"c1b4824e67d57130e89e"}[chunkId] + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"50":"4900a2e3a943a9004122"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -316,26 +316,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_3__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 // @flow
- // import styled from "styled-components";
 
 
 
 
-const Planet = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpack_require__.e(/* import() */ 54).then(__webpack_require__.bind(null, "n/ku")), {
-  ssr: false,
-  loadableGenerated: {
-    webpack: () => [/*require.resolve*/("n/ku")],
-    modules: ["../client/components/Planets/Planet"]
-  }
-});
-const Header = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpack_require__.e(/* import() */ 48).then(__webpack_require__.bind(null, "dFpG")), {
+const Header = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpack_require__.e(/* import() */ 50).then(__webpack_require__.bind(null, "dFpG")), {
   ssr: false,
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("dFpG")],
     modules: ["../client/components/Header"]
   }
-}); // const Footer = dynamic(import("../client/components/Footer"), { ssr: false });
-
+});
 /* harmony default export */ __webpack_exports__["default"] = (class extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
   static async getInitialProps({
     Component,
@@ -354,7 +345,6 @@ const Header = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpa
   }
 
   render() {
-    var show = true;
     const {
       Component,
       pageProps
@@ -362,9 +352,9 @@ const Header = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(() => __webpa
     return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_seo__WEBPACK_IMPORTED_MODULE_2__["NextSeo"], {
       title: "forbitspace",
       description: "forbitspace is an interoperability aggregator protocol that unites decentralized applications across disparate blockchains. Allows crypto traders to tap deep liquidity and receive better pricing one single interface."
-    }), show ? __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(Header, null), __jsx("div", {
+    }), __jsx(Header, null), __jsx("div", {
       className: "main"
-    }, __jsx(Component, pageProps))) : __jsx(Planet, null));
+    }, __jsx(Component, pageProps)));
   }
 
 });
