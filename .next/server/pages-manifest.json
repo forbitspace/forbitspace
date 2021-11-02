@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/branding": "pages/branding.js",
-  "/": "pages/index.js",
-  "/aggregation": "pages/aggregation.js"
+  "/aggregation": "pages/aggregation.js",
+  "/": "pages/index.js"
 }
