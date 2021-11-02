@@ -9,7 +9,10 @@ const Banner = () => {
             <WrapContainer>
                 <WrapImg>
                     <ImgHalf>
-                        <img src="../images/self-page/bridge.png" alt="" />
+                        <img
+                            src="../images/self-page/bridge.png"
+                            alt="bridge-image"
+                        />
                     </ImgHalf>
                 </WrapImg>
                 <Content className="title-banner text-dark text-visi">

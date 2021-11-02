@@ -160,7 +160,7 @@ export const navContent = [
                 outLink: true,
             },
             {
-                link: "",
+                link: "/branding",
                 content: "Press & Brand",
                 // outLink: true,
             },

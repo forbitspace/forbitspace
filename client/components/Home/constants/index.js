@@ -168,7 +168,10 @@ export const DataFBTC = [
 
 export const AuditData = [
     {
-        img: "certik.svg",
+        img: "certik.png",
+    },
+    {
+        img: "skynet.png",
     },
 ];
 export const EcosystemData = [
