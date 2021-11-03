@@ -12,9 +12,15 @@ const Banner = () => {
                             src="../images/home-page/aggregation-min.png"
                             alt="aggregation-protocol"
                         /> */}
+                        {/* <video width="800" height="auto" autoplay>
+                            <source
+                                src="../gif/aggregation-protocols.webm"
+                                type="video/webm"
+                            />
+                        </video> */}
                         <img
                             src="../gif/gif_aggregation-protocol.gif"
-                            alt="aggregation-protocol"
+                            alt="aggregation-protocols"
                         />
                     </ImgHalf>
                 </WrapImg>
