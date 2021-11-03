@@ -57,7 +57,7 @@ const Leaders = () => {
                             in the digital asset ecosystem since 2016 and has
                             worked with and advised a variety of blockchain
                             projects. When participate in some Blockchain events
-                            in the Asian market He sees a huge demand for the
+                            in the Asian market. He sees a huge demand for the
                             Blockchain space especially the decentralized
                             financial market.
                         </div>
