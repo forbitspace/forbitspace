@@ -28,11 +28,6 @@
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/aggregation.js"
-    ],
-    "/branding": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/branding.js"
     ]
   },
   "ampFirstPages": []
