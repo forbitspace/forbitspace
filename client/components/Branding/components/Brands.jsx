@@ -303,6 +303,10 @@ const Brands = () => {
                             href="../images/brand-logo/brandkit-forbit.zip"
                             download="brandkit-forbit"
                         >
+                            <img
+                                src="../images/icons/file-archive-regular.svg"
+                                alt=""
+                            />{" "}
                             Download Full
                         </a>
                     </DownloadButton>
@@ -483,6 +487,13 @@ const DownloadButton = styled.div`
         text-decoration: none;
         color: #fff;
         text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        img {
+            width: 14px;
+        }
     }
 `;
 export default Brands;
