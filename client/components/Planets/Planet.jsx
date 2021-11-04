@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import LazyLoad from "react-lazyload";
 
 const Planet = () => {
     const DataRender = [
@@ -33,10 +34,12 @@ const Planet = () => {
             <System>
                 {data.map((item, index) => (
                     <Planets key={index}>
-                        <img
-                            src={`../images/space-planets/${item.img}.svg`}
-                            alt={item.img}
-                        />
+                        <LazyLoad height={80}>
+                            <img
+                                src={`../images/space-planets/${item.img}.svg`}
+                                alt={item.img}
+                            />
+                        </LazyLoad>
                     </Planets>
                 ))}
             </System>
@@ -49,22 +52,28 @@ const Planet = () => {
                 <WrapperPlanet>
                     <Circle>
                         <Logo>
-                            <img
-                                src="../images/space-planets/logo.png"
-                                alt="logo-forbitspace"
-                            />
+                            <LazyLoad height={180}>
+                                <img
+                                    src="../images/space-planets/logo.png"
+                                    alt="logo-forbitspace"
+                                />
+                            </LazyLoad>
                         </Logo>
                         <RenderSystem data={DataRender} />
                         <Earth>
-                            <img
-                                src="../images/space-planets/earth.svg"
-                                alt="earth-image"
-                            />
-                            <Moon>
+                            <LazyLoad height={80}>
                                 <img
-                                    src="../images/space-planets/moon.svg"
-                                    alt="moon-image"
+                                    src="../images/space-planets/earth.svg"
+                                    alt="earth-image"
                                 />
+                            </LazyLoad>
+                            <Moon>
+                                <LazyLoad height={80}>
+                                    <img
+                                        src="../images/space-planets/moon.svg"
+                                        alt="moon-image"
+                                    />
+                                </LazyLoad>
                             </Moon>
                         </Earth>
                     </Circle>

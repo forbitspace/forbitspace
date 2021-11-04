@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import LazyLoad from "react-lazyload";
 
 const LiquidityAnimation = () => {
     const dataTokens = [
@@ -16,18 +17,22 @@ const LiquidityAnimation = () => {
     return (
         <WrapContent>
             <BackgroundImg>
-                <img
-                    src="../images/liquidity Pool/background-forbit.png"
-                    alt="liquidity"
-                />
+                <LazyLoad height={500}>
+                    <img
+                        src="../images/liquidity Pool/background-forbit.png"
+                        alt="liquidity"
+                    />
+                </LazyLoad>
             </BackgroundImg>
             <ItemImg>
                 {dataTokens.map((item, index) => (
                     <ImgWrap className={`img-${index}`}>
-                        <img
-                            src={`../images/liquidity Pool/icon-${item.name}.png`}
-                            alt={item.name + "-icon"}
-                        />
+                        <LazyLoad height={500}>
+                            <img
+                                src={`../images/liquidity Pool/icon-${item.name}-min.png`}
+                                alt={item.name + "-icon"}
+                            />
+                        </LazyLoad>
                     </ImgWrap>
                 ))}
             </ItemImg>

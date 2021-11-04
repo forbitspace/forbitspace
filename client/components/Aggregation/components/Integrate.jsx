@@ -35,7 +35,7 @@ const Integrate = () => {
                         </NetworkOrbit>
                     </Network>
                     {network.map((item, index) => (
-                        <Network>
+                        <Network key={index}>
                             <NetworkIcon>
                                 <WrapIcon>
                                     <img

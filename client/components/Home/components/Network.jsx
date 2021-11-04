@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "reactstrap";
 import styled from "styled-components";
+import LazyLoad from "react-lazyload";
 
 const Network = () => {
     return (
@@ -18,10 +19,12 @@ const Network = () => {
                             </ButtonBanner>
                         </WrapperButtonApp>
                         <ImgHalf>
-                            <img
-                                src="../images/home-page/network-02.png"
-                                alt="space-network"
-                            />
+                            <LazyLoad height={200}>
+                                <img
+                                    src="../images/home-page/network-02.png"
+                                    alt="space-network"
+                                />
+                            </LazyLoad>
                         </ImgHalf>
                     </WrapImg>{" "}
                     <WrapTitle>
@@ -70,10 +73,12 @@ const Network = () => {
                             </ButtonBanner>
                         </WrapperButtonApp>
                         <ImgHalf>
-                            <img
-                                src="../images/home-page/network-01.png"
-                                alt="swap-network"
-                            />
+                            <LazyLoad height={200}>
+                                <img
+                                    src="../images/home-page/network-01.png"
+                                    alt="swap-network"
+                                />
+                            </LazyLoad>
                         </ImgHalf>
                     </WrapImg>
                 </WrapContent>
