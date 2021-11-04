@@ -124,6 +124,9 @@ const WrapperInput = styled.div`
     margin: 10px auto;
     border: 1px solid;
     border-radius: 10px;
+    :hover {
+        box-shadow: 2px 2px 5px #ffffff8a;
+    }
 `;
 const WrapperMessage = styled.div`
     max-width: 650px;
@@ -131,6 +134,9 @@ const WrapperMessage = styled.div`
     margin: 10px auto;
     border: 1px solid;
     border-radius: 10px;
+    :hover {
+        box-shadow: 2px 2px 5px #ffffff8a;
+    }
 
     textarea {
         max-width: 100%;

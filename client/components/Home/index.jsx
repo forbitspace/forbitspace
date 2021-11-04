@@ -35,18 +35,6 @@ const Index = () => {
                     <Partners />
                     <System />
                 </Container>
-                {/* <Pramaster />
-        <Growing />
-        <Suite />
-        <Superpowers />
-        <SpaceNFTs />
-        <FBTCToken />
-        <Ecosystem />
-        <Community />
-        <BackgroundImg
-          src="./images/background-line-min.png"
-          alt="background"
-        ></BackgroundImg> */}
                 <Footer />
             </WrapperBackground>
         </React.Fragment>
@@ -54,7 +42,7 @@ const Index = () => {
 };
 const WrapperBackground = styled.div`
     position: relative;
-    font-family: helvetica neue;
+    font-family: "helvetica neue", "Roboto", sans-serif;
     /* background-image: url("../images/background-line-min.jpg"); */
     @media (max-width: 576px) {
         overflow-x: hidden;
@@ -74,37 +62,5 @@ const BackgroundImg = styled.img`
         position: fixed;
     }
 `;
-// const BackgroundImgMobile = styled.img`
-//   display: none;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   width: 100%;
-//   height: 100%;
-//   opacity: 0.1;
-//   z-index: -1;
-// `;
-
-// const BoxSection = styled.section`
-//   position: relative;
-
-//   a {
-//     display: block;
-//     overflow: hidden;
-//     width: 100%;
-//     max-width: 100px;
-//     transition: ease-in-out 1s all;
-
-//     img {
-//       width: 100%;
-//       object-fit: cover;
-//     }
-
-//     &:hover {
-//       transform: rotate(-18deg) scale(1.2);
-//     }
-//   }
-// `;
 
 export default Index;
