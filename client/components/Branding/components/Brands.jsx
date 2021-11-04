@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import LazyLoad from "react-lazyload";
 
 const Brands = () => {
     const forbitspaceLogo = [
@@ -66,10 +67,12 @@ const Brands = () => {
         <BoxSection>
             <WrapContainer className="container">
                 <WrapImg>
-                    <img
-                        src="../images/home-page/space-header.png"
-                        alt="header-brand-page-image"
-                    />
+                    <LazyLoad height={400}>
+                        <img
+                            src="../images/home-page/space-header.png"
+                            alt="header-brand-page-image"
+                        />
+                    </LazyLoad>
                 </WrapImg>
                 <WrapEmail>
                     <TitleHeader>Brandkit</TitleHeader>
@@ -99,18 +102,22 @@ const Brands = () => {
                         {forbitspaceLogo.map((item, index) => (
                             <BrandLogo key={index}>
                                 <BackgroundImg>
-                                    <img
-                                        src="../images/contributor-page/orbit-background.svg"
-                                        alt=""
-                                    />
+                                    <LazyLoad height={100}>
+                                        <img
+                                            src="../images/contributor-page/orbit-background.svg"
+                                            alt=""
+                                        />
+                                    </LazyLoad>
                                 </BackgroundImg>
                                 <LogoImg
                                     className={"logo-brandkit-" + item.number}
                                 >
-                                    <img
-                                        src={`../images/brand-logo/brandkit-forbit/forbitspace/PNG/Logo-forbitspace-brandkit-${item.number}.png`}
-                                        alt=""
-                                    />
+                                    <LazyLoad height={100}>
+                                        <img
+                                            src={`../images/brand-logo/brandkit-forbit/forbitspace/PNG/Logo-forbitspace-brandkit-${item.number}.png`}
+                                            alt=""
+                                        />
+                                    </LazyLoad>
                                 </LogoImg>
                                 <LinkImg>
                                     <a
@@ -146,18 +153,22 @@ const Brands = () => {
                         {forbitspaceLogoNoise.map((item, index) => (
                             <BrandLogo key={index}>
                                 <BackgroundImg>
-                                    <img
-                                        src="../images/contributor-page/orbit-background.svg"
-                                        alt=""
-                                    />
+                                    <LazyLoad height={100}>
+                                        <img
+                                            src="../images/contributor-page/orbit-background.svg"
+                                            alt=""
+                                        />
+                                    </LazyLoad>
                                 </BackgroundImg>
                                 <LogoImg
                                     className={"logo-noise-" + item.number}
                                 >
-                                    <img
-                                        src={`../images/brand-logo/brandkit-forbit/forbitspace-noise/PNG/Logo-forbitspace-noise-${item.number}.png`}
-                                        alt=""
-                                    />
+                                    <LazyLoad height={100}>
+                                        <img
+                                            src={`../images/brand-logo/brandkit-forbit/forbitspace-noise/PNG/Logo-forbitspace-noise-${item.number}.png`}
+                                            alt=""
+                                        />
+                                    </LazyLoad>
                                 </LogoImg>
                                 <LinkImg>
                                     <a
@@ -182,16 +193,20 @@ const Brands = () => {
                         {forbitswapLogo.map((item, index) => (
                             <BrandLogo key={index}>
                                 <BackgroundImg>
-                                    <img
-                                        src="../images/contributor-page/orbit-background.svg"
-                                        alt=""
-                                    />
+                                    <LazyLoad height={100}>
+                                        <img
+                                            src="../images/contributor-page/orbit-background.svg"
+                                            alt=""
+                                        />
+                                    </LazyLoad>
                                 </BackgroundImg>
                                 <LogoImg className={"logo-swap-" + item.number}>
-                                    <img
-                                        src={`../images/brand-logo/brandkit-forbit/forbitswap/PNG/Logo-forbitswap-brandkit-${item.number}.png`}
-                                        alt=""
-                                    />
+                                    <LazyLoad height={100}>
+                                        <img
+                                            src={`../images/brand-logo/brandkit-forbit/forbitswap/PNG/Logo-forbitswap-brandkit-${item.number}.png`}
+                                            alt=""
+                                        />
+                                    </LazyLoad>
                                 </LogoImg>
                                 <LinkImg>
                                     <a
@@ -227,18 +242,22 @@ const Brands = () => {
                         {flybyLogo.map((item, index) => (
                             <BrandLogo key={index}>
                                 <BackgroundImg>
-                                    <img
-                                        src="../images/contributor-page/orbit-background.svg"
-                                        alt=""
-                                    />
+                                    <LazyLoad height={100}>
+                                        <img
+                                            src="../images/contributor-page/orbit-background.svg"
+                                            alt=""
+                                        />
+                                    </LazyLoad>
                                 </BackgroundImg>
                                 <LogoImg
                                     className={"logo-flyby-" + item.number}
                                 >
-                                    <img
-                                        src={`../images/brand-logo/brandkit-forbit/flyby-IDO/PNG/Flybyido-${item.number}.png`}
-                                        alt=""
-                                    />
+                                    <LazyLoad height={100}>
+                                        <img
+                                            src={`../images/brand-logo/brandkit-forbit/flyby-IDO/PNG/Flybyido-${item.number}.png`}
+                                            alt=""
+                                        />
+                                    </LazyLoad>
                                 </LogoImg>
                                 <LinkImg>
                                     <a
@@ -263,16 +282,20 @@ const Brands = () => {
                         {nftsLogo.map((item, index) => (
                             <BrandLogo key={index}>
                                 <BackgroundImg>
-                                    <img
-                                        src="../images/contributor-page/orbit-background.svg"
-                                        alt=""
-                                    />
+                                    <LazyLoad height={100}>
+                                        <img
+                                            src="../images/contributor-page/orbit-background.svg"
+                                            alt=""
+                                        />
+                                    </LazyLoad>
                                 </BackgroundImg>
                                 <LogoImg className={"logo-nfts-" + item.number}>
-                                    <img
-                                        src={`../images/brand-logo/brandkit-forbit/nfts-space/PNG/Logo-nftsspace-${item.number}.png`}
-                                        alt=""
-                                    />
+                                    <LazyLoad height={100}>
+                                        <img
+                                            src={`../images/brand-logo/brandkit-forbit/nfts-space/PNG/Logo-nftsspace-${item.number}.png`}
+                                            alt=""
+                                        />
+                                    </LazyLoad>
                                 </LogoImg>
                                 <LinkImg>
                                     <a
@@ -294,10 +317,12 @@ const Brands = () => {
                 <Content>
                     <DownloadButton>
                         <BackgroundImg>
-                            <img
-                                src="../images/contributor-page/orbit-background.svg"
-                                alt=""
-                            />
+                            <LazyLoad height={100}>
+                                <img
+                                    src="../images/contributor-page/orbit-background.svg"
+                                    alt=""
+                                />
+                            </LazyLoad>
                         </BackgroundImg>
                         <a
                             href="../images/brand-logo/brandkit-forbit.zip"
@@ -362,6 +387,8 @@ const WrapContentMail = styled.div`
     text-align: left;
     a {
         width: 100%;
+        color: #0168ff;
+        text-decoration: underline;
     }
     .mail-hello {
         text-align: center;
@@ -460,7 +487,7 @@ const BackgroundImg = styled.div`
 `;
 const LinkImg = styled.div`
     position: absolute;
-    bottom: 5rem;
+    bottom: 5.5rem;
     display: flex;
     align-items: center;
     justify-content: space-around;

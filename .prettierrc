@@ -6,7 +6,7 @@
     "insertPragma": false,
     "jsxBracketSameLine": false,
     "jsxSingleQuote": false,
-    "printWidth": 400,
+    "printWidth": 80,
     "proseWrap": "preserve",
     "quoteProps": "as-needed",
     "requirePragma": false,
@@ -18,4 +18,4 @@
     "vueIndentScriptAndStyle": false,
     "filepath": "/Users/spacefintechbe02/Desktop/01-document/forbitspace-home/forbitspace/pages/_document.jsx",
     "parser": "babel"
-}
+  }

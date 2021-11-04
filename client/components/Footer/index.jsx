@@ -21,8 +21,7 @@ const Index = () => {
     };
 
     function validateEmail(email) {
-        const re =
-            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
     }
 
@@ -43,43 +42,26 @@ const Index = () => {
                     <ListMenu>
                         {navContent.map((item, index) => (
                             <ul className="text-visi" key={index}>
-                                <TitleFooter>
-                                    {" "}
-                                    {item.link ? (
-                                        <Link href={item.link}>{item.nav}</Link>
-                                    ) : (
-                                        item.nav
-                                    )}{" "}
-                                </TitleFooter>
+                                <TitleFooter> {item.link ? <Link href={item.link}>{item.nav}</Link> : item.nav} </TitleFooter>
                                 {item.contents.map((item, index) => (
                                     <li key={index}>
                                         {!item.disable ? (
                                             item.outLink ? (
-                                                <a
-                                                    href={item.link}
-                                                    target="_blank"
-                                                    rel="noreferrer"
-                                                >
+                                                <a href={item.link} target="_blank" rel="noreferrer">
                                                     {item.content}
                                                 </a>
                                             ) : (
-                                                <Link href={item.link}>
-                                                    {item.content}
-                                                </Link>
+                                                <Link href={item.link}>{item.content}</Link>
                                             )
                                         ) : (
-                                            <Blank href="/">
-                                                {item.content}
-                                            </Blank>
+                                            <Blank href="/">{item.content}</Blank>
                                         )}
                                     </li>
                                 ))}
                             </ul>
                         ))}
                         <ul className="text-visi input-field">
-                            <SubTitleFooter>
-                                Subscribe to our newsletter for updates
-                            </SubTitleFooter>
+                            <SubTitleFooter>Subscribe to our newsletter for updates</SubTitleFooter>
                             <div className="form-wrap" action="">
                                 <WrapperInput>
                                     <Input
@@ -95,34 +77,17 @@ const Index = () => {
                                     />
                                     {/* <BorderInput /> */}
                                 </WrapperInput>
-                                <button
-                                    type="button"
-                                    aria-label="send-email-address"
-                                    onClick={handleSubmit}
-                                >
+                                <button type="button" aria-label="send-email-address" onClick={handleSubmit}>
                                     <i className="fa fa-arrow-right"></i>
                                 </button>
                             </div>
-                            <Copyright className="text-dark foundation">
-                                forbitspace foundation LLC
-                            </Copyright>
-                            <Copyright className="text-dark">
-                                © 2021 @forbitspace, All Rights Reserved,
-                                Disclaimer
-                            </Copyright>
+                            <Copyright className="text-dark foundation">forbitspace foundation LLC</Copyright>
+                            <Copyright className="text-dark">© 2021 @forbitspace, All Rights Reserved, Disclaimer</Copyright>
                             <SocialLink>
                                 {DataSocialLinkFooter.map((item, index) => {
                                     return (
-                                        <a
-                                            href={item.link}
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            key={index}
-                                        >
-                                            <Icon
-                                                src={item.url}
-                                                alt="icon social media"
-                                            ></Icon>
+                                        <a href={item.link} target="_blank" rel="noreferrer" key={index}>
+                                            <Icon src={item.url} alt="icon social media"></Icon>
                                         </a>
                                     );
                                 })}
@@ -208,15 +173,7 @@ const ListMenu = styled.div`
                 height: 30px;
                 border: none;
                 outline: none;
-                background-image: linear-gradient(
-                    17deg,
-                    #00ff36 -68%,
-                    #00ee57 -43%,
-                    #00c5ad 14%,
-                    #00a4f1 57%,
-                    #0b18fc 154%,
-                    #0d00ff 171%
-                );
+                background-image: linear-gradient(17deg, #00ff36 -68%, #00ee57 -43%, #00c5ad 14%, #00a4f1 57%, #0b18fc 154%, #0d00ff 171%);
                 border-radius: 8px;
                 transition: all 0.5s ease-in-out;
                 background-size: 200%;
@@ -312,6 +269,7 @@ const Copyright = styled.p`
     font-size: 14px;
     font-weight: 300;
     font-style: italic;
+    margin-bottom: 6px;
     &.foundation {
         padding-left: 1.5rem;
         margin-bottom: 3px;

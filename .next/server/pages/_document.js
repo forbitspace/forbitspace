@@ -849,10 +849,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       rel: "manifest",
       href: "/manifest.json"
     }), __jsx("meta", {
-      charset: "utf-8"
-    }), __jsx("meta", {
-      name: "viewport",
-      content: "width=device-width, initial-scale=1"
+      charSet: "utf-8"
     }), __jsx("meta", {
       name: "keywords",
       content: "forbitspace, forbitswap, flyby, ido, decentralized, defi, dex, exchange, crypto, fbs"
@@ -870,16 +867,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       property: "og:image",
       content: "https://ipfs.infura.io/ipfs/QmaioLHcm1ugkc36oSQ1zyg56W2sqiPhWxvB1xtK2egEWs"
     }), __jsx("meta", {
-      "http-equiv": "cache-control",
+      httpEquiv: "cache-control",
       content: "no-cache"
     }), __jsx("meta", {
-      "http-equiv": "expires",
+      httpEquiv: "expires",
       content: "0"
     }), __jsx("meta", {
-      "http-equiv": "Cache-Control",
+      httpEquiv: "Cache-Control",
       content: "no-cache, no-store, must-revalidate"
     }), __jsx("meta", {
-      "http-equiv": "X-UA-Compatible",
+      httpEquiv: "X-UA-Compatible",
       content: "IE=edge,chrome=1"
     }), __jsx("link", {
       rel: "shortcut icon",
@@ -908,19 +905,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       rel: "preload",
       href: "/css/style.css",
       as: "style",
-      onload: "this.rel='stylesheet'"
+      onLoad: "this.rel='stylesheet'"
     }), __jsx("link", {
       href: "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,500;1,700&display=swap",
       rel: "stylesheet"
     }), __jsx("link", {
-      href: "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css",
-      rel: "stylesheet",
-      integrity: "sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1",
-      crossOrigin: "anonymous"
-    }), __jsx("link", {
       rel: "manifest",
       href: "../public/manifest.json",
-      crossorigin: "use-credentials"
+      crossOrigin: "use-credentials"
     })), __jsx("body", {
       className: "dark-mode"
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], null), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], null)));
