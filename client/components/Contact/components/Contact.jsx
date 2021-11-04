@@ -1,9 +1,18 @@
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
+import { send } from "emailjs-com";
 
 const ContactUs = () => {
     const [x, setX] = useState();
     const [y, setY] = useState();
+    //config email sender
+    const [toSend, setToSend] = useState({
+        from_name: "",
+        reply_to: "",
+        position: "",
+        message: "",
+    });
+    //ref for send button object
     const buttonRef = useRef();
 
     const getMouseOver = (e) => {
@@ -12,34 +21,56 @@ const ContactUs = () => {
         setY(e.pageY - parentOffset.top);
     };
 
+    const onSubmit = (e) => {
+        e.preventDefault();
+        send("SERVICE ID", "TEMPLATE ID", toSend, "User Id")
+            .then((response) => {
+                console.log("SUCCESS!", response.status, response.text);
+            })
+            .catch((err) => {
+                console.log("FAILED...", err);
+            });
+    };
+
+    const handleChange = (e) => {
+        setToSend({ ...toSend, [e.target.name]: e.target.value });
+    };
+
     return (
         <BoxSection>
             <WrapContainer>
                 <Header>Contact Us.</Header>
                 <WrapperSubmit
-                    action="mailto:ryanspace46@gmail.com"
+                    // action="mailto:ryanspace46@gmail.com"
                     method="post"
                     enctype="text/plain"
+                    onSubmit={onSubmit}
                 >
                     <WrapperInput>
                         <input
                             type="text"
                             placeholder="Your Name"
-                            name="name"
+                            name="from_name"
+                            value={toSend.from_name}
+                            onChange={handleChange}
                         />
                     </WrapperInput>
                     <WrapperInput>
                         <input
                             type="text"
                             placeholder="Your Email"
-                            name="mail"
+                            name="reply_to"
+                            value={toSend.reply_to}
+                            onChange={handleChange}
                         />
                     </WrapperInput>
                     <WrapperInput>
                         <input
                             type="text"
                             placeholder="Who Are You"
-                            name="description"
+                            name="position"
+                            value={toSend.position}
+                            onChange={handleChange}
                         />
                     </WrapperInput>
                     <WrapperMessage>
@@ -49,6 +80,8 @@ const ContactUs = () => {
                             cols="100%"
                             wrap="soft"
                             placeholder="Write your message here"
+                            value={toSend.message}
+                            onChange={handleChange}
                         ></textarea>
                     </WrapperMessage>
                     <WrapperButton>
@@ -60,11 +93,11 @@ const ContactUs = () => {
                             value="Send"
                         >
                             <input type="submit" value="Send" />
-                            {/* Send{" "} */}
                             <span
                                 style={{ top: y + "px", left: x + "px" }}
                             ></span>{" "}
                         </SubmitButton>
+                        <button type="submit">Send</button>
                     </WrapperButton>
                 </WrapperSubmit>
             </WrapContainer>
@@ -100,10 +133,6 @@ const WrapperSubmit = styled.form`
     max-width: 650px;
     font-family: sans-serif;
     font-weight: 400;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     input,
     textarea {
         width: 100%;
@@ -123,7 +152,7 @@ const WrapperInput = styled.div`
     padding: 1rem;
     margin: 10px auto;
     border: 1px solid;
-    border-radius: 10px;
+    border-radius: 12px;
     :hover {
         box-shadow: 2px 2px 5px #ffffff8a;
     }
@@ -133,7 +162,7 @@ const WrapperMessage = styled.div`
     padding: 1rem;
     margin: 10px auto;
     border: 1px solid;
-    border-radius: 10px;
+    border-radius: 12px;
     :hover {
         box-shadow: 2px 2px 5px #ffffff8a;
     }
@@ -148,7 +177,7 @@ const WrapperMessage = styled.div`
 const WrapperButton = styled.div`
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     padding: 1rem 0;
 `;
 const SubmitButton = styled.div`
@@ -159,7 +188,7 @@ const SubmitButton = styled.div`
     width: 100%;
     height: auto;
     max-width: 160px;
-    border-radius: 8px;
+    border-radius: 12px;
     font: normal 18px/40px "proxima-nova", sans-serif;
     text-align: center;
     text-decoration: none;

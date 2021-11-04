@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { AuditData, DataSocialLinkFooter, EcosystemData } from "../constants";
+import LazyLoad from "react-lazyload";
 const System = () => {
     const ContributorRender = ({ data, title }) => {
         return (
@@ -8,10 +9,12 @@ const System = () => {
                 <div className="img-content">
                     {data.map((item, index) => (
                         <div className="img-holder" key={index}>
-                            <img
-                                src={`./images/logo-contributor/${item.img}`}
-                                alt={`logo-${item.img}`}
-                            />
+                            <LazyLoad height={45}>
+                                <img
+                                    src={`./images/logo-contributor/${item.img}`}
+                                    alt={`logo-${item.img}`}
+                                />
+                            </LazyLoad>
                         </div>
                     ))}
                 </div>
@@ -25,10 +28,12 @@ const System = () => {
                 <div className="img-content">
                     {data.map((item, index) => (
                         <div className="img-holder" key={index}>
-                            <img
-                                src={`./images/logo-contributor/${item.img}`}
-                                alt={`logo-${item.img}`}
-                            />
+                            <LazyLoad height={45}>
+                                <img
+                                    src={`./images/logo-contributor/${item.img}`}
+                                    alt={`logo-${item.img}`}
+                                />
+                            </LazyLoad>
                         </div>
                     ))}
                 </div>

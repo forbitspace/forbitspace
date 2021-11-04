@@ -1,47 +1,28 @@
 import React from "react";
 import { Container } from "reactstrap";
 import styled from "styled-components";
-import AppLink from "../../Header/components/AppLink";
-// import Title from "../../Title";
-// import DecentralizedText from "./DecentralizedText";
-// import ButtonApp from "../../Header/components/AppLink";
+import LazyLoad from "react-lazyload";
 
 const Banner = () => {
     return (
         <BoxSection>
             <WrapImgBanner>
-                <img
-                    src="../images/home-page/banner.png"
-                    alt="banner-picture"
-                />
+                <LazyLoad height={400}>
+                    <img width="1251" height="409.79" src="../images/home-page/banner.png" alt="banner-picture" />
+                </LazyLoad>
             </WrapImgBanner>
             <Container>
                 <Content className="title-banner text-dark text-visi">
                     <Title>
-                        <img
-                            src="../images/home-page/forbitspace-word.png"
-                            alt="forbitspace-dex-name"
-                        />
+                        <img src="../images/home-page/forbitspace-word.png" alt="forbitspace-dex-name" />
                     </Title>
                     <Text>The Decentralized Exchange Super Aggregator</Text>
                     <SubText>
-                        <span>forbitspace</span> is an interoperability
-                        aggregator protocol that unites decentralized
-                        applications across disparate blockchains. Allows crypto
-                        traders to tap deep liquidity and receive better pricing
-                        one single interface.
+                        <span>forbitspace</span> is an interoperability aggregator protocol that unites decentralized applications across disparate blockchains. Allows crypto traders to tap deep liquidity and receive better pricing one single interface.
                     </SubText>
-                    <ButtonBanner
-                        href="https://app.forbitspace.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                    <ButtonBanner href="https://app.forbitspace.com/" target="_blank" rel="noopener noreferrer">
                         {" "}
-                        Launch App{" "}
-                        <img
-                            src="../images/chevron-right.svg"
-                            alt="button-launch-app-chevron"
-                        />
+                        Launch App <img src="../images/chevron-right.svg" alt="button-launch-app-chevron" />
                     </ButtonBanner>
                 </Content>
             </Container>
@@ -51,7 +32,6 @@ const Banner = () => {
 
 const BoxSection = styled.section`
     position: relative;
-    /* min-height: 88vh; */
     padding: 2vh 0 0;
     transition: min-height 0.3s;
     margin-top: -40px;
@@ -59,7 +39,6 @@ const BoxSection = styled.section`
     @media (max-width: 770px) {
         margin-top: 0px;
         padding-top: 50px;
-        /* min-height: ${({ height }) => height}; */
     }
 `;
 const WrapImgBanner = styled.div`
@@ -76,7 +55,6 @@ const WrapImgBanner = styled.div`
     }
 `;
 const Content = styled.div`
-    /* margin-left: 80px; */
     width: 85%;
     @media (max-width: 768px) {
         width: 100%;
@@ -148,22 +126,12 @@ const ButtonBanner = styled.a`
     color: white;
     /* border: 1px solid transparent; */
     margin-right: 1rem;
-    background-image: linear-gradient(
-        38deg,
-        #00ff36 -10%,
-        #00ee57 3%,
-        #00c5ad 32%,
-        #00a4f1 53%,
-        #0b18fc 102%,
-        #0d00ff 111%
-    );
+    background-image: linear-gradient(38deg, #00ff36 -10%, #00ee57 3%, #00c5ad 32%, #00a4f1 53%, #0b18fc 102%, #0d00ff 111%);
     width: 100%;
-    /* max-width: 210px; */
-    /* &:hover { */
     background-size: 200%;
     background-position: right;
     color: white;
-    /* } */
+
     :hover {
         color: white;
     }

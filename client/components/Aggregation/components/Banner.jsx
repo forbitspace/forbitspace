@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "reactstrap";
 import styled from "styled-components";
+import LazyLoad from "react-lazyload";
 
 const Banner = () => {
     return (
@@ -8,20 +9,12 @@ const Banner = () => {
             <WrapContainer>
                 <WrapImg>
                     <ImgHalf>
-                        {/* <img
-                            src="../images/home-page/aggregation-min.png"
-                            alt="aggregation-protocol"
-                        /> */}
-                        {/* <video width="800" height="auto" autoplay>
-                            <source
-                                src="../gif/aggregation-protocols.webm"
-                                type="video/webm"
+                        <LazyLoad height={200}>
+                            <img
+                                src="../gif/gif_aggregation-protocol.gif"
+                                alt="aggregation-protocols"
                             />
-                        </video> */}
-                        <img
-                            src="../gif/gif_aggregation-protocol.gif"
-                            alt="aggregation-protocols"
-                        />
+                        </LazyLoad>
                     </ImgHalf>
                 </WrapImg>
                 <Content className="title-banner text-dark text-visi">
