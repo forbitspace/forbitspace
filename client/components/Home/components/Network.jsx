@@ -92,7 +92,7 @@ const BoxSection = styled.section`
     padding: 6vh 0px 0;
 
     @media (max-width: 1024px) {
-        padding: 25px 15px 0;
+        padding: 25px 0 0;
     }
 `;
 const Text = styled.div`
@@ -148,6 +148,7 @@ const WrapImg = styled.div`
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
+    padding: 1rem 0;
     &.img__swap {
         width: 50%;
     }
@@ -176,6 +177,7 @@ const ImgHalf = styled.div`
 const SubText = styled.p`
     font-size: 22px;
     font-weight: 300;
+    line-height: 1.2;
     /* width: 60%; */
     span {
         font-style: italic;
@@ -188,12 +190,6 @@ const SubText = styled.p`
         width: 50%;
         padding: 40px 0;
     }
-    /* @media (min-width: 1441px) {
-    width: 50%;
-    &.subtext__content {
-      width: 35%;
-    }
-  } */
     @media (max-width: 768px) {
         font-size: 14px;
         width: 100% !important;
@@ -201,6 +197,7 @@ const SubText = styled.p`
     }
     @media (max-width: 576px) {
         font-size: 16px;
+        line-height: 1.5;
         &.subtext__content {
             padding: 0;
         }

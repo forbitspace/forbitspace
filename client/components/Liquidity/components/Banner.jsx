@@ -112,6 +112,7 @@ const SubText = styled.div`
     font-weight: 200;
     font-family: sans-serif;
     text-align: right;
+    line-height: 1.2;
     span {
         font-style: italic;
         font-weight: 900;
@@ -120,6 +121,7 @@ const SubText = styled.div`
         font-style: normal;
     }
     @media (max-width: 768px) {
+        line-height: 1.5;
         text-align: center;
         font-size: 16px;
     }

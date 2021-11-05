@@ -71,10 +71,10 @@ const BoxSection = styled.section`
     position: relative;
     padding: 25px 0;
     @media (max-width: 770px) {
-        padding: 10px;
+        padding: 10px 0;
     }
 `;
-const WrapContainer = styled(Container)`
+const WrapContainer = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -126,6 +126,7 @@ const Text = styled.p`
 const SubText = styled.p`
     font-size: 22px;
     font-weight: 300;
+    line-height: 1.2;
     &.toggle__btn {
         font-weight: 400;
         font-style: italic;
@@ -138,6 +139,7 @@ const SubText = styled.p`
         }
     }
     @media (max-width: 576px) {
+        line-height: 1.5;
         font-size: 16px;
     }
 `;

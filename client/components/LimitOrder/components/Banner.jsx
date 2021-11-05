@@ -126,8 +126,8 @@ const SubText = styled.p`
     font-size: 22px;
     font-weight: 300;
     font-family: sans-serif;
-    /* text-align: right; */
     margin-bottom: 3rem;
+    line-height: 1.2;
 
     span {
         font-style: italic;
@@ -138,6 +138,7 @@ const SubText = styled.p`
         font-size: 16px;
     }
     @media (max-width: 576px) {
+        line-height: 1.5;
         text-align: center;
         font-size: 16px;
         margin-bottom: 1.5rem;

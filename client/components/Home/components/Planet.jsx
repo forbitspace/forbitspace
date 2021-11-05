@@ -56,7 +56,7 @@ const BoxSection = styled.section`
         padding-top: 10px;
     }
 `;
-const WrapContainer = styled(Container)`
+const WrapContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,11 +78,11 @@ const WrapPlanet = styled.div`
         margin: -60px 0;
     }
     @media (max-width: 415px) {
-        transform: scale(0.6);
+        transform: scale(0.4);
         margin: -220px 0;
     }
     @media (max-width: 320px) {
-        transform: scale(0.4);
+        /* transform: scale(0.4); */
         margin: -280px 0;
     }
 `;
@@ -119,6 +119,7 @@ const Title = styled.h2`
 const SubText = styled.p`
     font-size: 22px;
     font-weight: 300;
+    line-height: 1.2;
     span {
         font-style: italic;
         font-weight: 900;
@@ -128,6 +129,7 @@ const SubText = styled.p`
     }
     @media (max-width: 576px) {
         font-size: 16px;
+        line-height: 1.5;
     }
 `;
 

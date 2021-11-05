@@ -93,6 +93,7 @@ const Text = styled.p`
         letter-spacing: 1px;
         font-weight: 500;
         line-height: 25px;
+        padding: 1rem 0;
     }
 `;
 const SubText = styled.p`
@@ -100,6 +101,7 @@ const SubText = styled.p`
     font-weight: 300;
     font-family: sans-serif;
     text-align: right;
+    line-height: 1.2;
     span {
         font-style: italic;
         font-weight: 900;
@@ -109,7 +111,8 @@ const SubText = styled.p`
         text-align: center;
     }
     @media (max-width: 576px) {
-        font-size: 14px;
+        line-height: 1.2;
+        font-size: 16px;
     }
 `;
 export default Banner;

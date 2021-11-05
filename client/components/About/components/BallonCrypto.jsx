@@ -201,6 +201,7 @@ const SubText = styled.p`
     font-family: sans-serif;
     text-align: left;
     margin-bottom: 4rem;
+    line-height: 1.2;
     &.toggle__btn {
         font-style: italic;
         font-weight: 400;
@@ -224,6 +225,7 @@ const SubText = styled.p`
         }
     }
     @media (max-width: 576px) {
+        line-height: 1.5;
         font-size: 16px;
     }
 `;

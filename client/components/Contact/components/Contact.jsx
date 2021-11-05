@@ -23,7 +23,12 @@ const ContactUs = () => {
 
     const onSubmit = (e) => {
         e.preventDefault();
-        send("SERVICE ID", "TEMPLATE ID", toSend, "User Id")
+        send(
+            "service_hrt6uaf",
+            "template_0rpmrcr",
+            toSend,
+            "user_rUwQTrKEeiiqxSanQorG7"
+        )
             .then((response) => {
                 console.log("SUCCESS!", response.status, response.text);
             })
@@ -97,7 +102,6 @@ const ContactUs = () => {
                                 style={{ top: y + "px", left: x + "px" }}
                             ></span>{" "}
                         </SubmitButton>
-                        <button type="submit">Send</button>
                     </WrapperButton>
                 </WrapperSubmit>
             </WrapContainer>
@@ -140,6 +144,7 @@ const WrapperSubmit = styled.form`
         border: none;
         color: #fff;
         ::placeholder {
+            font-family: sans-serif;
             color: #ffffff8a;
         }
         :focus-visible {
@@ -172,6 +177,7 @@ const WrapperMessage = styled.div`
         word-wrap: break-word;
         word-break: break-all;
         height: 80px;
+        font-family: sans-serif;
     }
 `;
 const WrapperButton = styled.div`
@@ -208,13 +214,7 @@ const SubmitButton = styled.div`
         width: 0;
         height: 0;
         border-radius: 50%;
-        background-image: linear-gradient(
-            38deg,
-            #00a4f1 35%,
-            #0060f1 56%,
-            #003cf1 70%,
-            #0d00ff 85%
-        );
+        background-image: linear-gradient(238deg, #0004fe 100%, #00fefe 4%);
         -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
         transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
         -webkit-transform: translate(-50%, -50%);
