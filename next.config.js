@@ -1,35 +1,44 @@
 const path = require("path");
 const withSass = require("@zeit/next-sass");
+const withPWA = require("next-pwa");
 
 // for those who using CDN
 const { ASSET_HOST } = process.env;
 const assetPrefix = ASSET_HOST || "";
 
 module.exports = withSass({
-  // eslint-disable-next-line no-unused-vars
-  webpack: (config, { dev }) => {
-    config.output.publicPath = `${assetPrefix}${config.output.publicPath}`;
+    // eslint-disable-next-line no-unused-vars
+    webpack: (config, { dev }) => {
+        config.output.publicPath = `${assetPrefix}${config.output.publicPath}`;
 
-    const aliases = config.resolve.alias || {};
-    config.resolve.alias = {
-      ...aliases,
-      "@client": path.resolve(__dirname, "client"),
-      "@config": path.resolve(__dirname, "config"),
-      "@pages": path.resolve(__dirname, "pages"),
-      "@public": path.resolve(__dirname, "public"),
-      "@server": path.resolve(__dirname, "server"),
-      "@test": path.resolve(__dirname, "test"),
-    };
+        const aliases = config.resolve.alias || {};
+        config.resolve.alias = {
+            ...aliases,
+            "@client": path.resolve(__dirname, "client"),
+            "@config": path.resolve(__dirname, "config"),
+            "@pages": path.resolve(__dirname, "pages"),
+            "@public": path.resolve(__dirname, "public"),
+            "@server": path.resolve(__dirname, "server"),
+            "@test": path.resolve(__dirname, "test"),
+        };
 
-    return config;
-  },
-  env: {
-    REACT_APP_USER_API_BASE_URL: "",
-  },
-  publicRuntimeConfig: {
-    // Will be available on both server and client
-    backendUrl: "",
-  },
+        return config;
+    },
+    env: {
+        REACT_APP_USER_API_BASE_URL: "",
+    },
+    publicRuntimeConfig: {
+        // Will be available on both server and client
+        backendUrl: "",
+    },
 
-  trailingSlash: true,
+    trailingSlash: true,
+});
+
+module.exports = withPWA({
+    pwa: {
+        dest: "public",
+        disable: process.env.NODE_ENV === "development",
+    },
+    reactStrictMode: true,
 });

@@ -259,6 +259,11 @@ export const navContent = [
                 outLink: true,
             },
             {
+                link: "/contact", //
+                content: "Contact",
+                // disabled: true,
+            },
+            {
                 link: "https://help.forbitspace.com/",
                 content: "Help Center",
                 outLink: true,

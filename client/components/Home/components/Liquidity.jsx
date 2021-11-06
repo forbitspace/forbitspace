@@ -52,6 +52,10 @@ const WrapContainer = styled.div`
     gap: 20px;
     @media (max-width: 768px) {
         flex-direction: column;
+        gap: 50px;
+    }
+    @media (max-width: 576px) {
+        gap: 30px;
     }
 `;
 const WrapLiquidity = styled.div`
