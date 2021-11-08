@@ -87,8 +87,9 @@ export const navContent = [
         nav: "Developers",
         contents: [
             {
-                link: "",
+                link: "https://docs.forbitspace.com/",
                 content: "Documentation",
+                outLink: true,
             },
             {
                 link: "../forbitspace-whitepaper.pdf",
