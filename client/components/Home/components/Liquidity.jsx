@@ -7,7 +7,6 @@ const Liquidity = () => {
         <BoxSection>
             <WrapContainer>
                 <Content className="title-banner text-dark text-visi">
-                    {/* <Title>forbitspace</Title> */}
                     <Text>Liquidity Pool</Text>
                     <SubText>
                         With <span className="space">forbitspace</span>, the

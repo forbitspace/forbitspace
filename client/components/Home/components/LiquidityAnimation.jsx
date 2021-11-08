@@ -7,7 +7,7 @@ const LiquidityAnimation = () => {
         { name: "fbs" },
         { name: "usdt" },
         { name: "aave" },
-        { name: "dai" },
+        { name: "bsc" },
         { name: "eth" },
         { name: "sushi" },
         { name: "uni" },

@@ -179,7 +179,7 @@ export const navContent = [
         show: true,
         contents: [
             {
-                link: "https://docs.forbitspace.com/forbitspace/",
+                link: "https://docs.forbitspace.com/",
                 content: "Documentation",
                 outLink: true,
             },
@@ -193,11 +193,11 @@ export const navContent = [
                 content: "Github",
                 outLink: true,
             },
-            // {
-            //   link: "",
-            //   content: "Audits",
-            //   disable: true,
-            // },
+            {
+                link: "",
+                content: "Audit",
+                //   disable: true,
+            },
             // {
             //   link: "",
             //   content: "Bug bounty",
