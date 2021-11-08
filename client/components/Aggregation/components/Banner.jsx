@@ -95,6 +95,7 @@ const SubText = styled.p`
     font-weight: 300;
     font-family: sans-serif;
     text-align: left;
+    line-height: 1.2;
     span {
         font-style: italic;
         font-weight: 900;
@@ -104,6 +105,7 @@ const SubText = styled.p`
         text-align: center;
     }
     @media (max-width: 576px) {
+        line-height: 1.5;
         font-size: 16px;
     }
 `;

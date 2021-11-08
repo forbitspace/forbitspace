@@ -46,12 +46,12 @@ const BallonCrypto = () => {
                         crypto-economic protocols.
                         <br />
                         <br />
-                        System Approach We work synergistically to identify
+                        System Approach we work synergistically to identify
                         opportunities, build technology, and manage risk. We
                         believe in value investments using a rigorous
                         institutional due diligence approach and bring the deep
                         domain expertise of our investment team. Scalability,
-                        raising the Ceiling It’s not about the destination, It’s
+                        raising the Ceiling it’s not about the destination, it’s
                         about a user experience journey and provides simple and
                         intuitive products that anyone can use.
                     </SubText>
@@ -121,9 +121,6 @@ const WrapContainer = styled(Container)`
     align-items: center;
     justify-content: center;
     gap: 20px;
-    :last-child {
-        width: 100%;
-    }
     @media (max-width: 768px) {
         flex-direction: column;
     }
@@ -201,6 +198,7 @@ const SubText = styled.p`
     font-family: sans-serif;
     text-align: left;
     margin-bottom: 4rem;
+    line-height: 1.2;
     &.toggle__btn {
         font-style: italic;
         font-weight: 400;
@@ -224,6 +222,7 @@ const SubText = styled.p`
         }
     }
     @media (max-width: 576px) {
+        line-height: 1.5;
         font-size: 16px;
     }
 `;

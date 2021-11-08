@@ -56,7 +56,7 @@ const WrapContainer = styled(Container)`
 const WrapImg = styled.div`
     width: 50%;
     @media (max-width: 768px) {
-        width: 60%;
+        width: 65%;
     }
 `;
 const ImgHalf = styled.div`
@@ -86,13 +86,14 @@ const Content = styled.div`
 const Text = styled.p`
     font-size: 2rem;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 50px;
     letter-spacing: 1px;
     @media (max-width: 768px) {
         font-size: 26px;
         letter-spacing: 1px;
         font-weight: 500;
         line-height: 25px;
+        padding: 1rem 0;
     }
 `;
 const SubText = styled.p`
@@ -100,11 +101,13 @@ const SubText = styled.p`
     font-weight: 300;
     font-family: sans-serif;
     text-align: right;
+    line-height: 1.2;
     @media (max-width: 768px) {
         font-size: 18px;
         text-align: center;
     }
     @media (max-width: 576px) {
+        line-height: 1.5;
         font-size: 16px;
     }
 `;

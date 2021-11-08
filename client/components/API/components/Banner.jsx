@@ -44,9 +44,6 @@ const WrapContainer = styled(Container)`
     justify-content: space-between;
     flex-direction: column;
     gap: 20px;
-    /* @media (min-width: 1650px) {
-    max-width: 80%;
-  } */
     @media (max-width: 768px) {
         flex-direction: column;
     }
@@ -60,8 +57,6 @@ const WrapImg = styled.div`
     gap: 20px;
     max-width: 900px;
     @media (max-width: 768px) {
-        /* width: 100%; */
-        /* min-height: 75vh; */
         justify-content: center;
         :first-child {
             width: 100%;
@@ -105,80 +100,13 @@ const SubText = styled.p`
     font-size: 24px;
     font-weight: 300;
     font-family: sans-serif;
+    line-height: 1.2;
     @media (max-width: 768px) {
         text-align: center;
     }
     @media (max-width: 576px) {
         font-size: 16px;
+        line-height: 1.5;
     }
-`;
-const WrapIntegration = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: flex-end;
-    @media (max-width: 768px) {
-        align-items: center;
-    }
-`;
-const TopWrap = styled.div`
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 10px;
-    @media (max-width: 576px) {
-        width: 100%;
-        padding: 8px;
-        flex-direction: column;
-        gap: 10px;
-    }
-`;
-const SubContent = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    img {
-        width: 25px;
-    }
-    @media (max-width: 576px) {
-        font-size: 12px;
-    }
-`;
-const BottomWrap = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-`;
-const ButtonWrap = styled.div`
-    padding: 5px 30px;
-    margin-top: 30px;
-    border-radius: 12px;
-    transform: scale(0.98);
-    transition: transform 0.25s ease 0s;
-    box-sizing: border-box;
-    text-align: center;
-    font-weight: 500;
-    font-size: 1.125rem;
-    text-decoration: none;
-    cursor: pointer;
-    color: white;
-    background: linear-gradient(
-        38deg,
-        #00ff36 -10%,
-        #00ee57 3%,
-        #00c5ad 32%,
-        #00a4f1 53%,
-        #0b18fc 102%,
-        #0d00ff 111%
-    );
-    transition: 0.2s;
-
-    /* :hover { */
-    color: #fff;
-    background-size: 200%;
-    background-position: right;
-    /* } */
 `;
 export default Banner;

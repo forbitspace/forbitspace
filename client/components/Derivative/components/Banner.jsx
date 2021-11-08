@@ -113,6 +113,7 @@ const Text = styled.p`
         letter-spacing: 1px;
         font-weight: 500;
         line-height: 25px;
+        padding: 1rem 0;
     }
 `;
 const WrapText = styled.div``;
@@ -120,8 +121,8 @@ const WrapText = styled.div``;
 const SubText = styled.p`
     font-size: 22px;
     font-weight: 300;
-    /* max-width: 600px; */
     font-family: sans-serif;
+    line-height: 1.2;
     span {
         font-weight: 900;
         font-style: italic;
@@ -131,6 +132,7 @@ const SubText = styled.p`
         font-size: 16px;
     }
     @media (max-width: 576px) {
+        line-height: 1.5;
         text-align: center;
         font-size: 16px;
     }

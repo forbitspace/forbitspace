@@ -48,7 +48,7 @@ const BoxSection = styled.section`
         /* min-height: 80vh; */
     }
 `;
-const WrapContainer = styled(Container)`
+const WrapContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,10 +101,12 @@ const Text = styled.p`
 const SubText = styled.p`
     font-size: 22px;
     font-weight: 300;
+    line-height: 1.2;
     @media (max-width: 768px) {
         font-size: 14px;
     }
     @media (max-width: 576px) {
+        line-height: 1.5;
         font-size: 16px;
     }
 `;
