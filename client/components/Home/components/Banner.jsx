@@ -8,21 +8,41 @@ const Banner = () => {
         <BoxSection>
             <WrapImgBanner>
                 <LazyLoad height={400}>
-                    <img width="1251" height="409.79" src="../images/home-page/banner.png" alt="banner-picture" />
+                    <img
+                        width="1251"
+                        height="409.79"
+                        src="../images/home-page/banner.png"
+                        alt="banner-picture"
+                    />
                 </LazyLoad>
             </WrapImgBanner>
             <Container>
                 <Content className="title-banner text-dark text-visi">
                     <Title>
-                        <img src="../images/home-page/forbitspace-word.png" alt="forbitspace-dex-name" />
+                        <img
+                            src="../images/home-page/forbitspace-word.png"
+                            alt="forbitspace-dex-name"
+                        />
                     </Title>
                     <Text>The Decentralized Exchange Super Aggregator</Text>
                     <SubText>
-                        <span>forbitspace</span> is an interoperability aggregator protocol that unites decentralized applications across disparate blockchains. Allows crypto traders to tap deep liquidity and receive better pricing one single interface.
+                        <span>forbitspace</span> is an interoperability
+                        aggregator protocol that unites decentralized
+                        applications across disparate blockchains. Allows crypto
+                        traders to tap deep liquidity and receive better pricing
+                        one single interface.
                     </SubText>
-                    <ButtonBanner href="https://app.forbitspace.com/" target="_blank" rel="noopener noreferrer">
+                    <ButtonBanner
+                        href="https://app.forbitspace.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         {" "}
-                        Launch App <img src="../images/chevron-right.svg" alt="button-launch-app-chevron" />
+                        Launch App{" "}
+                        <img
+                            src="../images/chevron-right.svg"
+                            alt="button-launch-app-chevron"
+                        />
                     </ButtonBanner>
                 </Content>
             </Container>
@@ -84,6 +104,7 @@ const SubText = styled.p`
     font-size: 22px;
     font-weight: 300;
     font-family: sans-serif;
+    line-height: 1.2;
     span {
         font-style: italic;
         font-weight: 900;
@@ -91,6 +112,7 @@ const SubText = styled.p`
     @media (max-width: 576px) {
         font-size: 16px;
         margin-top: 2rem;
+        line-height: 1.5;
     }
 `;
 
@@ -114,7 +136,6 @@ const ButtonBanner = styled.a`
     text-align: center;
     border-radius: 12px;
     display: inline-block;
-    transform: scale(0.98);
     transition: transform 0.25s ease 0s;
     box-sizing: border-box;
     font-weight: 500;
@@ -126,18 +147,32 @@ const ButtonBanner = styled.a`
     color: white;
     /* border: 1px solid transparent; */
     margin-right: 1rem;
-    background-image: linear-gradient(38deg, #00ff36 -10%, #00ee57 3%, #00c5ad 32%, #00a4f1 53%, #0b18fc 102%, #0d00ff 111%);
+    margin-top: 1rem;
+    background-image: linear-gradient(
+        38deg,
+        #00ff36 -10%,
+        #00ee57 3%,
+        #00c5ad 32%,
+        #00a4f1 53%,
+        #0b18fc 102%,
+        #0d00ff 111%
+    );
     width: 100%;
     background-size: 200%;
     background-position: right;
     color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 
     :hover {
         color: white;
     }
 
     img {
-        max-width: 12px;
+        max-height: 12px;
     }
     @media (min-width: 576px) {
         display: none;

@@ -6,9 +6,11 @@ import { navContent } from "../constants/index";
 
 const MenuMobile = () => {
     const [menu, setMenu] = useState(false);
+    const [active, setActive] = useState(false);
 
     const toggle = () => {
         setMenu(!menu);
+        setActive(!active);
     };
     return (
         <StyledMenu>
@@ -41,7 +43,10 @@ const MenuMobile = () => {
                             <Logo />
                         </li>
                         {navContent.map((item, index) => (
-                            <li className="title" key={index}>
+                            <li
+                                className={active ? "title active" : "title"}
+                                key={index}
+                            >
                                 <Link
                                     href={item.link}
                                     className="text"
@@ -111,40 +116,30 @@ const Nav = styled.div`
     background-image: linear-gradient(268deg, #c4f1f2 3%, #ffffff 97%);
     overflow-y: auto;
     img {
-        width: 20px;
+        width: 12px;
         margin-left: 0.5rem;
+        transition: transform 0.3s;
     }
     ul {
         li {
             margin-top: 5px;
+            padding-left: 2rem;
             a {
                 text-decoration: none;
                 color: #ffffff;
             }
         }
     }
-    .title {
+    .active {
         :hover {
             .submenu {
                 max-height: 500px;
             }
+            img {
+                transform: rotate(-180deg);
+            }
         }
     }
-    /* .submenu {
-    max-height: 0;
-    transition: max-height 0.5s ease-in-out;
-    overflow: hidden;
-    a {
-      margin-bottom: 10px !important;
-      font-weight: 500 !important;
-      font-size: 12px !important;
-      font-style: italic;
-    }
-    #disable {
-      opacity: 0.3;
-      z-index: -1;
-    }
-  } */
     @media (max-width: 576px) {
         width: 100%;
     }
@@ -153,7 +148,7 @@ const Nav = styled.div`
 const StyledMenu = styled.div`
     display: flex;
     align-items: center;
-    @media (min-width: 770px) {
+    @media (min-width: 1024px) {
         display: none;
     }
 `;

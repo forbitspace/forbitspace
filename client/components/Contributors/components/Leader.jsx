@@ -169,30 +169,6 @@ const Leaders = () => {
         </Wrapper>
     );
 };
-//
-// {
-//   name: "Menardo QuiÑosa",
-//   thumb: "../images/contributor-page/menardo.png",
-//   job: "CO - Founder",
-//   jobb: "Head Strategist",
-//   linked: "https://www.linkedin.com/in/menardo-quinosa-823498222",
-//   twitter: "https://twitter.com/MenardoQuinosa",
-// },
-// {
-//   name: "Baroda Hoang",
-//   thumb: "../images/contributor-page/baroda.png",
-//   job: "CO - Founder",
-//   jobb: "Lead Blockchain Engineer & Architect",
-//   linked: "https://www.linkedin.com/in/barodahoang/",
-//   twitter: "https://twitter.com/barodahoang",
-// },
-// {
-//   name: "Stella Vo",
-//   thumb: "../images/contributor-page/stella-vo.png",
-//   job: "Head Strategist",
-//   jobb: "Business Development",
-//   linked: "https://www.linkedin.com/in/stella-vo-276627222",
-// },
 const Wrapper = styled.div`
     padding: 1rem;
 `;
@@ -214,7 +190,7 @@ const WrapperLeader = styled.div`
 const Leader = styled.div`
     width: 45%;
     @media (max-width: 767px) {
-        width: 90%;
+        width: 100%;
     }
 `;
 const ViceLeader = styled.div`
@@ -227,7 +203,7 @@ const ViceLeader = styled.div`
     @media (max-width: 767px) {
         flex-direction: column;
         .vice-leader {
-            width: 90%;
+            width: 100%;
         }
     }
 `;
@@ -239,9 +215,14 @@ const Introduction = styled.div`
     .content {
         font-size: 18px;
         font-weight: 100;
+        line-height: 1.2;
     }
     @media (max-width: 767px) {
         text-align: center;
+        .content {
+            line-height: 1.5;
+            font-size: 16px;
+        }
     }
 `;
 

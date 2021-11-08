@@ -179,7 +179,7 @@ export const navContent = [
         show: true,
         contents: [
             {
-                link: "https://docs.forbitspace.com/forbitspace/",
+                link: "https://docs.forbitspace.com/",
                 content: "Documentation",
                 outLink: true,
             },
@@ -193,11 +193,11 @@ export const navContent = [
                 content: "Github",
                 outLink: true,
             },
-            // {
-            //   link: "",
-            //   content: "Audits",
-            //   disable: true,
-            // },
+            {
+                link: "https://github.com/forbitspace/forbitspace-audits",
+                content: "Audit",
+                outLink: true,
+            },
             // {
             //   link: "",
             //   content: "Bug bounty",
@@ -257,6 +257,11 @@ export const navContent = [
                 link: "https://blog.forbitspace.com/",
                 content: "Blog",
                 outLink: true,
+            },
+            {
+                link: "/contact", //
+                content: "Contact",
+                // disabled: true,
             },
             {
                 link: "https://help.forbitspace.com/",

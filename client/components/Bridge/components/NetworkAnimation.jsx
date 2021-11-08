@@ -70,42 +70,64 @@ const ItemImg = styled.div`
 `;
 const ImgWrap = styled.div`
     position: absolute;
+    transform: translate(-50%, -50%);
     img {
         width: 96px;
         height: 96px;
         animation: ${rotate_revert} 30s linear infinite;
     }
     &.img-0 {
-        top: calc(50% - 58px);
-        left: calc(50% - 58px);
+        top: 50%;
+        left: 50%;
         img {
             width: 116px;
             height: 116px;
         }
     }
     &.img-1 {
-        top: 4%;
-        left: calc(50% - 48px);
+        top: 12%;
+        left: 50%;
     }
     &.img-2 {
-        top: calc(32% - 48px);
-        left: calc(16% - 48px);
+        top: 32%;
+        left: 16%;
     }
     &.img-3 {
         top: 64%;
-        left: calc(18% - 48px);
+        left: 15%;
     }
     &.img-4 {
-        top: 78%;
-        left: calc(50% - 48px);
+        top: 88%;
+        left: 50%;
     }
     &.img-5 {
-        top: 65%;
-        left: calc(82% - 48px);
+        top: 64%;
+        left: 85%;
     }
     &.img-6 {
-        top: calc(32% - 48px);
-        left: calc(84% - 48px);
+        top: 32%;
+        left: 84%;
+    }
+    @media (max-width: 1200px) {
+        &.img-0 {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        img {
+            width: 66px;
+            height: 66px;
+        }
+    }
+    @media (max-width: 576px) {
+        &.img-0 {
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        /* transform: scale(0.6); */
     }
 `;
 

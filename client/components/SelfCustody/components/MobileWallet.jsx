@@ -127,7 +127,7 @@ const ImgHalf = styled.div`
     @media (max-width: 768px) {
         text-align: center !important;
         img {
-            width: 60%;
+            width: 65%;
             height: auto;
         }
     }
@@ -165,6 +165,7 @@ const SubText = styled.p`
     font-weight: 300;
     font-family: sans-serif;
     text-align: right;
+    line-height: 1.2;
     span {
         font-style: italic;
         font-weight: 900;
@@ -177,6 +178,7 @@ const SubText = styled.p`
         text-align: center !important;
     }
     @media (max-width: 576px) {
+        line-height: 1.5;
         font-size: 16px;
     }
 `;

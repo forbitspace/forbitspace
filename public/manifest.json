@@ -1,13 +1,8 @@
 {
+  "name": "Next PWA",
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "display": "standalone",
-  "scope": "/",
-  "start_url": "/",
-  "name": "Next PWA",
-  "short_name": "PWA",
-  "description": "forbitspace",
-  "homepage_url": "http://localhost:4000/",
   "icons": [
     {
       "src": "favicon.png",
@@ -26,5 +21,10 @@
       "type": "image/png",
       "purpose": "any maskable"
     }
-  ]
+  ],
+  "start_url": "/",
+  "scope": ".",
+  "short_name": "PWA",
+  "description": "forbitspace",
+  "homepage_url": "http://localhost:4000/"
 }

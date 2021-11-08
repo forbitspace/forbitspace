@@ -102,11 +102,13 @@ const SubText = styled.p`
     font-weight: 300;
     font-family: sans-serif;
     text-align: right;
+    line-height: 1.2;
     @media (max-width: 1024px) {
         font-size: 18px;
         text-align: center;
     }
     @media (max-width: 576px) {
+        line-height: 1.5;
         font-size: 16px;
     }
 `;
