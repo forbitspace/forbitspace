@@ -1,6 +1,5 @@
 const path = require("path");
 const withSass = require("@zeit/next-sass");
-const withPWA = require("next-pwa");
 
 // for those who using CDN
 const { ASSET_HOST } = process.env;
@@ -33,12 +32,4 @@ module.exports = withSass({
     },
 
     trailingSlash: true,
-});
-
-module.exports = withPWA({
-    pwa: {
-        dest: "public",
-        disable: process.env.NODE_ENV === "development",
-    },
-    reactStrictMode: true,
 });
