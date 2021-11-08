@@ -75,6 +75,7 @@ const StyledNav = styled.div`
         display: flex;
         align-items: center;
         cursor: default;
+        font-size: 14px;
         :hover {
             .dropdown-content {
                 max-height: 300px;
