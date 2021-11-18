@@ -7,14 +7,7 @@ const Nav = () => {
     return (
         <StyledNav>
             <div className="main-menu">
-                <ul className="main-menu-nav">
-                    {/* <li>
-            <Link href="/" activeClassName="active">
-              <a href="#" className="text-dark text-visi">
-                Space Trade
-              </a>
-            </Link>
-          </li>*/}
+                <MainMenuNav className="main-menu-nav">
                     {navContent.map((item, index) => (
                         <li key={index}>
                             {item.link ? (
@@ -63,7 +56,7 @@ const Nav = () => {
                             </DropdownMenu>
                         </li>
                     ))}
-                </ul>
+                </MainMenuNav>
                 <div className="main-menu-overlay" />
             </div>
         </StyledNav>
@@ -113,5 +106,83 @@ const DisableLink = styled.div`
     font-size: 12px !important;
     font-style: italic;
 `;
+const MainMenuNav = styled.ul`
+    display: flex;
+    margin-bottom: 0;
 
+    li > .submenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        white-space: nowrap;
+        background-color: #fff;
+        -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        color: #000;
+        list-style-type: none;
+        min-width: 100%;
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-transform: perspective(1200px) rotateX(-90deg);
+        transform: perspective(1200px) rotateX(-90deg);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    li:hover > .submenu {
+        transform: none;
+        padding-left: 0;
+    }
+
+    li > .submenu > li > a {
+        padding: 10px 15px;
+        display: block;
+        color: #000;
+        font-weight: normal;
+        text-transform: none;
+        transition: 0.3s ease;
+    }
+
+    li > .submenu > li:hover a {
+        border-radius: 0;
+    }
+
+    li > .submenu > li {
+        border-bottom: 1px solid #8080804d;
+        border-style: dashed;
+    }
+
+    li {
+        position: relative;
+        margin: 0 15px;
+    }
+    li::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        right: 50%;
+        border-bottom: 2px solid #ffffff;
+        transition: all 0.4s;
+    }
+    li:hover::after {
+        left: 0;
+        right: 0;
+    }
+
+    li a {
+        display: block;
+        border-radius: 5px;
+        background: transparent;
+        color: #182239;
+        transition: 0.3s ease;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: none;
+        letter-spacing: 1px;
+        margin-right: 5px;
+        color: white;
+    }
+`
 export default Nav;

@@ -72,12 +72,12 @@ export default class extends Document {
                         sizes="512x512"
                         href="../images/logo-space.png"
                     />
-                    <link
+                    {/* <link
                         rel="stylesheet"
                         href="/js/fontawesome-free-5.15.3-web/css/all.min.css"
-                    />
-                    <link rel="stylesheet" href="/css/style.css" />
-                    <link rel="stylesheet" href="/css/responsive.css" />
+                    /> */}
+                    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+                    <link rel="stylesheet" href="/css/responsive.css" type="text/css" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
                     <link
                         rel="preload"
