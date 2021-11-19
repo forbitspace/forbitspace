@@ -79,25 +79,25 @@ const Brands = () => {
                     <WrapContentMail>
                         <Text>Say Hello</Text>
                         <span>
-                            Learn more about forbitspace and see what makes it
+                            Learn more about <span className="forbitspace">forbitspace</span> and see what makes it
                             great.
                         </span>
                         <a
                             href="mailto:hello@forbitspace.com"
                             className="mail-hello"
                         >
-                            hello@forbitspace.com
+                            hello@<span className="forbitspace">forbitspace</span>.com
                         </a>
                         <span>
                             Please direct inquiries to:{" "}
                             <a href="mailto:press@forbitspace.com">
-                                press@forbitspace.com
+                                press@<span className="forbitspace">forbitspace</span>.com
                             </a>
                         </span>{" "}
                     </WrapContentMail>
                 </WrapEmail>
                 <Content>
-                    <Title>forbitspace logo</Title>
+                    <Title><span className="forbitspace">forbitspace</span> logo</Title>
                     <WrapperLogo>
                         {forbitspaceLogo.map((item, index) => (
                             <BrandLogo key={index}>
@@ -148,7 +148,7 @@ const Brands = () => {
                     </WrapperLogo>
                 </Content>
                 <Content>
-                    <Title>forbitspace noise logo</Title>
+                    <Title><span className="forbitspace">forbitspace</span> noise logo</Title>
                     <WrapperLogo>
                         {forbitspaceLogoNoise.map((item, index) => (
                             <BrandLogo key={index}>
@@ -188,7 +188,7 @@ const Brands = () => {
                     </WrapperLogo>
                 </Content>
                 <Content>
-                    <Title>forbitswap logo</Title>
+                    <Title><span className="forbitspace">forbitswap</span> logo</Title>
                     <WrapperLogo>
                         {forbitswapLogo.map((item, index) => (
                             <BrandLogo key={index}>
@@ -345,6 +345,11 @@ const BoxSection = styled.section`
     position: relative;
     padding: 8vh 0 0;
     margin: 0 0 2rem;
+    .forbitspace{
+        font-family: "helvetica neue", Roboto, sans-serif;
+        font-weight: 900;
+        font-style: italic;
+    }
     @media (max-width: 770px) {
         padding-top: 60px;
         margin: 0 0 1rem;
@@ -421,7 +426,7 @@ const Text = styled.div`
 const Content = styled.div``;
 const Title = styled.div`
     font-size: 28px;
-    font-weight: 200;
+    font-weight: normal;
 `;
 const WrapperLogo = styled.div`
     width: 100%;

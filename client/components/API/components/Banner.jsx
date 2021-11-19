@@ -64,10 +64,10 @@ const WrapImg = styled.div`
     }
 `;
 const Content = styled.div`
-    margin-left: 100px;
+    /* margin-left: 100px; */
     padding: 0 10px;
     text-align: right;
-    width: 60%;
+    width: 65%;
     align-self: flex-end;
     @media (max-width: 1024px) {
         width: 100%;
@@ -80,6 +80,7 @@ const Title = styled.h2`
     font-size: 2rem;
     font-weight: 600;
     line-height: 1;
+    padding: 10px 0;
     img {
         max-width: 400px;
     }

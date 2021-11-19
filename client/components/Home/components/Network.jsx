@@ -99,7 +99,7 @@ const Text = styled.div`
     font-size: 2rem;
     font-weight: 500;
     text-align: right;
-    padding: 1vh 0;
+    padding: 10px 0;
     @media (max-width: 768px) {
         font-size: 26px;
         padding: 10px 0 30px;
