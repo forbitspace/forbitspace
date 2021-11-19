@@ -891,13 +891,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       href: "../images/logo-space.png"
     }), __jsx("link", {
       rel: "stylesheet",
-      href: "/js/fontawesome-free-5.15.3-web/css/all.min.css"
-    }), __jsx("link", {
-      rel: "stylesheet",
-      href: "/css/style.css"
-    }), __jsx("link", {
-      rel: "stylesheet",
-      href: "/css/responsive.css"
+      href: "/css/style.css",
+      type: "text/css"
     }), __jsx("link", {
       rel: "preconnect",
       href: "https://fonts.gstatic.com"

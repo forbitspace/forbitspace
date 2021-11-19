@@ -93,6 +93,7 @@ const Text = styled.p`
     font-weight: 500;
     line-height: 40px;
     letter-spacing: 1px;
+    padding: 10px 0;
     @media (max-width: 768px) {
         font-size: 26px;
         letter-spacing: 1px;

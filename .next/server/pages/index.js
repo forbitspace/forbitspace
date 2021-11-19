@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"44":"263f993d0159d3c078a1"}[chunkId] + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"44":"d8fdd7cd2f5c58b1fcf3"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -189,8 +189,7 @@ const HomeComp = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __web
     webpack: () => [/*require.resolve*/("kSri")],
     modules: ["../client/components/Home"]
   }
-}); // const HomeComp = dynamic(import("../client/components/ComingSoon"), { ssr: false });
-
+});
 function Home() {
   return __jsx("div", null, __jsx(HomeComp, null));
 }

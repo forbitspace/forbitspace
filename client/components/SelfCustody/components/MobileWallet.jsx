@@ -55,7 +55,7 @@ const MobileWallet = () => {
                 </Content>
             </WrapContainer>
 
-            <WrapWallet>
+            <WrapWallet className='container'>
                 <Content>
                     <Text>Smart contract wallet</Text>
                     <SubText className="text-left">
@@ -182,7 +182,7 @@ const SubText = styled.p`
         font-size: 16px;
     }
 `;
-const WrapWallet = styled(Container)`
+const WrapWallet = styled.div`
     margin-top: 4rem;
     width: 100%;
     /* padding: 0 3rem; */
