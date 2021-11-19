@@ -9,9 +9,9 @@ import {
   MemberData,
   MemberData_1,
   AdvisorData,
-  MemberData_2,
 } from "./constants";
 import Leaders from "./components/Leader";
+import Advisors from "./components/Advisors";
 
 const Index = () => {
   return (
@@ -21,18 +21,11 @@ const Index = () => {
         <Leaders />
         <Members title={""} data={MemberData} />
         <Members title={""} data={MemberData_1} />
-        <Members title={""} data={MemberData_2} />
-        <Members
-          title={"Advisors"}
-          data={AdvisorData}
-          isAdvisor={true}
-          gap={"10%"}
-          imgCenter={true}
-        />
+        <Advisors data={AdvisorData}/>
         <FooterContributor />
         <Footer />
       </Container>
-      {/* <BackgroundImg src="../images/background-line-min.png"></BackgroundImg> */}
+
     </WrapperBackground>
   );
 };
@@ -44,33 +37,4 @@ const WrapperBackground = styled.section`
   font-family: Montserrat, sans-serif;
 `;
 const Container = styled.div``;
-
-// const BackgroundImg = styled.img`
-//   position: absolute;
-//   top: -100vh;
-//   left: 0;
-//   bottom: 0;
-//   width: 100%;
-//   height: calc(100% + 100vh);
-//   opacity: 0.3;
-//   z-index: -1;
-//   @media (max-width: 576px) {
-//     position: fixed;
-//   }
-// `;
-// const BackgroundImg = styled.img`
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   width: 100%;
-//   /* height: calc(100% + 100vh); */
-//   min-height: 100vh;
-//   opacity: 0.6;
-//   z-index: -1;
-//   @media (max-width: 576px) {
-//     position: fixed;
-//   }
-// `;
 export default Index;

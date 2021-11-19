@@ -12,7 +12,7 @@ const Members = (props) => {
         twitter,
     }) => {
         return (
-            <StyledMemberItem width={props.width}>
+            <StyledMemberItem isAdvisor={props.isAdvisor}>
                 <WrapperIfo>
                     <FlexItem>
                         <Name isAdvisor={props.isAdvisor}>{name}</Name>
@@ -26,17 +26,17 @@ const Members = (props) => {
                         <Social>
                             {twitter ? (
                                 <a href={twitter} target="_blank">
-                                    <i className="fab fa-twitter"></i>
+                                    <img src="../images/icons/twitter.svg" alt="" />
                                 </a>
                             ) : null}
                             {linked ? (
                                 linked !== "/" ? (
                                     <a href={linked} target="_blank">
-                                        <i className="fab fa-linkedin"></i>
+                                    <img src="../images/icons/linkedin.svg" alt="" />
                                     </a>
                                 ) : (
                                     <span href={linked} target="_blank">
-                                        <i className="fab fa-linkedin"></i>
+                                    <img src="../images/icons/linkedin.svg" alt="" />
                                     </span>
                                 )
                             ) : null}
@@ -93,7 +93,8 @@ const Social = styled.div`
             color: #0168ff;
         }
     }
-    i {
+    img {
+        width: 16px;
         margin-right: 5px;
     }
 `;
@@ -136,8 +137,8 @@ const GroupMembers = styled.div`
 
 const StyledMemberItem = styled.div`
     position: relative;
-    max-width: ${({ width }) => (width ? "500px" : "350px")};
-    width: ${({ width }) => (width ? width : "30%")};
+    max-width: ${({ isAdvisor }) => (isAdvisor ? "500px" : "350px")};
+    width: ${({ isAdvisor }) => (isAdvisor ? "22%" : "30%")};
     height: 350px;
     margin: 0 auto;
 
@@ -184,9 +185,9 @@ const Thumb = styled.div`
     height: ${({ isAdvisor }) => (isAdvisor ? "130px" : "100px")};
     position: absolute;
     right: ${({ isAdvisor }) => (isAdvisor ? 0 : "15px")};
-    top: ${({ isAdvisor }) => (isAdvisor ? "-50px" : "-10px")};
+    top: ${({ isAdvisor }) => (isAdvisor ? "-120px" : "-10px")};
     bottom: ${({ isAdvisor }) => (isAdvisor ? 0 : "")};
-    left: ${({ isAdvisor }) => (isAdvisor ? "-55px" : "")};
+    left: ${({ isAdvisor }) => (isAdvisor ? "35px" : "")};
     margin: ${({ isAdvisor }) => (isAdvisor ? "auto" : "0")};
 
     @media (max-width: 576px) {
