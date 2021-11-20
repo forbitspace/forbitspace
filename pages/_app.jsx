@@ -23,7 +23,7 @@ export default class extends App {
                 <Head>
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                 </Head>
-                <NextSeo title={"forbitspace"} description={"forbitspace is an interoperability aggregator protocol that unites decentralized applications across disparate blockchains. Allows crypto traders to tap deep liquidity and receive better pricing one single interface."} />
+                <NextSeo title={"forbitspace"} description={"The forbitspace DEX super aggregator is an interoperability protocol that connects disparate blockchains. That unites decentralized applications across disparate blockchains, simultaneously uniting liquidity across chains and making it possible to transact in, out, and across disparate networks with ease."} />
                 <Header />
                 <div className="main">
                     <Component {...pageProps} />

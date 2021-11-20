@@ -357,7 +357,7 @@ const Header = next_dynamic__WEBPACK_IMPORTED_MODULE_4___default()(() => __webpa
       content: "width=device-width, initial-scale=1"
     })), __jsx(next_seo__WEBPACK_IMPORTED_MODULE_3__["NextSeo"], {
       title: "forbitspace",
-      description: "forbitspace is an interoperability aggregator protocol that unites decentralized applications across disparate blockchains. Allows crypto traders to tap deep liquidity and receive better pricing one single interface."
+      description: "The forbitspace DEX super aggregator is an interoperability protocol that connects disparate blockchains. That unites decentralized applications across disparate blockchains, simultaneously uniting liquidity across chains and making it possible to transact in, out, and across disparate networks with ease."
     }), __jsx(Header, null), __jsx("div", {
       className: "main"
     }, __jsx(Component, pageProps)));
