@@ -23,7 +23,7 @@ export default class extends Document {
                     <meta name="theme-color" content="#fff" />
                     <meta
                         name="Description"
-                        content="The forbitspace  DEX super aggregator is an interoperability protocol that connects disparate blockchains. that unites decentralized applications across disparate blockchains, simultaneously uniting liquidity across chains and making it possible to transact in, out, and across disparate networks with ease."
+                        content="The forbitspace DEX super aggregator is an interoperability protocol that connects disparate blockchains. That unites decentralized applications across disparate blockchains, simultaneously uniting liquidity across chains and making it possible to transact in, out, and across disparate networks with ease."
                     />
                     <meta
                         property="og:image"
