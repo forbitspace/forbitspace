@@ -861,9 +861,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       name: "theme-color",
       content: "#fff"
     }), __jsx("meta", {
-      name: "Description",
-      content: "The forbitspace DEX super aggregator is an interoperability protocol that connects disparate blockchains. That unites decentralized applications across disparate blockchains, simultaneously uniting liquidity across chains and making it possible to transact in, out, and across disparate networks with ease."
-    }), __jsx("meta", {
       property: "og:image",
       content: "https://ipfs.infura.io/ipfs/QmaioLHcm1ugkc36oSQ1zyg56W2sqiPhWxvB1xtK2egEWs"
     }), __jsx("meta", {
