@@ -166,7 +166,7 @@ const Ul = styled.ul`
 `;
 
 const ButtonMenu = styled.div`
-
+    display: block;
     div {
         width: 20px;
         height: 2px;
