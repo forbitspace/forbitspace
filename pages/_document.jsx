@@ -10,6 +10,7 @@ export default class extends Document {
             <Html lang="en">
                 <Head>
                     <link rel="manifest" href="/manifest.json" />
+                    <link rel="shortcut icon" href="../favicon.ico" />
                     <meta charSet="utf-8" />
                     <meta
                         name="keywords"
@@ -39,7 +40,7 @@ export default class extends Document {
                         httpEquiv="X-UA-Compatible"
                         content="IE=edge,chrome=1"
                     />
-                    <link rel="shortcut icon" href="../images/logo-space.png" />
+                    {/* <link rel="shortcut icon" href="../images/logo-space.png" /> */}
                     <link
                         rel="apple-touch-icon"
                         sizes="192x192"

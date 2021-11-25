@@ -6,7 +6,7 @@ module.exports =
 /******/ 	// object to store loaded chunks
 /******/ 	// "0" means "already loaded"
 /******/ 	var installedChunks = {
-/******/ 		"pages/team": 0
+/******/ 		33: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"42":"f804db0dc7ac909081c7"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -121,86 +121,87 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./pages/team.jsx");
+/******/ 	return __webpack_require__(__webpack_require__.s = 29);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./pages/team.jsx":
-/*!************************!*\
-  !*** ./pages/team.jsx ***!
-  \************************/
-/*! exports provided: default */
+/***/ "/T1H":
+/***/ (function(module, exports) {
+
+module.exports = require("next/dynamic");
+
+/***/ }),
+
+/***/ 29:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("yrEz");
+
+
+/***/ }),
+
+/***/ "90Kz":
+/***/ (function(module, exports) {
+
+module.exports = require("next-routes");
+
+/***/ }),
+
+/***/ "Dtiu":
+/***/ (function(module, exports) {
+
+module.exports = require("styled-components");
+
+/***/ }),
+
+/***/ "cDcd":
+/***/ (function(module, exports) {
+
+module.exports = require("react");
+
+/***/ }),
+
+/***/ "oL/c":
+/***/ (function(module, exports) {
+
+module.exports = require("reactstrap");
+
+/***/ }),
+
+/***/ "yrEz":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/dynamic */ \"next/dynamic\");\n/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_1__);\nvar _jsxFileName = \"/Users/admin/Desktop/01_documents/forbitspace-home/forbitspace/pages/team.jsx\";\nvar __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;\n// @flow\n\n\nconst Contributors = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ../client/components/Contributors */ \"./client/components/Contributors/index.jsx\")), {\n  ssr: false,\n  loadableGenerated: {\n    webpack: () => [/*require.resolve*/(/*! ../client/components/Contributors */ \"./client/components/Contributors/index.jsx\")],\n    modules: [\"../client/components/Contributors\"]\n  }\n});\n\nconst Page = () => {\n  return __jsx(Contributors, {\n    __self: undefined,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 9,\n      columnNumber: 5\n    }\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Page);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wYWdlcy90ZWFtLmpzeD9jYWIxIl0sIm5hbWVzIjpbIkNvbnRyaWJ1dG9ycyIsImR5bmFtaWMiLCJzc3IiLCJQYWdlIl0sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBQUE7QUFDQTtBQUNBO0FBRUEsTUFBTUEsWUFBWSxHQUFHQyxtREFBTyxPQUFDLG9LQUFELEVBQThDO0FBQUVDLEtBQUcsRUFBRSxLQUFQO0FBQUE7QUFBQSx3Q0FBdEMscUZBQXNDO0FBQUEsY0FBdEMsbUNBQXNDO0FBQUE7QUFBQSxDQUE5QyxDQUE1Qjs7QUFFQSxNQUFNQyxJQUFJLEdBQUcsTUFBTTtBQUNqQixTQUNFLE1BQUMsWUFBRDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLElBREY7QUFHRCxDQUpEOztBQU1lQSxtRUFBZiIsImZpbGUiOiIuL3BhZ2VzL3RlYW0uanN4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gQGZsb3dcbmltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCBkeW5hbWljIGZyb20gXCJuZXh0L2R5bmFtaWNcIjtcblxuY29uc3QgQ29udHJpYnV0b3JzID0gZHluYW1pYyhpbXBvcnQoXCIuLi9jbGllbnQvY29tcG9uZW50cy9Db250cmlidXRvcnNcIiksIHsgc3NyOiBmYWxzZSB9KTtcblxuY29uc3QgUGFnZSA9ICgpID0+IHtcbiAgcmV0dXJuIChcbiAgICA8Q29udHJpYnV0b3JzIC8+XG4gIClcbn1cblxuZXhwb3J0IGRlZmF1bHQgUGFnZSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./pages/team.jsx\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("/T1H");
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_1__);
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+// @flow
+
+
+const Contributors = next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(() => __webpack_require__.e(/* import() */ 42).then(__webpack_require__.bind(null, "ClIX")), {
+  ssr: false,
+  loadableGenerated: {
+    webpack: () => [/*require.resolve*/("ClIX")],
+    modules: ["../client/components/Contributors"]
+  }
+});
+
+const Page = () => {
+  return __jsx(Contributors, null);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Page);
 
 /***/ }),
 
-/***/ "axios":
-/*!************************!*\
-  !*** external "axios" ***!
-  \************************/
-/*! no static exports found */
+/***/ "zr5I":
 /***/ (function(module, exports) {
 
-eval("module.exports = require(\"axios\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJheGlvc1wiPzcwYzYiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoiYXhpb3MuanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJheGlvc1wiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///axios\n");
-
-/***/ }),
-
-/***/ "next-routes":
-/*!******************************!*\
-  !*** external "next-routes" ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = require(\"next-routes\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJuZXh0LXJvdXRlc1wiPzBkNGYiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoibmV4dC1yb3V0ZXMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJuZXh0LXJvdXRlc1wiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///next-routes\n");
-
-/***/ }),
-
-/***/ "next/dynamic":
-/*!*******************************!*\
-  !*** external "next/dynamic" ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = require(\"next/dynamic\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJuZXh0L2R5bmFtaWNcIj82ZDNmIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6Im5leHQvZHluYW1pYy5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcIm5leHQvZHluYW1pY1wiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///next/dynamic\n");
-
-/***/ }),
-
-/***/ "react":
-/*!************************!*\
-  !*** external "react" ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = require(\"react\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWFjdFwiPzU4OGUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoicmVhY3QuanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJyZWFjdFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///react\n");
-
-/***/ }),
-
-/***/ "reactstrap":
-/*!*****************************!*\
-  !*** external "reactstrap" ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = require(\"reactstrap\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWFjdHN0cmFwXCI/MjQ5MyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJyZWFjdHN0cmFwLmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwicmVhY3RzdHJhcFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///reactstrap\n");
-
-/***/ }),
-
-/***/ "styled-components":
-/*!************************************!*\
-  !*** external "styled-components" ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = require(\"styled-components\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJzdHlsZWQtY29tcG9uZW50c1wiP2Y1YWQiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoic3R5bGVkLWNvbXBvbmVudHMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJzdHlsZWQtY29tcG9uZW50c1wiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///styled-components\n");
+module.exports = require("axios");
 
 /***/ })
 
