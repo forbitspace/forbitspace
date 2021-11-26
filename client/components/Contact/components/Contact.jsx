@@ -79,7 +79,7 @@ const ContactUs = () => {
     return (
         <BoxSection>
             <WrapContainer>
-                <Header>Contact Us.</Header>
+                <Header>Contact Us</Header>
                 {status ? (
                     <ThankyouMessage
                         onClick={() => {

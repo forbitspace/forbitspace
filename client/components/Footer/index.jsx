@@ -306,12 +306,13 @@ const Copyright = styled.p`
 `;
 
 const Input = styled.input`
-    width: 100%;
+    /* width: 100%; */
+    max-width: 100%;
     height: 30px;
     margin-right: 5px;
     font-style: italic;
     font-size: 14px;
-    padding: 10px 15px;
+    padding: 0px 15px;
     line-height: 20px;
     outline: 0;
     transition: all 0.3s ease-in-out;
