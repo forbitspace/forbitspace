@@ -10,7 +10,36 @@ export default class extends Document {
             <Html lang="en">
                 <Head>
                     <link rel="manifest" href="/manifest.json" />
-                    <link rel="shortcut icon" href="/favicon.ico" />
+                    <meta charSet="utf-8" />
+                    <meta
+                        name="keywords"
+                        content="forbitspace, forbitswap, flyby, ido, decentralized, defi, dex, exchange, crypto, fbs"
+                    />
+                    <meta
+                        name="referrer"
+                        content="origin-when-crossorigin"
+                        id="meta_referrer"
+                    />
+                    <meta name="theme-color" content="#fff" />
+                    {/* <meta
+                        name="Description"
+                        content="The forbitspace DEX super aggregator is an interoperability protocol that connects disparate blockchains. That unites decentralized applications across disparate blockchains, simultaneously uniting liquidity across chains and making it possible to transact in, out, and across disparate networks with ease."
+                    /> */}
+                    <meta
+                        property="og:image"
+                        content="https://ipfs.infura.io/ipfs/QmaioLHcm1ugkc36oSQ1zyg56W2sqiPhWxvB1xtK2egEWs"
+                    />
+                    <meta httpEquiv="cache-control" content="no-cache" />
+                    <meta httpEquiv="expires" content="0" />
+                    <meta
+                        httpEquiv="Cache-Control"
+                        content="no-cache, no-store, must-revalidate"
+                    />
+                    <meta
+                        httpEquiv="X-UA-Compatible"
+                        content="IE=edge,chrome=1"
+                    />
+                    <link rel="shortcut icon" href="../images/logo-space.png" />
                     <link
                         rel="apple-touch-icon"
                         sizes="192x192"
@@ -43,35 +72,6 @@ export default class extends Document {
                         rel="manifest"
                         href="../public/manifest.json"
                         crossOrigin="use-credentials"
-                    />
-                    <meta charSet="utf-8" />
-                    <meta
-                        name="keywords"
-                        content="forbitspace, forbitswap, flyby, ido, decentralized, defi, dex, exchange, crypto, fbs"
-                    />
-                    <meta
-                        name="referrer"
-                        content="origin-when-crossorigin"
-                        id="meta_referrer"
-                    />
-                    <meta name="theme-color" content="#fff" />
-                    {/* <meta
-                        name="Description"
-                        content="The forbitspace DEX super aggregator is an interoperability protocol that connects disparate blockchains. That unites decentralized applications across disparate blockchains, simultaneously uniting liquidity across chains and making it possible to transact in, out, and across disparate networks with ease."
-                    /> */}
-                    <meta
-                        property="og:image"
-                        content="https://ipfs.infura.io/ipfs/QmaioLHcm1ugkc36oSQ1zyg56W2sqiPhWxvB1xtK2egEWs"
-                    />
-                    <meta httpEquiv="cache-control" content="no-cache" />
-                    <meta httpEquiv="expires" content="0" />
-                    <meta
-                        httpEquiv="Cache-Control"
-                        content="no-cache, no-store, must-revalidate"
-                    />
-                    <meta
-                        httpEquiv="X-UA-Compatible"
-                        content="IE=edge,chrome=1"
                     />
                 </Head>
                 <body className="dark-mode">
