@@ -2,12 +2,12 @@
 import React from "react";
 import dynamic from "next/dynamic";
 
-const Tokencompo = dynamic(import("../client/components/Token"), {
+const Tokens = dynamic(import("../client/components/Token"), {
   ssr: false,
 });
 
 const Token = () => {
-  return <Tokencompo />;
+  return <Tokens />;
 };
 
 export default Token;

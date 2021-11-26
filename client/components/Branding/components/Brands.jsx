@@ -408,7 +408,7 @@ const WrapContentMail = styled.div`
     @media (max-width: 768px) {
         width: 100%;
         .mail-hello {
-            text-align: left;
+            /* text-align: left; */
             padding-right: 0;
         }
     }

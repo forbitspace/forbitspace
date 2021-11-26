@@ -10,6 +10,7 @@ export default class extends Document {
             <Html lang="en">
                 <Head>
                     <link rel="manifest" href="/manifest.json" />
+                    <link rel="shortcut icon" href="../favicon.ico" />
                     <meta charSet="utf-8" />
                     <meta
                         name="keywords"
@@ -21,6 +22,10 @@ export default class extends Document {
                         id="meta_referrer"
                     />
                     <meta name="theme-color" content="#fff" />
+                    {/* <meta
+                        name="Description"
+                        content="The forbitspace DEX super aggregator is an interoperability protocol that connects disparate blockchains. That unites decentralized applications across disparate blockchains, simultaneously uniting liquidity across chains and making it possible to transact in, out, and across disparate networks with ease."
+                    /> */}
                     <meta
                         property="og:image"
                         content="https://ipfs.infura.io/ipfs/QmaioLHcm1ugkc36oSQ1zyg56W2sqiPhWxvB1xtK2egEWs"
@@ -35,7 +40,7 @@ export default class extends Document {
                         httpEquiv="X-UA-Compatible"
                         content="IE=edge,chrome=1"
                     />
-                    <link rel="shortcut icon" href="../images/logo-space.png" />
+                    {/* <link rel="shortcut icon" href="../images/logo-space.png" /> */}
                     <link
                         rel="apple-touch-icon"
                         sizes="192x192"
@@ -50,19 +55,19 @@ export default class extends Document {
                         rel="stylesheet"
                         href="/js/fontawesome-free-5.15.3-web/css/all.min.css"
                     /> */}
-                    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+                    {/* <link rel="stylesheet" href="/css/style.css" type="text/css" /> */}
                     {/* <link rel="stylesheet" href="/css/responsive.css" type="text/css" /> */}
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
-                    <link
+                    {/* <link
                         rel="preload"
                         href="/css/style.css"
                         as="style"
                         onLoad="this.rel='stylesheet'"
-                    />
-                    <link
+                    /> */}
+                    {/* <link
                         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,500;1,700&display=swap"
                         rel="stylesheet"
-                    />
+                    /> */}
                     {/* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossOrigin="anonymous"></link> */}
                     <link
                         rel="manifest"
