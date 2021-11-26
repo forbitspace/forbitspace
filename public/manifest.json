@@ -3,7 +3,6 @@
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "display": "standalone",
-  "homepage_url": "https://forbitspace.com/",
   "icons": [
     {
       "src": "favicon.png",
@@ -25,5 +24,7 @@
   ],
   "start_url": "/",
   "scope": ".",
-  "short_name": "forbitspace"
+  "short_name": "FBS",
+  "description": "forbitspace",
+  "homepage_url": "https://forbitspace.com/"
 }
