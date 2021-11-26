@@ -848,36 +848,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Head"], null, __jsx("link", {
       rel: "manifest",
       href: "/manifest.json"
-    }), __jsx("link", {
-      rel: "shortcut icon",
-      href: "/favicon.ico"
-    }), __jsx("link", {
-      rel: "apple-touch-icon",
-      sizes: "192x192",
-      href: "../images/logo-space.png"
-    }), __jsx("link", {
-      rel: "apple-touch-icon",
-      sizes: "512x512",
-      href: "../images/logo-space.png"
-    }), __jsx("link", {
-      rel: "stylesheet",
-      href: "/css/style.css",
-      type: "text/css"
-    }), __jsx("link", {
-      rel: "preconnect",
-      href: "https://fonts.gstatic.com"
-    }), __jsx("link", {
-      rel: "preload",
-      href: "/css/style.css",
-      as: "style",
-      onLoad: "this.rel='stylesheet'"
-    }), __jsx("link", {
-      href: "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,500;1,700&display=swap",
-      rel: "stylesheet"
-    }), __jsx("link", {
-      rel: "manifest",
-      href: "../public/manifest.json",
-      crossOrigin: "use-credentials"
     }), __jsx("meta", {
       charSet: "utf-8"
     }), __jsx("meta", {
@@ -905,6 +875,36 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     }), __jsx("meta", {
       httpEquiv: "X-UA-Compatible",
       content: "IE=edge,chrome=1"
+    }), __jsx("link", {
+      rel: "shortcut icon",
+      href: "../images/logo-space.png"
+    }), __jsx("link", {
+      rel: "apple-touch-icon",
+      sizes: "192x192",
+      href: "../images/logo-space.png"
+    }), __jsx("link", {
+      rel: "apple-touch-icon",
+      sizes: "512x512",
+      href: "../images/logo-space.png"
+    }), __jsx("link", {
+      rel: "stylesheet",
+      href: "/css/style.css",
+      type: "text/css"
+    }), __jsx("link", {
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com"
+    }), __jsx("link", {
+      rel: "preload",
+      href: "/css/style.css",
+      as: "style",
+      onLoad: "this.rel='stylesheet'"
+    }), __jsx("link", {
+      href: "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,500;1,700&display=swap",
+      rel: "stylesheet"
+    }), __jsx("link", {
+      rel: "manifest",
+      href: "../public/manifest.json",
+      crossOrigin: "use-credentials"
     })), __jsx("body", {
       className: "dark-mode"
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], null), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], null)));
