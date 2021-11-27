@@ -848,6 +848,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Head"], null, __jsx("link", {
       rel: "manifest",
       href: "/manifest.json"
+    }), __jsx("link", {
+      rel: "shortcut icon",
+      href: "/images/logo-space.png"
     }), __jsx("meta", {
       charSet: "utf-8"
     }), __jsx("meta", {
@@ -876,16 +879,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       httpEquiv: "X-UA-Compatible",
       content: "IE=edge,chrome=1"
     }), __jsx("link", {
-      rel: "shortcut icon",
-      href: "../images/logo-space.png"
-    }), __jsx("link", {
       rel: "apple-touch-icon",
       sizes: "192x192",
-      href: "../images/logo-space.png"
+      href: "/images/logo-space.png"
     }), __jsx("link", {
       rel: "apple-touch-icon",
       sizes: "512x512",
-      href: "../images/logo-space.png"
+      href: "/images/logo-space.png"
     }), __jsx("link", {
       rel: "stylesheet",
       href: "/css/style.css",
@@ -903,7 +903,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       rel: "stylesheet"
     }), __jsx("link", {
       rel: "manifest",
-      href: "../public/manifest.json",
+      href: "/public/manifest.json",
       crossOrigin: "use-credentials"
     })), __jsx("body", {
       className: "dark-mode"
