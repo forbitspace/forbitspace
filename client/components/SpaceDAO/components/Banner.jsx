@@ -93,7 +93,6 @@ const Text = styled.p`
         font-size: 26px;
         letter-spacing: 1px;
         font-weight: 500;
-        line-height: 25px;
     }
 `;
 const SubText = styled.p`

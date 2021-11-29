@@ -1,5 +1,5 @@
 {
-  "name": "Next PWA",
+  "name": "forbitspace",
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "display": "standalone",
@@ -24,7 +24,7 @@
   ],
   "start_url": "/",
   "scope": ".",
-  "short_name": "PWA",
+  "short_name": "FBS",
   "description": "forbitspace",
-  "homepage_url": "http://localhost:4000/"
+  "homepage_url": "https://forbitspace.com/"
 }

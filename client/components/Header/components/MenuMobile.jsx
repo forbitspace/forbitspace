@@ -24,11 +24,7 @@ const MenuMobile = () => {
                 Launch App
             </ButtonBanner>
             <ButtonMenu onClick={toggle} isOpen={menu}>
-                <div className="logo-light-mode">
-                    <span></span>
-                    <span></span>
-                </div>
-                <div className="logo-dark-mode">
+                <div>
                     <span></span>
                     <span></span>
                 </div>
@@ -113,7 +109,7 @@ const Nav = styled.div`
     left: -100%;
     top: 0;
     transition: all ease-in-out 0.5s;
-    background-image: linear-gradient(268deg, #c4f1f2 3%, #ffffff 97%);
+    background-image: linear-gradient(to top left, #00284b 0%, #020a1a 100%);
     overflow-y: auto;
     img {
         width: 12px;
@@ -170,61 +166,8 @@ const Ul = styled.ul`
 `;
 
 const ButtonMenu = styled.div`
-    .logo-dark-mode {
-        display: none;
-    }
-
+    display: block;
     div {
-        width: 20px;
-        height: 2px;
-        position: relative;
-        margin-bottom: 3px;
-        z-index: 10000;
-
-        span {
-            position: absolute;
-            width: 20px;
-            height: 2px;
-            background: black;
-            transition: all ease-in-out 0.2s;
-            border-radius: 5px;
-        }
-
-        span:nth-child(1) {
-            transform: ${(props) =>
-                !props.isOpen ? "rotate(0deg)" : "rotate(45deg)"};
-        }
-        span:nth-child(2) {
-            transform: ${(props) =>
-                !props.isOpen ? "rotate(0deg)" : "rotate(-45deg)"};
-        }
-
-        &::before {
-            content: "";
-            height: 2px;
-            background-color: black;
-            position: absolute;
-            bottom: -6px;
-            transition: all ease-in-out 0.2s;
-            width: ${(props) => (!props.isOpen ? "20px" : "0px")};
-            transform-origin: center;
-            border-radius: 5px;
-        }
-        &::after {
-            content: "";
-            width: 20px;
-            height: 2px;
-            background-color: black;
-            position: absolute;
-            top: -6px;
-            transition: all ease-in-out 0.2s;
-            width: ${(props) => (!props.isOpen ? "20px" : "0px")};
-            transform-origin: center;
-            border-radius: 5px;
-        }
-    }
-
-    div.logo-dark-mode {
         width: 20px;
         height: 2px;
         position: relative;

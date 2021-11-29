@@ -10,12 +10,12 @@ const Leaders = () => {
                     <StyledMemberItem>
                         <WrapperIfo>
                             <FlexItem>
-                                <Name></Name>
+                                <Name>Baroda Hoang</Name>
                                 <p style={{ marginLeft: "-18px" }}>
-                                    CO - Founder
+                                    Founder
                                 </p>
                                 <p style={{ marginLeft: "-13px" }}>
-                                    Lead Blockchain Engineer & Architect
+                                    {"Lead Blockchain Engineer & Architect"}
                                 </p>
                                 <p></p>
                                 <Social>
@@ -24,14 +24,14 @@ const Leaders = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <i className="fab fa-twitter"></i>
+                                       <img src="../images/icons/twitter.svg" alt="" />
                                     </a>
                                     <a
                                         href="https://www.linkedin.com/in/barodahoang/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <i className="fab fa-linkedin"></i>
+                                        <img src="../images/icons/linkedin.svg" alt="" />
                                     </a>
                                 </Social>
                             </FlexItem>
@@ -67,7 +67,7 @@ const Leaders = () => {
                     <StyledMemberItem>
                         <WrapperIfo>
                             <FlexItem>
-                                <Name></Name>
+                                <Name>Menardo Quiñosa</Name>
                                 <p style={{ marginLeft: "-18px" }}>
                                     CO - Founder
                                 </p>
@@ -81,14 +81,14 @@ const Leaders = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <i className="fab fa-twitter"></i>
+                                       <img src="../images/icons/twitter.svg" alt="" />
                                     </a>
                                     <a
                                         href="https://www.linkedin.com/in/menardo-quinosa-823498222"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <i className="fab fa-linkedin"></i>
+                                        <img src="../images/icons/linkedin.svg" alt="" />
                                     </a>
                                 </Social>
                             </FlexItem>
@@ -118,16 +118,17 @@ const Leaders = () => {
                     </Introduction>
                 </Leader>
             </WrapperLeader>
-            <ViceLeader>
+            <WrapperLeader>
+            <Leader>
                 <StyledMemberItem>
                     <WrapperIfo>
                         <FlexItem>
-                            <Name></Name>
+                            <Name>Stella Vo</Name>
                             <p style={{ marginLeft: "-18px" }}>
                                 Head Strategist
                             </p>
                             <p style={{ marginLeft: "-13px" }}>
-                                Business Development
+                                Business Development Manager
                             </p>
                             <p></p>
                             <Social>
@@ -136,7 +137,7 @@ const Leaders = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <i className="fab fa-linkedin"></i>
+                                    <img src="../images/icons/linkedin.svg" alt="" />
                                 </a>
                             </Social>
                         </FlexItem>
@@ -165,7 +166,57 @@ const Leaders = () => {
                         for all also the future of the whole world.
                     </div>
                 </Introduction>
-            </ViceLeader>
+            </Leader>
+            <Leader>
+                <StyledMemberItem>
+                    <WrapperIfo>
+                        <FlexItem>
+                            <Name>Emily Anh</Name>
+                            <p style={{ marginLeft: "-18px" }}>
+                                CMO
+                            </p>
+                            <p style={{ marginLeft: "-13px" }}>
+                                Business Development
+                            </p>
+                            <p></p>
+                            <Social>
+                                <a
+                                    href="/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <img src="../images/icons/linkedin.svg" alt="" />
+                                </a>
+                            </Social>
+                        </FlexItem>
+                        <Thumb>
+                            <img
+                                src="../images/contributor-page/emily-anh.png"
+                                alt="icon member"
+                            />
+                        </Thumb>
+                    </WrapperIfo>
+                    <Background>
+                        <img
+                            src="../images/contributor-page/orbit-background.svg"
+                            alt="background-orbit-image"
+                        />
+                    </Background>
+                </StyledMemberItem>
+                <Introduction className="vice-leader">
+                    <div className="name">Emily Anh</div>
+                    <div className="content">
+                        Blockchain technology geek, I am young which has just started. 
+                        I goal looking for ambitious are motivated to make forbitspace 
+                        one of the biggest DEX projects on all chains.
+                        Managing incoming media requests and building relationships with 
+                        industry journalists executing, and measuring media campaigns, 
+                        strategic marketing, and communications plans
+                    </div>
+                </Introduction>
+            </Leader>
+
+            </WrapperLeader>
         </Wrapper>
     );
 };
@@ -215,7 +266,7 @@ const Introduction = styled.div`
     .content {
         font-size: 18px;
         font-weight: 100;
-        line-height: 1.2;
+        line-height: 1.4;
     }
     @media (max-width: 767px) {
         text-align: center;
@@ -257,6 +308,7 @@ const WrapperIfo = styled.div`
 const Name = styled.h3`
     font-size: ${({ isAdvisor }) => (isAdvisor ? "18px" : "14px")};
     position: ${({ isAdvisor }) => (isAdvisor ? "absolute" : "")};
+    font-weight: 600;
     bottom: 30px;
     left: -60px;
     right: 0;
@@ -299,7 +351,8 @@ const Social = styled.div`
             color: #0168ff;
         }
     }
-    i {
+    img {
+        width: 16px;
         margin-right: 5px;
     }
 `;

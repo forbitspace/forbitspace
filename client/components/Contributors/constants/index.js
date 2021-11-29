@@ -63,40 +63,40 @@ export const MemberData = [
     linked: "https://www.linkedin.com/in/pantinho-vo/",
   },
   {
-    name: "Mars III",
-    thumb: "../images/contributor-page/mars-iii.png",
-    job: "Blockchain Engineer",
-    linked: "https://www.linkedin.com/in/mars-iii-phan/",
-  },
-  {
-    name: "Richard Nguyen",
-    thumb: "../images/contributor-page/richard.png",
-    job: "Blockchain Engineer",
-    linked: "www.linkedin.com/in/richardnguyen25",
-  },
-  {
-    name: "Peter Tran",
-    thumb: "../images/contributor-page/peter.png",
-    job: "Blockchain Engineer",
-    linked: "https://www.linkedin.com/in/space-peter-tran/",
-  },
-  {
     name: "Jason Ly",
     thumb: "../images/contributor-page/jason.png",
     job: "Software Engineer (FE)",
     linked: "https://www.linkedin.com/in/jasonlyy/",
   },
   {
-    name: "Mr Lee",
-    thumb: "../images/contributor-page/lee.png",
-    job: "Software Engineer (FE)",
-    linked: "https://www.linkedin.com/in/mr-lee-930745222/",
+    name: "Battisa Le",
+    thumb: "../images/contributor-page/battisa.png",
+    job: "Blockchain Engineer",
+    linked: "/",
   },
   {
-    name: "Meliora Lily",
-    thumb: "../images/contributor-page/lily.png",
-    job: "Art & Design Lead",
-    linked: "https://www.linkedin.com/in/meliora-lily-103663222/",
+    name: "Jason Min",
+    thumb: "../images/contributor-page/min.png",
+    job: "Blockchain Engineer",
+    linked: "/",
+  },
+  {
+    name: "Brian Linh",
+    thumb: "../images/contributor-page/linh.png",
+    job: "Blockchain Engineer",
+    linked: "/",
+  },
+  {
+    name: "Arnold Nguyen",
+    thumb: "../images/contributor-page/arnold.png",
+    job: "Blockchain Engineer",
+    linked: "/",
+  },
+  {
+    name: "Alice Nguyen",
+    thumb: "../images/contributor-page/alice.png",
+    job: "Designer",
+    linked: "/",
   },
   {
     name: "Chris Nguyen",
@@ -105,23 +105,9 @@ export const MemberData = [
     linked: "/",
   },
   {
-    name: "Anthea Le",
-    thumb: "../images/contributor-page/anthea-le.png",
-    job: "Support and Community",
-    linked: "https://www.linkedin.com/in/anthea-le-83b663222/",
-  },
-];
-export const MemberData_1 = [
-  {
     name: "Almira Nhu",
     thumb: "../images/contributor-page/almira.png",
     job: "Business Development ",
-    linked: "/",
-  },
-  {
-    name: "DiDy Nguyen",
-    thumb: "../images/contributor-page/didy-nguyen.png",
-    job: "R&D",
     linked: "/",
   },
   {
@@ -131,30 +117,15 @@ export const MemberData_1 = [
     linked: "/",
   },
   {
-    name: "Rawinda India",
-    thumb: "../images/contributor-page/rawinda.png",
-    job: "Business Development",
+    name: "DiDy Nguyen",
+    thumb: "../images/contributor-page/didy-nguyen.png",
+    job: "R&D",
     linked: "/",
   },
   {
-    name: "Jacka Chanthy",
-    thumb: "../images/contributor-page/jacka.png",
-    job: "Business Development Lead",
-    linked: "/",
-  },
-];
-
-export const MemberData_2 = [
-  {
-    name: "Jacky Weerati",
-    thumb: "../images/contributor-page/jacky.png",
-    job: "Business Development",
-    linked: "/",
-  },
-  {
-    name: "Sim Sokheng",
-    thumb: "../images/contributor-page/sokheng.png",
-    job: "Business Development ",
+    name: "Anne Nguyen",
+    thumb: "../images/contributor-page/anne.png",
+    job: "R&D",
     linked: "/",
   },
   {
@@ -164,27 +135,50 @@ export const MemberData_2 = [
     linked: "/",
   },
 ];
-
-export const AuditorData = [
+export const MemberData_1 = [
   {
-    name: "Meliora Lily",
-    thumb: "./images/thumb-members.png",
-    job: "Founder",
-    lang: "En, Vi",
+    name: "Jacka Chanthy",
+    thumb: "../images/contributor-page/jacka.png",
+    job: "Business Development Lead",
     linked: "/",
-    twitter: "/",
   },
   {
-    name: "Meliora Lily",
-    thumb: "./images/thumb-members.png",
-    job: "Founder",
-    lang: "En, Vi",
+    name: "Sim Sokheng",
+    thumb: "../images/contributor-page/sokheng.png",
+    job: "Business Development ",
     linked: "/",
-    twitter: "/",
+  },
+  {
+    name: "Rawinda India",
+    thumb: "../images/contributor-page/rawinda.png",
+    job: "Business Development",
+    linked: "/",
+  },
+  {
+    name: "Jacky Weerati",
+    thumb: "../images/contributor-page/jacky.png",
+    job: "Business Development",
+    linked: "/",
+  },
+  {
+    name: "James Davis",
+    thumb: "../images/contributor-page/james.png",
+    job: "Business Development",
+    linked: "/",
+  },
+  {
+    name: "Jonatha Tico",
+    thumb: "../images/contributor-page/tico.png",
+    job: "Business Development",
+    linked: "/",
   },
 ];
 
 export const AdvisorData = [
+  {
+    thumb: "../images/logo-contributor/123-18.png",
+    name: "Mr Oliver",
+  },
   {
     thumb: "../images/logo-contributor/123-16.png",
     name: "Choki Dorji",
@@ -192,10 +186,6 @@ export const AdvisorData = [
   {
     thumb: "../images/logo-contributor/123-19.png",
     name: "Chard Lie",
-  },
-  {
-    thumb: "../images/logo-contributor/123-18.png",
-    name: "Mr Oliver",
   },
   {
     thumb: "../images/logo-contributor/123-17.png",

@@ -95,13 +95,13 @@ const Index = () => {
                                     />
                                     {/* <BorderInput /> */}
                                 </WrapperInput>
-                                <button
+                                <ButtonSend
                                     type="button"
                                     aria-label="send-email-address"
                                     onClick={handleSubmit}
                                 >
-                                    <i className="fa fa-arrow-right"></i>
-                                </button>
+                                    <img src="../images/icons/arrow-right.svg" className='arrow-right' alt="arrow-right-icon" />
+                                </ButtonSend>
                             </div>
                             <Copyright className="text-dark foundation">
                                 forbitspace foundation LLC
@@ -172,6 +172,9 @@ const FooterMenu = styled.section`
     position: relative;
     padding: 30px 0;
     overflow: hidden;
+    .arrow-right{
+        width: 12px;
+    }
 
     @media (max-width: 576px) {
         padding: 40px 0;
@@ -183,8 +186,8 @@ const FooterMenu = styled.section`
 `;
 
 const ListMenu = styled.div`
-    display: flex;
     width: 100%;
+    display: flex;
     flex-wrap: wrap;
     padding-top: 25px;
     .input-field {
@@ -203,35 +206,6 @@ const ListMenu = styled.div`
             input {
             }
 
-            button {
-                width: 60px;
-                height: 30px;
-                border: none;
-                outline: none;
-                background-image: linear-gradient(
-                    17deg,
-                    #00ff36 -68%,
-                    #00ee57 -43%,
-                    #00c5ad 14%,
-                    #00a4f1 57%,
-                    #0b18fc 154%,
-                    #0d00ff 171%
-                );
-                border-radius: 8px;
-                transition: all 0.5s ease-in-out;
-                background-size: 200%;
-                background-position: 95%;
-
-                i {
-                    color: #fff;
-                    font-size: 12px;
-                }
-
-                &:hover {
-                    background-size: 200%;
-                    background-position: right;
-                }
-            }
         }
 
         li {
@@ -284,6 +258,13 @@ const ListMenu = styled.div`
             width: 50%;
         }
     }
+    @media (max-width: 576px){
+        gap: 2%;
+
+        .input-field {
+            padding: 1rem 0;
+        }
+    }
 `;
 const Blank = styled.div`
     font-size: 12px;
@@ -325,13 +306,13 @@ const Copyright = styled.p`
 `;
 
 const Input = styled.input`
-    width: 100%;
+    /* width: 100%; */
+    max-width: 100%;
     height: 30px;
     margin-right: 5px;
     font-style: italic;
-    /* font-family: "Averta"; */
     font-size: 14px;
-    padding: 10px 15px;
+    padding: 0px 15px;
     line-height: 20px;
     outline: 0;
     transition: all 0.3s ease-in-out;
@@ -341,6 +322,8 @@ const Input = styled.input`
     border: none;
     background: #cff3f4;
     border: 1px solid #0047b2;
+    background: #001225 ;
+    color: #ffffff;
     ::placeholder {
         font-weight: 100;
     }
@@ -351,4 +334,38 @@ const WrapperInput = styled.div`
     border-radius: 10px;
     margin-right: 5px;
 `;
+
+const ButtonSend = styled.button`
+    width: 60px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(
+        17deg,
+        #00ff36 -68%,
+        #00ee57 -43%,
+        #00c5ad 14%,
+        #00a4f1 57%,
+        #0b18fc 154%,
+        #0d00ff 171%
+    );
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    background-size: 200%;
+    background-position: 95%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+        color: #fff;
+        font-size: 12px;
+    }
+
+    :hover {
+        background-size: 200%;
+        background-position: right;
+    }
+`
 export default Index;

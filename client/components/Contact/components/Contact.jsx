@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import ReCAPTCHA from "react-google-recaptcha";
 import { send } from "emailjs-com";
@@ -8,6 +8,8 @@ const ContactUs = () => {
     const [y, setY] = useState();
     const [status, setStatus] = useState(false);
     const [captcha, setCaptcha] = useState(false);
+    const [scrollPos, setScrollPos] = useState();
+
     //config email sender
     const [toSend, setToSend] = useState({
         from_name: "",
@@ -20,8 +22,9 @@ const ContactUs = () => {
 
     const getMouseOver = (e) => {
         var parentOffset = buttonRef.current.getBoundingClientRect();
-        setX(e.pageX - parentOffset.left);
-        setY(e.pageY - parentOffset.top);
+        
+        setX(e.clientX - parentOffset.left);
+        setY(e.clientY - parentOffset.top);
     };
 
     function validateEmail(email) {
@@ -66,10 +69,17 @@ const ContactUs = () => {
         }
     }
 
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+          var currentScrollPos = window.pageYOffset;
+          setScrollPos(currentScrollPos)
+        });
+    },[scrollPos])
+
     return (
         <BoxSection>
             <WrapContainer>
-                <Header>Contact Us.</Header>
+                <Header>Contact Us</Header>
                 {status ? (
                     <ThankyouMessage
                         onClick={() => {

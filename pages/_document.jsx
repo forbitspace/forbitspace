@@ -9,29 +9,8 @@ export default class extends Document {
         return (
             <Html lang="en">
                 <Head>
-                    {/* 
-                    <meta charset="utf-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1" />
-                    <meta name="keywords" content="forbitspace, forbitswap, flyby, ido, decentralized, defi, dex, exchange, crypto, fbs">
-                    <meta name="referrer" content="origin-when-crossorigin" id="meta_referrer">
-                    <meta name="theme-color" content="#fff">
-                    <meta name="Description" content="An initial DEX offering, or IDO, is a new and exciting type of decentralized and permissionless crowdfunding platform, which is opening up a new way of fundraising in the crypto space." />
-                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-                    <meta property="og:image" content="https://ipfs.infura.io/ipfs/QmaioLHcm1ugkc36oSQ1zyg56W2sqiPhWxvB1xtK2egEWs">
-                    <meta http-equiv='cache-control' content='no-cache'>
-                    <meta http-equiv='expires' content='0'>
-                    <link rel="shortcut icon" href="%PUBLIC_URL%/logo_new.png" />
-                    <link rel="apple-touch-icon" sizes="192x192" href="%PUBLIC_URL%/logo_new.png" />
-                    <link rel="apple-touch-icon" sizes="512x512" href="%PUBLIC_URL%/logo_new.png" />
-                    <link rel="preconnect" href="https://fonts.gstatic.com" />
-                    <link rel="preload" href="./css/reset.css" as="style" onload="this.rel='stylesheet'">
-                    <link rel="stylesheet" href="./css/reset.css">
-                    <link rel="manifest" href="./manifest.json" crossorigin="use-credentials" />
-                    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-                    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-                    */}
                     <link rel="manifest" href="/manifest.json" />
+                    <link rel="shortcut icon" href="/images/logo-space.png" />
                     <meta charSet="utf-8" />
                     <meta
                         name="keywords"
@@ -43,10 +22,10 @@ export default class extends Document {
                         id="meta_referrer"
                     />
                     <meta name="theme-color" content="#fff" />
-                    <meta
+                    {/* <meta
                         name="Description"
-                        content="An initial DEX offering, or IDO, is a new and exciting type of decentralized and permissionless crowdfunding platform, which is opening up a new way of fundraising in the crypto space."
-                    />
+                        content="The forbitspace DEX super aggregator is an interoperability protocol that connects disparate blockchains. That unites decentralized applications across disparate blockchains, simultaneously uniting liquidity across chains and making it possible to transact in, out, and across disparate networks with ease."
+                    /> */}
                     <meta
                         property="og:image"
                         content="https://ipfs.infura.io/ipfs/QmaioLHcm1ugkc36oSQ1zyg56W2sqiPhWxvB1xtK2egEWs"
@@ -61,23 +40,22 @@ export default class extends Document {
                         httpEquiv="X-UA-Compatible"
                         content="IE=edge,chrome=1"
                     />
-                    <link rel="shortcut icon" href="../images/logo-space.png" />
                     <link
                         rel="apple-touch-icon"
                         sizes="192x192"
-                        href="../images/logo-space.png"
+                        href="/images/logo-space.png"
                     />
                     <link
                         rel="apple-touch-icon"
                         sizes="512x512"
-                        href="../images/logo-space.png"
+                        href="/images/logo-space.png"
                     />
-                    <link
+                    {/* <link
                         rel="stylesheet"
                         href="/js/fontawesome-free-5.15.3-web/css/all.min.css"
-                    />
-                    <link rel="stylesheet" href="/css/style.css" />
-                    <link rel="stylesheet" href="/css/responsive.css" />
+                    /> */}
+                    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+                    {/* <link rel="stylesheet" href="/css/responsive.css" type="text/css" /> */}
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
                     <link
                         rel="preload"
@@ -92,7 +70,7 @@ export default class extends Document {
                     {/* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossOrigin="anonymous"></link> */}
                     <link
                         rel="manifest"
-                        href="../public/manifest.json"
+                        href="/public/manifest.json"
                         crossOrigin="use-credentials"
                     />
                 </Head>
