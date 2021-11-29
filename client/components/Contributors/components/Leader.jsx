@@ -11,9 +11,7 @@ const Leaders = () => {
                         <WrapperIfo>
                             <FlexItem>
                                 <Name>Baroda Hoang</Name>
-                                <p style={{ marginLeft: "-18px" }}>
-                                    Founder
-                                </p>
+                                <p style={{ marginLeft: "-18px" }}>Founder</p>
                                 <p style={{ marginLeft: "-13px" }}>
                                     {"Lead Blockchain Engineer & Architect"}
                                 </p>
@@ -24,14 +22,20 @@ const Leaders = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                       <img src="../images/icons/twitter.svg" alt="" />
+                                        <img
+                                            src="../images/icons/twitter.svg"
+                                            alt=""
+                                        />
                                     </a>
                                     <a
                                         href="https://www.linkedin.com/in/barodahoang/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <img src="../images/icons/linkedin.svg" alt="" />
+                                        <img
+                                            src="../images/icons/linkedin.svg"
+                                            alt=""
+                                        />
                                     </a>
                                 </Social>
                             </FlexItem>
@@ -81,14 +85,20 @@ const Leaders = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                       <img src="../images/icons/twitter.svg" alt="" />
+                                        <img
+                                            src="../images/icons/twitter.svg"
+                                            alt=""
+                                        />
                                     </a>
                                     <a
                                         href="https://www.linkedin.com/in/menardo-quinosa-823498222"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <img src="../images/icons/linkedin.svg" alt="" />
+                                        <img
+                                            src="../images/icons/linkedin.svg"
+                                            alt=""
+                                        />
                                     </a>
                                 </Social>
                             </FlexItem>
@@ -119,103 +129,109 @@ const Leaders = () => {
                 </Leader>
             </WrapperLeader>
             <WrapperLeader>
-            <Leader>
-                <StyledMemberItem>
-                    <WrapperIfo>
-                        <FlexItem>
-                            <Name>Stella Vo</Name>
-                            <p style={{ marginLeft: "-18px" }}>
-                                Head Strategist
-                            </p>
-                            <p style={{ marginLeft: "-13px" }}>
-                                Business Development Manager
-                            </p>
-                            <p></p>
-                            <Social>
-                                <a
-                                    href="https://www.linkedin.com/in/stella-vo-276627222"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <img src="../images/icons/linkedin.svg" alt="" />
-                                </a>
-                            </Social>
-                        </FlexItem>
-                        <Thumb>
+                <Leader>
+                    <StyledMemberItem>
+                        <WrapperIfo>
+                            <FlexItem>
+                                <Name>Stella Vo</Name>
+                                <p style={{ marginLeft: "-18px" }}>
+                                    Head Strategist
+                                </p>
+                                <p style={{ marginLeft: "-13px" }}>
+                                    Business Development Manager
+                                </p>
+                                <p></p>
+                                <Social>
+                                    <a
+                                        href="https://www.linkedin.com/in/stella-vo-276627222"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src="../images/icons/linkedin.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </Social>
+                            </FlexItem>
+                            <Thumb>
+                                <img
+                                    src="../images/contributor-page/stella-vo.png"
+                                    alt="icon member"
+                                />
+                            </Thumb>
+                        </WrapperIfo>
+                        <Background>
                             <img
-                                src="../images/contributor-page/stella-vo.png"
-                                alt="icon member"
+                                src="../images/contributor-page/orbit-background.svg"
+                                alt="background-orbit-image"
                             />
-                        </Thumb>
-                    </WrapperIfo>
-                    <Background>
-                        <img
-                            src="../images/contributor-page/orbit-background.svg"
-                            alt="background-orbit-image"
-                        />
-                    </Background>
-                </StyledMemberItem>
-                <Introduction className="vice-leader">
-                    <div className="name">Stella Vo</div>
-                    <div className="content">
-                        He is an economist, he join space blockchain in early
-                        2018. He has attended many seminars, given presentations
-                        on blockchain, cryptocurrency in many different
-                        countries. He belief the blockchain will opportunity the
-                        innovations necessary to usher and decentralized trading
-                        for all also the future of the whole world.
-                    </div>
-                </Introduction>
-            </Leader>
-            <Leader>
-                <StyledMemberItem>
-                    <WrapperIfo>
-                        <FlexItem>
-                            <Name>Emily Anh</Name>
-                            <p style={{ marginLeft: "-18px" }}>
-                                CMO
-                            </p>
-                            <p style={{ marginLeft: "-13px" }}>
-                                Business Development
-                            </p>
-                            <p></p>
-                            <Social>
-                                <a
-                                    href="/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <img src="../images/icons/linkedin.svg" alt="" />
-                                </a>
-                            </Social>
-                        </FlexItem>
-                        <Thumb>
+                        </Background>
+                    </StyledMemberItem>
+                    <Introduction className="vice-leader">
+                        <div className="name">Stella Vo</div>
+                        <div className="content">
+                            He is an economist, he join space blockchain in
+                            early 2018. He has attended many seminars, given
+                            presentations on blockchain, cryptocurrency in many
+                            different countries. He belief the blockchain will
+                            opportunity the innovations necessary to usher and
+                            decentralized trading for all also the future of the
+                            whole world.
+                        </div>
+                    </Introduction>
+                </Leader>
+                <Leader>
+                    <StyledMemberItem>
+                        <WrapperIfo>
+                            <FlexItem>
+                                <Name>Emily Anh</Name>
+                                <p style={{ marginLeft: "-18px" }}>CMO</p>
+                                <p style={{ marginLeft: "-13px" }}>
+                                    Business Development
+                                </p>
+                                <p></p>
+                                <Social>
+                                    <a
+                                        href="/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src="../images/icons/linkedin.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </Social>
+                            </FlexItem>
+                            <Thumb>
+                                <img
+                                    src="../images/contributor-page/emily-anh.png"
+                                    alt="icon member"
+                                />
+                            </Thumb>
+                        </WrapperIfo>
+                        <Background>
                             <img
-                                src="../images/contributor-page/emily-anh.png"
-                                alt="icon member"
+                                src="../images/contributor-page/orbit-background.svg"
+                                alt="background-orbit-image"
                             />
-                        </Thumb>
-                    </WrapperIfo>
-                    <Background>
-                        <img
-                            src="../images/contributor-page/orbit-background.svg"
-                            alt="background-orbit-image"
-                        />
-                    </Background>
-                </StyledMemberItem>
-                <Introduction className="vice-leader">
-                    <div className="name">Emily Anh</div>
-                    <div className="content">
-                        Blockchain technology geek, I am young which has just started. 
-                        I goal looking for ambitious are motivated to make forbitspace 
-                        one of the biggest DEX projects on all chains.
-                        Managing incoming media requests and building relationships with 
-                        industry journalists executing, and measuring media campaigns, 
-                        strategic marketing, and communications plans
-                    </div>
-                </Introduction>
-            </Leader>
-
+                        </Background>
+                    </StyledMemberItem>
+                    <Introduction className="vice-leader">
+                        <div className="name">Emily Anh</div>
+                        <div className="content">
+                            Blockchain technology geek, I am young which has
+                            just started. I goal looking for ambitious are
+                            motivated to make forbitspace one of the biggest DEX
+                            projects on all chains. Managing incoming media
+                            requests and building relationships with industry
+                            journalists executing, and measuring media
+                            campaigns, strategic marketing, and communications
+                            plans.
+                        </div>
+                    </Introduction>
+                </Leader>
             </WrapperLeader>
         </Wrapper>
     );
