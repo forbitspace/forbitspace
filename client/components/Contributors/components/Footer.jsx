@@ -38,7 +38,8 @@ const FooterContributor = () => {
                             Become a contributor
                         </div>
                         <div className="inner-content">
-                            For onboarding, get in touch with the forbitswap
+                            For onboarding, get in touch with the{" "}
+                            <span className="forbitspace">forbitspace</span>{" "}
                             core contributors
                         </div>
                     </div>
@@ -53,6 +54,10 @@ const FooterContributor = () => {
 
 const WrapperFooter = styled.section`
     padding: 45px 0;
+    .forbitspace {
+        font-weight: 900;
+        font-style: italic;
+    }
     @media (max-width: 576px) {
         padding: 10px 0;
     }

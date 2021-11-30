@@ -223,12 +223,13 @@ const Leaders = () => {
                         <div className="content">
                             Blockchain technology geek, I am young which has
                             just started. I goal looking for ambitious are
-                            motivated to make forbitspace one of the biggest DEX
-                            projects on all chains. Managing incoming media
-                            requests and building relationships with industry
-                            journalists executing, and measuring media
-                            campaigns, strategic marketing, and communications
-                            plans.
+                            motivated to make{" "}
+                            <span className="forbitspace">forbitspace</span> one
+                            of the biggest DEX projects on all chains. Managing
+                            incoming media requests and building relationships
+                            with industry journalists executing, and measuring
+                            media campaigns, strategic marketing, and
+                            communications plans.
                         </div>
                     </Introduction>
                 </Leader>
@@ -283,6 +284,10 @@ const Introduction = styled.div`
         font-size: 18px;
         font-weight: 100;
         line-height: 1.4;
+    }
+    .forbitspace {
+        font-weight: 900;
+        font-style: italic;
     }
     @media (max-width: 767px) {
         text-align: center;
