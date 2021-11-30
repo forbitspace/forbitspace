@@ -1,4 +1,4 @@
-import  { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 export const ThemeGlobalStyle = createGlobalStyle`
     * {
         margin: 0;
@@ -139,7 +139,7 @@ export const ThemeGlobalStyle = createGlobalStyle`
             #00284b 50%,
             #020a1a 100%
         );
-        transition: ease-in-out 0.5s all;
+        /* transition: ease-in-out 0.5s all; */
     }
 
     a {
@@ -332,4 +332,4 @@ export const ThemeGlobalStyle = createGlobalStyle`
     }
 
 
-`
+`;
