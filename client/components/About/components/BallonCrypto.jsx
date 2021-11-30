@@ -78,7 +78,7 @@ const BallonCrypto = () => {
                     <Text className="sub-header">Long Term Compass share </Text>
                     <SubText>
                         We aim to build an enduring technology finance firm open
-                        up the world to newfound . We are radically optimistic
+                        up the world to newfound. We are radically optimistic
                         about crypto’s potential to restore trust and enable new
                         kinds of governance where communities collectively make
                         important decisions about how networks evolve strategic

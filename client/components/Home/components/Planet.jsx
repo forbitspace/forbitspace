@@ -66,7 +66,7 @@ const WrapContainer = styled.div`
 `;
 const WrapPlanet = styled.div`
     width: 50%;
-    transform: scale(0.75);
+    transform: scale(0.68);
     @media (max-width: 1440px) {
         transform: scale(0.65);
     }
