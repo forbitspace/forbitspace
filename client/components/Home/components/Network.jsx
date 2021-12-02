@@ -250,9 +250,9 @@ const ButtonBanner = styled.a`
         background-size: 110%;
         background-position: 30%;
     }
-    :hover {
+    /* :hover {
         color: white;
-    }
+    } */
     @media (max-width: 768px) {
         font-size: 12px;
     }

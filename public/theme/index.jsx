@@ -183,6 +183,10 @@ export const ThemeGlobalStyle = createGlobalStyle`
         position: relative;
         z-index: 10;
     }
+    span.forbitspace{
+        font-weight: 900;
+        font-style: italic;
+    }
     /* CONTAINER */
     .container{
         width: 100%;
@@ -225,6 +229,7 @@ export const ThemeGlobalStyle = createGlobalStyle`
         margin-top: 0px;
         }
     }
+
     
     /* style header */
     .header {
@@ -268,7 +273,7 @@ export const ThemeGlobalStyle = createGlobalStyle`
 
     /* Body style */
     body.dark-mode {
-        transition: ease-in-out 0.5s all;
+        /* transition: ease-in-out 0.5s all; */
         color: #fff;
     }
     body.dark-mode::before {

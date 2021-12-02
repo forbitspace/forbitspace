@@ -22,7 +22,7 @@ body {
         #00284b 50%,
         #020a1a 100%
     );
-    transition: ease-in-out 0.5s all;
+    /* transition: ease-in-out 0.5s all; */
 }
 
 a {
@@ -144,7 +144,7 @@ footer {
 
 /* Body style */
 body.dark-mode {
-    transition: ease-in-out 0.5s all;
+    /* transition: ease-in-out 0.5s all; */
     color: #fff;
 }
 body.dark-mode::before {

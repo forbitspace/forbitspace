@@ -54,7 +54,6 @@ const WrapContainer = styled(Container)`
 `;
 const WrapImg = styled.div`
     width: 50%;
-    /* transform: rotate(-5deg); */
     @media (max-width: 768px) {
         width: 80%;
     }
@@ -98,7 +97,7 @@ const Text = styled.p`
 const SubText = styled.p`
     font-size: 22px;
     font-weight: 300;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     text-align: right;
     line-height: 1.5;
     span {

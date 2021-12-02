@@ -195,7 +195,7 @@ const Text = styled.p`
 const SubText = styled.p`
     font-size: 20px;
     font-weight: 300;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     text-align: left;
     margin-bottom: 4rem;
     line-height: 1.2;

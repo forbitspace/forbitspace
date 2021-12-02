@@ -75,7 +75,10 @@ const WrapImgBanner = styled.div`
     }
 `;
 const Content = styled.div`
-    width: 85%;
+    width: 75%;
+    @media (max-width: 1220px) {
+        width: 85%;
+    }
     @media (max-width: 768px) {
         width: 100%;
         margin-left: 0;
@@ -103,7 +106,7 @@ const Title = styled.h2`
 const SubText = styled.p`
     font-size: 22px;
     font-weight: 300;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     line-height: 1.2;
     span {
         font-style: italic;
@@ -167,9 +170,9 @@ const ButtonBanner = styled.a`
     justify-content: center;
     gap: 5px;
 
-    :hover {
+    /* :hover {
         color: white;
-    }
+    } */
 
     img {
         max-height: 12px;

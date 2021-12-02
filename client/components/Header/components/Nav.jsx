@@ -70,7 +70,7 @@ const StyledNav = styled.div`
         cursor: default;
         font-size: 14px;
         font-weight: 500;
-        a{
+        a {
             font-weight: 500;
         }
         :hover {
@@ -118,9 +118,9 @@ const StyledNav = styled.div`
             background: #122131;
             color: #fff;
             background-image: radial-gradient(
-            50% 50% at 50% 30%,
-            rgb(21 61 111 / 65%) 0%,
-            rgba(55, 107, 173, 0) 100%
+                50% 50% at 50% 30%,
+                rgb(21 61 111 / 65%) 0%,
+                rgba(55, 107, 173, 0) 100%
             );
             background-position: 0px -70vh;
             background-repeat: no-repeat;
@@ -140,9 +140,9 @@ const StyledNav = styled.div`
             background: #122131;
             color: #fff;
             background-image: radial-gradient(
-            50% 50% at 50% 30%,
-            rgb(21 61 111 / 65%) 0%,
-            rgba(55, 107, 173, 0) 100%
+                50% 50% at 50% 30%,
+                rgb(21 61 111 / 65%) 0%,
+                rgba(55, 107, 173, 0) 100%
             );
             background-position: 0px -70vh;
             background-repeat: no-repeat;
@@ -271,5 +271,5 @@ const MainMenuNav = styled.ul`
         margin-right: 5px;
         color: white;
     }
-`
+`;
 export default Nav;

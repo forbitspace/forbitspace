@@ -107,6 +107,7 @@ const SubText = styled.p`
     max-width: 600px;
     text-align: left;
     line-height: 1.2;
+    padding: 0 0 10px;
     .space {
         font-style: italic;
         font-weight: 900;

@@ -111,7 +111,7 @@ const Text = styled.p`
 const SubText = styled.div`
     font-size: 22px;
     font-weight: 200;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     text-align: right;
     line-height: 1.2;
     span {

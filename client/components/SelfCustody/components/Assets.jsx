@@ -56,7 +56,7 @@ const WrapContainer = styled(Container)`
     }
 `;
 const WrapImg = styled.div`
-    width: 50%;
+    width: 45%;
     @media (max-width: 768px) {
         width: 60%;
     }
@@ -100,7 +100,7 @@ const Text = styled.p`
 const SubText = styled.p`
     font-size: 22px;
     font-weight: 300;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     text-align: right;
     line-height: 1.2;
     @media (max-width: 1024px) {

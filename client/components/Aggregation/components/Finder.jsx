@@ -14,7 +14,7 @@ const Finder = () => {
                         routing that split a single transaction into multiple
                         orders across various DEX’s, also route orders through
                         allows crypto traders to tap deep liquidity and receive
-                        better pricing low cost & efficient the most liquidity
+                        better pricing low cost & efficient the most liquidity.
                     </SubText>
                 </Content>
                 <WrapImg>
@@ -94,7 +94,7 @@ const Content = styled.div`
 const SubText = styled.p`
     font-size: 22px;
     font-weight: 300;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     text-align: left;
     line-height: 1.2;
     &.toggle__btn {

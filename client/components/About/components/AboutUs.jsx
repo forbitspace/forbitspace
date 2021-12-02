@@ -97,9 +97,9 @@ const Text = styled.p`
     }
 `;
 const SubText = styled.p`
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 300;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     text-align: left;
     line-height: 1.2;
     @media (max-width: 768px) {

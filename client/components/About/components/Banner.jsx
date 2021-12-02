@@ -38,10 +38,11 @@ const Banner = () => {
                                 aggregators thrive.
                             </SubText>
                             <SubText>
-                                forbitspace DEXs aggregator utilizes the power
-                                of blockchain to bring together trades across
-                                various decentralized finance platforms (DeFi)
-                                into one space, saving users time and increasing
+                                <span className="forbitspace">forbitspace</span>{" "}
+                                DEXs aggregator utilizes the power of blockchain
+                                to bring together trades across various
+                                decentralized finance platforms (DeFi) into one
+                                space, saving users time and increasing
                                 efficiency for cryptocurrency trades. We siphon
                                 the very best prices from DEXs, swap services,
                                 and liquidity pools into one place so that users
@@ -128,15 +129,20 @@ const Text = styled.p`
     }
 `;
 const SubText = styled.p`
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 300;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     text-align: right;
     line-height: 1.2;
+    padding: 10px 0;
     &.toggle__btn {
         font-style: italic;
         font-weight: 400;
         font-size: 16px;
+    }
+    .forbitspace {
+        font-weight: 900;
+        font-style: italic;
     }
     @media (max-width: 768px) {
         font-size: 14px;

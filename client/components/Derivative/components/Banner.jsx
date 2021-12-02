@@ -122,7 +122,7 @@ const WrapText = styled.div``;
 const SubText = styled.p`
     font-size: 22px;
     font-weight: 300;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     line-height: 1.2;
     span {
         font-weight: 900;
