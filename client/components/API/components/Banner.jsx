@@ -67,7 +67,7 @@ const Content = styled.div`
     /* margin-left: 100px; */
     padding: 0 10px;
     text-align: right;
-    width: 65%;
+    width: 85%;
     align-self: flex-end;
     @media (max-width: 1024px) {
         width: 100%;
@@ -100,8 +100,8 @@ const Title = styled.h2`
 const SubText = styled.p`
     font-size: 24px;
     font-weight: 300;
-    /* font-family: sans-serif; */
     line-height: 1.2;
+    padding: 10px 0;
     .forbitspace {
         font-weight: 900;
         font-style: italic;

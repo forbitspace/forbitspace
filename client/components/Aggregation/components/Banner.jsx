@@ -93,12 +93,15 @@ const Text = styled.p`
 const SubText = styled.p`
     font-size: 22px;
     font-weight: 300;
-    /* font-family: sans-serif; */
     text-align: left;
     line-height: 1.2;
+    padding-right: 4rem;
     span {
         font-style: italic;
         font-weight: 900;
+    }
+    @media (max-width: 768px) {
+        padding-right: 0;
     }
     @media (max-width: 768px) {
         font-size: 14px;

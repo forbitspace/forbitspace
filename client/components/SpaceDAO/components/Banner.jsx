@@ -68,7 +68,7 @@ const ImgHalf = styled.div`
 `;
 const Content = styled.div`
     padding: 0 20px;
-    width: 50%;
+    width: 56%;
     text-align: left;
     display: flex;
     flex-direction: column;
