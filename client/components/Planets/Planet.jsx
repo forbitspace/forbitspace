@@ -102,12 +102,12 @@ const Orbit = styled.div`
 const WrapperPlanet = styled.div`
     display: flex;
     justify-content: center;
-    @media (min-height: 1260px) {
-        transform: scale(1.3);
+    /* @media (min-height: 1260px) {
+        transform: scale(1);
     }
     @media (min-width: 1281px) {
-        transform: scale(1.3);
-    }
+        transform: scale(1);
+    } */
 
     @media (min-width: 1024px) {
         transform: scale(1);

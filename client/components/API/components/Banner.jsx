@@ -15,10 +15,10 @@ const Banner = () => {
                 <Content className="title-banner text-dark text-visi">
                     <Title>API</Title>
                     <SubText>
-                        The forbitspace API is a cutting-edge discovery and
-                        routing custodial asset exchanges at the best rates on
-                        the biggest Ethereum, Binance Smart Chain and Polygon
-                        (Matic).
+                        The <span className="forbitspace">forbitspace</span> API
+                        is a cutting-edge discovery and routing custodial asset
+                        exchanges at the best rates on the biggest Ethereum,
+                        Binance Smart Chain and Polygon (Matic).
                     </SubText>
                     <SubText>
                         It finds the most efficient token swap paths, splitting
@@ -67,7 +67,7 @@ const Content = styled.div`
     /* margin-left: 100px; */
     padding: 0 10px;
     text-align: right;
-    width: 65%;
+    width: 85%;
     align-self: flex-end;
     @media (max-width: 1024px) {
         width: 100%;
@@ -100,8 +100,12 @@ const Title = styled.h2`
 const SubText = styled.p`
     font-size: 24px;
     font-weight: 300;
-    font-family: sans-serif;
     line-height: 1.2;
+    padding: 10px 0;
+    .forbitspace {
+        font-weight: 900;
+        font-style: italic;
+    }
     @media (max-width: 768px) {
         text-align: center;
     }

@@ -55,7 +55,7 @@ const MobileWallet = () => {
                 </Content>
             </WrapContainer>
 
-            <WrapWallet className='container'>
+            <WrapWallet className="container">
                 <Content>
                     <Text>Smart contract wallet</Text>
                     <SubText className="text-left">
@@ -163,7 +163,7 @@ const Text = styled.p`
 const SubText = styled.p`
     font-size: 22px;
     font-weight: 300;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     text-align: right;
     line-height: 1.2;
     span {

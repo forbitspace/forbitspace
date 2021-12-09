@@ -239,6 +239,7 @@ const Leaders = () => {
 };
 const Wrapper = styled.div`
     padding: 1rem;
+    font-family: inherit;
 `;
 const Title = styled.p`
     font-size: 3rem;
@@ -259,20 +260,6 @@ const Leader = styled.div`
     width: 45%;
     @media (max-width: 767px) {
         width: 100%;
-    }
-`;
-const ViceLeader = styled.div`
-    /* width: 90%; */
-    display: flex;
-    align-items: center;
-    .vice-leader {
-        width: 60%;
-    }
-    @media (max-width: 767px) {
-        flex-direction: column;
-        .vice-leader {
-            width: 100%;
-        }
     }
 `;
 const Introduction = styled.div`

@@ -179,6 +179,8 @@ const BecomeBox = styled.div`
     }
     .inner-content {
         font-size: 1rem;
+        font-weight: 200;
+        letter-spacing: 1px;
     }
     @media (max-width: 786px) {
         .header-content {

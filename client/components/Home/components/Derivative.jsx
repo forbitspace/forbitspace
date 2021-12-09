@@ -127,6 +127,7 @@ const SubText = styled.p`
     font-size: 22px;
     font-weight: 300;
     line-height: 1.2;
+    padding: 10px 0 0;
     &.toggle__btn {
         font-weight: 400;
         font-style: italic;
