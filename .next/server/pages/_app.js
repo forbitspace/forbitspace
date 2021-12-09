@@ -317,6 +317,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("/T1H");
 /* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_4__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 // @flow
 
 
@@ -331,6 +334,22 @@ const Header = next_dynamic__WEBPACK_IMPORTED_MODULE_4___default()(() => __webpa
   }
 });
 /* harmony default export */ __webpack_exports__["default"] = (class extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
+  constructor(...args) {
+    super(...args);
+
+    _defineProperty(this, "componentDidMount", () => {
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("/sw.js").then(function (registration) {
+            console.log("Service Worker registration successful with scope: ", registration.scope);
+          }, function (err) {
+            console.log("Service Worker registration failed: ", err);
+          });
+        });
+      }
+    });
+  }
+
   static async getInitialProps({
     Component,
     ctx
@@ -345,27 +364,7 @@ const Header = next_dynamic__WEBPACK_IMPORTED_MODULE_4___default()(() => __webpa
     return {
       pageProps
     };
-  } // componentDidMount = () => {
-  //     if ("serviceWorker" in navigator) {
-  //         window.addEventListener("load", function () {
-  //             navigator.serviceWorker.register("/sw.js").then(
-  //                 function (registration) {
-  //                     console.log(
-  //                         "Service Worker registration successful with scope: ",
-  //                         registration.scope
-  //                     );
-  //                 },
-  //                 function (err) {
-  //                     console.log(
-  //                         "Service Worker registration failed: ",
-  //                         err
-  //                     );
-  //                 }
-  //             );
-  //         });
-  //     }
-  // };
-
+  }
 
   render() {
     const {
