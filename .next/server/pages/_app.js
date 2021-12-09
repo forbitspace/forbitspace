@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"52":"b15dfb119a86bea1ab07"}[chunkId] + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"52":"7b15ad394505cf647d3a"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -345,7 +345,27 @@ const Header = next_dynamic__WEBPACK_IMPORTED_MODULE_4___default()(() => __webpa
     return {
       pageProps
     };
-  }
+  } // componentDidMount = () => {
+  //     if ("serviceWorker" in navigator) {
+  //         window.addEventListener("load", function () {
+  //             navigator.serviceWorker.register("/sw.js").then(
+  //                 function (registration) {
+  //                     console.log(
+  //                         "Service Worker registration successful with scope: ",
+  //                         registration.scope
+  //                     );
+  //                 },
+  //                 function (err) {
+  //                     console.log(
+  //                         "Service Worker registration failed: ",
+  //                         err
+  //                     );
+  //                 }
+  //             );
+  //         });
+  //     }
+  // };
+
 
   render() {
     const {

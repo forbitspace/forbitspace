@@ -65,12 +65,19 @@ const Nav = () => {
 
 const StyledNav = styled.div`
     li {
+        max-width: 22%;
+        /* overflow: hidden; */
+
+        font-size: 14px;
+        font-weight: 500;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
         display: flex;
         align-items: center;
         cursor: default;
-        font-size: 14px;
-        font-weight: 500;
-        a{
+
+        a {
             font-weight: 500;
         }
         :hover {
@@ -118,9 +125,9 @@ const StyledNav = styled.div`
             background: #122131;
             color: #fff;
             background-image: radial-gradient(
-            50% 50% at 50% 30%,
-            rgb(21 61 111 / 65%) 0%,
-            rgba(55, 107, 173, 0) 100%
+                50% 50% at 50% 30%,
+                rgb(21 61 111 / 65%) 0%,
+                rgba(55, 107, 173, 0) 100%
             );
             background-position: 0px -70vh;
             background-repeat: no-repeat;
@@ -140,9 +147,9 @@ const StyledNav = styled.div`
             background: #122131;
             color: #fff;
             background-image: radial-gradient(
-            50% 50% at 50% 30%,
-            rgb(21 61 111 / 65%) 0%,
-            rgba(55, 107, 173, 0) 100%
+                50% 50% at 50% 30%,
+                rgb(21 61 111 / 65%) 0%,
+                rgba(55, 107, 173, 0) 100%
             );
             background-position: 0px -70vh;
             background-repeat: no-repeat;
@@ -173,7 +180,7 @@ const DropdownMenu = styled.div`
     max-height: 0;
     height: auto;
     position: absolute;
-    top: 35px;
+    top: calc(100% + 10px);
     width: max-content;
     overflow: hidden;
     transition: all ease-in-out 0.3s;
@@ -218,29 +225,6 @@ const MainMenuNav = styled.ul`
         transition: all 0.2s ease-in-out;
     }
 
-    li:hover > .submenu {
-        transform: none;
-        padding-left: 0;
-    }
-
-    li > .submenu > li > a {
-        padding: 10px 15px;
-        display: block;
-        color: #000;
-        font-weight: normal;
-        text-transform: none;
-        transition: 0.3s ease;
-    }
-
-    li > .submenu > li:hover a {
-        border-radius: 0;
-    }
-
-    li > .submenu > li {
-        border-bottom: 1px solid #8080804d;
-        border-style: dashed;
-    }
-
     li {
         position: relative;
         margin: 0 15px;
@@ -252,12 +236,14 @@ const MainMenuNav = styled.ul`
         bottom: -5px;
         left: 50%;
         right: 50%;
+        width: 0;
         border-bottom: 2px solid #ffffff;
         transition: all 0.4s;
     }
     li:hover::after {
         left: 0;
         right: 0;
+        width: auto;
     }
 
     li a {
@@ -271,5 +257,5 @@ const MainMenuNav = styled.ul`
         margin-right: 5px;
         color: white;
     }
-`
+`;
 export default Nav;

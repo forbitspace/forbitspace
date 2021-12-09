@@ -53,7 +53,7 @@ const Content = styled.div`
 const Title = styled.h2`
     font-size: 3.5rem;
     text-align: center;
-    font-family: Montserrat, sans-serif;
+    /* font-family: Montserrat, sans-serif; */
     font-style: italic;
     font-weight: 500;
     @media (max-width: 576px) {

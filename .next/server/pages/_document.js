@@ -881,11 +881,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     }), __jsx("link", {
       rel: "apple-touch-icon",
       sizes: "192x192",
-      href: "/images/logo-space.png"
+      href: "/images/192x192.png"
     }), __jsx("link", {
       rel: "apple-touch-icon",
       sizes: "512x512",
-      href: "/images/logo-space.png"
+      href: "/images/512x512.png"
     }), __jsx("link", {
       rel: "stylesheet",
       href: "/css/style.css",

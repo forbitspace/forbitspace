@@ -120,6 +120,7 @@ const SubText = styled.p`
     font-size: 22px;
     font-weight: 300;
     line-height: 1.2;
+    padding: 0 0 10px;
     span {
         font-style: italic;
         font-weight: 900;

@@ -100,7 +100,11 @@ const Index = () => {
                                     aria-label="send-email-address"
                                     onClick={handleSubmit}
                                 >
-                                    <img src="../images/icons/arrow-right.svg" className='arrow-right' alt="arrow-right-icon" />
+                                    <img
+                                        src="../images/icons/arrow-right.svg"
+                                        className="arrow-right"
+                                        alt="arrow-right-icon"
+                                    />
                                 </ButtonSend>
                             </div>
                             <Copyright className="text-dark foundation">
@@ -172,7 +176,7 @@ const FooterMenu = styled.section`
     position: relative;
     padding: 30px 0;
     overflow: hidden;
-    .arrow-right{
+    .arrow-right {
         width: 12px;
     }
 
@@ -205,7 +209,6 @@ const ListMenu = styled.div`
 
             input {
             }
-
         }
 
         li {
@@ -258,7 +261,7 @@ const ListMenu = styled.div`
             width: 50%;
         }
     }
-    @media (max-width: 576px){
+    @media (max-width: 576px) {
         gap: 2%;
 
         .input-field {
@@ -278,6 +281,10 @@ const TitleFooter = styled.li`
     font-style: normal !important;
     a {
         text-decoration: none;
+    }
+    @media (max-width: 576px) {
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 `;
 const SubTitleFooter = styled.div`
@@ -322,7 +329,7 @@ const Input = styled.input`
     border: none;
     background: #cff3f4;
     border: 1px solid #0047b2;
-    background: #001225 ;
+    background: #001225;
     color: #ffffff;
     ::placeholder {
         font-weight: 100;
@@ -367,5 +374,5 @@ const ButtonSend = styled.button`
         background-size: 200%;
         background-position: right;
     }
-`
+`;
 export default Index;

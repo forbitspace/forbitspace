@@ -22,7 +22,7 @@ const ContactUs = () => {
 
     const getMouseOver = (e) => {
         var parentOffset = buttonRef.current.getBoundingClientRect();
-        
+
         setX(e.clientX - parentOffset.left);
         setY(e.clientY - parentOffset.top);
     };
@@ -71,10 +71,10 @@ const ContactUs = () => {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-          var currentScrollPos = window.pageYOffset;
-          setScrollPos(currentScrollPos)
+            var currentScrollPos = window.pageYOffset;
+            setScrollPos(currentScrollPos);
         });
-    },[scrollPos])
+    }, [scrollPos]);
 
     return (
         <BoxSection>
@@ -192,7 +192,7 @@ const WrapperSubmit = styled.form`
     padding: 1rem;
     width: 100%;
     max-width: 650px;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     font-weight: 400;
     input,
     textarea {
@@ -201,7 +201,7 @@ const WrapperSubmit = styled.form`
         border: none;
         color: #fff;
         ::placeholder {
-            font-family: sans-serif;
+            font-family: inherit;
             color: #ffffff8a;
         }
         :focus-visible {
@@ -259,7 +259,7 @@ const SubmitButton = styled.div`
     height: auto;
     max-width: 160px;
     border-radius: 12px;
-    font: normal 18px/40px "proxima-nova", sans-serif;
+    font: normal 18px/40px "helvetica neue", sans-serif;
     text-align: center;
     text-decoration: none;
     border: 2px solid #fff;
