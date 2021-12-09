@@ -161,6 +161,9 @@ const ButtonBanner = styled.a`
         #0d00ff 111%
     );
     width: 100%;
+    /* max-width: 150px; */
+    white-space: nowrap;
+    overflow: hidden;
     background-size: 200%;
     background-position: right;
     color: white;

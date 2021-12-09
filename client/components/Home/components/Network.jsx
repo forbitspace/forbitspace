@@ -216,22 +216,28 @@ const WrapperButtonApp = styled.div`
 `;
 
 const ButtonBanner = styled.a`
-    padding: 0.25rem 0.85rem;
+    color: white;
     text-decoration: none;
     text-align: center;
     font-style: italic;
-    border-radius: 12px;
-    display: inline-block;
-    transform: scale(0.98);
-    transition: transform 0.25s ease 0s;
-    box-sizing: border-box;
     font-weight: 500;
     font-size: 1.125rem;
-    cursor: pointer;
-    width: fit-content;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
     background-color: rgb(255, 255, 255);
-    color: white;
+    width: 100%;
+    max-width: 150px;
+    border-radius: 12px;
+    padding: 0.25rem 0.85rem;
     margin-right: 1rem;
+    display: inline-block;
+    transform: scale(0.98);
+    box-sizing: border-box;
+    transition: transform 0.25s ease 0s;
+    cursor: pointer;
+    overflow: hidden;
+
     background-image: linear-gradient(
         38deg,
         #00ff36 -10%,
@@ -241,18 +247,13 @@ const ButtonBanner = styled.a`
         #0b18fc 102%,
         #0d00ff 111%
     );
-    width: 100%;
     background-size: 200%;
     background-position: 99%;
-    color: white;
 
     &.forbitswap {
         background-size: 110%;
         background-position: 30%;
     }
-    /* :hover {
-        color: white;
-    } */
     @media (max-width: 768px) {
         font-size: 12px;
     }
