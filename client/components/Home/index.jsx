@@ -12,6 +12,7 @@ import System from "./components/System";
 import Partners from "./components/Partners";
 import Network from "./components/Network";
 import LazyLoad from "react-lazyload";
+import ChristmasAnimation from "../ChristmasAnimation";
 
 const Index = () => {
     return (
@@ -23,6 +24,9 @@ const Index = () => {
                 <Container>
                     <LazyLoad height={250}>
                         <Network />
+                    </LazyLoad>
+                    <LazyLoad height={250}>
+                        <ChristmasAnimation />
                     </LazyLoad>
                     <LazyLoad height={250}>
                         <Planet />
@@ -57,19 +61,4 @@ const WrapperBackground = styled.div`
         overflow-x: hidden;
     }
 `;
-
-const BackgroundImg = styled.img`
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: auto;
-    height: 100vh;
-    opacity: 0.15;
-    z-index: -1;
-    @media (max-width: 576px) {
-        position: fixed;
-    }
-`;
-
 export default Index;
