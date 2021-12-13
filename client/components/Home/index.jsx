@@ -26,10 +26,10 @@ const Index = () => {
                         <Network />
                     </LazyLoad>
                     <LazyLoad height={250}>
-                        <ChristmasAnimation />
+                        <Planet />
                     </LazyLoad>
                     <LazyLoad height={250}>
-                        <Planet />
+                        <ChristmasAnimation />
                     </LazyLoad>
                     <LazyLoad height={250}>
                         <Liquidity />

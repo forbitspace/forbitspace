@@ -15,14 +15,27 @@ const Noel = () => {
                 <div className="snowflake">❅</div>
                 <div className="snowflake">❆</div>
                 <div className="snowflake">❅</div>
+                <div className="snowflake">❅</div>
+                <div className="snowflake">❅</div>
+                <div className="snowflake">❆</div>
+                <div className="snowflake">❅</div>
+                <div className="snowflake">❅</div>
+                <div className="snowflake">❆</div>
+                <div className="snowflake">❅</div>
+                <div className="snowflake">❅</div>
+                <div className="snowflake">❆</div>
+                <div className="snowflake">❅</div>
             </Snowflake>
             <WrapImage>
                 <img src="../images/design-image/noel_2.png" alt="noel-image" />
             </WrapImage>
+            <WrapImage className="wide-screen">
+                <img src="../images/design-image/noel_1.png" alt="noel-image" />
+            </WrapImage>
             <WrapImage>
                 <img src="../images/design-image/noel_3.png" alt="noel-image" />
             </WrapImage>
-            <WrapImage>
+            <WrapImage className="medium-screen">
                 <img src="../images/design-image/noel_1.png" alt="noel-image" />
             </WrapImage>
         </WrapContent>
@@ -49,12 +62,17 @@ const shake = keyframes`
 
 const WrapContent = styled.div`
     width: 100%;
+    max-width: 240px;
     display: flex;
     flex-wrap: nowrap;
     align-items: flex-end;
     justify-content: center;
     gap: 1rem;
     position: relative;
+    @media (min-width: 1440px) {
+        flex-direction: column-reverse;
+        max-width: 210px;
+    }
     @media (max-width: 576px) {
         gap: 3px;
     }
@@ -66,6 +84,21 @@ const WrapImage = styled.div`
     img {
         width: 100%;
         max-width: 100px;
+    }
+    &.wide-screen {
+        display: none;
+    }
+    @media (min-width: 1440px) {
+        width: fit-content;
+        img {
+            max-width: 210px;
+        }
+        &.medium-screen {
+            display: none;
+        }
+        &.wide-screen {
+            display: block;
+        }
     }
 `;
 
@@ -139,52 +172,68 @@ const Snowflake = styled.div`
         animation-iteration-count: infinite, infinite;
         animation-play-state: running, running;
     }
-    .snowflake:nth-of-type(0) {
+    @media (min-width: 1440px) {
+        .snowflake {
+            -webkit-animation-duration: 8s, 10s;
+            animation-duration: 8s, 10s;
+        }
+    }
+    .snowflake:nth-of-type(0),
+    .snowflake:nth-of-type(10) {
         left: 1%;
         -webkit-animation-delay: 0s, 0s;
         animation-delay: 0s, 0s;
     }
-    .snowflake:nth-of-type(1) {
+    .snowflake:nth-of-type(1),
+    .snowflake:nth-of-type(11) {
         left: 10%;
         -webkit-animation-delay: 1s, 1s;
         animation-delay: 1s, 1s;
     }
-    .snowflake:nth-of-type(2) {
+    .snowflake:nth-of-type(2),
+    .snowflake:nth-of-type(12) {
         left: 20%;
         -webkit-animation-delay: 6s, 0.5s;
         animation-delay: 6s, 0.5s;
     }
-    .snowflake:nth-of-type(3) {
+    .snowflake:nth-of-type(3),
+    .snowflake:nth-of-type(13) {
         left: 30%;
         -webkit-animation-delay: 4s, 2s;
         animation-delay: 4s, 2s;
     }
-    .snowflake:nth-of-type(4) {
+    .snowflake:nth-of-type(4),
+    .snowflake:nth-of-type(14) {
         left: 40%;
         -webkit-animation-delay: 2s, 2s;
         animation-delay: 2s, 2s;
     }
-    .snowflake:nth-of-type(5) {
+    .snowflake:nth-of-type(5),
+    .snowflake:nth-of-type(15) {
         left: 50%;
         -webkit-animation-delay: 8s, 3s;
         animation-delay: 8s, 3s;
     }
-    .snowflake:nth-of-type(6) {
+    .snowflake:nth-of-type(6),
+    .snowflake:nth-of-type(16) {
         left: 60%;
         -webkit-animation-delay: 6s, 2s;
         animation-delay: 6s, 2s;
     }
-    .snowflake:nth-of-type(7) {
+    .snowflake:nth-of-type(7),
+    .snowflake:nth-of-type(17) {
         left: 70%;
         -webkit-animation-delay: 2.5s, 1s;
         animation-delay: 2.5s, 1s;
     }
-    .snowflake:nth-of-type(8) {
+    .snowflake:nth-of-type(8),
+    .snowflake:nth-of-type(18) {
         left: 80%;
         -webkit-animation-delay: 1s, 0s;
         animation-delay: 1s, 0s;
     }
-    .snowflake:nth-of-type(9) {
+    .snowflake:nth-of-type(9),
+    .snowflake:nth-of-type(19) {
         left: 90%;
         -webkit-animation-delay: 3s, 1.5s;
         animation-delay: 3s, 1.5s;

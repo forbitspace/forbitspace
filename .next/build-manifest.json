@@ -29,10 +29,10 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/liquidity": [
+    "/aggregation": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/liquidity.js"
+      "static/chunks/pages/aggregation.js"
     ]
   },
   "ampFirstPages": []
