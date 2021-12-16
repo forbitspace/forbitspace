@@ -74,8 +74,8 @@ const WrapPlanet = styled.div`
         transform: scale(0.55);
     }
     @media (max-width: 768px) {
-        transform: scale(0.65);
-        margin: -60px 0;
+        transform: scale(0.6);
+        margin: -180px 0;
     }
     @media (max-width: 415px) {
         transform: scale(0.4);

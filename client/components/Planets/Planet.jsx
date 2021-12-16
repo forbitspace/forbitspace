@@ -113,7 +113,7 @@ const WrapperPlanet = styled.div`
         transform: scale(1);
     }
 
-    @media (max-height: 768px) {
+    @media (max-width: 768px) {
         transform: scale(0.7);
     }
 
