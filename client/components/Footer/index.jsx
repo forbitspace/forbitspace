@@ -181,7 +181,7 @@ const FooterMenu = styled.section`
     }
 
     @media (max-width: 576px) {
-        padding: 40px 0;
+        padding: 40px 0 80px;
 
         &:after {
             content: none;
@@ -258,7 +258,7 @@ const ListMenu = styled.div`
             width: 32%;
         }
         @media (max-width: 320px) {
-            width: 50%;
+            width: 48%;
         }
     }
     @media (max-width: 576px) {

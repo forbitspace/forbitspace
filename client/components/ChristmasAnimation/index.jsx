@@ -2,11 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import Noel from "./components/Noel";
 import Santa from "./components/Santa";
+import Xmas from "./components/Xmas";
 
 const ChristmasAnimation = () => {
     return (
         <Wrapper>
             <Content>
+                <Xmas />
                 <Noel />
                 <Santa />
             </Content>
@@ -25,11 +27,12 @@ const Content = styled.div`
     z-index: 9999;
 
     position: fixed;
-    bottom: 1.5rem;
+    bottom: 0.5rem;
     left: 0rem;
     @media (min-width: 1440px) {
         /* width: 350px; */
-        bottom: 2.5rem;
+        /* bottom: 2.5rem; */
+        bottom: 8rem;
         padding: 0.5rem 2rem;
         /* left: 2.5rem; */
     }
@@ -38,7 +41,6 @@ const Content = styled.div`
     }
     @media (max-width: 576px) {
         /* left: 0.5rem; */
-        bottom: 0.5rem;
         /* width: 150px; */
     }
 `;

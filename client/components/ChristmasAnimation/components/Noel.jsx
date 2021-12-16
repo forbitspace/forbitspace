@@ -25,6 +25,10 @@ const Noel = () => {
                 <div className="snowflake">❅</div>
                 <div className="snowflake">❆</div>
                 <div className="snowflake">❅</div>
+                <div className="snowflake">❅</div>
+                <div className="snowflake">❅</div>
+                <div className="snowflake">❆</div>
+                <div className="snowflake">❅</div>
             </Snowflake>
             <WrapImage>
                 <img src="../images/design-image/noel_2.png" alt="noel-image" />
@@ -71,7 +75,7 @@ const WrapContent = styled.div`
     position: relative;
     @media (min-width: 1440px) {
         flex-direction: column-reverse;
-        max-width: 210px;
+        max-width: 120px;
     }
     @media (max-width: 576px) {
         gap: 3px;
@@ -91,7 +95,7 @@ const WrapImage = styled.div`
     @media (min-width: 1440px) {
         width: fit-content;
         img {
-            max-width: 210px;
+            max-width: 120px;
         }
         &.medium-screen {
             display: none;
@@ -153,7 +157,7 @@ const Snowflake = styled.div`
         }
     }
     .snowflake {
-        position: absolute;
+        position: fixed;
         top: -30%;
         z-index: 9999;
         -webkit-user-select: none;
@@ -162,24 +166,24 @@ const Snowflake = styled.div`
         user-select: none;
         cursor: default;
         -webkit-animation-name: snowflakes-fall, snowflakes-shake;
-        -webkit-animation-duration: 4s, 10s;
+        -webkit-animation-duration: 10s, 4s;
         -webkit-animation-timing-function: linear, ease-in-out;
         -webkit-animation-iteration-count: infinite, infinite;
         -webkit-animation-play-state: running, running;
         animation-name: snowflakes-fall, snowflakes-shake;
-        animation-duration: 4s, 10s;
+        animation-duration: 10s, 4s;
         animation-timing-function: linear, ease-in-out;
         animation-iteration-count: infinite, infinite;
         animation-play-state: running, running;
     }
     @media (min-width: 1440px) {
         .snowflake {
+            font-size: 2em;
             -webkit-animation-duration: 8s, 10s;
             animation-duration: 8s, 10s;
         }
     }
-    .snowflake:nth-of-type(0),
-    .snowflake:nth-of-type(10) {
+    .snowflake:nth-of-type(0) {
         left: 1%;
         -webkit-animation-delay: 0s, 0s;
         animation-delay: 0s, 0s;
@@ -237,6 +241,31 @@ const Snowflake = styled.div`
         left: 90%;
         -webkit-animation-delay: 3s, 1.5s;
         animation-delay: 3s, 1.5s;
+    }
+    .snowflake:nth-of-type(10) {
+        left: 5%;
+        -webkit-animation-delay: 1s, 0s;
+        animation-delay: 1s, 0s;
+    }
+    .snowflake:nth-of-type(20) {
+        left: 15%;
+        -webkit-animation-delay: 3.2s, 1.8s;
+        animation-delay: 3.2s, 1.8s;
+    }
+    .snowflake:nth-of-type(21) {
+        left: 25%;
+        -webkit-animation-delay: 3.2s, 1.8s;
+        animation-delay: 4.2s, 2.8s;
+    }
+    .snowflake:nth-of-type(22) {
+        left: 35%;
+        -webkit-animation-delay: 3.2s, 1.8s;
+        animation-delay: 5.2s, 3.8s;
+    }
+    .snowflake:nth-of-type(23) {
+        left: 45%;
+        -webkit-animation-delay: 3.2s, 1.8s;
+        animation-delay: 6.2s, 3.2s;
     }
 `;
 
