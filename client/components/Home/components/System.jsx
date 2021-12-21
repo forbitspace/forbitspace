@@ -31,6 +31,11 @@ const System = () => {
                             <LazyLoad height={45}>
                                 <img
                                     src={`./images/logo-contributor/${item.img}`}
+                                    className={`img-${
+                                        item.img.split(".")[0]
+                                            ? item.img.split(".")[0]
+                                            : "auditor"
+                                    }`}
                                     alt={`logo-${item.img}`}
                                 />
                             </LazyLoad>
@@ -135,6 +140,11 @@ const WrapperInner = styled.div`
         img {
             height: auto;
             width: auto;
+            max-height: 65px;
+        }
+        .img-hacken {
+            margin-left: -2rem;
+            padding: 0;
         }
 
         @media (max-width: 945px) {
@@ -156,7 +166,21 @@ const WrapperInner = styled.div`
     @media (max-width: 1024px) {
         &.auditor {
             .img-content {
-                gap: 3rem;
+                gap: 2rem;
+            }
+            .img-hacken {
+                margin-left: 0;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        &.auditor {
+            .img-holder {
+                padding: 10px 0;
+            }
+            .img-hacken {
+                margin-left: 0;
+                width: 100%;
             }
         }
     }
