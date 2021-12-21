@@ -173,6 +173,9 @@ export const AuditData = [
     {
         img: "skynet.png",
     },
+    {
+        img: "hacken.svg",
+    },
 ];
 export const EcosystemData = [
     {
