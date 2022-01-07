@@ -248,7 +248,7 @@ const Brands = () => {
                     </WrapperLogo>
                 </Content>
                 <Content>
-                    <Title>flyby IDO launchpad logo</Title>
+                    <Title><span className="flyby">flyby</span> IDO launchpad logo</Title>
                     <WrapperLogo>
                         {flybyLogo.map((item, index) => (
                             <BrandLogo key={index}>
@@ -288,7 +288,7 @@ const Brands = () => {
                     </WrapperLogo>
                 </Content>
                 <Content>
-                    <Title>NFTs space logo</Title>
+                    <Title><span className="nfts">NFTs Space</span> logo</Title>
                     <WrapperLogo>
                         {nftsLogo.map((item, index) => (
                             <BrandLogo key={index}>
@@ -359,6 +359,13 @@ const BoxSection = styled.section`
     .forbitspace {
         font-family: Montserrat, "helvetica neue", Roboto, sans-serif;
         font-weight: 900;
+        font-style: italic;
+    }
+    .flyby{
+        font-style: italic;
+    }
+    .nfts{
+        font-weight: 500;
         font-style: italic;
     }
     @media (max-width: 770px) {

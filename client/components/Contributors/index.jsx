@@ -5,7 +5,7 @@ import FooterContributor from "./components/Footer";
 import Banner from "./components/Banner";
 import Members from "./components/Members";
 import Footer from "../Footer";
-import { MemberData, MemberData_1, AdvisorData } from "./constants";
+import { MemberData, AdvisorData } from "./constants";
 import Leaders from "./components/Leader";
 import Advisors from "./components/Advisors";
 
@@ -16,7 +16,7 @@ const Index = () => {
                 <Banner />
                 <Leaders />
                 <Members title={""} data={MemberData} />
-                <Members title={""} data={MemberData_1} />
+                {/* <Members title={""} data={MemberData_1} /> */}
                 <Advisors data={AdvisorData} />
                 <FooterContributor />
                 <Footer />

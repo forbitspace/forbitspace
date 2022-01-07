@@ -8,12 +8,12 @@ const Logo = () => {
             <Link href="/">
                 <a>
                     <img
-                        src="../images/logo/logo-forbitspace-christmas.png"
+                        src="../images/logo/logo-forbitspace.png"
                         alt="forbitspace"
                         className="logo--desktop"
                     />
                     <img
-                        src="../images/logo/logo-sm-christmas.png"
+                        src="../images/logo/logo-sm.png"
                         alt="forbitspace"
                         className="logo--mobile"
                     />

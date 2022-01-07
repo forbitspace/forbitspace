@@ -112,6 +112,7 @@ const WrapContainer = styled(Container)`
     justify-content: center;
     flex-direction: column;
     gap: 60px;
+    padding: 0%;
 
     @media (max-width: 768px) {
         gap: 0;

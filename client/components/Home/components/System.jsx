@@ -128,6 +128,10 @@ const WrapperInner = styled.div`
         padding: 45px;
         gap: 10px;
 
+        @media (max-width: 767px){
+            gap: 7px;;
+        }
+
         @media (max-width: 576px) {
             padding: 30px 10px;
             justify-content: space-between;
