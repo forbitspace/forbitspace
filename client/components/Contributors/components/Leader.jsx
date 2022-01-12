@@ -143,7 +143,8 @@ const Leaders = () => {
                                 <p></p>
                                 <Social>
                                     <a
-                                        href="https://www.linkedin.com/in/stella-vo-276627222"
+                                        // href="https://www.linkedin.com/in/stella-vo-276627222"
+                                        href="/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >

@@ -7,6 +7,19 @@ const Banner = () => {
     return (
         <BoxSection>
             <WrapImgBanner>
+                {/* <LazyLoad height={400} once={true} placeholder={<img
+                        width="1251"
+                        height="409.79"
+                        src="../images/logo/logo-forbitspace.png"
+                        alt="banner-picture"
+                    />}>
+                    <img
+                        width="1251"
+                        height="409.79"
+                        src="../images/network-banner.png"
+                        alt="banner-picture"
+                    />
+                </LazyLoad> */}
                 <LazyLoad height={400}>
                     <img
                         width="1251"
@@ -54,7 +67,7 @@ const BoxSection = styled.section`
     position: relative;
     padding: 2vh 0 0;
     transition: min-height 0.3s;
-    margin-top: -40px;
+    /* margin-top: -20px; */
 
     @media (max-width: 770px) {
         margin-top: 0px;
@@ -76,6 +89,8 @@ const WrapImgBanner = styled.div`
 `;
 const Content = styled.div`
     width: 75%;
+    /* width: 100%; */
+    /* text-align: right; */
     @media (max-width: 1220px) {
         width: 85%;
     }
@@ -108,9 +123,16 @@ const SubText = styled.p`
     font-weight: 300;
     /* font-family: sans-serif; */
     line-height: 1.2;
+    /* margin-left: 25%; */
     span {
         font-style: italic;
         font-weight: 900;
+    }
+    @media (max-width: 1220px) {
+        /* margin-left: 15%; */
+    }
+    @media (max-width: 768px) {
+        margin-left: 0;
     }
     @media (max-width: 576px) {
         font-size: 16px;

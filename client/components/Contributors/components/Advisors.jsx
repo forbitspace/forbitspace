@@ -71,8 +71,10 @@ const AdvisorImage = styled.div`
 const Title = styled.p`
     font-size: 3rem;
     text-align: center;
+    padding: 4rem 0 3rem;
     @media (max-width: 576px) {
         font-size: 26px;
+        padding: 2rem 0 1rem;
     }
 `;
 const Name = styled.div``
