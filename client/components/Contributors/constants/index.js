@@ -54,19 +54,22 @@ export const MemberData = [
     name: "Mat Luu",
     thumb: "../images/contributor-page/mat-mind.png",
     jobb: "Lead Blockchain Engineer",
-    linked: "https://www.linkedin.com/in/mat-luu/",
+    // linked: "https://www.linkedin.com/in/mat-luu/",
+    linked: "/",
   },
   {
     name: "Pantinho Vo",
     thumb: "../images/contributor-page/pantinho.png",
     job: "Lead Blockchain Engineer",
-    linked: "https://www.linkedin.com/in/pantinho-vo/",
+    // linked: "https://www.linkedin.com/in/pantinho-vo/",
+    linked: "/",
   },
   {
     name: "Jason Ly",
     thumb: "../images/contributor-page/jason.png",
     job: "Software Engineer (FE)",
-    linked: "https://www.linkedin.com/in/jasonlyy/",
+    // linked: "https://www.linkedin.com/in/jasonlyy/",
+    linked: "/",
   },
   {
     name: "Battisa Le",
@@ -105,6 +108,24 @@ export const MemberData = [
     linked: "/",
   },
   {
+    name: "James Davis",
+    thumb: "../images/contributor-page/davis.png",
+    job: "Business Development",
+    linked: "/",
+  },
+  {
+    name: "Bekhnam",
+    thumb: "../images/contributor-page/bekhnam.png",
+    job: "Blockchain Lead",
+    linked: "/",
+  },
+  {
+    name: "Jacky Weerati",
+    thumb: "../images/contributor-page/jacky.png",
+    job: "Business Development",
+    linked: "/",
+  },
+  {
     name: "Almira Nhu",
     thumb: "../images/contributor-page/almira.png",
     job: "Business Development ",
@@ -114,6 +135,27 @@ export const MemberData = [
     name: "Ai Co",
     thumb: "../images/contributor-page/ai-co.png",
     job: "Marketing Manager",
+    linked: "/",
+  },
+  {
+    name: "Nina Nguyen",
+    thumb: "../images/contributor-page/nina.png",
+    job: "Business Development",
+    // linked: "https://www.linkedin.com/in/nina-nguyen-192958224/",
+    linked: "/",
+  },
+  {
+    name: "Alysia Nguyen",
+    thumb: "../images/contributor-page/alysia.png",
+    job: "Business Development",
+    // linked: "https://www.linkedin.com/in/alysia-space-97a64b227/",
+    linked: "/",
+  },
+  {
+    name: "Jennie Le",
+    thumb: "../images/contributor-page/jennie.png",
+    job: "Business Development",
+    // linked: "http://linkedin.com/in/jennie-helen-11a677214/",
     linked: "/",
   },
   {
@@ -134,8 +176,6 @@ export const MemberData = [
     job: "Business Development",
     linked: "/",
   },
-];
-export const MemberData_1 = [
   {
     name: "Jacka Chanthy",
     thumb: "../images/contributor-page/jacka.png",
@@ -154,24 +194,8 @@ export const MemberData_1 = [
     job: "Business Development",
     linked: "/",
   },
-  {
-    name: "Jacky Weerati",
-    thumb: "../images/contributor-page/jacky.png",
-    job: "Business Development",
-    linked: "/",
-  },
-  {
-    name: "James Davis",
-    thumb: "../images/contributor-page/james.png",
-    job: "Business Development",
-    linked: "/",
-  },
-  {
-    name: "Jonatha Tico",
-    thumb: "../images/contributor-page/tico.png",
-    job: "Business Development",
-    linked: "/",
-  },
+];
+export const MemberData_1 = [
 ];
 
 export const AdvisorData = [

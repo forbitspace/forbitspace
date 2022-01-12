@@ -12,7 +12,7 @@ import System from "./components/System";
 import Partners from "./components/Partners";
 import Network from "./components/Network";
 import LazyLoad from "react-lazyload";
-import ChristmasAnimation from "../ChristmasAnimation";
+// import ChristmasAnimation from "../ChristmasAnimation";
 
 const Index = () => {
     return (
@@ -28,9 +28,9 @@ const Index = () => {
                     <LazyLoad height={250}>
                         <Planet />
                     </LazyLoad>
-                    <LazyLoad height={250}>
+                    {/* <LazyLoad height={250}>
                         <ChristmasAnimation />
-                    </LazyLoad>
+                    </LazyLoad> */}
                     <LazyLoad height={250}>
                         <Liquidity />
                     </LazyLoad>
