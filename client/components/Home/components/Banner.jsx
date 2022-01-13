@@ -7,7 +7,7 @@ const Banner = () => {
     return (
         <BoxSection>
             <WrapImgBanner>
-                <LazyLoad height={400} once={true} placeholder={<img
+                {/* <LazyLoad height={400} once={true} placeholder={<img
                         width="1251"
                         height="409.79"
                         src="../images/network-banner.png"
@@ -19,15 +19,15 @@ const Banner = () => {
                         src="../gif/gif_space"
                         alt="banner-picture"
                     />
-                </LazyLoad>
-                {/* <LazyLoad height={400}>
+                </LazyLoad> */}
+                <LazyLoad height={400}>
                     <img
                         width="1251"
                         height="409.79"
                         src="../images/home-page/banner.png"
                         alt="banner-picture"
                     />
-                </LazyLoad> */}
+                </LazyLoad>
             </WrapImgBanner>
             <Container>
                 <Content className="title-banner text-dark text-visi">
