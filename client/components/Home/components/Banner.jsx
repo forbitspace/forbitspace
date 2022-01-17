@@ -7,27 +7,27 @@ const Banner = () => {
     return (
         <BoxSection>
             <WrapImgBanner>
-                {/* <LazyLoad height={400} once={true} placeholder={<img
+                <LazyLoad height={400} once={true} placeholder={<img
                         width="1251"
                         height="409.79"
-                        src="../images/logo/logo-forbitspace.png"
+                        src="../images/network-banner.png"
                         alt="banner-picture"
                     />}>
                     <img
                         width="1251"
                         height="409.79"
-                        src="../images/network-banner.png"
+                        src="../gif/gif_space.gif"
                         alt="banner-picture"
                     />
-                </LazyLoad> */}
-                <LazyLoad height={400}>
+                </LazyLoad>
+                {/* <LazyLoad height={400}>
                     <img
                         width="1251"
                         height="409.79"
                         src="../images/home-page/banner.png"
                         alt="banner-picture"
                     />
-                </LazyLoad>
+                </LazyLoad> */}
             </WrapImgBanner>
             <Container>
                 <Content className="title-banner text-dark text-visi">
@@ -45,7 +45,7 @@ const Banner = () => {
                         traders to tap deep liquidity and receive better pricing
                         one single interface.
                     </SubText>
-                    <ButtonBanner
+                <ButtonBanner
                         href="https://app.forbitspace.com/"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -78,21 +78,27 @@ const WrapImgBanner = styled.div`
     width: 100vw;
     height: auto;
     max-width: 100%;
-    margin-bottom: -80px;
+    margin-bottom: -20px;
+    .lazyload-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     img {
         width: 100%;
         height: auto;
+        max-width: 1250px;
     }
     @media (max-width: 768px) {
         margin-bottom: 0px;
     }
 `;
 const Content = styled.div`
-    width: 75%;
-    /* width: 100%; */
-    /* text-align: right; */
+    /* width: 75%; */
+    width: 100%;
+    text-align: right;
     @media (max-width: 1220px) {
-        width: 85%;
+        /* width: 85%; */
     }
     @media (max-width: 768px) {
         width: 100%;
@@ -123,13 +129,13 @@ const SubText = styled.p`
     font-weight: 300;
     /* font-family: sans-serif; */
     line-height: 1.2;
-    /* margin-left: 25%; */
+    margin-left: 25%;
     span {
         font-style: italic;
         font-weight: 900;
     }
     @media (max-width: 1220px) {
-        /* margin-left: 15%; */
+        margin-left: 15%;
     }
     @media (max-width: 768px) {
         margin-left: 0;
