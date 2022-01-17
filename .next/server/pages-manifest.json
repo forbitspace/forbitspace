@@ -7,7 +7,7 @@
   "/about": "pages/about.js",
   "/aggregation": "pages/aggregation.js",
   "/assets": "pages/assets.js",
-  "/branding": "pages/branding.js",
+  "/brandkit": "pages/brandkit.js",
   "/bridge": "pages/bridge.js",
   "/comps/blog": "pages/comps/blog.js",
   "/comps/bug-bounty": "pages/comps/bug-bounty.js",
