@@ -7,8 +7,17 @@ const Network = () => {
     return (
         <BoxSection>
             <WrapContainer>
-                <WrapContent>
-                    <WrapImg>
+                <WrapContent className="content-space">
+                    <WrapImg className="image-space">
+                        <ImgHalf className="banner-space">
+                            <LazyLoad height={200}>
+                                <img
+                                    // src="../images/home-page/network-02.png"
+                                    src="../images/home-page/banner.png"
+                                    alt="space-network"
+                                />
+                            </LazyLoad>
+                        </ImgHalf>
                         <WrapperButtonApp>
                             <ButtonBanner
                                 href="https://app.forbitspace.com/"
@@ -18,24 +27,13 @@ const Network = () => {
                                 Space Trade
                             </ButtonBanner>
                         </WrapperButtonApp>
-                        <ImgHalf>
-                            <LazyLoad height={200}>
-                                <img
-                                    src="../images/home-page/network-02.png"
-                                    alt="space-network"
-                                />
-                            </LazyLoad>
-                        </ImgHalf>
                     </WrapImg>{" "}
-                    <WrapTitle>
+                    <WrapTitle className="title-space">
                         <Text>Spread across Multiple Networks</Text>
                         <SubText className="subtext__title">
                             <span>forbitspace</span> aggregator protocol is now
-                            available on Ethereum, Binance Smart Chain, and
-                            layer 2 Polygon, Avalanche, Arbitrum, and Optimism
-                            we currently launch each blockchain as by stage.
-                            <br /> As the decentralized space is growing at
-                            lightning speed.
+                            available on Ethereum, Binance Smart Chain,<br/> and
+                             Polygon, Avalanche.
                             <br />
                             <br />
                             <span>forbitspace</span> connects multiple
@@ -44,10 +42,7 @@ const Network = () => {
                             additional functionality, usability, and scalability
                             are blazingly fast, low cost, & eco-friendly, brings
                             is contributes to the benefit of users. <br />{" "}
-                            <br />
-                            We plan to support more EVM chains and non-EVM
-                            chains, Solana, and more in the months following
-                            launch.
+                            
                         </SubText>
                     </WrapTitle>
                 </WrapContent>
@@ -133,6 +128,19 @@ const WrapContent = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    &.content-space{
+        flex-direction: column;
+        align-items: center;
+        .title-space{
+            width: 100%;
+        }
+        .image-space{
+            width: 100%;
+        }
+        .banner-space{
+            width: 100%;
+        }
+    }
 
     @media (max-width: 768px) {
         flex-direction: column;
@@ -172,7 +180,7 @@ const ImgHalf = styled.div`
         height: auto;
     }
     @media (max-width: 768px) {
-        padding: 10px 0 25px;
+        padding: 10px 0;
     }
 `;
 const SubText = styled.p`
@@ -205,7 +213,11 @@ const SubText = styled.p`
     }
 `;
 const WrapperButtonApp = styled.div`
-    max-width: 350px;
+    /* max-width: 350px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     text-align: left;
     @media (max-width: 1200px) {
         display: block;
