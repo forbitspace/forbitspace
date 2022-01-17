@@ -248,8 +248,8 @@ const ButtonBanner = styled.a`
     width: 100%;
     max-width: 150px;
     border-radius: 12px;
-    padding: 0.25rem 0.85rem;
-    margin-right: 1rem;
+    padding: 0.35rem 0.85rem;
+    /* margin-right: 1rem; */
     display: inline-block;
     transform: scale(0.98);
     box-sizing: border-box;
@@ -274,7 +274,7 @@ const ButtonBanner = styled.a`
         background-position: 30%;
     }
     @media (max-width: 768px) {
-        font-size: 12px;
+        font-size: 14px;
     }
 `;
 export default Network;
