@@ -23,7 +23,7 @@ const LiquidityAnimation = () => {
             </BackgroundImg>
             <ItemImg>
                 {dataTokens.map((item, index) => (
-                    <ImgWrap className={`img-${index}`}>
+                    <ImgWrap className={`img-${index}`} key={index}>
                         <img
                             src={`../images/liquidity Pool/icon-${item.name}.png`}
                             alt={item.name + "-icon"}

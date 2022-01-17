@@ -57,7 +57,7 @@ const Network = () => {
                         ease.
                     </SubText>
                     <WrapImg className="img__swap">
-                        <WrapperButtonApp>
+                        <WrapperButtonApp className="btn-swap">
                             <ButtonBanner
                                 href="https://app.forbitswap.com/#/swap"
                                 target="_blank"
@@ -84,10 +84,10 @@ const Network = () => {
 
 const BoxSection = styled.section`
     position: relative;
-    padding: 6vh 0px 0;
+    padding: 2vh 0px 0;
 
     @media (max-width: 1024px) {
-        padding: 25px 0 0;
+        padding: 10px 0 0;
     }
 `;
 const Text = styled.div`
@@ -219,8 +219,14 @@ const WrapperButtonApp = styled.div`
     align-items: center;
     justify-content: flex-end;
     text-align: left;
+    &.btn-swap{
+        justify-content: center;
+    }
     @media (max-width: 1200px) {
-        display: block;
+        /* display: block; */
+    }
+    @media (max-width: 768px){
+        justify-content: center;
     }
     @media (max-width: 576px) {
         text-align: center;
