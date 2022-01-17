@@ -32,7 +32,7 @@ const Network = () => {
                         <Text>Spread across Multiple Networks</Text>
                         <SubText className="subtext__title">
                             <span>forbitspace</span> aggregator protocol is now
-                            available on Ethereum, Binance Smart Chain,<br/> and
+                            available on Ethereum, Binance Smart Chain<br/> and
                              Polygon, Avalanche.
                             <br />
                             <br />
@@ -40,7 +40,7 @@ const Network = () => {
                             blockchains, making the network’s transaction from
                             one chain to another seamless becomes that the
                             additional functionality, usability, and scalability
-                            are blazingly fast, low cost, & eco-friendly, brings
+                            are blazingly fast, low cost & eco-friendly, brings
                             is contributes to the benefit of users. <br />{" "}
                             
                         </SubText>
