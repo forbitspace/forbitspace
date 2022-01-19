@@ -16,7 +16,7 @@ const Banner = () => {
                     <img
                         width="1251"
                         height="409.79"
-                        src="../gif/gif_space.gif"
+                        src="../gif/option_2.gif"
                         alt="banner-picture"
                     />
                 </LazyLoad>
