@@ -11,7 +11,7 @@ const Banner = () => {
                     <ImgHalf>
                         <LazyLoad height={200}>
                             <img
-                                src="../gif/space.gif"
+                                src="../gif/space-gif.gif"
                                 alt="aggregation-protocols"
                             />
                         </LazyLoad>
