@@ -11,7 +11,7 @@ const Banner = () => {
                     <ImgHalf>
                         <LazyLoad height={200}>
                             <img
-                                src="../gif/gif_aggregation-protocol.gif"
+                                src="../gif/space-gif.gif"
                                 alt="aggregation-protocols"
                             />
                         </LazyLoad>
@@ -51,9 +51,9 @@ const WrapContainer = styled(Container)`
     }
 `;
 const WrapImg = styled.div`
-    width: 60%;
+    width: 75%;
     @media (max-width: 768px) {
-        width: 80%;
+        width: 85%;
     }
 `;
 const ImgHalf = styled.div`
