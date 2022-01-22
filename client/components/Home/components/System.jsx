@@ -229,6 +229,9 @@ const Link = styled.a`
     :hover {
         cursor: pointer;
     }
+    @media (max-width: 576px){
+        margin-right: 10px;
+    }
 `;
 
 const Icon = styled.img`
@@ -239,7 +242,7 @@ const Icon = styled.img`
         transform: scale(1.2);
     }
     @media (max-width: 576px) {
-        max-width: 25px;
+        max-width: 24px;
     }
 `;
 

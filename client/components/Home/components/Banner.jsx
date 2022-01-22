@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "reactstrap";
 import styled from "styled-components";
 import LazyLoad from "react-lazyload";
 
 const Banner = () => {
+    const [num, setNum] = useState(0);
+    
+    useEffect(() => {
+        const myInterval = setInterval(() => {
+            if(num < 4){
+                setNum(num+1);
+            }else{
+                setNum(0);
+            }
+        }, 1000);
+        return (() => {
+            clearInterval(myInterval);
+        })
+    })
+    // console.log('num ----->', num);
     return (
         <BoxSection>
             <WrapImgBanner>

@@ -152,7 +152,7 @@ export const navContent = [
             },
             {
                 link: "../documents/terms-of-service.pdf",
-                content: "Term of Service",
+                content: "Terms of Service",
                 outLink: true,
             },
             {
