@@ -152,12 +152,12 @@ export const navContent = [
                 outLink: true,
             },
             {
-                link: "../documents/terms-of-service.pdf",
+                link: "../terms-of-service.pdf",
                 content: "Terms of Service",
                 outLink: true,
             },
             {
-                link: "../documents/privacy-policy.pdf",
+                link: "../privacy-policy.pdf",
                 content: "Privacy Policy",
                 outLink: true,
             },
