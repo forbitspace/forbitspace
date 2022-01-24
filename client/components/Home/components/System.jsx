@@ -28,17 +28,19 @@ const System = () => {
                 <div className="img-content">
                     {data.map((item, index) => (
                         <div className="img-holder" key={index}>
-                            <LazyLoad height={45}>
-                                <img
-                                    src={`./images/logo-contributor/${item.img}`}
-                                    className={`img-${
-                                        item.img.split(".")[0]
-                                            ? item.img.split(".")[0]
-                                            : "auditor"
-                                    }`}
-                                    alt={`logo-${item.img}`}
-                                />
-                            </LazyLoad>
+                            <a href={item.link} target="_blank" rel='noreferrer noreopenner' className="link-to-web">
+                                <LazyLoad height={45}>
+                                    <img
+                                        src={`./images/logo-contributor/${item.img}`}
+                                        className={`img-${
+                                            item.img.split(".")[0]
+                                                ? item.img.split(".")[0]
+                                                : "auditor"
+                                        }`}
+                                        alt={`logo-${item.img}`}
+                                    />
+                                </LazyLoad>
+                            </a>
                         </div>
                     ))}
                 </div>

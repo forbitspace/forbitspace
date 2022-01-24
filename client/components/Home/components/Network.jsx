@@ -14,6 +14,7 @@ const Network = () => {
                                 <img
                                     // src="../images/home-page/network-02.png"
                                     src="../images/home-page/banner.png"
+                                    // src="https://firebasestorage.googleapis.com/v0/b/image-storage-2f921.appspot.com/o/space_dex_min.gif?alt=media&token=d7c24d47-8c9b-4ce5-9f76-62683113def6"
                                     alt="space-network"
                                 />
                             </LazyLoad>
@@ -34,15 +35,32 @@ const Network = () => {
                             <span>forbitspace</span> aggregator protocol is now
                             available on Ethereum, Binance Smart Chain<br/> and
                              Polygon, Avalanche.
-                            <br />
-                            <br />
+                        </SubText>
+                        <br />
+                        <GifWrapper className="banner-space">
+                            <LazyLoad height={200} once={true} placeholder={<img
+                                    width="1251"
+                                    height="409.79"
+                                    src="../images/home-page/howitwork-min.png"
+                                    alt="howitwork-picture"
+                                    />}>
+                                <img
+                                    // src="../images/home-page/network-02.png"
+                                    // src="../images/home-page/banner.png"
+                                    // src="../gif/space_dex_min.gif"
+                                    src="https://firebasestorage.googleapis.com/v0/b/image-storage-2f921.appspot.com/o/space_dex.gif?alt=media&token=5631ce05-fb3b-4d8c-825a-f6e1f2db3f00"
+                                    alt="space-network"
+                                    />
+                            </LazyLoad>
+                        </GifWrapper> 
+                        <br />
+                        <SubText className="subtext__title">
                             <span>forbitspace</span> connects multiple
                             blockchains, making the network’s transaction from
                             one chain to another seamless becomes that the
                             additional functionality, usability, and scalability
                             are blazingly fast, low cost & eco-friendly, brings
                             is contributes to the benefit of users. <br />{" "}
-                            
                         </SubText>
                     </WrapTitle>
                 </WrapContent>
@@ -146,7 +164,7 @@ const WrapContent = styled.div`
         flex-direction: column;
         align-items: center;
         :first-child {
-            flex-direction: column-reverse;
+            /* flex-direction: column-reverse; */
         }
     }
 `;
@@ -183,6 +201,14 @@ const ImgHalf = styled.div`
         padding: 10px 0;
     }
 `;
+const GifWrapper = styled.div`
+    width: 100%;
+    text-align: center;
+    img{
+        width: 100%;
+        max-width: 750px;
+    }
+`
 const SubText = styled.p`
     font-size: 22px;
     font-weight: 300;

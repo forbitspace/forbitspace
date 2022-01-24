@@ -31,7 +31,9 @@ const Banner = () => {
                     <img
                         width="1251"
                         height="409.79"
-                        src="../gif/gif_space.gif"
+                        // src="../gif/gif_space.gif"
+                        // src="../gif/space-gif-min.gif" <---
+                        src="https://firebasestorage.googleapis.com/v0/b/image-storage-2f921.appspot.com/o/space-gif-min.gif?alt=media&token=cc2417c4-61fa-4efd-8eab-fe1b042de325"
                         alt="banner-picture"
                     />
                 </LazyLoad>

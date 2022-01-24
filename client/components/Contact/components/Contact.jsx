@@ -103,6 +103,7 @@ const ContactUs = () => {
                                 type="text"
                                 placeholder="Your Name"
                                 name="from_name"
+                                autoComplete="off"
                                 value={toSend.from_name}
                                 onChange={handleChange}
                             />
@@ -112,6 +113,7 @@ const ContactUs = () => {
                                 type="text"
                                 placeholder="Your Email"
                                 name="email"
+                                autoComplete="off"
                                 value={toSend.email}
                                 onChange={handleChange}
                             />
@@ -121,6 +123,7 @@ const ContactUs = () => {
                                 type="text"
                                 placeholder="Who Are You"
                                 name="position"
+                                autoComplete="off"
                                 value={toSend.position}
                                 onChange={handleChange}
                             />
