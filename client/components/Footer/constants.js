@@ -16,7 +16,8 @@ export const DataSocialLinkFooter = [
         url: "../images/icon-social-footer/1.svg",
     },
     {
-        link: "https://discord.com/invite/forbitspace",
+        // link: "https://discord.com/invite/forbitspace",
+        link: "https://discord.gg/PkCehXfe3t",
         url: "../images/icon-social-footer/3.svg",
     },
     {
@@ -151,12 +152,12 @@ export const navContent = [
                 outLink: true,
             },
             {
-                link: "../documents/terms-of-service.pdf",
+                link: "../terms-of-service.pdf",
                 content: "Terms of Service",
                 outLink: true,
             },
             {
-                link: "../documents/privacy-policy.pdf",
+                link: "../privacy-policy.pdf",
                 content: "Privacy Policy",
                 outLink: true,
             },

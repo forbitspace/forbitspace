@@ -9,9 +9,19 @@ const Banner = () => {
             <WrapContainer>
                 <WrapImg>
                     <ImgHalf>
-                        <LazyLoad height={200}>
+                        <LazyLoad height={400} once={true} placeholder={<img
+                            width="1250"
+                            height="400"
+                            src="../images/aggregation-page/eth-aggregation.png"
+                            alt="aggregation-placeholder-picture"
+                        />}>
+                            {/* <img
+                                src="../gif/gif_aggregation-protocol.gif"
+                                alt="aggregation-protocols"
+                            /> */}
                             <img
-                                src="../gif/space-gif.gif"
+                                // src="../gif/space-aggregation.gif"
+                                src="https://firebasestorage.googleapis.com/v0/b/image-storage-2f921.appspot.com/o/space-aggregation.gif?alt=media&token=1ace86e6-be8c-4d65-ad75-4717acd316ac"
                                 alt="aggregation-protocols"
                             />
                         </LazyLoad>

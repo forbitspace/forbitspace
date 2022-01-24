@@ -169,12 +169,15 @@ export const DataFBTC = [
 export const AuditData = [
     {
         img: "certik.png",
+        link: "https://www.certik.com/projects/forbitspace",
     },
     {
         img: "skynet.png",
+        link: "https://www.certik.com/projects/forbitspace",
     },
     {
         img: "hacken.svg",
+        link: "https://hacken.io/audits/#forbitspace"
     },
 ];
 export const EcosystemData = [
@@ -272,7 +275,8 @@ export const DataSocialLinkFooter = [
         url: "./images/icon-social-footer/1.svg",
     },
     {
-        link: "https://discord.com/invite/forbitspace",
+        // link: "https://discord.com/invite/forbitspace",
+        link: "https://discord.gg/PkCehXfe3t",
         url: "./images/icon-social-footer/3.svg",
     },
     {
