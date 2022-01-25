@@ -61,9 +61,12 @@ const WrapContainer = styled(Container)`
     }
 `;
 const WrapImg = styled.div`
-    width: 75%;
+    width: 60%;
     @media (max-width: 768px) {
-        width: 85%;
+        width: 80%;
+    }
+    @media (max-width: 576px) {
+        width: 100%;
     }
 `;
 const ImgHalf = styled.div`
