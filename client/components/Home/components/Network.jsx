@@ -47,8 +47,8 @@ const Network = () => {
                                 <img
                                     // src="../images/home-page/network-02.png"
                                     // src="../images/home-page/banner.png"
-                                    // src="../gif/space_dex_min.gif"
-                                    src="https://firebasestorage.googleapis.com/v0/b/image-storage-2f921.appspot.com/o/space_dex.gif?alt=media&token=5631ce05-fb3b-4d8c-825a-f6e1f2db3f00"
+                                    src="../gif/space_dex_min.gif"
+                                    // src="https://firebasestorage.googleapis.com/v0/b/image-storage-2f921.appspot.com/o/space_dex.gif?alt=media&token=5631ce05-fb3b-4d8c-825a-f6e1f2db3f00"
                                     alt="space-network"
                                     />
                             </LazyLoad>

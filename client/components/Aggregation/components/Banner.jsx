@@ -20,8 +20,8 @@ const Banner = () => {
                                 alt="aggregation-protocols"
                             /> */}
                             <img
-                                // src="../gif/space-aggregation.gif"
-                                src="https://firebasestorage.googleapis.com/v0/b/image-storage-2f921.appspot.com/o/space-aggregation.gif?alt=media&token=1ace86e6-be8c-4d65-ad75-4717acd316ac"
+                                src="../gif/space-aggregation.gif"
+                                // src="https://firebasestorage.googleapis.com/v0/b/image-storage-2f921.appspot.com/o/space-aggregation.gif?alt=media&token=1ace86e6-be8c-4d65-ad75-4717acd316ac"
                                 alt="aggregation-protocols"
                             />
                         </LazyLoad>
