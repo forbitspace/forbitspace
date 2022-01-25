@@ -35,8 +35,8 @@ const Integrate = () => {
                                     alt="howitwork-picture"
                                 />}>
                                     <img
-                                        // src={`../gif/gif-network.gif`}
-                                        src="https://firebasestorage.googleapis.com/v0/b/image-storage-2f921.appspot.com/o/gif-network.gif?alt=media&token=ae8776f4-d207-4aea-9daa-72d0a42aac3a"
+                                        src={`../gif/gif-network.gif`}
+                                        // src="https://firebasestorage.googleapis.com/v0/b/image-storage-2f921.appspot.com/o/gif-network.gif?alt=media&token=ae8776f4-d207-4aea-9daa-72d0a42aac3a"
                                         alt="gif-eth-orbit"
                                     />
                                 </LazyLoad>
