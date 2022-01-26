@@ -82,6 +82,12 @@ const Slide = styled.div`
     &:nth-child(2) { transform: rotateY(  90deg) translateZ(305px); }
     &:nth-child(3) { transform: rotateY( 180deg) translateZ(305px); }
     &:nth-child(4) { transform: rotateY( 270deg) translateZ(305px); }
+    @media (max-width: 576px){
+        &:nth-child(1) { transform: rotateY(   0deg) translateZ(205px); }
+        &:nth-child(2) { transform: rotateY(  90deg) translateZ(205px); }
+        &:nth-child(3) { transform: rotateY( 180deg) translateZ(205px); }
+        &:nth-child(4) { transform: rotateY( 270deg) translateZ(205px); }
+    }
 `
 
 export default Routing;
