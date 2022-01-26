@@ -52,7 +52,7 @@ const SlideShow = styled.div`
     margin: 40px 0;
     position: relative;
     width: 100%;
-    max-width: 650px;
+    max-width: 750px;
     margin: 40px auto;
     /* perspective: 1000px; */
 `
@@ -78,10 +78,10 @@ const Slide = styled.div`
     color: white;
     text-align: center;
     transition: ease-in-out opacity 1s;
-    &:nth-child(1) { transform: rotateY(   0deg) translateZ(305px); }
-    &:nth-child(2) { transform: rotateY(  90deg) translateZ(305px); }
-    &:nth-child(3) { transform: rotateY( 180deg) translateZ(305px); }
-    &:nth-child(4) { transform: rotateY( 270deg) translateZ(305px); }
+    &:nth-child(1) { transform: rotateY(   0deg) translateZ(375px); }
+    &:nth-child(2) { transform: rotateY(  90deg) translateZ(375px); }
+    &:nth-child(3) { transform: rotateY( 180deg) translateZ(375px); }
+    &:nth-child(4) { transform: rotateY( 270deg) translateZ(375px); }
     @media (max-width: 576px){
         &:nth-child(1) { transform: rotateY(   0deg) translateZ(205px); }
         &:nth-child(2) { transform: rotateY(  90deg) translateZ(205px); }
