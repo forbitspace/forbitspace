@@ -52,6 +52,7 @@ const SlideShow = styled.div`
 `
 const Slider = styled.div`
     white-space: nowrap;
+    transform-style: preserve-3d;
     /* transition: ease 1s; */
 `
 const Slide = styled.div`

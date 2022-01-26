@@ -3,6 +3,7 @@ import { Container } from "reactstrap";
 import styled from "styled-components";
 import LazyLoad from "react-lazyload";
 import Routing from "./Routing";
+import Pramaster from "./Pramaster";
 
 const Network = () => {
     return (
@@ -54,6 +55,7 @@ const Network = () => {
                                     />
                             </LazyLoad> */}
                             <Routing />
+                            {/* <Pramaster /> */}
                         </GifWrapper> 
                         <br />
                         <SubText className="subtext__title">
