@@ -9,12 +9,7 @@ const Banner = () => {
             <WrapContainer>
                 <WrapImg>
                     <ImgHalf>
-                        <LazyLoad height={400} once={true} placeholder={<img
-                            width="1250"
-                            height="400"
-                            src="../images/aggregation-page/eth-aggregation.png"
-                            alt="aggregation-placeholder-picture"
-                        />}>
+                        <LazyLoad height={400} once={true}>
                             {/* <img
                                 src="../gif/gif_aggregation-protocol.gif"
                                 alt="aggregation-protocols"
@@ -61,9 +56,12 @@ const WrapContainer = styled(Container)`
     }
 `;
 const WrapImg = styled.div`
-    width: 75%;
+    width: 60%;
     @media (max-width: 768px) {
-        width: 85%;
+        width: 80%;
+    }
+    @media (max-width: 576px) {
+        width: 100%;
     }
 `;
 const ImgHalf = styled.div`

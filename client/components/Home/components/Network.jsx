@@ -2,6 +2,8 @@ import React from "react";
 import { Container } from "reactstrap";
 import styled from "styled-components";
 import LazyLoad from "react-lazyload";
+import Routing from "./Routing";
+import Pramaster from "./Pramaster";
 
 const Network = () => {
     return (
@@ -38,7 +40,7 @@ const Network = () => {
                         </SubText>
                         <br />
                         <GifWrapper className="banner-space">
-                            <LazyLoad height={200} once={true} placeholder={<img
+                            {/* <LazyLoad height={200} once={true} placeholder={<img
                                     width="1251"
                                     height="409.79"
                                     src="../images/home-page/howitwork-min.png"
@@ -51,7 +53,9 @@ const Network = () => {
                                     // src="https://firebasestorage.googleapis.com/v0/b/image-storage-2f921.appspot.com/o/space_dex.gif?alt=media&token=5631ce05-fb3b-4d8c-825a-f6e1f2db3f00"
                                     alt="space-network"
                                     />
-                            </LazyLoad>
+                            </LazyLoad> */}
+                            <Routing />
+                            {/* <Pramaster /> */}
                         </GifWrapper> 
                         <br />
                         <SubText className="subtext__title">
