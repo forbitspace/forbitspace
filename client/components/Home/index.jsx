@@ -20,11 +20,11 @@ const Index = () => {
             <LazyLoad height={250}>
                 <Banner />
             </LazyLoad>
+            <LazyLoad height={250}>
+                <Network />
+            </LazyLoad>
             <WrapperBackground>
                 <Container>
-                    <LazyLoad height={250}>
-                        <Network />
-                    </LazyLoad>
                     <LazyLoad height={250}>
                         <Planet />
                     </LazyLoad>
@@ -37,8 +37,9 @@ const Index = () => {
                     <LazyLoad height={250}>
                         <LimitOrder />
                     </LazyLoad>
-                    <LazyLoad height={250}></LazyLoad>
-                    <Derivative />
+                    <LazyLoad height={250}>
+                        <Derivative />
+                    </LazyLoad>
                     <LazyLoad height={250}>
                         <SelfCustody />
                     </LazyLoad>
