@@ -150,7 +150,7 @@ export const navContent = [
             //   link: "/token", //../images/pdf/fbs-token-1.pdf
             //   content: "FBS Token",
             //   // outLink: true,
-            //   disable: true,
+            //   disable: false,
             // },
             {
                 link: "/dao",

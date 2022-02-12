@@ -3,12 +3,13 @@ import { Container } from "reactstrap";
 import styled from "styled-components";
 import LazyLoad from "react-lazyload";
 import Routing from "./Routing";
-import Pramaster from "./Pramaster";
+// import Pramaster from "./Pramaster";
 
 const Network = () => {
     return (
+        <>
         <BoxSection>
-            <WrapContainer>
+            <WrapContainer className="container">
                 <WrapContent className="content-space">
                     <WrapImg className="image-space">
                         <ImgHalf className="banner-space">
@@ -39,24 +40,17 @@ const Network = () => {
                              Polygon, Avalanche.
                         </SubText>
                         <br />
-                        <GifWrapper className="banner-space">
-                            {/* <LazyLoad height={200} once={true} placeholder={<img
-                                    width="1251"
-                                    height="409.79"
-                                    src="../images/home-page/howitwork-min.png"
-                                    alt="howitwork-picture"
-                                    />}>
-                                <img
-                                    // src="../images/home-page/network-02.png"
-                                    // src="../images/home-page/banner.png"
-                                    src="../gif/space_dex.gif"
-                                    // src="https://firebasestorage.googleapis.com/v0/b/image-storage-2f921.appspot.com/o/space_dex.gif?alt=media&token=5631ce05-fb3b-4d8c-825a-f6e1f2db3f00"
-                                    alt="space-network"
-                                    />
-                            </LazyLoad> */}
-                            <Routing />
-                            {/* <Pramaster /> */}
-                        </GifWrapper> 
+                    </WrapTitle>
+                </WrapContent>
+            </WrapContainer>
+        </BoxSection>
+            <GifWrapper className="banner-space">
+                <Routing />
+            </GifWrapper> 
+        <BoxSection>
+            <WrapContainer className="container">
+                <WrapContent className="content-space">
+                    <WrapTitle className="title-space">
                         <br />
                         <SubText className="subtext__title">
                             <span>forbitspace</span> connects multiple
@@ -101,6 +95,7 @@ const Network = () => {
                 </WrapContent>
             </WrapContainer>
         </BoxSection>
+        </>
     );
 };
 
@@ -123,13 +118,13 @@ const Text = styled.div`
         text-align: center;
     }
 `;
-const WrapContainer = styled(Container)`
+const WrapContainer = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     gap: 60px;
-    padding: 0%;
+    /* padding: 0%; */
 
     @media (max-width: 768px) {
         gap: 0;
@@ -206,7 +201,9 @@ const ImgHalf = styled.div`
     }
 `;
 const GifWrapper = styled.div`
-    width: 100%;
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
     text-align: center;
     img{
         width: 100%;
