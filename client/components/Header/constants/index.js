@@ -146,12 +146,12 @@ export const navContent = [
         link: "",
         nav: "Governance",
         contents: [
-            {
-              link: "/token", //../images/pdf/fbs-token-1.pdf
-              content: "FBS Token",
-              // outLink: true,
-              disable: false,
-            },
+            // {
+            //   link: "/token", //../images/pdf/fbs-token-1.pdf
+            //   content: "FBS Token",
+            //   // outLink: true,
+            //   disable: false,
+            // },
             {
                 link: "/dao",
                 content: "Space Dao",
