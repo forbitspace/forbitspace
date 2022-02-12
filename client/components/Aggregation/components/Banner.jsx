@@ -9,7 +9,14 @@ const Banner = () => {
             <WrapContainer>
                 <WrapImg>
                     <ImgHalf>
-                        <LazyLoad height={400} once={true}>
+                        <LazyLoad height={400} once={true} placeholder = {
+                            <img
+                                width="1251"
+                                height="409.79"
+                                src="../images/aggregation-page/aggregation-banner.png"
+                                alt="aggregation-picture"
+                            />
+                        }>
                             {/* <img
                                 src="../gif/gif_aggregation-protocol.gif"
                                 alt="aggregation-protocols"
