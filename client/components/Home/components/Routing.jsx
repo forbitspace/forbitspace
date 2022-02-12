@@ -104,18 +104,18 @@ const SlideShow = styled.div`
     @media (max-width: 1250px){
         max-width: 380px;
     }
-    @media (max-width: 1024px){
+    /* @media (max-width: 1024px){
         max-width: 320px;
     }
     @media (max-width: 768px){
         max-width: 240px;
-    }
+    } */
     /* @media (max-width: 690px){
         max-width: 200px;
-    }
-    @media (max-width: 576px){
-        max-width: 400px;
     } */
+    @media (max-width: 576px){
+        max-width: 300px;
+    }
 `
 const Slider = styled.div`
     width: 100%;
@@ -125,7 +125,7 @@ const Slider = styled.div`
     top: 0;
     transform: translateZ(-180px);
     transform-style: preserve-3d;
-    animation: spin3d linear 50s infinite;
+    animation: spin3d linear 70s infinite;
 
     @keyframes spin3d {
         0% {
@@ -174,7 +174,7 @@ const Slide = styled.div`
             max-width: 380px;
         }
     }
-    @media (max-width: 1024px){
+    /* @media (max-width: 1024px){
         img{
             max-width: 320px;
         }
@@ -183,72 +183,72 @@ const Slide = styled.div`
         img{
             max-width: 240px;
         }
-    }
+    } */
     /* @media (max-width: 690px){
         img{
             max-width: 200px;
         }
-    }
+    } */
     @media (max-width: 576px){
         img{
-            max-width: 400px;
+            max-width: 300px;
         }
-    } */
+    }
 
     ${getAnimations()}
 
     :nth-child(1) {
-        animation: move1 linear infinite 50s;
-        transform: rotateY(   0deg) translateZ(1215px);
+        animation: move1 linear infinite 70s;
+        transform: rotateY(   0deg) translateZ(1415px);
         @keyframes move1 {
             ${animation1(1, 1, 7, 8)}
         }
     }
     :nth-child(2) {
-        animation: move2 linear infinite 50s;
-        transform: rotateY(  45deg) translateZ(1215px);
+        animation: move2 linear infinite 70s;
+        transform: rotateY(  45deg) translateZ(1415px);
         @keyframes move2 {
             ${animation1(0, 2, 8, 1)}
         }
     }
     :nth-child(3) {
-        animation: move3 linear infinite 50s;
-        transform: rotateY(  90deg) translateZ(1215px);
+        animation: move3 linear infinite 70s;
+        transform: rotateY(  90deg) translateZ(1415px);
         @keyframes move3 {
             ${animation1(0, 1, 3, 2)}
         }
     }
     :nth-child(4) {
-        animation: move4 linear infinite 50s;
-        transform: rotateY( 135deg) translateZ(1215px);
+        animation: move4 linear infinite 70s;
+        transform: rotateY( 135deg) translateZ(1415px);
         @keyframes move4 {
             ${animation1(0, 2, 4, 3)}
         }
     }
     :nth-child(5) {
-        animation: move5 linear infinite 50s;
-        transform: rotateY( 180deg) translateZ(1215px);
+        animation: move5 linear infinite 70s;
+        transform: rotateY( 180deg) translateZ(1415px);
         @keyframes move5 {
             ${animation1(0, 3, 5, 4)}
         }
     }
     :nth-child(6) {
-        animation: move6 linear infinite 50s;
-        transform: rotateY( 225deg) translateZ(1215px);
+        animation: move6 linear infinite 70s;
+        transform: rotateY( 225deg) translateZ(1415px);
         @keyframes move6 {
             ${animation1(0, 4, 6, 5)}
         }
     }
     :nth-child(7) {
-        animation: move7 linear infinite 50s;
-        transform: rotateY( 270deg) translateZ(1215px);
+        animation: move7 linear infinite 70s;
+        transform: rotateY( 270deg) translateZ(1415px);
         @keyframes move7 {
             ${animation1(0, 5, 7, 6)}
         }
     }
     :nth-child(8) {
-        animation: move8 linear infinite 50s;
-        transform: rotateY( 315deg) translateZ(1215px);
+        animation: move8 linear infinite 70s;
+        transform: rotateY( 315deg) translateZ(1415px);
         @keyframes move8 {
             ${animation1(0, 6, 8, 7)}
         }
@@ -263,6 +263,16 @@ const Slide = styled.div`
     &:nth-child(7) { transform: rotateY( 270deg) translateZ(955px); }
     &:nth-child(8) { transform: rotateY( 315deg) translateZ(955px); } */
     @media (max-width: 1800px){
+        &:nth-child(1) { transform: rotateY(   0deg) translateZ(1125px); }
+        &:nth-child(2) { transform: rotateY(  45deg) translateZ(1125px); }
+        &:nth-child(3) { transform: rotateY(  90deg) translateZ(1125px); }
+        &:nth-child(4) { transform: rotateY( 135deg) translateZ(1125px); }
+        &:nth-child(5) { transform: rotateY( 180deg) translateZ(1125px); }
+        &:nth-child(6) { transform: rotateY( 225deg) translateZ(1125px); }
+        &:nth-child(7) { transform: rotateY( 270deg) translateZ(1125px); }
+        &:nth-child(8) { transform: rotateY( 315deg) translateZ(1125px); }
+    }
+    @media (max-width: 1500px){
         &:nth-child(1) { transform: rotateY(   0deg) translateZ(865px); }
         &:nth-child(2) { transform: rotateY(  45deg) translateZ(865px); }
         &:nth-child(3) { transform: rotateY(  90deg) translateZ(865px); }
@@ -271,16 +281,6 @@ const Slide = styled.div`
         &:nth-child(6) { transform: rotateY( 225deg) translateZ(865px); }
         &:nth-child(7) { transform: rotateY( 270deg) translateZ(865px); }
         &:nth-child(8) { transform: rotateY( 315deg) translateZ(865px); }
-    }
-    @media (max-width: 1500px){
-        &:nth-child(1) { transform: rotateY(   0deg) translateZ(665px); }
-        &:nth-child(2) { transform: rotateY(  45deg) translateZ(665px); }
-        &:nth-child(3) { transform: rotateY(  90deg) translateZ(665px); }
-        &:nth-child(4) { transform: rotateY( 135deg) translateZ(665px); }
-        &:nth-child(5) { transform: rotateY( 180deg) translateZ(665px); }
-        &:nth-child(6) { transform: rotateY( 225deg) translateZ(665px); }
-        &:nth-child(7) { transform: rotateY( 270deg) translateZ(665px); }
-        &:nth-child(8) { transform: rotateY( 315deg) translateZ(665px); }
     }
     /* @media (max-width: 1375px){
         &:nth-child(1) { transform: rotateY(   0deg) translateZ(525px); }
