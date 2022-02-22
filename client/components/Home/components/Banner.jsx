@@ -5,29 +5,35 @@ import LazyLoad from "react-lazyload";
 
 const Banner = () => {
     const [num, setNum] = useState(0);
-    
+
     useEffect(() => {
         const myInterval = setInterval(() => {
-            if(num < 4){
-                setNum(num+1);
-            }else{
+            if (num < 4) {
+                setNum(num + 1);
+            } else {
                 setNum(0);
             }
         }, 1000);
-        return (() => {
+        return () => {
             clearInterval(myInterval);
-        })
-    })
+        };
+    });
     // console.log('num ----->', num);
     return (
         <BoxSection>
             <WrapImgBanner>
-                <LazyLoad height={400} once={true} placeholder={<img
-                        width="1251"
-                        height="409.79"
-                        src="../images/network-banner.png"
-                        alt="banner-picture"
-                    />}>
+                <LazyLoad
+                    height={400}
+                    once={true}
+                    placeholder={
+                        <img
+                            width="1251"
+                            height="409.79"
+                            src="../images/network-banner.png"
+                            alt="banner-picture"
+                        />
+                    }
+                >
                     <img
                         width="1251"
                         height="409.79"
@@ -62,7 +68,7 @@ const Banner = () => {
                         traders to tap deep liquidity and receive better pricing
                         one single interface.
                     </SubText>
-                <ButtonBanner
+                    <ButtonBanner
                         href="https://app.forbitspace.com/"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -96,7 +102,7 @@ const WrapImgBanner = styled.div`
     height: auto;
     max-width: 100%;
     margin-bottom: -20px;
-    .lazyload-wrapper{
+    .lazyload-wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -144,7 +150,6 @@ const Title = styled.h2`
 const SubText = styled.p`
     font-size: 22px;
     font-weight: 300;
-    /* font-family: sans-serif; */
     line-height: 1.2;
     margin-left: 25%;
     span {
