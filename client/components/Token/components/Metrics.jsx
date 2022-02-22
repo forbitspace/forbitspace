@@ -22,35 +22,55 @@ const Metrics = () => {
                     <p className="header">Contract</p>
                     <p className="title">• ERC20:</p>
                     <p className="content link">
-                        <a href="https://etherscan.io/token/0xa953736904e23fafb42e353d4122420899999999">
+                        <a
+                            href="https://etherscan.io/token/0xa953736904e23fafb42e353d4122420899999999"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             https://etherscan.io/token/0xa953736904e23fafb42e353d4122420899999999
                         </a>
                         <br />
                     </p>
                     <p className="title">• Bep20:</p>
                     <p className="content link">
-                        <a href="https://bscscan.com/token/0xA953736904e23Fafb42e353D4122420899999999">
+                        <a
+                            href="https://bscscan.com/token/0xA953736904e23Fafb42e353D4122420899999999"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             https://bscscan.com/token/0xA953736904e23Fafb42e353D4122420899999999
                         </a>
                         <br />
                     </p>
                     <p className="title">• SLP:</p>
                     <p className="content link">
-                        <a href="https://solanabeach.io/address/Hwv5ecNoHv5kNnQ2ungWN6PSq1pMq89McysSQtiELTTH">
+                        <a
+                            href="https://solanabeach.io/address/Hwv5ecNoHv5kNnQ2ungWN6PSq1pMq89McysSQtiELTTH"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             https://solanabeach.io/address/Hwv5ecNoHv5kNnQ2ungWN6PSq1pMq89McysSQtiELTTH
                         </a>
                         <br />
                     </p>
                     <p className="title">• Polygon:</p>
                     <p className="content link">
-                        <a href="https://polygonscan.com/token/0xA953736904e23Fafb42e353D4122420899999999">
+                        <a
+                            href="https://polygonscan.com/token/0xA953736904e23Fafb42e353D4122420899999999"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             https://polygonscan.com/token/0xA953736904e23Fafb42e353D4122420899999999
                         </a>
                         <br />
                     </p>
                     <p className="title">• Avalanche:</p>
                     <p className="content link">
-                        <a href="https://snowtrace.io/address/0xA953736904e23Fafb42e353D4122420899999999">
+                        <a
+                            href="https://snowtrace.io/address/0xA953736904e23Fafb42e353D4122420899999999"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             https://snowtrace.io/address/0xA953736904e23Fafb42e353D4122420899999999
                         </a>
                         <br />
