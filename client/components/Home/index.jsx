@@ -12,13 +12,13 @@ import System from "./components/System";
 import Partners from "./components/Partners";
 import Network from "./components/Network";
 import LazyLoad from "react-lazyload";
-// import FlybyBanner from "../FlybyBanner/FlybyBanner";
+import FlybyBanner from "../FlybyBanner/FlybyBanner";
 // import ChristmasAnimation from "../ChristmasAnimation";
 
 const Index = () => {
     return (
         <React.Fragment>
-            {/* <FlybyBanner /> */}
+            <FlybyBanner />
             <LazyLoad height={250}>
                 <Banner />
             </LazyLoad>
