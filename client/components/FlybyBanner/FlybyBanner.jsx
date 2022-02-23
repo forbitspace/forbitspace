@@ -9,25 +9,35 @@ const FlybyBanner = () => {
         <Wrapper>
             <GlobalStyle />
             <Content>
+                <img
+                    src="../images/icons/close-icon.svg"
+                    alt="close icon"
+                    className="close-icon"
+                    onClick={() => setActive(false)}
+                />
                 <a
                     href="https://flyby.forbitswap.com/#/live"
                     target="_blank"
                     rel="noreferrer"
                     className="box"
                 >
-                    <img
-                        src={flyby_rocket}
-                        alt="join background"
-                        className="join-bg"
-                    />
-                    <PointWrap>
-                        <div className="point a" />
-                        <div className="b">
-                            <span className="">IDO</span>
-                        </div>
-                        <div className="point c" />
-                    </PointWrap>
-                    <div className="title ">flyby Launchpad</div>
+                    <WrapImage>
+                        <img
+                            src={flyby_rocket}
+                            alt="join background"
+                            className="join-bg"
+                        />
+                        <PointWrap>
+                            <div className="point a" />
+                            <div className="b">
+                                <span className="">IDO</span>
+                            </div>
+                            <div className="point c" />
+                        </PointWrap>
+                    </WrapImage>
+                    <div className="title ">
+                        flyby Launchpad <span className="button">Join</span>
+                    </div>
                 </a>
             </Content>
             <BlurDiv onClick={() => setActive(false)} />
@@ -63,18 +73,47 @@ const Wrapper = styled.div`
 const Content = styled.div`
     width: 50vw;
     height: fit-content;
-    max-width: 280px;
+    max-width: 480px;
     /* padding: 1rem; */
     display: flex;
     align-items: flex-start;
     position: relative;
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
     .title {
         font-style: italic;
         font-size: 24px;
-        position: absolute;
+        margin-left: 3rem;
+        /* position: absolute;
         left: 118%;
-        top: 40%;
+        top: 40%; */
         white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .button {
+        font-size: 20px;
+        padding: 6px 22px;
+        border: 2px solid white;
+        border-radius: 14px;
+        margin-top: 1rem;
+        background-image: linear-gradient(
+            38deg,
+            rgb(0, 255, 54) -10%,
+            rgb(0, 238, 87) 3%,
+            rgb(0, 197, 173) 32%,
+            rgb(0, 164, 241) 53%,
+            rgb(11, 24, 252) 102%,
+            rgb(13, 0, 255) 111%
+        );
+        overflow: hidden;
+        background-size: 200%;
+        background-position: 99% center;
     }
     .text-decor {
         font-weight: 500;
@@ -92,6 +131,13 @@ const Content = styled.div`
         -webkit-text-fill-color: transparent;
         animation: text-run 5s infinite linear;
     }
+    .close-icon {
+        width: 18px;
+        position: absolute;
+        top: -18px;
+        right: 0px;
+        cursor: pointer;
+    }
     @keyframes text-run {
         from {
             /* right: -120%; */
@@ -103,18 +149,33 @@ const Content = styled.div`
         }
     }
     @media (max-width: 800px) {
+        max-width: 280px;
+        .box {
+            flex-direction: column-reverse;
+        }
         .title {
             font-size: 18px;
+            margin-left: 0;
+            margin-bottom: 2rem;
+        }
+        .close-icon {
+            top: -25px;
+            right: -25px;
         }
     }
     @media (max-width: 676px) {
+        max-width: 220px;
         .title {
-            font-size: 22px;
-            top: 120%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            font-size: 20px;
+        }
+        .button {
+            font-size: 16px;
         }
     }
+`;
+
+const WrapImage = styled.div`
+    position: relative;
 `;
 const PointWrap = styled.div`
     position: absolute;
