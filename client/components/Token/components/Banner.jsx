@@ -10,7 +10,10 @@ const Banner = () => {
             </Content>
             <WrapContainer>
                 <WrapImg>
-                    <img src="../images/token-page/token-banner.png" alt="" />
+                    <img
+                        src="../images/token-page/token-banner-min.png"
+                        alt=""
+                    />
                 </WrapImg>
                 <WrapLogo>
                     <img src="../images/token-page/logo-full-gray.png" alt="" />
