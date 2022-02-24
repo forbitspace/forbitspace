@@ -56,7 +56,7 @@ const Schedules = () => {
                         •
                         <span className="title-line">
                             {" "}
-                            Liquidity mining Incentives:
+                            Liquidity Mining Incentives:
                         </span>{" "}
                         <span className="forbitspace">forbitspace</span>'s
                         protocols multi-chain incorporates a liquidity mining
@@ -112,7 +112,7 @@ const Schedules = () => {
                         <span className="forbitspace">FBS</span>.
                     </p>
                     <p className="content">
-                        • <span className="title-line">Utility holders:</span>{" "}
+                        • <span className="title-line">Utility Holders:</span>{" "}
                         <span className="forbitspace">FBS</span> token holders
                         can participate in an auction with options such as
                         Crowdsale, Dutch & Batch auction on Flyby IDO Launchpad
