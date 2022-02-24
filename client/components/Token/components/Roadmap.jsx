@@ -30,7 +30,7 @@ const RoadMap = () => {
                         industry's fastest smart contracts platform, which is
                         blazingly fast, low-cost, and eco friendly.
                     </p>
-                    <p className="header">Our Road map</p>
+                    <p className="header">Our Roadmap</p>
                 </Text>
                 <WrapImg>
                     <img
