@@ -30,7 +30,7 @@ const RoadMap = () => {
                         industry's fastest smart contracts platform, which is
                         blazingly fast, low-cost, and eco friendly.
                     </p>
-                    <p className="header">Our Road map</p>
+                    <p className="header">Our Roadmap</p>
                 </Text>
                 <WrapImg>
                     <img
@@ -124,8 +124,8 @@ const Text = styled.div`
     .header {
         font-size: 28px;
         font-weight: bold;
-        margin: 12px 0;
-        font-style: italic;
+        margin: 2rem 0 1rem;
+        /* font-style: italic; */
     }
     .title {
         font-size: 23px;

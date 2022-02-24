@@ -46,9 +46,7 @@ const Allocation = () => {
                         protocol and ecosystem at the expense of passive{" "}
                         <span className="forbitspace">FBS</span> holders.
                     </p>
-                    <p className="content">• 10,0% Network growth funds.</p>
-                    <p className="content">• 5,0% Strategic Sale IDO.</p>
-                    <p className="title">Token distribution</p>
+                    <p className="header">Token unlock schedule</p>
                     <p className="content">
                         IEO funding for the liquidity provider protocol was
                         unlocked with a 10% network expansion fund of tokens
@@ -81,12 +79,12 @@ const Text = styled.div`
         font-size: 28px;
         font-weight: bold;
         margin: 12px 0;
-        font-style: italic;
+        /* font-style: italic; */
     }
     .title {
         font-size: 23px;
-        margin: 6px 0;
-        font-style: italic;
+        margin: 16px 0 6px;
+        /* font-style: italic; */
     }
     .content {
         font-size: 22px;
@@ -97,6 +95,9 @@ const Text = styled.div`
     @media (max-width: 576px) {
         .header {
             font-size: 22px;
+        }
+        .title {
+            font-size: 20px;
         }
         .content {
             text-align: left;
