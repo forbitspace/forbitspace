@@ -37,19 +37,27 @@ const Schedules = () => {
                     />
                 </WrapImg>
                 <Text>
-                    <p className="header">
+                    <p className="header italic">
                         FBS is the native utility token of the platform and is
                         used in the following functions:
                     </p>
                     <p className="content">
-                        • Protocol Governance: The{" "}
-                        <span className="forbitspace">FBS</span> token holders
-                        can submit and vote on network governance proposals in
-                        futures protocol, exchange parameters, and protocol
-                        upgrades via a DAO structure.
+                        •
+                        <span className="title-line" className="title-line">
+                            {" "}
+                            Protocol Governance:
+                        </span>{" "}
+                        The <span className="forbitspace">FBS</span> token
+                        holders can submit and vote on network governance
+                        proposals in futures protocol, exchange parameters, and
+                        protocol upgrades via a DAO structure.
                     </p>
                     <p className="content">
-                        • Liquidity mining Incentives:{" "}
+                        •
+                        <span className="title-line">
+                            {" "}
+                            Liquidity mining Incentives:
+                        </span>{" "}
                         <span className="forbitspace">forbitspace</span>'s
                         protocols multi-chain incorporates a liquidity mining
                         scheme and distributes a fixed number of{" "}
@@ -62,21 +70,28 @@ const Schedules = () => {
                         protocol.
                     </p>
                     <p className="content">
-                        • Protocol Incentivization: Users can earn{" "}
-                        <span className="forbitspace">FBS</span> tokens as
-                        rewards based on their trading volume on the{" "}
+                        •{" "}
+                        <span className="title-line">
+                            Protocol Incentivization:
+                        </span>{" "}
+                        Users can earn <span className="forbitspace">FBS</span>{" "}
+                        tokens as rewards based on their trading volume on the{" "}
                         <span className="forbitspace">FBS</span> platform.
                     </p>
                     <p className="content">
-                        • Staking: Users can stake{" "}
-                        <span className="forbitspace">FBS</span> tokens to the
-                        Safety Module to earn staking rewards in{" "}
+                        • <span className="title-line">Staking:</span> Users can
+                        stake <span className="forbitspace">FBS</span> tokens to
+                        the Safety Module to earn staking rewards in{" "}
                         <span className="forbitspace">FBS</span> tokens. Note
                         that staked <span className="forbitspace">FBS</span>{" "}
                         will balance by the following time.
                     </p>
                     <p className="content">
-                        • Collateral Backing for Derivatives:{" "}
+                        •
+                        <span className="title-line">
+                            {" "}
+                            Collateral Backing for Derivatives:
+                        </span>{" "}
                         <span className="forbitspace">FBS</span> will be
                         utilized as an alternative to stablecoins as margin and
                         collateral for{" "}
@@ -85,20 +100,22 @@ const Schedules = () => {
                         <span className="forbitspace">FBS</span> can also be
                         used for collateral backing or insurance pool staking
                         where stakes can earn interest on their locked tokens.
-                        <br />
-                        <br />
                     </p>
                     <p className="content">
-                        Platform Service Fees: After the relayer reward
-                        distribution, the exchange platform fee will undergo an
-                        on-chain buy-back-and-burn event to accrue value for{" "}
-                        <span className="forbitspace">FBS</span>
+                        •{" "}
+                        <span className="title-line">
+                            Platform Service Fees:
+                        </span>{" "}
+                        After the relayer reward distribution, the exchange
+                        platform fee will undergo an on-chain buy-back-and-burn
+                        event to accrue value for{" "}
+                        <span className="forbitspace">FBS</span>.
                     </p>
                     <p className="content">
-                        Utility holders:{" "}
+                        • <span className="title-line">Utility holders:</span>{" "}
                         <span className="forbitspace">FBS</span> token holders
                         can participate in an auction with options such as
-                        Crowdsale, Dutch & Batch auction on Flyby IDO launchpad
+                        Crowdsale, Dutch & Batch auction on Flyby IDO Launchpad
                         - a multi-chain platform, and NFTs Space.
                     </p>
                 </Text>
@@ -126,10 +143,17 @@ const Text = styled.div`
         margin: 12px 0;
         /* font-style: italic; */
     }
+    .italic {
+        font-style: italic;
+    }
     .title {
         font-size: 23px;
         margin: 6px 0;
+        font-weight: bold;
         /* font-style: italic; */
+    }
+    .title-line {
+        font-weight: bold;
     }
     .content {
         font-size: 22px;
