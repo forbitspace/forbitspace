@@ -59,7 +59,10 @@ const Highlights = () => {
                     </p>
                     <p className="title">• Self-custody</p>
                     <p className="content">
-                        - Our vision:{" "}
+                        Our app is built on decentralized crypto for customers
+                        to do self-custody of their crypto in the main{" "}
+                        <span className="forbitspace">forbitspace</span> app.
+                        {/* - Our vision:{" "}
                         <span className="forbitspace">forbitspace</span> sees
                         crypto quickly mature to the trading of thousands of new
                         assets and the adoption of new use cases, including
@@ -67,12 +70,15 @@ const Highlights = () => {
                         decentralized autonomous organizations (DAOs), and more.
                         Our app is built on decentralized crypto for customers
                         to do self-custody of their crypto in the main{" "}
-                        <span className="forbitspace">forbitspace</span> app.
-                        <br /> <br />- Space DAO:{" "}
+                        <span className="forbitspace">forbitspace</span> app. */}
+                    </p>
+
+                    <p className="title">• Space DAO</p>
+                    <p className="content">
                         <span className="forbitspace">forbitspace</span>{" "}
                         protocols integrate decentralized autonomous
                         organizations (DAOs) into protocols to facilitate
-                        decentralized blockchain governance. Space DAOs utilizes
+                        decentralized blockchain governance. Space DAO utilizes
                         blockchain-based tokens to represent voting rights. As a
                         result, only token holders can participate in network
                         governance. These smart contracts can greatly reduce —
@@ -118,7 +124,7 @@ const Highlights = () => {
                     </p>
                     <p className="sub content">
                         <img src="../images/icons/star.svg" alt="star icon" />{" "}
-                        flyby IDO platform Launching multiple chains
+                        flyby IDO Launchpad — a multi-chain platform
                     </p>
                 </Text>
             </WrapContainer>

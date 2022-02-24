@@ -37,11 +37,11 @@ const Introduction = () => {
                         <br />
                         <br />
                         <span className="forbitspace">forbitspace</span> DEX
-                        Super Aggregator uses a Spaceflight algorithm smart
-                        order routing to split a single transaction into
-                        multiple orders across various DEXs, also route orders
-                        through allowing crypto traders to tap deep liquidity
-                        and receive better pricing, low cost & efficiency in the
+                        Super Aggregator uses Spaceflight algorithm smart order
+                        routing to split a single transaction into multiple
+                        orders across various DEXs, also routes orders through
+                        allowing crypto traders to tap deep liquidity and
+                        receive better pricing, low cost & efficiency in the
                         most of liquidity.
                     </p>
                 </Text>

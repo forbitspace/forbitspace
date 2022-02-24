@@ -9,7 +9,7 @@ const RoadMap = () => {
                 <Text>
                     <p className="content">
                         <span className="forbitspace">forbitspace</span> DEX
-                        super aggregator successfully solves one of the
+                        Super Aggregator successfully solves one of the
                         disjointed liquidity that is inherent in decentralized
                         exchanges’ biggest issues — liquidity — by sourcing it
                         through the aggregation of many leading DEXs – at the
@@ -28,7 +28,7 @@ const RoadMap = () => {
                         users access to hundreds of new assets, a secure,
                         easy-to-use decentralized exchange, and the blockchain
                         industry's fastest smart contracts platform, which is
-                        blazingly fast, low-cost, and eco friendly.
+                        blazingly fast, low-cost, and eco-friendly.
                     </p>
                     <p className="header">Our Roadmap</p>
                 </Text>
@@ -68,6 +68,7 @@ const RoadMap = () => {
                         Telegram
                     </a>
                     <a
+                        // href="https://discord.com/invite/forbitspace"
                         href="https://discord.com/invite/forbitspace"
                         target="_blank"
                         rel="noreferrer"
