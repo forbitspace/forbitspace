@@ -9,7 +9,7 @@ const BallonCrypto = () => {
                 <WrapText>
                     <Text>What We Do</Text>
                     <SubText>
-                        “We believe that crypto is just getting started. We have
+                        We believe that crypto is just getting started. We have
                         an optimistic view of the future and believe in crypto’s
                         potential and the use of the blockchain as the main
                         underlying technology.

@@ -118,7 +118,7 @@ const Highlights = () => {
                     </p>
                     <p className="sub content">
                         <img src="../images/icons/star.svg" alt="star icon" />{" "}
-                        flyby IDO platform Launching multiple chains.
+                        flyby IDO platform Launching multiple chains
                     </p>
                 </Text>
             </WrapContainer>
@@ -149,14 +149,15 @@ const Text = styled.div`
         font-size: 28px;
         font-weight: bold;
         margin: 12px 0;
-        font-style: italic;
+        /* font-style: italic; */
     }
     .title {
         font-size: 23px;
-        margin: 6px 0;
-        font-style: italic;
+        margin: 2rem 0 1rem;
+        /* font-style: italic; */
     }
     .dex {
+        font-size: 23px;
         margin-bottom: 1rem;
         font-weight: 500;
         font-style: italic;
@@ -179,8 +180,19 @@ const Text = styled.div`
         }
     }
     @media (max-width: 576px) {
+        .key {
+            font-size: 24px;
+            margin: 1rem 0;
+        }
         .header {
             font-size: 22px;
+        }
+        .dex {
+            font-size: 20px;
+        }
+        .title {
+            font-size: 20px;
+            margin: 1rem 0;
         }
         .content {
             text-align: left;

@@ -7,10 +7,7 @@ const Schedules = () => {
         <BoxSection>
             <WrapContainer>
                 <Text>
-                    <p className="header">
-                        <span className="forbitspace">FBS</span> Token Release
-                        schedule
-                    </p>
+                    <p className="header">FBS Token Release schedule</p>
                 </Text>
                 <WrapImg>
                     <img
@@ -19,10 +16,7 @@ const Schedules = () => {
                     />
                 </WrapImg>
                 <Text>
-                    <p className="header">
-                        <span className="forbitspace">FBS</span> Token Unlock
-                        schedule
-                    </p>
+                    <p className="header">FBS Token Unlock schedule</p>
                 </Text>
                 <WrapImg>
                     <img
@@ -32,9 +26,8 @@ const Schedules = () => {
                 </WrapImg>
                 <Text>
                     <p className="header">
-                        <span className="forbitspace">FBS</span> will vest to
-                        the governance treasury on a continuous basis according
-                        to the following schedule
+                        FBS will vest to the governance treasury on a continuous
+                        basis according to the following schedule
                     </p>
                 </Text>
                 <WrapImg>
@@ -45,9 +38,8 @@ const Schedules = () => {
                 </WrapImg>
                 <Text>
                     <p className="header">
-                        <span className="forbitspace">FBS</span> is the native
-                        utility token of the platform and is used in the
-                        following functions:
+                        FBS is the native utility token of the platform and is
+                        used in the following functions:
                     </p>
                     <p className="content">
                         • Protocol Governance: The{" "}
@@ -132,12 +124,12 @@ const Text = styled.div`
         font-size: 28px;
         font-weight: bold;
         margin: 12px 0;
-        font-style: italic;
+        /* font-style: italic; */
     }
     .title {
         font-size: 23px;
         margin: 6px 0;
-        font-style: italic;
+        /* font-style: italic; */
     }
     .content {
         font-size: 22px;

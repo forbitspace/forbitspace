@@ -7,7 +7,7 @@ const RoadMap = () => {
         <BoxSection>
             <WrapContainer>
                 <Content className="title-banner text-dark text-visi">
-                    <Text>Road map</Text>
+                    <Text>Roadmap</Text>
                 </Content>
                 <WrapImg>
                     <ImgHalf>

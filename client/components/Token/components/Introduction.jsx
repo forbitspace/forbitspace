@@ -11,7 +11,7 @@ const Introduction = () => {
                     {/* <p className="header">Introduction to FBS</p> */}
                     <p className="content">
                         The <span className="forbitspace">forbitspace</span> DEX
-                        super aggregator is an interoperability protocol that
+                        Super Aggregator is an interoperability protocol that
                         unites decentralized applications across disparate
                         blockchains, simultaneously uniting liquidity across
                         chains and making it possible to transact in, out, and

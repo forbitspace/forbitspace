@@ -9,7 +9,7 @@ const Metrics = () => {
                 <Text>
                     <p className="header">Key Metrics</p>
                     <p className="content">
-                        • Token type: Utility Governance and Multi-chain
+                        • Token type: Utility Governance and Multi-chain.
                         <br />
                     </p>
                     <p className="content">
@@ -19,7 +19,7 @@ const Metrics = () => {
                     </p>
                 </Text>
                 <Text className="contract">
-                    <p className="header">Contract</p>
+                    <p className="header">Contract:</p>
                     <p className="title">• ERC20:</p>
                     <p className="content link">
                         <a
@@ -100,6 +100,7 @@ const Text = styled.div`
     line-height: 1.2;
     &.contract {
         overflow: auto;
+        padding: 10px 0;
     }
     .header {
         font-size: 28px;
@@ -118,6 +119,9 @@ const Text = styled.div`
         font-size: 22px;
         font-weight: 300;
         text-align: justify;
+    }
+    .title {
+        font-size: 20px;
     }
     .link {
         padding-left: 1rem;
