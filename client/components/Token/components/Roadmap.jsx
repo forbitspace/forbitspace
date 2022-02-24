@@ -124,8 +124,8 @@ const Text = styled.div`
     .header {
         font-size: 28px;
         font-weight: bold;
-        margin: 12px 0;
-        font-style: italic;
+        margin: 2rem 0 1rem;
+        /* font-style: italic; */
     }
     .title {
         font-size: 23px;
