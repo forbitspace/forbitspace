@@ -136,7 +136,7 @@ const Text = styled.div`
         font-size: 22px;
         font-weight: 300;
         text-align: justify;
-        padding: 5px 0;
+        padding: 15px 0;
     }
     @media (max-width: 576px) {
         .header {
@@ -145,6 +145,7 @@ const Text = styled.div`
         .content {
             text-align: left;
             font-size: 16px;
+            padding: 12px 0;
         }
     }
 `;
