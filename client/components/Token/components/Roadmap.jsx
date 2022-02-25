@@ -69,7 +69,7 @@ const RoadMap = () => {
                     </a>
                     <a
                         // href="https://discord.com/invite/forbitspace"
-                        href="https://discord.com/invite/forbitspace"
+                        href="https://discord.gg/CnJqNa2wfG"
                         target="_blank"
                         rel="noreferrer"
                     >

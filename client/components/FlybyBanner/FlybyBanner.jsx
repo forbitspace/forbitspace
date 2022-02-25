@@ -115,22 +115,6 @@ const Content = styled.div`
         background-size: 200%;
         background-position: 99% center;
     }
-    .text-decor {
-        font-weight: 500;
-        background-image: linear-gradient(
-            -225deg,
-            rgb(124, 249, 91) 0%,
-            rgb(124, 249, 91) 29%,
-            rgb(225, 162, 236) 67%,
-            rgb(248, 116, 255) 100%
-        );
-        background-size: 200% auto;
-        background-clip: text;
-        text-fill-color: transparent;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: text-run 5s infinite linear;
-    }
     .close-icon {
         width: 18px;
         position: absolute;
