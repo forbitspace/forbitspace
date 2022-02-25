@@ -17,7 +17,7 @@ export const DataSocialLinkFooter = [
     },
     {
         // link: "https://discord.com/invite/forbitspace",
-        link: "https://discord.gg/PkCehXfe3t",
+        link: "https://discord.gg/CnJqNa2wfG",
         url: "../images/icon-social-footer/3.svg",
     },
     {
