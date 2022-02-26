@@ -22,22 +22,21 @@ const FlybyBanner = () => {
                     className="box"
                 >
                     <WrapImage>
-                        <img
-                            src={flyby_rocket}
-                            alt="join background"
-                            className="join-bg"
-                        />
-                        <PointWrap>
-                            <div className="point a" />
-                            <div className="b">
-                                <span className="">IDO</span>
-                            </div>
-                            <div className="point c" />
-                        </PointWrap>
+                        <Astronaut>
+                            <img
+                                src="../images/ido-popup/ido-man.png"
+                                alt="join background"
+                                className="join-bg"
+                            />
+                        </Astronaut>
+                        <Banner>
+                            <img
+                                src="../images/ido-popup/ido-logo.png"
+                                alt="join background"
+                                className="join-bg"
+                            />
+                        </Banner>
                     </WrapImage>
-                    <div className="title ">
-                        flyby Launchpad <span className="button">Join</span>
-                    </div>
                 </a>
             </Content>
             <BlurDiv onClick={() => setActive(false)} />
@@ -65,7 +64,6 @@ const Wrapper = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    /* background-color: #00000080; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,87 +71,31 @@ const Wrapper = styled.div`
 const Content = styled.div`
     width: 50vw;
     height: fit-content;
-    max-width: 480px;
-    /* padding: 1rem; */
+    max-width: 380px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    .box {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .title {
-        font-style: italic;
-        font-size: 24px;
-        margin-left: 3rem;
-        /* position: absolute;
-        left: 118%;
-        top: 40%; */
-        white-space: nowrap;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .button {
-        font-size: 20px;
-        padding: 6px 22px;
-        border: 2px solid white;
-        border-radius: 14px;
-        margin-top: 1rem;
-        background-image: linear-gradient(
-            38deg,
-            rgb(0, 255, 54) -10%,
-            rgb(0, 238, 87) 3%,
-            rgb(0, 197, 173) 32%,
-            rgb(0, 164, 241) 53%,
-            rgb(11, 24, 252) 102%,
-            rgb(13, 0, 255) 111%
-        );
-        overflow: hidden;
-        background-size: 200%;
-        background-position: 99% center;
-    }
     .close-icon {
-        width: 18px;
+        width: 20px;
         position: absolute;
-        top: -18px;
+        top: -100px;
         right: 0px;
         cursor: pointer;
+        opacity: 0.3;
     }
-    @keyframes text-run {
-        from {
-            /* right: -120%; */
-            background-position: 0 center;
-        }
-        to {
-            /* right: 120%; */
-            background-position: -200% center;
+    :hover {
+        .close-icon {
+            opacity: 0.8;
         }
     }
     @media (max-width: 800px) {
+        transform: scale(0.7);
         max-width: 280px;
-        .box {
-            flex-direction: column-reverse;
-        }
-        .title {
-            font-size: 18px;
-            margin-left: 0;
-            margin-bottom: 2rem;
-        }
         .close-icon {
-            top: -25px;
-            right: -25px;
-        }
-    }
-    @media (max-width: 676px) {
-        max-width: 220px;
-        .title {
-            font-size: 20px;
-        }
-        .button {
-            font-size: 16px;
+            width: 24px;
+            top: -105px;
+            right: -75px;
         }
     }
 `;
@@ -161,59 +103,50 @@ const Content = styled.div`
 const WrapImage = styled.div`
     position: relative;
 `;
-const PointWrap = styled.div`
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+const Astronaut = styled.div`
+    /* position: absolute; */
+    width: 220px;
     bottom: 0;
-    animation-name: spin;
-    animation-duration: 15000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    @keyframes spin {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(-360deg);
-        }
-    }
-    @keyframes reverse-spin {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
+    left: 0;
+    z-index: 999;
+    &:hover {
+        cursor: pointer;
     }
 
-    .point {
-        background-color: white;
-        position: absolute;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        transform: translate(-50%, -50%);
+    img {
+        width: 100%;
+        height: auto;
     }
-    .a {
-        top: 2px;
-        left: 50%;
+`;
+
+const Banner = styled.a`
+    position: absolute;
+    bottom: 85%;
+    left: 72%;
+    width: 125px;
+    height: auto;
+    z-index: 999;
+    &:hover {
+        cursor: pointer;
     }
-    .b {
-        font-style: italic;
-        font-size: 24px;
-        position: absolute;
-        top: 50%;
-        left: calc(100% + 2px);
-        animation-name: reverse-spin;
-        animation-duration: 15000ms;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
+
+    img {
+        width: 100%;
+        height: auto;
     }
-    .c {
-        top: calc(92% + 2px);
-        left: 50%;
+    @keyframes popup-scale {
+        0% {
+            opacity: 0;
+        }
+        90% {
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
     }
 `;
 const BlurDiv = styled.div`
