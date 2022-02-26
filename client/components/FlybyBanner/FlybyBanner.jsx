@@ -24,18 +24,18 @@ const FlybyBanner = () => {
                     <WrapImage>
                         <Astronaut>
                             <img
-                                src="../images/ido-popup/ido-man.png"
+                                src="../images/ido-popup/ido-gif"
                                 alt="join background"
                                 className="join-bg"
                             />
                         </Astronaut>
-                        <Banner>
+                        {/* <Banner>
                             <img
                                 src="../images/ido-popup/ido-logo.png"
                                 alt="join background"
                                 className="join-bg"
                             />
-                        </Banner>
+                        </Banner> */}
                     </WrapImage>
                 </a>
             </Content>
@@ -71,7 +71,7 @@ const Wrapper = styled.div`
 const Content = styled.div`
     width: 50vw;
     height: fit-content;
-    max-width: 380px;
+    max-width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,7 +79,7 @@ const Content = styled.div`
     .close-icon {
         width: 20px;
         position: absolute;
-        top: -100px;
+        top: 0px;
         right: 0px;
         cursor: pointer;
         opacity: 0.3;
@@ -94,8 +94,8 @@ const Content = styled.div`
         max-width: 280px;
         .close-icon {
             width: 24px;
-            top: -105px;
-            right: -75px;
+            top: 0px;
+            right: -10px;
         }
     }
 `;
