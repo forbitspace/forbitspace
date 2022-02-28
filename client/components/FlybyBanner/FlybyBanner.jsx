@@ -16,7 +16,7 @@ const FlybyBanner = () => {
                     onClick={() => setActive(false)}
                 />
                 <a
-                    href="https://flyby.forbitswap.com/#/live"
+                    href="https://app.flybylaunchpad.com/#/live"
                     target="_blank"
                     rel="noreferrer"
                     className="box"
