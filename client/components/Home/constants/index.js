@@ -257,6 +257,32 @@ export const EcosystemData = [
         img: "de-bank.svg",
     },
 ];
+export const MediaData = [
+    {
+        img: "benzinga.png",
+        link: "https://www.benzinga.com/pressreleases/22/03/g25956056/forbitspace-dex-super-aggregator-announces-its-launch",
+    },
+    {
+        img: "cointelegraph.png",
+        link: "https://cointelegraph.com/news/dex-super-aggregator-unites-dapps-across-multiple-chains",
+    },
+    {
+        img: "market-watch.png",
+        link: "https://www.marketwatch.com/press-release/forbitspace-dex-super-aggregator-announces-its-launch-2022-03-03",
+    },
+    {
+        img: "yahoo-finance.png",
+        link: "https://finance.yahoo.com/news/forbitspace-dex-super-aggregator-announces-051300887.html",
+    },
+    {
+        img: "yahoo-news.png",
+        link: "https://finance.yahoo.com/news/forbitspace-dex-super-aggregator-announces-051300887.html",
+    },
+    {
+        img: "yahoo-money.png",
+        link: "https://finance.yahoo.com/news/forbitspace-dex-super-aggregator-announces-051300887.html",
+    },
+];
 export const DataSocialLinkFooter = [
     {
         link: "https://twitter.com/forbitspace",
