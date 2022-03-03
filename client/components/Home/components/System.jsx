@@ -1,5 +1,10 @@
 import styled from "styled-components";
-import { AuditData, DataSocialLinkFooter, EcosystemData } from "../constants";
+import {
+    AuditData,
+    DataSocialLinkFooter,
+    EcosystemData,
+    MediaData,
+} from "../constants";
 import LazyLoad from "react-lazyload";
 const System = () => {
     const ContributorRender = ({ data, title }) => {
@@ -28,7 +33,12 @@ const System = () => {
                 <div className="img-content">
                     {data.map((item, index) => (
                         <div className="img-holder" key={index}>
-                            <a href={item.link} target="_blank" rel='noreferrer noreopenner' className="link-to-web">
+                            <a
+                                href={item.link}
+                                target="_blank"
+                                rel="noreferrer noreopenner"
+                                className="link-to-web"
+                            >
                                 <LazyLoad height={45}>
                                     <img
                                         src={`./images/logo-contributor/${item.img}`}
@@ -47,18 +57,45 @@ const System = () => {
             </WrapperInner>
         );
     };
+    const MediaRender = ({ data, title }) => {
+        return (
+            <WrapperInner className="media">
+                <div className="header">{title}</div>
+                <div className="img-content">
+                    {data.map((item, index) => (
+                        <div className="img-holder" key={index}>
+                            <a
+                                href={item.link}
+                                target="_blank"
+                                rel="noreferrer noreopenner"
+                                className="link-to-web"
+                            >
+                                <LazyLoad height={45}>
+                                    <img
+                                        src={`./images/logo-contributor/${item.img}`}
+                                        alt={`logo-${item.img}`}
+                                    />
+                                </LazyLoad>
+                            </a>
+                        </div>
+                    ))}
+                </div>
+            </WrapperInner>
+        );
+    };
 
     return (
         <WrapperSystem>
             <div className="container">
                 <ContributorRender
                     data={EcosystemData}
-                    title={"Ecosystem partners"}
+                    title={"Ecosystem Partners"}
                 />
                 <AuditorRender
                     data={AuditData}
-                    title={"Security Audit Partner"}
+                    title={"Security Audit Partners"}
                 />
+                <MediaRender data={MediaData} title={"Media Partners"} />
                 {/* <ContributorRender data={ContributorData} title={"Stakeholders"} /> */}
                 <BecomeBox>
                     <div className="content">
@@ -108,7 +145,19 @@ const WrapperInner = styled.div`
         .img-content {
             justify-content: center;
             padding: 15px 0 45px;
-            gap: 6rem;
+            /* gap: 6rem; */
+        }
+        .img-holder {
+            margin: 0 2rem;
+        }
+    }
+    &.media {
+        .img-content {
+            justify-content: center;
+            padding: 15px 0 45px;
+        }
+        .img-holder {
+            margin: 0 2rem;
         }
     }
     .header {
@@ -130,8 +179,8 @@ const WrapperInner = styled.div`
         padding: 45px;
         gap: 10px;
 
-        @media (max-width: 767px){
-            gap: 7px;;
+        @media (max-width: 767px) {
+            gap: 7px;
         }
 
         @media (max-width: 576px) {
@@ -148,10 +197,10 @@ const WrapperInner = styled.div`
             width: auto;
             max-height: 65px;
         }
-        .img-hacken {
+        /* .img-hacken {
             margin-left: -2rem;
             padding: 0;
-        }
+        } */
 
         @media (max-width: 945px) {
             width: 22.5%;
@@ -172,11 +221,11 @@ const WrapperInner = styled.div`
     @media (max-width: 1024px) {
         &.auditor {
             .img-content {
-                gap: 2rem;
+                /* gap: 2rem; */
             }
-            .img-hacken {
+            /* .img-hacken {
                 margin-left: 0;
-            }
+            } */
         }
     }
     @media (max-width: 768px) {
@@ -185,15 +234,20 @@ const WrapperInner = styled.div`
                 padding: 10px 0;
             }
             .img-hacken {
-                margin-left: 0;
+                /* margin-left: 0; */
                 width: 100%;
             }
         }
     }
     @media (max-width: 576px) {
         &.auditor {
-            .img-content {
-                gap: 10px;
+            .img-holder {
+                margin: 0;
+            }
+        }
+        &.media {
+            .img-holder {
+                margin: 0;
             }
         }
     }
@@ -231,7 +285,7 @@ const Link = styled.a`
     :hover {
         cursor: pointer;
     }
-    @media (max-width: 576px){
+    @media (max-width: 576px) {
         margin-right: 10px;
     }
 `;
