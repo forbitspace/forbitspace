@@ -111,12 +111,9 @@ const RoadMap = () => {
 
 const BoxSection = styled.section`
     position: relative;
-    font-family: sans-serif;
-    /* min-height: 88vh; */
     padding: 4vh 0 0;
     @media (max-width: 770px) {
         padding-top: 60px;
-        /* min-height: 80vh; */
     }
 `;
 const WrapContainer = styled(Container)``;
@@ -126,32 +123,32 @@ const Text = styled.div`
         font-size: 28px;
         font-weight: bold;
         margin: 2rem 0 1rem;
-        /* font-style: italic; */
     }
     .title {
         font-size: 23px;
         margin: 6px 0;
     }
     .content {
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 300;
         text-align: justify;
         padding: 15px 0;
+        line-height: 1.2;
     }
     @media (max-width: 576px) {
         .header {
-            font-size: 22px;
+            font-size: 18px;
         }
         .content {
             text-align: left;
-            font-size: 16px;
+            font-size: 14px;
             padding: 12px 0;
+            line-height: 1.5;
         }
     }
 `;
 const WrapImg = styled.div`
     width: 100%;
-    /* max-width: 720px; */
     img {
         width: 100%;
         margin: auto;

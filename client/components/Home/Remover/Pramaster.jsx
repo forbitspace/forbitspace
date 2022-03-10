@@ -37,7 +37,7 @@ const DataPra = [
 const Pramaster = () => {
     const renderItem = (element, index) => {
         return (
-            <ItemPra className='item-pra' key={index}>
+            <ItemPra className="item-pra" key={index}>
                 <img src={element.img} />
             </ItemPra>
         );
@@ -46,7 +46,7 @@ const Pramaster = () => {
     return (
         <BoxSection>
             <Container>
-                <GroupPra className='wrapper-pra'>
+                <GroupPra className="wrapper-pra">
                     {DataPra.map((item, index) => renderItem(item, index))}
                 </GroupPra>
             </Container>
@@ -212,7 +212,7 @@ const ItemPra = styled.div`
     }
 
     p {
-        font-size: 16px;
+        font-size: 14px;
         color: #000;
     }
 `;

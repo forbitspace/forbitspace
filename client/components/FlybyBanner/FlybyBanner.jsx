@@ -81,18 +81,20 @@ const Content = styled.div`
         position: absolute;
         top: 0px;
         right: 0px;
-        cursor: pointer;
         opacity: 0.3;
+        z-index: 100;
+        cursor: pointer;
     }
     :hover {
         .close-icon {
-            opacity: 0.8;
+            opacity: 1;
         }
     }
     @media (max-width: 800px) {
         transform: scale(0.7);
         max-width: 280px;
         .close-icon {
+            opacity: 1;
             width: 24px;
             top: 0px;
             right: -10px;
@@ -119,36 +121,6 @@ const Astronaut = styled.div`
     }
 `;
 
-const Banner = styled.a`
-    position: absolute;
-    bottom: 85%;
-    left: 72%;
-    width: 125px;
-    height: auto;
-    z-index: 999;
-    &:hover {
-        cursor: pointer;
-    }
-
-    img {
-        width: 100%;
-        height: auto;
-    }
-    @keyframes popup-scale {
-        0% {
-            opacity: 0;
-        }
-        90% {
-            transform: scale(0);
-            opacity: 0;
-        }
-
-        100% {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-`;
 const BlurDiv = styled.div`
     position: absolute;
     top: 0;

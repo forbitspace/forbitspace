@@ -25,12 +25,9 @@ const Banner = () => {
 
 const BoxSection = styled.section`
     position: relative;
-    font-family: sans-serif;
-    /* min-height: 88vh; */
     padding: 8vh 0 0;
     @media (max-width: 770px) {
         padding-top: 60px;
-        /* min-height: 80vh; */
     }
 `;
 const WrapContainer = styled(Container)`
@@ -56,7 +53,6 @@ const WrapLogo = styled.div`
     }
 `;
 const Content = styled.div`
-    /* margin-left: 80px; */
     text-align: center;
 `;
 const Title = styled.p`
@@ -72,17 +68,6 @@ const Title = styled.p`
         letter-spacing: 1px;
         font-weight: 500;
         line-height: 25px;
-    }
-`;
-const SubText = styled.p`
-    font-size: 22px;
-    font-weight: 300;
-    max-width: 600px;
-    @media (max-width: 768px) {
-        font-size: 14px;
-    }
-    @media (max-width: 576px) {
-        font-size: 16px;
     }
 `;
 

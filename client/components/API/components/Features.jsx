@@ -8,7 +8,10 @@ const Features = () => {
             <WrapContainer>
                 <Content className="title-banner text-dark text-visi">
                     {/* <Title>forbitspace</Title> */}
-                    <Text>Why use <span className="forbitspace">forbitspace</span> API?</Text>
+                    <Text>
+                        Why use <span className="forbitspace">forbitspace</span>{" "}
+                        API?
+                    </Text>
                     <SubText>
                         {/* Users are covered for up to 600 ETH in the event that funds are lost
             during a swap due to an unforeseen bug. */}
@@ -91,13 +94,13 @@ const Text = styled.p`
     }
 `;
 const SubText = styled.p`
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
     @media (max-width: 768px) {
         font-size: 14px;
     }
     @media (max-width: 576px) {
-        font-size: 16px;
+        font-size: 14px;
     }
 `;
 

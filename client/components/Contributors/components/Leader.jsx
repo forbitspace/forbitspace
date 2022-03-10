@@ -281,7 +281,7 @@ const Introduction = styled.div`
         text-align: center;
         .content {
             line-height: 1.5;
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 `;

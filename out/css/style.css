@@ -12,7 +12,8 @@ iframe {
 }
 
 body {
-    font-family: "helvetica neue", sans-serif !important;
+    font-family: 'Montserrat', Roboto, "helvetica neue", serif !important;
+    /* font-family: Montserrat, "helvetica neue", sans-serif !important; */
     font-size: 14px;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -205,4 +206,12 @@ body.dark-mode .link-visi {
 
 body.dark-mode p {
     color: white !important;
+}
+
+/* FONT FORBITSPACE */
+
+.forbitspace{
+    /* font-family: "helvetica neue", sans-serif !important; */
+    font-style: italic !important;
+    font-weight: 900 !important;
 }

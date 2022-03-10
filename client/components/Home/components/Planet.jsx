@@ -117,7 +117,7 @@ const Title = styled.h2`
     }
 `;
 const SubText = styled.p`
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.2;
     padding: 0 0 10px;
@@ -129,7 +129,7 @@ const SubText = styled.p`
         font-size: 14px;
     }
     @media (max-width: 576px) {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.5;
     }
 `;

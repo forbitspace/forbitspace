@@ -108,7 +108,7 @@ const SubText = styled.p`
     }
     @media (max-width: 576px) {
         line-height: 1.5;
-        font-size: 16px;
+        font-size: 14px;
     }
 `;
 export default AboutUs;

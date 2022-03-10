@@ -148,7 +148,7 @@ const Title = styled.h2`
     }
 `;
 const SubText = styled.p`
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.2;
     margin-left: 25%;
@@ -163,7 +163,7 @@ const SubText = styled.p`
         margin-left: 0;
     }
     @media (max-width: 576px) {
-        font-size: 16px;
+        font-size: 14px;
         margin-top: 2rem;
         line-height: 1.5;
     }
@@ -176,7 +176,7 @@ const Text = styled.p`
     letter-spacing: 1px;
     font-style: italic;
     @media (max-width: 576px) {
-        font-size: 16px;
+        font-size: 14px;
         letter-spacing: 1px;
         font-weight: 200;
         line-height: 25px;
