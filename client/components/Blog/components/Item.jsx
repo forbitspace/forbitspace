@@ -46,7 +46,7 @@ const BoxItem = styled.div`
         max-width: 100%;
         height: 73px;
         margin: 0 auto;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 18px;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;

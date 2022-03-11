@@ -9,14 +9,18 @@ const Banner = () => {
             <WrapContainer>
                 <WrapImg>
                     <ImgHalf>
-                        <LazyLoad height={400} once={true} placeholder = {
-                            <img
-                                width="1251"
-                                height="409.79"
-                                src="../images/aggregation-page/aggregation-banner.png"
-                                alt="aggregation-picture"
-                            />
-                        }>
+                        <LazyLoad
+                            height={400}
+                            once={true}
+                            placeholder={
+                                <img
+                                    width="1251"
+                                    height="409.79"
+                                    src="../images/aggregation-page/aggregation-banner.png"
+                                    alt="aggregation-picture"
+                                />
+                            }
+                        >
                             {/* <img
                                 src="../gif/gif_aggregation-protocol.gif"
                                 alt="aggregation-protocols"
@@ -106,7 +110,7 @@ const Text = styled.p`
     }
 `;
 const SubText = styled.p`
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
     text-align: left;
     line-height: 1.2;
@@ -124,7 +128,7 @@ const SubText = styled.p`
     }
     @media (max-width: 576px) {
         line-height: 1.5;
-        font-size: 16px;
+        font-size: 14px;
     }
 `;
 export default Banner;

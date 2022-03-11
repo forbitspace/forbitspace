@@ -97,7 +97,7 @@ const Text = styled.p`
     }
 `;
 const SubText = styled.p`
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
     /* font-family: sans-serif; */
     text-align: right;
@@ -107,12 +107,12 @@ const SubText = styled.p`
         font-weight: 900;
     }
     @media (max-width: 768px) {
-        font-size: 16px;
+        font-size: 14px;
         text-align: center;
     }
     @media (max-width: 576px) {
         line-height: 1.2;
-        font-size: 16px;
+        font-size: 14px;
     }
 `;
 export default Banner;

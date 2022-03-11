@@ -8,93 +8,94 @@ import Routing from "./Routing";
 const Network = () => {
     return (
         <>
-        <BoxSection>
-            <WrapContainer className="container">
-                <WrapContent className="content-space">
-                    <WrapImg className="image-space">
-                        <ImgHalf className="banner-space">
-                            <LazyLoad height={200}>
-                                <img
-                                    // src="../images/home-page/network-02.png"
-                                    src="../images/home-page/banner.png"
-                                    // src="https://firebasestorage.googleapis.com/v0/b/image-storage-2f921.appspot.com/o/space_dex_min.gif?alt=media&token=d7c24d47-8c9b-4ce5-9f76-62683113def6"
-                                    alt="space-network"
-                                />
-                            </LazyLoad>
-                        </ImgHalf>
-                        <WrapperButtonApp>
-                            <ButtonBanner
-                                href="https://app.forbitspace.com/"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                Space Trade
-                            </ButtonBanner>
-                        </WrapperButtonApp>
-                    </WrapImg>{" "}
-                    <WrapTitle className="title-space">
-                        <Text>Spread across Multiple Networks</Text>
-                        <SubText className="subtext__title">
-                            <span>forbitspace</span> aggregator protocol is now
-                            available on Ethereum, Binance Smart Chain<br/> and
-                             Polygon, Avalanche.
-                        </SubText>
-                        <br />
-                    </WrapTitle>
-                </WrapContent>
-            </WrapContainer>
-        </BoxSection>
+            <BoxSection>
+                <WrapContainer className="container">
+                    <WrapContent className="content-space">
+                        <WrapImg className="image-space">
+                            <ImgHalf className="banner-space">
+                                <LazyLoad height={200}>
+                                    <img
+                                        // src="../images/home-page/network-02.png"
+                                        src="../images/home-page/banner.png"
+                                        // src="https://firebasestorage.googleapis.com/v0/b/image-storage-2f921.appspot.com/o/space_dex_min.gif?alt=media&token=d7c24d47-8c9b-4ce5-9f76-62683113def6"
+                                        alt="space-network"
+                                    />
+                                </LazyLoad>
+                            </ImgHalf>
+                            <WrapperButtonApp>
+                                <ButtonBanner
+                                    href="https://app.forbitspace.com/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Space Trade
+                                </ButtonBanner>
+                            </WrapperButtonApp>
+                        </WrapImg>{" "}
+                        <WrapTitle className="title-space">
+                            <Text>Spread across Multiple Networks</Text>
+                            <SubText className="subtext__title">
+                                <span>forbitspace</span> aggregator protocol is
+                                now available on Ethereum, Binance Smart Chain
+                                <br /> and Polygon, Avalanche.
+                            </SubText>
+                            <br />
+                        </WrapTitle>
+                    </WrapContent>
+                </WrapContainer>
+            </BoxSection>
             <GifWrapper className="banner-space">
                 <Routing />
-            </GifWrapper> 
-        <BoxSection>
-            <WrapContainer className="container">
-                <WrapContent className="content-space">
-                    <WrapTitle className="title-space">
-                        <br />
-                        <SubText className="subtext__title">
-                            <span>forbitspace</span> connects multiple
-                            blockchains, making the network’s transaction from
-                            one chain to another seamless becomes that the
-                            additional functionality, usability, and scalability
-                            are blazingly fast, low cost & eco-friendly, brings
-                            is contributes to the benefit of users. <br />{" "}
+            </GifWrapper>
+            <BoxSection>
+                <WrapContainer className="container">
+                    <WrapContent className="content-space">
+                        <WrapTitle className="title-space">
+                            <br />
+                            <SubText className="subtext__title">
+                                <span>forbitspace</span> connects multiple
+                                blockchains, making the network’s transaction
+                                from one chain to another seamless becomes that
+                                the additional functionality, usability, and
+                                scalability are blazingly fast, low cost &
+                                eco-friendly, brings is contributes to the
+                                benefit of users. <br />{" "}
+                            </SubText>
+                        </WrapTitle>
+                    </WrapContent>
+                    <WrapContent>
+                        <SubText className="subtext__content">
+                            The <span>forbitspace</span> DEX super aggregator is
+                            an interoperability protocol that connects disparate
+                            blockchains. That unites decentralized applications
+                            across disparate blockchains, simultaneously uniting
+                            liquidity across chains and making it possible to
+                            transact in, out, and across disparate networks with
+                            ease.
                         </SubText>
-                    </WrapTitle>
-                </WrapContent>
-                <WrapContent>
-                    <SubText className="subtext__content">
-                        The <span>forbitspace</span> DEX super aggregator is an
-                        interoperability protocol that connects disparate
-                        blockchains. That unites decentralized applications
-                        across disparate blockchains, simultaneously uniting
-                        liquidity across chains and making it possible to
-                        transact in, out, and across disparate networks with
-                        ease.
-                    </SubText>
-                    <WrapImg className="img__swap">
-                        <WrapperButtonApp className="btn-swap">
-                            <ButtonBanner
-                                href="https://app.forbitswap.com/#/swap"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="forbitswap"
-                            >
-                                forbitswap
-                            </ButtonBanner>
-                        </WrapperButtonApp>
-                        <ImgHalf>
-                            <LazyLoad height={200}>
-                                <img
-                                    src="../images/home-page/network-01.png"
-                                    alt="swap-network"
-                                />
-                            </LazyLoad>
-                        </ImgHalf>
-                    </WrapImg>
-                </WrapContent>
-            </WrapContainer>
-        </BoxSection>
+                        <WrapImg className="img__swap">
+                            <WrapperButtonApp className="btn-swap">
+                                <ButtonBanner
+                                    href="https://app.forbitswap.com/#/swap"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="forbitswap"
+                                >
+                                    forbitswap
+                                </ButtonBanner>
+                            </WrapperButtonApp>
+                            <ImgHalf>
+                                <LazyLoad height={200}>
+                                    <img
+                                        src="../images/home-page/network-01.png"
+                                        alt="swap-network"
+                                    />
+                                </LazyLoad>
+                            </ImgHalf>
+                        </WrapImg>
+                    </WrapContent>
+                </WrapContainer>
+            </BoxSection>
         </>
     );
 };
@@ -145,16 +146,16 @@ const WrapContent = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    &.content-space{
+    &.content-space {
         flex-direction: column;
         align-items: center;
-        .title-space{
+        .title-space {
             width: 100%;
         }
-        .image-space{
+        .image-space {
             width: 100%;
         }
-        .banner-space{
+        .banner-space {
             width: 100%;
         }
     }
@@ -205,13 +206,13 @@ const GifWrapper = styled.div`
     max-width: 100%;
     overflow: hidden;
     text-align: center;
-    img{
+    img {
         width: 100%;
         max-width: 750px;
     }
-`
+`;
 const SubText = styled.p`
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.2;
     /* width: 60%; */
@@ -232,7 +233,7 @@ const SubText = styled.p`
         text-align: center !important;
     }
     @media (max-width: 576px) {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.5;
         &.subtext__content {
             padding: 0;
@@ -246,13 +247,13 @@ const WrapperButtonApp = styled.div`
     align-items: center;
     justify-content: flex-end;
     text-align: left;
-    &.btn-swap{
+    &.btn-swap {
         justify-content: center;
     }
     @media (max-width: 1200px) {
         /* display: block; */
     }
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
         justify-content: center;
     }
     @media (max-width: 576px) {

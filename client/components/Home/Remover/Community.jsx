@@ -10,7 +10,7 @@ const Community = () => {
             <ItemCom key={index}>
                 <a href={element.link}>
                     <ThumIcon>
-                        <img src={element.icon} alt='' />
+                        <img src={element.icon} alt="" />
                     </ThumIcon>
                 </a>
             </ItemCom>
@@ -20,9 +20,9 @@ const Community = () => {
     return (
         <BoxSection>
             <Container>
-                <div className='groupsuite'>
-                    <Title title='A global community.' />
-                    <DrepSuite className='text-dark'>
+                <div className="groupsuite">
+                    <Title title="A global community." />
+                    <DrepSuite className="text-dark">
                         Learn more about forbitswap, chat with the team, others
                         in the community, and have your say in shaping the
                         future of the forbitswap protocol.
@@ -77,7 +77,7 @@ const ItemCom = styled.div`
 `;
 
 const DrepSuite = styled.p`
-    font-size: 22px;
+    font-size: 18px;
     color: #000;
     margin-bottom: 90px;
     text-align: center;

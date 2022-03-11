@@ -899,6 +899,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       as: "style",
       onLoad: "this.rel='stylesheet'"
     }), __jsx("link", {
+      href: "https://fonts.googleapis.com/css2?family=Montserrat&display=swap",
+      rel: "stylesheet"
+    }), __jsx("link", {
       href: "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,500;1,700&display=swap",
       rel: "stylesheet"
     }), __jsx("link", {
