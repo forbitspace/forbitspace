@@ -109,7 +109,7 @@ const Text = styled.p`
     }
 `;
 const SubText = styled.div`
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 200;
     /* font-family: sans-serif; */
     text-align: right;
@@ -124,7 +124,7 @@ const SubText = styled.div`
     @media (max-width: 768px) {
         line-height: 1.5;
         text-align: center;
-        font-size: 16px;
+        font-size: 14px;
     }
 `;
 export default Banner;

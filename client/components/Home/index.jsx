@@ -59,7 +59,6 @@ const Index = () => {
 };
 const WrapperBackground = styled.div`
     position: relative;
-    font-family: "helvetica neue", "Roboto", sans-serif;
     @media (max-width: 576px) {
         overflow-x: hidden;
     }

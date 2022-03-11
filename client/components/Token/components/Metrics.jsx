@@ -87,12 +87,9 @@ const Metrics = () => {
 
 const BoxSection = styled.section`
     position: relative;
-    font-family: sans-serif;
-    /* min-height: 88vh; */
     padding: 4vh 0 0;
     @media (max-width: 770px) {
         padding-top: 60px;
-        /* min-height: 80vh; */
     }
 `;
 const WrapContainer = styled(Container)``;
@@ -116,25 +113,29 @@ const Text = styled.div`
         font-style: italic;
     }
     .content {
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 300;
         text-align: justify;
+        line-height: 1.2;
     }
     .title {
         font-size: 20px;
     }
     .link {
         padding-left: 1rem;
-        font-size: 22px;
+        font-size: 18px;
     }
     @media (max-width: 576px) {
         .header {
-            font-size: 22px;
+            font-size: 18px;
         }
         .content,
         .link {
             text-align: left;
-            font-size: 16px;
+            font-size: 14px;
+        }
+        .content {
+            line-height: 1.5;
         }
     }
 `;
@@ -146,9 +147,7 @@ const WrapImg = styled.div`
     justify-content: center;
     img {
         width: 100%;
-        /* max-width: 920px; */
         border-radius: 16px;
-        /* margin: auto; */
     }
 `;
 export default Metrics;

@@ -12,10 +12,10 @@ const Suite = () => {
                     <BackgroundItem src={element.background} />
                 </WrapperImg>
                 <WrapperContent>
-                    <TitleSuite className='text-dark text-visi'>
+                    <TitleSuite className="text-dark text-visi">
                         {element.title}
                     </TitleSuite>
-                    <DrepSuite className='text-dark text-visi'>
+                    <DrepSuite className="text-dark text-visi">
                         {element.dreption}
                     </DrepSuite>
                 </WrapperContent>
@@ -26,9 +26,9 @@ const Suite = () => {
     return (
         <BoxSection>
             <Container>
-                <div className='groupsuite'>
-                    <Title title='The decentralized trading Protocol a highly scalable and global ecosystem.' />
-                    <Dreption className='text-dark'>
+                <div className="groupsuite">
+                    <Title title="The decentralized trading Protocol a highly scalable and global ecosystem." />
+                    <Dreption className="text-dark">
                         We build state-of-the-art open-source DeFi applications
                         develop more intuitive user interfaces and simplify to
                         access the forbitswap protocol and contribute to the
@@ -110,7 +110,7 @@ const ThumSuite = styled.p`
 `;
 
 const TitleSuite = styled.h4`
-    font-size: 22px;
+    font-size: 18px;
     color: #fff;
     margin: 0 auto 5px;
     text-align: center;

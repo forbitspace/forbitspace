@@ -99,7 +99,7 @@ const Text = styled.p`
     }
 `;
 const SubText = styled.p`
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.2;
     padding: 10px 0 0;
@@ -108,7 +108,7 @@ const SubText = styled.p`
     }
     @media (max-width: 576px) {
         line-height: 1.5;
-        font-size: 16px;
+        font-size: 14px;
     }
 `;
 

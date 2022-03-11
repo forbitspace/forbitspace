@@ -195,7 +195,6 @@ const WrapperSubmit = styled.form`
     padding: 1rem;
     width: 100%;
     max-width: 650px;
-    /* font-family: sans-serif; */
     font-weight: 400;
     input,
     textarea {
@@ -203,8 +202,9 @@ const WrapperSubmit = styled.form`
         background-color: transparent;
         border: none;
         color: #fff;
+        font-family: "Montserrat", "helvetica neue", sans-serif;
         ::placeholder {
-            font-family: inherit;
+            font-family: "Montserrat", "helvetica neue", sans-serif;
             color: #ffffff8a;
         }
         :focus-visible {
@@ -244,7 +244,7 @@ const WrapperMessage = styled.div`
         word-wrap: break-word;
         word-break: break-all;
         height: 80px;
-        font-family: sans-serif;
+        font-family: "Montserrat", "helvetica neue", sans-serif;
     }
 `;
 const WrapperButton = styled.div`
@@ -262,7 +262,7 @@ const SubmitButton = styled.div`
     height: auto;
     max-width: 160px;
     border-radius: 12px;
-    font: normal 18px/40px "helvetica neue", sans-serif;
+    font: normal 18px/40px "Montserrat", "helvetica neue", sans-serif;
     text-align: center;
     text-decoration: none;
     border: 2px solid #fff;
@@ -356,7 +356,7 @@ const ThankyouMessage = styled.div`
     justify-content: center;
 
     span {
-        font-size: 22px;
+        font-size: 18px;
         width: 100%;
         text-align: center;
         margin: auto;

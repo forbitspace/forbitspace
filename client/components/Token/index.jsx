@@ -26,13 +26,7 @@ const Index = () => {
     );
 };
 const WrapperBackground = styled.div`
-    div,
-    span,
-    p {
-        font-family: "helvetica neue", "Roboto", sans-serif;
-    }
     position: relative;
-    font-family: helvetica neue;
     position: relative;
     overflow-x: hidden;
     background-size: auto;
