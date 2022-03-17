@@ -172,7 +172,7 @@ const WrapperInner = styled.div`
                 transform: scale(0.8);
             }
             .img-song-ngu {
-                transform: scale(1);
+                transform: scale(1.2);
             }
         }
     }

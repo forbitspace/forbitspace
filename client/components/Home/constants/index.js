@@ -316,10 +316,10 @@ export const BankerData = [
         img: "nagaya.png",
     },
     {
-        img: "crypto-spacex.png",
+        img: "song-ngu.png",
     },
     {
-        img: "song-ngu.png",
+        img: "crypto-spacex.png",
     },
     {
         img: "defiaz.png",
