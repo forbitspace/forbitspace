@@ -96,11 +96,10 @@ const Highlights = () => {
                     <p className="content">
                         <span className="forbitspace">forbitswap</span> is a
                         capital-efficient AMM that combines the liquidity on
-                        Ethereum blockchain and Binance Smart Chain with the
-                        scalability of a Layer 2 platform deployed on the
-                        Polygon Network, Avalanche, Arbitrum, and will soon be
-                        functional on other blockchains including Solana and
-                        more.
+                        Ethereum blockchain and BNB Chain with the scalability
+                        of a Layer 2 platform deployed on the Polygon Network,
+                        Avalanche, Arbitrum, and will soon be functional on
+                        other blockchains including Solana and more.
                         <br /> <br />
                         <span className="forbitspace">forbitswap</span> will
                         also work to provide a comprehensive platform for social

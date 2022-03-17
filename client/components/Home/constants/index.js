@@ -185,7 +185,7 @@ export const EcosystemData = [
         img: "eth.svg",
     },
     {
-        img: "binance.svg",
+        img: "bnb-chain.png",
     },
     {
         img: "solana.svg",
@@ -281,6 +281,54 @@ export const MediaData = [
     {
         img: "yahoo-money.png",
         link: "https://finance.yahoo.com/news/forbitspace-dex-super-aggregator-announces-051300887.html",
+    },
+    {
+        img: "amb-crypto.png",
+        link: "#",
+    },
+    // {
+    //     img: "amb-crypto-gray.png",
+    //     link: "#",
+    // },
+    {
+        img: "bsc-news.png",
+        link: "#",
+    },
+    // {
+    //     img: "bsc-news-gray.png",
+    //     link: "#",
+    // },
+    {
+        img: "u-today.png",
+        link: "#",
+    },
+    // {
+    //     img: "u-today-gray.png",
+    //     link: "#",
+    // },
+];
+
+export const BankerData = [
+    {
+        img: "boarc-gray.png",
+    },
+    {
+        img: "nagaya.png",
+    },
+    {
+        img: "crypto-spacex.png",
+    },
+    {
+        img: "song-ngu.png",
+    },
+    {
+        img: "defiaz.png",
+    },
+    {
+        img: "space-defi.png",
+    },
+    {
+        img: "blog-defi.png",
     },
 ];
 export const DataSocialLinkFooter = [

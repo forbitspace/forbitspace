@@ -36,7 +36,7 @@ const Network = () => {
                             <Text>Spread across Multiple Networks</Text>
                             <SubText className="subtext__title">
                                 <span>forbitspace</span> aggregator protocol is
-                                now available on Ethereum, Binance Smart Chain
+                                now available on Ethereum, BNB Chain
                                 <br /> and Polygon, Avalanche.
                             </SubText>
                             <br />

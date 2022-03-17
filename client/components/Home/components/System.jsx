@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {
     AuditData,
+    BankerData,
     DataSocialLinkFooter,
     EcosystemData,
     MediaData,
@@ -73,6 +74,11 @@ const System = () => {
                                 <LazyLoad height={45}>
                                     <img
                                         src={`./images/logo-contributor/${item.img}`}
+                                        className={`img-${
+                                            item.img.split(".")[0]
+                                                ? item.img.split(".")[0]
+                                                : "auditor"
+                                        }`}
                                         alt={`logo-${item.img}`}
                                     />
                                 </LazyLoad>
@@ -89,13 +95,17 @@ const System = () => {
             <div className="container">
                 <ContributorRender
                     data={EcosystemData}
-                    title={"Ecosystem Partners"}
+                    title={"Ecosystem Partnership"}
                 />
                 <AuditorRender
                     data={AuditData}
                     title={"Security Audit Partners"}
                 />
                 <MediaRender data={MediaData} title={"Media Partners"} />
+                <MediaRender
+                    data={BankerData}
+                    title={"Backers and Investors"}
+                />
                 {/* <ContributorRender data={ContributorData} title={"Stakeholders"} /> */}
                 <BecomeBox>
                     <div className="content">
@@ -157,7 +167,13 @@ const WrapperInner = styled.div`
             padding: 15px 0 45px;
         }
         .img-holder {
-            margin: 0 2rem;
+            margin: 0 1rem;
+            img {
+                transform: scale(0.8);
+            }
+            .img-song-ngu {
+                transform: scale(1);
+            }
         }
     }
     .header {
@@ -197,10 +213,6 @@ const WrapperInner = styled.div`
             width: auto;
             max-height: 65px;
         }
-        /* .img-hacken {
-            margin-left: -2rem;
-            padding: 0;
-        } */
 
         @media (max-width: 945px) {
             width: 22.5%;
