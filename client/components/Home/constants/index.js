@@ -294,29 +294,41 @@ export const MediaData = [
         img: "bsc-news.png",
         link: "#",
     },
-    // {
-    //     img: "bsc-news-gray.png",
-    //     link: "#",
-    // },
+    {
+        img: "coin-quora.png",
+        link: "#",
+    },
     {
         img: "u-today.png",
         link: "#",
     },
-    // {
-    //     img: "u-today-gray.png",
-    //     link: "#",
-    // },
+    {
+        img: "crypto-potato.png",
+        link: "#",
+    },
+    {
+        img: "decrypt.png",
+        link: "#",
+    },
+    {
+        img: "blockonomi.png",
+        link: "#",
+    },
+    {
+        img: "coin-pedia.webp",
+        link: "#",
+    },
 ];
 
 export const BankerData = [
+    {
+        img: "song-ngu.png",
+    },
     {
         img: "boarc-gray.png",
     },
     {
         img: "nagaya.png",
-    },
-    {
-        img: "song-ngu.png",
     },
     {
         img: "crypto-spacex.png",

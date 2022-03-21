@@ -106,7 +106,6 @@ const System = () => {
                     data={BankerData}
                     title={"Backers and Investors"}
                 />
-                {/* <ContributorRender data={ContributorData} title={"Stakeholders"} /> */}
                 <BecomeBox>
                     <div className="content">
                         <div className="header-content">Join the community</div>
@@ -155,7 +154,6 @@ const WrapperInner = styled.div`
         .img-content {
             justify-content: center;
             padding: 15px 0 45px;
-            /* gap: 6rem; */
         }
         .img-holder {
             margin: 0 2rem;
@@ -167,12 +165,46 @@ const WrapperInner = styled.div`
             padding: 15px 0 45px;
         }
         .img-holder {
-            margin: 0 1rem;
-            img {
-                transform: scale(0.8);
+            width: 19%;
+            @media (max-width: 945px) {
+                width: 22.5%;
             }
-            .img-song-ngu {
-                transform: scale(1.2);
+
+            @media (max-width: 768px) {
+                width: 32%;
+            }
+
+            @media (max-width: 574px) {
+                width: 45%;
+            }
+        }
+        img {
+            transform: scale(0.85);
+        }
+        .img-song-ngu {
+            margin-left: 50%;
+            transform: translate(-50%) scale(1.2);
+        }
+    }
+    @media (max-width: 768px) {
+        &.auditor {
+            .img-holder {
+                padding: 10px 0;
+            }
+            .img-hacken {
+                width: 100%;
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        &.auditor {
+            .img-holder {
+                margin: 0;
+            }
+        }
+        &.media {
+            .img-holder {
+                margin: 0;
             }
         }
     }
@@ -224,43 +256,6 @@ const WrapperInner = styled.div`
 
         @media (max-width: 574px) {
             width: 45%;
-        }
-
-        /* @media (max-width: 415px) {
-      width: 70%;
-    } */
-    }
-    @media (max-width: 1024px) {
-        &.auditor {
-            .img-content {
-                /* gap: 2rem; */
-            }
-            /* .img-hacken {
-                margin-left: 0;
-            } */
-        }
-    }
-    @media (max-width: 768px) {
-        &.auditor {
-            .img-holder {
-                padding: 10px 0;
-            }
-            .img-hacken {
-                /* margin-left: 0; */
-                width: 100%;
-            }
-        }
-    }
-    @media (max-width: 576px) {
-        &.auditor {
-            .img-holder {
-                margin: 0;
-            }
-        }
-        &.media {
-            .img-holder {
-                margin: 0;
-            }
         }
     }
 `;
