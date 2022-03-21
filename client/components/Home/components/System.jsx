@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {
     AuditData,
+    BankerData,
     DataSocialLinkFooter,
     EcosystemData,
     MediaData,
@@ -73,6 +74,11 @@ const System = () => {
                                 <LazyLoad height={45}>
                                     <img
                                         src={`./images/logo-contributor/${item.img}`}
+                                        className={`img-${
+                                            item.img.split(".")[0]
+                                                ? item.img.split(".")[0]
+                                                : "auditor"
+                                        }`}
                                         alt={`logo-${item.img}`}
                                     />
                                 </LazyLoad>
@@ -89,14 +95,17 @@ const System = () => {
             <div className="container">
                 <ContributorRender
                     data={EcosystemData}
-                    title={"Ecosystem Partners"}
+                    title={"Ecosystem Partnership"}
                 />
                 <AuditorRender
                     data={AuditData}
                     title={"Security Audit Partners"}
                 />
                 <MediaRender data={MediaData} title={"Media Partners"} />
-                {/* <ContributorRender data={ContributorData} title={"Stakeholders"} /> */}
+                <MediaRender
+                    data={BankerData}
+                    title={"Backers and Investors"}
+                />
                 <BecomeBox>
                     <div className="content">
                         <div className="header-content">Join the community</div>
@@ -145,7 +154,6 @@ const WrapperInner = styled.div`
         .img-content {
             justify-content: center;
             padding: 15px 0 45px;
-            /* gap: 6rem; */
         }
         .img-holder {
             margin: 0 2rem;
@@ -157,7 +165,47 @@ const WrapperInner = styled.div`
             padding: 15px 0 45px;
         }
         .img-holder {
-            margin: 0 2rem;
+            width: 19%;
+            @media (max-width: 945px) {
+                width: 22.5%;
+            }
+
+            @media (max-width: 768px) {
+                width: 32%;
+            }
+
+            @media (max-width: 574px) {
+                width: 45%;
+            }
+        }
+        img {
+            transform: scale(0.85);
+        }
+        .img-song-ngu {
+            margin-left: 50%;
+            transform: translate(-50%) scale(1.2);
+        }
+    }
+    @media (max-width: 768px) {
+        &.auditor {
+            .img-holder {
+                padding: 10px 0;
+            }
+            .img-hacken {
+                width: 100%;
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        &.auditor {
+            .img-holder {
+                margin: 0;
+            }
+        }
+        &.media {
+            .img-holder {
+                margin: 0;
+            }
         }
     }
     .header {
@@ -197,10 +245,6 @@ const WrapperInner = styled.div`
             width: auto;
             max-height: 65px;
         }
-        /* .img-hacken {
-            margin-left: -2rem;
-            padding: 0;
-        } */
 
         @media (max-width: 945px) {
             width: 22.5%;
@@ -212,43 +256,6 @@ const WrapperInner = styled.div`
 
         @media (max-width: 574px) {
             width: 45%;
-        }
-
-        /* @media (max-width: 415px) {
-      width: 70%;
-    } */
-    }
-    @media (max-width: 1024px) {
-        &.auditor {
-            .img-content {
-                /* gap: 2rem; */
-            }
-            /* .img-hacken {
-                margin-left: 0;
-            } */
-        }
-    }
-    @media (max-width: 768px) {
-        &.auditor {
-            .img-holder {
-                padding: 10px 0;
-            }
-            .img-hacken {
-                /* margin-left: 0; */
-                width: 100%;
-            }
-        }
-    }
-    @media (max-width: 576px) {
-        &.auditor {
-            .img-holder {
-                margin: 0;
-            }
-        }
-        &.media {
-            .img-holder {
-                margin: 0;
-            }
         }
     }
 `;

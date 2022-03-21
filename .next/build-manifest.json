@@ -19,10 +19,10 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/index.js"
     ],
-    "/404": [
+    "/API": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/404.js"
+      "static/chunks/pages/API.js"
     ],
     "/_app": [
       "static/chunks/main.js",

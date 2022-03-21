@@ -15,7 +15,8 @@ const Banner = () => {
                             positions and mitigate their risks during highly
                             volatile trading days. Synthetic assets on
                             decentralized trading platforms are fetching good
-                            trade volume.
+                            trade volume. <br />
+                            <br />
                         </SubText>
                         <SubText>
                             <span>forbitspace</span> derivatives protocol is
