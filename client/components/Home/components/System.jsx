@@ -185,6 +185,10 @@ const WrapperInner = styled.div`
             margin-left: 50%;
             transform: translate(-50%) scale(1.2);
         }
+        .img-bsc-news {
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
     }
     @media (max-width: 768px) {
         &.auditor {
