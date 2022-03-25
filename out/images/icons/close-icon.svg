@@ -1,0 +1,16 @@
+<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;" stroke="null">
+ <title style="vector-effect: non-scaling-stroke;" stroke="null"/>
+ <desc style="vector-effect: non-scaling-stroke;" stroke="null"/>
+
+ <g stroke="null">
+  <title stroke="null">background</title>
+  <rect stroke="null" fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g stroke="null">
+  <title stroke="null">Layer 1</title>
+  <g id="svg_9">
+   <line stroke-linecap="null" stroke-linejoin="null" id="svg_6" y2="21.05266" x2="21.369588" y1="2.490234" x1="2.807162" stroke-width="3px" stroke="#ffffff" fill="none"/>
+   <line transform="rotate(90 12.039850234985352,11.722921371459963) " stroke-linecap="null" stroke-linejoin="null" id="svg_8" y2="21.004135" x2="21.321063" y1="2.441709" x1="2.758637" stroke-width="3px" stroke="#ffffff" fill="none"/>
+  </g>
+ </g>
+</svg>
