@@ -318,9 +318,17 @@ export const MediaData = [
         img: "coin-pedia.webp",
         link: "#",
     },
+    {
+        img: "cryptofamily.png",
+        link: "#",
+    },
+    {
+        img: "mg-logo.png",
+        link: "#",
+    },
 ];
 
-export const BankerData = [
+export const BackerData = [
     {
         img: "song-ngu.png",
     },
@@ -338,6 +346,9 @@ export const BankerData = [
     },
     {
         img: "space-defi.png",
+    },
+    {
+        img: "av-star-gray.png",
     },
     {
         img: "blog-defi.png",
