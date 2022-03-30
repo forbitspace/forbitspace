@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {
     AuditData,
-    BankerData,
+    BackerData,
     DataSocialLinkFooter,
     EcosystemData,
     MediaData,
@@ -18,6 +18,11 @@ const System = () => {
                             <LazyLoad height={45}>
                                 <img
                                     src={`./images/logo-contributor/${item.img}`}
+                                    className={`img-${
+                                        item.img?.split(".")[0]
+                                            ? item.img.split(".")[0]
+                                            : "eco-system"
+                                    }`}
                                     alt={`logo-${item.img}`}
                                 />
                             </LazyLoad>
@@ -103,7 +108,7 @@ const System = () => {
                 />
                 <MediaRender data={MediaData} title={"Media Partners"} />
                 <MediaRender
-                    data={BankerData}
+                    data={BackerData}
                     title={"Backers and Investors"}
                 />
                 <BecomeBox>
@@ -165,7 +170,7 @@ const WrapperInner = styled.div`
             padding: 15px 0 45px;
         }
         .img-holder {
-            width: 19%;
+            width: 15%;
             @media (max-width: 945px) {
                 width: 22.5%;
             }
@@ -248,6 +253,9 @@ const WrapperInner = styled.div`
             height: auto;
             width: auto;
             max-height: 65px;
+        }
+        .img-trust-wallet {
+            height: 60px;
         }
 
         @media (max-width: 945px) {
