@@ -330,7 +330,7 @@ export const MediaData = [
 
 export const BackerData = [
     {
-        img: "song-ngu.png",
+        img: "space-venture.png",
     },
     {
         img: "boarc-gray.png",
@@ -345,13 +345,16 @@ export const BackerData = [
         img: "defiaz.png",
     },
     {
-        img: "space-defi.png",
+        img: "blog-defi.png",
+    },
+    {
+        img: "song-ngu.png",
     },
     {
         img: "av-star-gray.png",
     },
     {
-        img: "blog-defi.png",
+        img: "space-defi.png",
     },
 ];
 export const DataSocialLinkFooter = [

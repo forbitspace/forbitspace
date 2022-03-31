@@ -186,7 +186,8 @@ const WrapperInner = styled.div`
         img {
             transform: scale(0.85);
         }
-        .img-song-ngu {
+        .img-song-ngu,
+        .img-space-venture {
             margin-left: 50%;
             transform: translate(-50%) scale(1.2);
         }
