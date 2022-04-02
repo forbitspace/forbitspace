@@ -31,10 +31,10 @@ const Allocation = () => {
                         • 8,0% Core contributors and future employees with a
                         5-year vesting.
                     </p>
-                    <p className="content">• 3,0% Strategic Sale IDO, IEO.</p>
                     <p className="content">
-                        • 5,0% Small backers 5-year vesting.
+                        • 3,0% Small backers 5-year vesting.
                     </p>
+                    <p className="content">• 5,0% Strategic Sale IDO, IEO.</p>
                     <p className="content">
                         • 3,0% Advisor with a 5-year vesting.
                     </p>
