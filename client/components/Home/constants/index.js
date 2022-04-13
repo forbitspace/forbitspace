@@ -284,27 +284,23 @@ export const MediaData = [
     },
     {
         img: "amb-crypto.png",
-        link: "#",
+        link: "https://ambcrypto.com/forbitspace-dex-super-aggregator-offers-a-convenient-defi-experience-for-trading/",
     },
-    // {
-    //     img: "amb-crypto-gray.png",
-    //     link: "#",
-    // },
     {
         img: "bsc-news.png",
-        link: "#",
+        link: "https://www.bsc.news/post/forbitspace-a-dex-super-aggregator-with-a-unique-multichain-ecosystem",
     },
     {
         img: "coin-quora.png",
-        link: "#",
+        link: "https://coinquora.com/forbitspace-dex-super-aggregator-the-way-forward/",
     },
     {
         img: "u-today.png",
-        link: "#",
+        link: "https://u.today/forbitspace-dex-super-aggregator-advances-cross-network-trading-review",
     },
     {
         img: "crypto-potato.png",
-        link: "#",
+        link: "https://cryptopotato.com/forbitspace-defi-aggregator-an-extensive-guide/",
     },
     {
         img: "decrypt.png",
@@ -312,49 +308,58 @@ export const MediaData = [
     },
     {
         img: "blockonomi.png",
-        link: "#",
+        link: "https://cryptodaily.io/introducing-forbitspace-the-decentralized-exchange-super-aggregator/",
     },
     {
         img: "coin-pedia.webp",
-        link: "#",
+        link: "https://coinpedia.org/defi/forbitspace-dex-super-aggregator-review-the-dapp-better-for-trading/",
     },
     {
         img: "cryptofamily.png",
-        link: "#",
+        link: "https://cryptofamily.net/forbitspace-dex-super-aggregator-dapp-doc-dao-cho-giao-dich-da-chuoi/",
     },
     {
         img: "mg-logo.png",
-        link: "#",
+        link: "https://mg.ventures/forbitspace-sieu-tong-hop-dex-trong-tuong-lai-da-chuoi/",
     },
 ];
 
 export const BackerData = [
     {
         img: "space-venture.png",
+        link: "",
     },
     {
         img: "boarc-gray.png",
+        link: "https://boarc.org/",
     },
     {
         img: "nagaya.png",
+        link: "",
     },
     {
         img: "crypto-spacex.png",
+        link: "",
     },
     {
         img: "defiaz.png",
+        link: "",
     },
     {
         img: "blog-defi.png",
+        link: "",
     },
     {
         img: "song-ngu.png",
+        link: "",
     },
     {
         img: "av-star-gray.png",
+        link: "",
     },
     {
         img: "space-defi.png",
+        link: "",
     },
 ];
 export const DataSocialLinkFooter = [
