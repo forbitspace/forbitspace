@@ -355,7 +355,7 @@ export const BackerData = [
     },
     {
         img: "av-star-gray.png",
-        link: "",
+        link: "https://avstarcapital.co/",
     },
     {
         img: "space-defi.png",
