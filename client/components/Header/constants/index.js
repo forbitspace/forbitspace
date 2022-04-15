@@ -248,14 +248,24 @@ export const navContent = [
                 content: "About",
             },
             {
-                link: "/team", //
-                content: "Team",
-                // disabled: true,
+                link: "../forbitspace-whitepaper.pdf",
+                content: "Whitepaper",
+                outLink: true,
+            },
+            {
+                link: "/fbs-token",
+                content: "FBS Token",
+                disable: false,
             },
             {
                 link: "https://blog.forbitspace.com/",
                 content: "Blog",
                 outLink: true,
+            },
+            {
+                link: "/team", //
+                content: "Team",
+                // disabled: true,
             },
             {
                 link: "/contact", //
