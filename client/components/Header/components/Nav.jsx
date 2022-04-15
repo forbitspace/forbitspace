@@ -198,7 +198,7 @@ const DropdownMenu = styled.div`
         z-index: -1;
     }
     a {
-        margin-bottom: 10px !important;
+        margin-bottom: 15px !important;
         font-weight: 400 !important;
         font-size: 12px !important;
         font-style: italic;
@@ -209,7 +209,7 @@ const DropdownMenu = styled.div`
     }
 `;
 const DisableLink = styled.div`
-    margin-bottom: 10px !important;
+    margin-bottom: 15px !important;
     font-weight: 500 !important;
     font-size: 12px !important;
     font-style: italic;
