@@ -12,7 +12,7 @@ export const DataSocialLinkFooter = [
         url: "../images/icon-social-footer/4.svg",
     },
     {
-        link: "https://medium.com/@forbitspace",
+        link: "https://medium.com/forbitspace",
         url: "../images/icon-social-footer/1.svg",
     },
     {
