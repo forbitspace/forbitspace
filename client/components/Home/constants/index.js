@@ -334,10 +334,6 @@ export const BackerData = [
         link: "https://boarc.org/",
     },
     {
-        img: "nagaya.png",
-        link: "",
-    },
-    {
         img: "crypto-spacex.png",
         link: "",
     },
