@@ -87,7 +87,7 @@ const Network = () => {
                             <ImgHalf>
                                 <LazyLoad height={200}>
                                     <img
-                                        src="../images/home-page/network-01.png"
+                                        src="../images/home-page/network-banner.png"
                                         alt="swap-network"
                                     />
                                 </LazyLoad>
