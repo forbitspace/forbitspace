@@ -16,9 +16,9 @@ const Members = (props) => {
                 <WrapperIfo>
                     <FlexItem>
                         <Name isAdvisor={props.isAdvisor}>{name}</Name>
-                        <p style={{ marginLeft: "-18px" }}>{job}</p>
+                        <p style={{ marginLeft: "-10px" }}>{job}</p>
                         {jobb ? (
-                            <p style={{ marginLeft: "-13px" }}>{jobb}</p>
+                            <p style={{ marginLeft: "-10px" }}>{jobb}</p>
                         ) : (
                             ""
                         )}
@@ -26,17 +26,26 @@ const Members = (props) => {
                         <Social>
                             {twitter ? (
                                 <a href={twitter} target="_blank">
-                                    <img src="../images/icons/twitter.svg" alt="" />
+                                    <img
+                                        src="../images/icons/twitter.svg"
+                                        alt=""
+                                    />
                                 </a>
                             ) : null}
                             {linked ? (
                                 linked !== "/" ? (
                                     <a href={linked} target="_blank">
-                                    <img src="../images/icons/linkedin.svg" alt="" />
+                                        <img
+                                            src="../images/icons/linkedin.svg"
+                                            alt=""
+                                        />
                                     </a>
                                 ) : (
                                     <span href={linked} target="_blank">
-                                    <img src="../images/icons/linkedin.svg" alt="" />
+                                        <img
+                                            src="../images/icons/linkedin.svg"
+                                            alt=""
+                                        />
                                     </span>
                                 )
                             ) : null}
@@ -131,7 +140,7 @@ const Title = styled.p`
 const GroupMembers = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: ${({ gap }) => (gap ? gap : 0)};
 `;
 
@@ -144,6 +153,9 @@ const StyledMemberItem = styled.div`
 
     @media (min-width: 1200px) {
         margin: 0 calc((100% - 1050px) / 6);
+    }
+    @media (max-width: 1024px) {
+        width: ${({ isAdvisor }) => (isAdvisor ? "22%" : "45%")};
     }
     @media (max-width: 768px) {
         width: 300px;
