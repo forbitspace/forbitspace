@@ -199,73 +199,6 @@ const Leaders = () => {
                     <StyledMemberItem>
                         <WrapperIfo>
                             <FlexItem>
-                                <Name>Jennie Helen</Name>
-                                <p style={{ marginLeft: "-13px" }}>CMO</p>
-                                <p style={{ marginLeft: "-13px" }}>
-                                    Business Development
-                                </p>
-                                <p></p>
-                                <Social>
-                                    <a
-                                        // href="https://www.linkedin.com/in/stella-vo-276627222"
-                                        href="/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <img
-                                            src="../images/icons/twitter.svg"
-                                            alt=""
-                                        />
-                                    </a>
-                                    <a
-                                        href="/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <img
-                                            src="../images/icons/linkedin.svg"
-                                            alt=""
-                                        />
-                                    </a>
-                                </Social>
-                            </FlexItem>
-                            <Thumb>
-                                <img
-                                    src="../images/contributor-page/jennie.png"
-                                    alt="icon member"
-                                />
-                            </Thumb>
-                        </WrapperIfo>
-                        <Background>
-                            <img
-                                src="../images/contributor-page/orbit-background.svg"
-                                alt="background-orbit-image"
-                            />
-                        </Background>
-                    </StyledMemberItem>
-                    <Introduction className="vice-leader">
-                        <div className="name">Jennie Helen</div>
-                        <div className="content">
-                            She has always pursued ways to attain her goals with
-                            enthusiasm and compassion. She feels she should be
-                            working somewhere where she can continue to be
-                            creative. She is adaptable to new ideas and
-                            technology, and she has the ability to network and
-                            build positive relationships. She had previously
-                            worked with{" "}
-                            <span className="forbitspace">forbitspace</span>,
-                            which inspired her to become a blockchain evangelist
-                            in order to represent blockchain’s unique capacity
-                            to improve the world.
-                        </div>
-                    </Introduction>
-                </Leader>
-            </WrapperLeader>
-            <WrapperLeader>
-                <Leader>
-                    <StyledMemberItem>
-                        <WrapperIfo>
-                            <FlexItem>
                                 <Name>Stella Vo</Name>
                                 <p style={{ marginLeft: "-13px" }}>
                                     Head Strategist
@@ -326,6 +259,8 @@ const Leaders = () => {
                         </div>
                     </Introduction>
                 </Leader>
+            </WrapperLeader>
+            <WrapperLeader>
                 <Leader>
                     <StyledMemberItem>
                         <WrapperIfo>
@@ -390,9 +325,7 @@ const Leaders = () => {
                         </div>
                     </Introduction>
                 </Leader>
-            </WrapperLeader>
-            <WrapperLeader className="footer-member">
-                <Leader className="footer-leader">
+                <Leader>
                     <StyledMemberItem>
                         <WrapperIfo>
                             <FlexItem>
@@ -463,6 +396,78 @@ const Leaders = () => {
                     </Introduction>
                 </Leader>
             </WrapperLeader>
+            {/* <WrapperLeader className="footer-member">
+                <Leader className="footer-leader">
+                    <StyledMemberItem>
+                        <WrapperIfo>
+                            <FlexItem>
+                                <Name>James Davis</Name>
+                                <p style={{ marginLeft: "-13px" }}>CFO</p>
+                                <p style={{ marginLeft: "-13px" }}>
+                                    Business Development
+                                </p>
+                                <p></p>
+                                <Social>
+                                    <a
+                                        // href="https://www.linkedin.com/in/stella-vo-276627222"
+                                        href="/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src="../images/icons/twitter.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a
+                                        // href="https://www.linkedin.com/in/stella-vo-276627222"
+                                        href="/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src="../images/icons/linkedin.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </Social>
+                            </FlexItem>
+                            <Thumb>
+                                <img
+                                    src="../images/contributor-page/davis.png"
+                                    alt="icon member"
+                                />
+                            </Thumb>
+                        </WrapperIfo>
+                        <Background>
+                            <img
+                                src="../images/contributor-page/orbit-background.svg"
+                                alt="background-orbit-image"
+                            />
+                        </Background>
+                    </StyledMemberItem>
+                    <Introduction className="vice-leader">
+                        <div className="name">James Davis</div>
+                        <div className="content">
+                            He is a software engineer who is interested in
+                            exploring technology and logical aspects. He has
+                            experience in different fields of programming and
+                            development, backend infrastructure design, and
+                            architect experience working on backend databases
+                            and extendable web-based infrastructures for online
+                            applications.
+                            <br /> He is a developer who builds the backbone of
+                            our <span className="forbitspace">forbitspace</span>
+                            . A blockchain engineer who focuses on algorithm
+                            optimization and data structures, specially on
+                            decentralized systems in Blockchain of{" "}
+                            <span className="forbitspace">forbitspace</span>.
+                            <br /> He always wants to be a better version of
+                            himself.
+                        </div>
+                    </Introduction>
+                </Leader>
+            </WrapperLeader> */}
         </Wrapper>
     );
 };
