@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Container } from "reactstrap";
 import styled from "styled-components";
 import LazyLoad from "react-lazyload";
 const LimitOrder = () => {
@@ -143,7 +142,7 @@ const Text = styled.p`
 `;
 const WrapText = styled.div``;
 const SubText = styled.p`
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
     text-align: right;
     line-height: 1.2;
@@ -155,7 +154,7 @@ const SubText = styled.p`
     &.toggle__btn {
         font-weight: 400;
         font-style: italic;
-        font-size: 16px;
+        font-size: 14px;
     }
     @media (max-width: 768px) {
         text-align: center;
@@ -166,7 +165,7 @@ const SubText = styled.p`
     }
     @media (max-width: 576px) {
         line-height: 1.5;
-        font-size: 16px;
+        font-size: 14px;
     }
 `;
 

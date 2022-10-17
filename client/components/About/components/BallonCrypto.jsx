@@ -9,7 +9,7 @@ const BallonCrypto = () => {
                 <WrapText>
                     <Text>What We Do</Text>
                     <SubText>
-                        “We believe that crypto is just getting started. We have
+                        We believe that crypto is just getting started. We have
                         an optimistic view of the future and believe in crypto’s
                         potential and the use of the blockchain as the main
                         underlying technology.
@@ -202,7 +202,7 @@ const SubText = styled.p`
     &.toggle__btn {
         font-style: italic;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 14px;
     }
     &.w-72 {
         width: 72%;
@@ -223,7 +223,7 @@ const SubText = styled.p`
     }
     @media (max-width: 576px) {
         line-height: 1.5;
-        font-size: 16px;
+        font-size: 14px;
     }
 `;
 export default BallonCrypto;

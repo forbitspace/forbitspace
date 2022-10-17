@@ -185,8 +185,20 @@ const DropdownMenu = styled.div`
     overflow: hidden;
     transition: all ease-in-out 0.3s;
     cursor: pointer;
+    ::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        backdrop-filter: blur(10px);
+        padding: 3px 8px;
+        border-radius: 5px;
+        z-index: -1;
+    }
     a {
-        margin-bottom: 10px !important;
+        margin-bottom: 15px !important;
         font-weight: 400 !important;
         font-size: 12px !important;
         font-style: italic;
@@ -197,7 +209,7 @@ const DropdownMenu = styled.div`
     }
 `;
 const DisableLink = styled.div`
-    margin-bottom: 10px !important;
+    margin-bottom: 15px !important;
     font-weight: 500 !important;
     font-size: 12px !important;
     font-style: italic;

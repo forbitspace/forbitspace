@@ -12,11 +12,12 @@ export const DataSocialLinkFooter = [
         url: "../images/icon-social-footer/4.svg",
     },
     {
-        link: "https://medium.com/@forbitspace",
+        link: "https://medium.com/forbitspace",
         url: "../images/icon-social-footer/1.svg",
     },
     {
-        link: "https://discord.com/invite/forbitspace",
+        // link: "https://discord.com/invite/forbitspace",
+        link: "https://discord.gg/CnJqNa2wfG",
         url: "../images/icon-social-footer/3.svg",
     },
     {
@@ -55,12 +56,10 @@ export const navContent = [
         link: "",
         nav: "Governance",
         contents: [
-            // {
-            //   link: "/token", //.../images/pdf/fbs-token-1.pdf
-            //   content: "FBS Token",
-            //   outLink: true,
-            //   disable: true,
-            // },
+            {
+                link: "/fbs-token",
+                content: "FBS Token",
+            },
             {
                 link: "/dao",
                 content: "Space Dao",
@@ -151,17 +150,17 @@ export const navContent = [
                 outLink: true,
             },
             {
-                link: "../documents/terms-of-service.pdf",
-                content: "Term of Service",
+                link: "../terms-of-service.pdf",
+                content: "Terms of Service",
                 outLink: true,
             },
             {
-                link: "../documents/privacy-policy.pdf",
+                link: "../privacy-policy.pdf",
                 content: "Privacy Policy",
                 outLink: true,
             },
             {
-                link: "/branding",
+                link: "/brandkit",
                 content: "Press & Brand",
                 // outLink: true,
             },

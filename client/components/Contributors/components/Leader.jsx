@@ -11,7 +11,7 @@ const Leaders = () => {
                         <WrapperIfo>
                             <FlexItem>
                                 <Name>Baroda Hoang</Name>
-                                <p style={{ marginLeft: "-18px" }}>Founder</p>
+                                <p style={{ marginLeft: "-13px" }}>Founder</p>
                                 <p style={{ marginLeft: "-13px" }}>
                                     {"Lead Blockchain Engineer & Architect"}
                                 </p>
@@ -72,7 +72,7 @@ const Leaders = () => {
                         <WrapperIfo>
                             <FlexItem>
                                 <Name>Menardo Quiñosa</Name>
-                                <p style={{ marginLeft: "-18px" }}>
+                                <p style={{ marginLeft: "-13px" }}>
                                     CO - Founder
                                 </p>
                                 <p style={{ marginLeft: "-13px" }}>
@@ -123,7 +123,7 @@ const Leaders = () => {
                             and currency trader. He has more than 9 years of
                             experience in FINANCIAL MARKET. He also participated
                             in multiple trading and crypto currency events in
-                            Dubai,Thailand, Vietnam, Singapore and Hongkong.
+                            Dubai, Thailand, Vietnam, Singapore and Hongkong.
                         </div>
                     </Introduction>
                 </Leader>
@@ -134,7 +134,7 @@ const Leaders = () => {
                         <WrapperIfo>
                             <FlexItem>
                                 <Name>Stella Vo</Name>
-                                <p style={{ marginLeft: "-18px" }}>
+                                <p style={{ marginLeft: "-13px" }}>
                                     Head Strategist
                                 </p>
                                 <p style={{ marginLeft: "-13px" }}>
@@ -142,6 +142,17 @@ const Leaders = () => {
                                 </p>
                                 <p></p>
                                 <Social>
+                                    <a
+                                        // href="https://www.linkedin.com/in/stella-vo-276627222"
+                                        href="/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src="../images/icons/twitter.svg"
+                                            alt=""
+                                        />
+                                    </a>
                                     <a
                                         // href="https://www.linkedin.com/in/stella-vo-276627222"
                                         href="/"
@@ -187,12 +198,23 @@ const Leaders = () => {
                         <WrapperIfo>
                             <FlexItem>
                                 <Name>Emily Anh</Name>
-                                <p style={{ marginLeft: "-18px" }}>CMO</p>
+                                <p style={{ marginLeft: "-13px" }}>CMO</p>
                                 <p style={{ marginLeft: "-13px" }}>
                                     Business Development
                                 </p>
                                 <p></p>
                                 <Social>
+                                    <a
+                                        // href="https://www.linkedin.com/in/stella-vo-276627222"
+                                        href="/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src="../images/icons/twitter.svg"
+                                            alt=""
+                                        />
+                                    </a>
                                     <a
                                         href="/"
                                         target="_blank"
@@ -226,11 +248,156 @@ const Leaders = () => {
                             just started. I goal looking for ambitious are
                             motivated to make{" "}
                             <span className="forbitspace">forbitspace</span> one
-                            of the biggest DEX projects on all chains. Managing
-                            incoming media requests and building relationships
-                            with industry journalists executing, and measuring
-                            media campaigns, strategic marketing, and
-                            communications plans.
+                            of the biggest DEX projects on all chains.
+                            <br />
+                            Managing incoming media requests and building
+                            relationships with industry journalists executing,
+                            and measuring media campaigns, strategic marketing,
+                            and communications plans.
+                        </div>
+                    </Introduction>
+                </Leader>
+            </WrapperLeader>
+            {/* <WrapperLeader>
+                <Leader>
+                    <StyledMemberItem>
+                        <WrapperIfo>
+                            <FlexItem>
+                                <Name>James Davis</Name>
+                                <p style={{ marginLeft: "-13px" }}>CFO</p>
+                                <p style={{ marginLeft: "-13px" }}>
+                                    Business Development
+                                </p>
+                                <p></p>
+                                <Social>
+                                    <a
+                                        // href="https://www.linkedin.com/in/stella-vo-276627222"
+                                        href="/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src="../images/icons/twitter.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a
+                                        // href="https://www.linkedin.com/in/stella-vo-276627222"
+                                        href="/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src="../images/icons/linkedin.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </Social>
+                            </FlexItem>
+                            <Thumb>
+                                <img
+                                    src="../images/contributor-page/davis.png"
+                                    alt="icon member"
+                                />
+                            </Thumb>
+                        </WrapperIfo>
+                        <Background>
+                            <img
+                                src="../images/contributor-page/orbit-background.svg"
+                                alt="background-orbit-image"
+                            />
+                        </Background>
+                    </StyledMemberItem>
+                    <Introduction className="vice-leader">
+                        <div className="name">James Davis</div>
+                        <div className="content">
+                            He is a software engineer who is interested in
+                            exploring technology and logical aspects. He has
+                            experience in different fields of programming and
+                            development, backend infrastructure design, and
+                            architect experience working on backend databases
+                            and extendable web-based infrastructures for online
+                            applications.
+                            <br /> He is a developer who builds the backbone of
+                            our <span className="forbitspace">forbitspace</span>
+                            . A blockchain engineer who focuses on algorithm
+                            optimization and data structures, specially on
+                            decentralized systems in Blockchain of{" "}
+                            <span className="forbitspace">forbitspace</span>.
+                            <br /> He always wants to be a better version of
+                            himself.
+                        </div>
+                    </Introduction>
+                </Leader>
+            </WrapperLeader> */}
+            <WrapperLeader className="footer-member">
+                <Leader className="footer-leader">
+                    <StyledMemberItem>
+                        <WrapperIfo>
+                            <FlexItem>
+                                <Name>James Davis</Name>
+                                <p style={{ marginLeft: "-13px" }}>CFO</p>
+                                <p style={{ marginLeft: "-13px" }}>
+                                    Business Development
+                                </p>
+                                <p></p>
+                                <Social>
+                                    <a
+                                        // href="https://www.linkedin.com/in/stella-vo-276627222"
+                                        href="/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src="../images/icons/twitter.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a
+                                        // href="https://www.linkedin.com/in/stella-vo-276627222"
+                                        href="/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src="../images/icons/linkedin.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </Social>
+                            </FlexItem>
+                            <Thumb>
+                                <img
+                                    src="../images/contributor-page/davis.png"
+                                    alt="icon member"
+                                />
+                            </Thumb>
+                        </WrapperIfo>
+                        <Background>
+                            <img
+                                src="../images/contributor-page/orbit-background.svg"
+                                alt="background-orbit-image"
+                            />
+                        </Background>
+                    </StyledMemberItem>
+                    <Introduction className="vice-leader">
+                        <div className="name">James Davis</div>
+                        <div className="content">
+                            He is a software engineer who is interested in
+                            exploring technology and logical aspects. He has
+                            experience in different fields of programming and
+                            development, backend infrastructure design, and
+                            architect experience working on backend databases
+                            and extendable web-based infrastructures for online
+                            applications.
+                            <br /> He is a developer who builds the backbone of
+                            our <span className="forbitspace">forbitspace</span>
+                            . A blockchain engineer who focuses on algorithm
+                            optimization and data structures, specially on
+                            decentralized systems in Blockchain of{" "}
+                            <span className="forbitspace">forbitspace</span>.
+                            <br /> He always wants to be a better version of
+                            himself.
                         </div>
                     </Introduction>
                 </Leader>
@@ -251,15 +418,36 @@ const Title = styled.p`
 `;
 const WrapperLeader = styled.div`
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
-    @media (max-width: 767px) {
+    &.footer-member {
+        justify-content: flex-start;
+    }
+    .footer-leader {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .vice-leader {
+            width: 60%;
+        }
+    }
+    @media (max-width: 991px) {
+        .footer-leader {
+            display: block;
+            .vice-leader {
+                width: 100%;
+            }
+        }
+    }
+    @media (max-width: 991px) {
         flex-direction: column;
     }
 `;
 const Leader = styled.div`
     width: 45%;
-    @media (max-width: 767px) {
+    padding: 1rem 0;
+    @media (max-width: 991px) {
         width: 100%;
     }
 `;
@@ -267,6 +455,7 @@ const Introduction = styled.div`
     .name {
         font-size: 20px;
         font-weight: bold;
+        padding: 8px 0px;
     }
     .content {
         font-size: 18px;
@@ -277,11 +466,11 @@ const Introduction = styled.div`
         font-weight: 900;
         font-style: italic;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
         text-align: center;
         .content {
             line-height: 1.5;
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 `;
@@ -315,7 +504,7 @@ const WrapperIfo = styled.div`
     display: flex;
 `;
 const Name = styled.h3`
-    font-size: ${({ isAdvisor }) => (isAdvisor ? "18px" : "14px")};
+    font-size: ${({ isAdvisor }) => (isAdvisor ? "18px" : "16px")};
     position: ${({ isAdvisor }) => (isAdvisor ? "absolute" : "")};
     font-weight: 600;
     bottom: 30px;
@@ -332,7 +521,7 @@ const Thumb = styled.div`
     width: ${({ isAdvisor }) => (isAdvisor ? "130px" : "100px")};
     height: ${({ isAdvisor }) => (isAdvisor ? "130px" : "100px")};
     position: absolute;
-    right: ${({ isAdvisor }) => (isAdvisor ? 0 : "15px")};
+    right: ${({ isAdvisor }) => (isAdvisor ? 0 : "0px")};
     top: ${({ isAdvisor }) => (isAdvisor ? "-50px" : "-10px")};
     bottom: ${({ isAdvisor }) => (isAdvisor ? 0 : "")};
     left: ${({ isAdvisor }) => (isAdvisor ? "-55px" : "")};
@@ -341,7 +530,7 @@ const Thumb = styled.div`
     @media (max-width: 576px) {
         left: ${({ isAdvisor }) => (isAdvisor ? "-13px" : "")};
         top: ${({ isAdvisor }) => (isAdvisor ? "-50px" : "0")};
-        right: ${({ isAdvisor }) => (isAdvisor ? 0 : "-16px")};
+        right: ${({ isAdvisor }) => (isAdvisor ? 0 : "-18px")};
         width: ${({ isAdvisor }) => (isAdvisor ? "130px" : "80px")};
         height: ${({ isAdvisor }) => (isAdvisor ? "130px" : "80px")};
     }
@@ -372,7 +561,7 @@ const FlexItem = styled.div`
     @media (max-width: 420px) {
         margin-top: 54px;
         margin-right: 40px;
-        margin-left: 24px;
+        margin-left: 15px;
     }
 `;
 

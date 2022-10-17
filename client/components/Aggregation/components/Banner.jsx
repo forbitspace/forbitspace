@@ -9,9 +9,25 @@ const Banner = () => {
             <WrapContainer>
                 <WrapImg>
                     <ImgHalf>
-                        <LazyLoad height={200}>
+                        <LazyLoad
+                            height={400}
+                            once={true}
+                            placeholder={
+                                <img
+                                    width="1251"
+                                    height="409.79"
+                                    src="../images/aggregation-page/aggregation-banner.png"
+                                    alt="aggregation-picture"
+                                />
+                            }
+                        >
+                            {/* <img
+                                src="../gif/gif_aggregation-protocol.gif"
+                                alt="aggregation-protocols"
+                            /> */}
                             <img
                                 src="../gif/gif_aggregation-protocol.gif"
+                                // src="https://firebasestorage.googleapis.com/v0/b/image-storage-2f921.appspot.com/o/space-aggregation.gif?alt=media&token=1ace86e6-be8c-4d65-ad75-4717acd316ac"
                                 alt="aggregation-protocols"
                             />
                         </LazyLoad>
@@ -55,6 +71,9 @@ const WrapImg = styled.div`
     @media (max-width: 768px) {
         width: 80%;
     }
+    @media (max-width: 576px) {
+        width: 100%;
+    }
 `;
 const ImgHalf = styled.div`
     width: 100%;
@@ -91,7 +110,7 @@ const Text = styled.p`
     }
 `;
 const SubText = styled.p`
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
     text-align: left;
     line-height: 1.2;
@@ -109,7 +128,7 @@ const SubText = styled.p`
     }
     @media (max-width: 576px) {
         line-height: 1.5;
-        font-size: 16px;
+        font-size: 14px;
     }
 `;
 export default Banner;

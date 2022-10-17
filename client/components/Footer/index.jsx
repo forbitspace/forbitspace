@@ -214,7 +214,7 @@ const ListMenu = styled.div`
         li {
             font-size: 12px;
             font-weight: 300;
-            font-family: sans-serif;
+            /* font-family: sans-serif; */
             margin-bottom: 4px;
             font-style: italic;
             a {
@@ -275,7 +275,7 @@ const Blank = styled.div`
 const TitleFooter = styled.li`
     margin-bottom: 10px !important;
     color: #ffffff;
-    font-family: sans-serif !important;
+    /* font-family: sans-serif !important; */
     font-size: 16px !important;
     font-weight: 600 !important;
     font-style: normal !important;
@@ -290,7 +290,7 @@ const TitleFooter = styled.li`
 const SubTitleFooter = styled.div`
     margin-bottom: 10px;
     color: #ffffff;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     font-size: 13px;
     font-weight: 100;
     font-style: italic;

@@ -60,8 +60,8 @@ const MobileWallet = () => {
                     <Text>Smart contract wallet</Text>
                     <SubText className="text-left">
                         A smart contract is a program deployed to disparate
-                        blockchains like Ethereum, Binance Smart Chain, and has
-                        a mobile app or desktop interface.
+                        blockchains like Ethereum, BNB Chain, and has a mobile
+                        app or desktop interface.
                         <br />
                         <br />
                         Smart contract wallets are the most functional wallets
@@ -161,7 +161,7 @@ const Text = styled.p`
 `;
 
 const SubText = styled.p`
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
     /* font-family: sans-serif; */
     text-align: right;
@@ -179,7 +179,7 @@ const SubText = styled.p`
     }
     @media (max-width: 576px) {
         line-height: 1.5;
-        font-size: 16px;
+        font-size: 14px;
     }
 `;
 const WrapWallet = styled.div`

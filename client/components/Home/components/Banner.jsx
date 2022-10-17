@@ -1,33 +1,56 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "reactstrap";
 import styled from "styled-components";
 import LazyLoad from "react-lazyload";
 
 const Banner = () => {
+    const [num, setNum] = useState(0);
+
+    useEffect(() => {
+        const myInterval = setInterval(() => {
+            if (num < 4) {
+                setNum(num + 1);
+            } else {
+                setNum(0);
+            }
+        }, 1000);
+        return () => {
+            clearInterval(myInterval);
+        };
+    });
+    // console.log('num ----->', num);
     return (
         <BoxSection>
             <WrapImgBanner>
-                {/* <LazyLoad height={400} once={true} placeholder={<img
-                        width="1251"
-                        height="409.79"
-                        src="../images/logo/logo-forbitspace.png"
-                        alt="banner-picture"
-                    />}>
+                <LazyLoad
+                    height={400}
+                    once={true}
+                    placeholder={
+                        <img
+                            width="1251"
+                            height="409.79"
+                            src="../images/network-banner.png"
+                            alt="banner-picture"
+                        />
+                    }
+                >
                     <img
                         width="1251"
                         height="409.79"
-                        src="../images/network-banner.png"
+                        // src="../gif/gif_space.gif"
+                        src="../gif/space-gif-min.gif"
+                        // src="https://firebasestorage.googleapis.com/v0/b/image-storage-2f921.appspot.com/o/space-gif-min.gif?alt=media&token=cc2417c4-61fa-4efd-8eab-fe1b042de325"
                         alt="banner-picture"
                     />
-                </LazyLoad> */}
-                <LazyLoad height={400}>
+                </LazyLoad>
+                {/* <LazyLoad height={400}>
                     <img
                         width="1251"
                         height="409.79"
                         src="../images/home-page/banner.png"
                         alt="banner-picture"
                     />
-                </LazyLoad>
+                </LazyLoad> */}
             </WrapImgBanner>
             <Container>
                 <Content className="title-banner text-dark text-visi">
@@ -78,21 +101,27 @@ const WrapImgBanner = styled.div`
     width: 100vw;
     height: auto;
     max-width: 100%;
-    margin-bottom: -80px;
+    margin-bottom: -20px;
+    .lazyload-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     img {
         width: 100%;
         height: auto;
+        max-width: 1250px;
     }
     @media (max-width: 768px) {
         margin-bottom: 0px;
     }
 `;
 const Content = styled.div`
-    width: 75%;
-    /* width: 100%; */
-    /* text-align: right; */
+    /* width: 75%; */
+    width: 100%;
+    text-align: right;
     @media (max-width: 1220px) {
-        width: 85%;
+        /* width: 85%; */
     }
     @media (max-width: 768px) {
         width: 100%;
@@ -119,23 +148,22 @@ const Title = styled.h2`
     }
 `;
 const SubText = styled.p`
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
-    /* font-family: sans-serif; */
     line-height: 1.2;
-    /* margin-left: 25%; */
+    margin-left: 25%;
     span {
         font-style: italic;
         font-weight: 900;
     }
     @media (max-width: 1220px) {
-        /* margin-left: 15%; */
+        margin-left: 15%;
     }
     @media (max-width: 768px) {
         margin-left: 0;
     }
     @media (max-width: 576px) {
-        font-size: 16px;
+        font-size: 14px;
         margin-top: 2rem;
         line-height: 1.5;
     }
@@ -148,7 +176,7 @@ const Text = styled.p`
     letter-spacing: 1px;
     font-style: italic;
     @media (max-width: 576px) {
-        font-size: 16px;
+        font-size: 14px;
         letter-spacing: 1px;
         font-weight: 200;
         line-height: 25px;

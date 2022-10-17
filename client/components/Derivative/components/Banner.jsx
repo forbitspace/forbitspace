@@ -15,7 +15,8 @@ const Banner = () => {
                             positions and mitigate their risks during highly
                             volatile trading days. Synthetic assets on
                             decentralized trading platforms are fetching good
-                            trade volume.
+                            trade volume. <br />
+                            <br />
                         </SubText>
                         <SubText>
                             <span>forbitspace</span> derivatives protocol is
@@ -120,7 +121,7 @@ const Text = styled.p`
 const WrapText = styled.div``;
 
 const SubText = styled.p`
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
     /* font-family: sans-serif; */
     line-height: 1.2;
@@ -130,12 +131,12 @@ const SubText = styled.p`
     }
     @media (max-width: 768px) {
         text-align: justify;
-        font-size: 16px;
+        font-size: 14px;
     }
     @media (max-width: 576px) {
         line-height: 1.5;
         text-align: center;
-        font-size: 16px;
+        font-size: 14px;
     }
 `;
 export default Banner;

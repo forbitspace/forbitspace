@@ -7,7 +7,7 @@
   "/about": "pages/about.js",
   "/aggregation": "pages/aggregation.js",
   "/assets": "pages/assets.js",
-  "/branding": "pages/branding.js",
+  "/brandkit": "pages/brandkit.js",
   "/bridge": "pages/bridge.js",
   "/comps/blog": "pages/comps/blog.js",
   "/comps/bug-bounty": "pages/comps/bug-bounty.js",
@@ -22,12 +22,12 @@
   "/contact": "pages/contact.js",
   "/dao": "pages/dao.js",
   "/derivative": "pages/derivative.js",
+  "/fbs-token": "pages/fbs-token.js",
   "/": "pages/index.js",
   "/limit": "pages/limit.js",
   "/liquidity": "pages/liquidity.js",
   "/mobile-wallet": "pages/mobile-wallet.js",
   "/selfcustody": "pages/selfcustody.js",
   "/smart-contract": "pages/smart-contract.js",
-  "/team": "pages/team.js",
-  "/token": "pages/token.js"
+  "/team": "pages/team.js"
 }

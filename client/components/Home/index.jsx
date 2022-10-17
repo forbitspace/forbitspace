@@ -12,19 +12,21 @@ import System from "./components/System";
 import Partners from "./components/Partners";
 import Network from "./components/Network";
 import LazyLoad from "react-lazyload";
+// import FlybyBanner from "../FlybyBanner/FlybyBanner";
 // import ChristmasAnimation from "../ChristmasAnimation";
 
 const Index = () => {
     return (
         <React.Fragment>
+            {/* <FlybyBanner /> */}
             <LazyLoad height={250}>
                 <Banner />
             </LazyLoad>
+            <LazyLoad height={250}>
+                <Network />
+            </LazyLoad>
             <WrapperBackground>
                 <Container>
-                    <LazyLoad height={250}>
-                        <Network />
-                    </LazyLoad>
                     <LazyLoad height={250}>
                         <Planet />
                     </LazyLoad>
@@ -37,8 +39,9 @@ const Index = () => {
                     <LazyLoad height={250}>
                         <LimitOrder />
                     </LazyLoad>
-                    <LazyLoad height={250}></LazyLoad>
-                    <Derivative />
+                    <LazyLoad height={250}>
+                        <Derivative />
+                    </LazyLoad>
                     <LazyLoad height={250}>
                         <SelfCustody />
                     </LazyLoad>
@@ -56,7 +59,6 @@ const Index = () => {
 };
 const WrapperBackground = styled.div`
     position: relative;
-    font-family: "helvetica neue", "Roboto", sans-serif;
     @media (max-width: 576px) {
         overflow-x: hidden;
     }

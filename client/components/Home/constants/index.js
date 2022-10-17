@@ -169,12 +169,15 @@ export const DataFBTC = [
 export const AuditData = [
     {
         img: "certik.png",
+        link: "https://www.certik.com/projects/forbitspace",
     },
     {
         img: "skynet.png",
+        link: "https://www.certik.com/projects/forbitspace",
     },
     {
         img: "hacken.svg",
+        link: "https://hacken.io/audits/#forbitspace",
     },
 ];
 export const EcosystemData = [
@@ -182,10 +185,7 @@ export const EcosystemData = [
         img: "eth.svg",
     },
     {
-        img: "binance.svg",
-    },
-    {
-        img: "solana.svg",
+        img: "bnb-chain.png",
     },
     {
         img: "polygon.svg",
@@ -194,34 +194,16 @@ export const EcosystemData = [
         img: "avalanche.svg",
     },
     {
-        img: "arbitrum.svg",
-    },
-    {
-        img: "coinbase.svg",
-    },
-    {
         img: "metamask.svg",
-    },
-    {
-        img: "near.svg",
     },
     {
         img: "trust-wallet.svg",
     },
     {
-        img: "fire-block.svg",
-    },
-    {
         img: "wallet-connect.svg",
     },
     {
-        img: "safepal.svg",
-    },
-    {
         img: "coin-gecko.svg",
-    },
-    {
-        img: "defillama.svg",
     },
     {
         img: "link.svg",
@@ -230,28 +212,115 @@ export const EcosystemData = [
         img: "the-graph.svg",
     },
     {
-        img: "dune.svg",
+        img: "intotheblock.svg",
     },
-    {
-        img: "phantom.svg",
-    },
-    {
-        img: "zapper.svg",
-    },
+];
+
+export const ExclusiveData = [
     {
         img: "boarc.png",
     },
+];
+
+export const MediaData = [
     {
-        img: "crypto.svg",
+        img: "benzinga.png",
+        link: "https://www.benzinga.com/pressreleases/22/03/g25956056/forbitspace-dex-super-aggregator-announces-its-launch",
     },
     {
-        img: "alpha-wallet.svg",
+        img: "cointelegraph.png",
+        link: "https://cointelegraph.com/news/dex-super-aggregator-unites-dapps-across-multiple-chains",
     },
     {
-        img: "intotheblock.svg",
+        img: "market-watch.png",
+        link: "https://www.marketwatch.com/press-release/forbitspace-dex-super-aggregator-announces-its-launch-2022-03-03",
     },
     {
-        img: "de-bank.svg",
+        img: "yahoo-finance.png",
+        link: "https://finance.yahoo.com/news/forbitspace-dex-super-aggregator-announces-051300887.html",
+    },
+    {
+        img: "yahoo-news.png",
+        link: "https://finance.yahoo.com/news/forbitspace-dex-super-aggregator-announces-051300887.html",
+    },
+    {
+        img: "yahoo-money.png",
+        link: "https://finance.yahoo.com/news/forbitspace-dex-super-aggregator-announces-051300887.html",
+    },
+    {
+        img: "amb-crypto.png",
+        link: "https://ambcrypto.com/forbitspace-dex-super-aggregator-offers-a-convenient-defi-experience-for-trading/",
+    },
+    {
+        img: "bsc-news.png",
+        link: "https://www.bsc.news/post/forbitspace-a-dex-super-aggregator-with-a-unique-multichain-ecosystem",
+    },
+    {
+        img: "coin-quora.png",
+        link: "https://coinquora.com/forbitspace-dex-super-aggregator-the-way-forward/",
+    },
+    {
+        img: "u-today.png",
+        link: "https://u.today/forbitspace-dex-super-aggregator-advances-cross-network-trading-review",
+    },
+    {
+        img: "crypto-potato.png",
+        link: "https://cryptopotato.com/forbitspace-defi-aggregator-an-extensive-guide/",
+    },
+    {
+        img: "decrypt.png",
+        link: "#",
+    },
+    {
+        img: "blockonomi.png",
+        link: "https://cryptodaily.io/introducing-forbitspace-the-decentralized-exchange-super-aggregator/",
+    },
+    {
+        img: "coin-pedia.webp",
+        link: "https://coinpedia.org/defi/forbitspace-dex-super-aggregator-review-the-dapp-better-for-trading/",
+    },
+    {
+        img: "cryptofamily.png",
+        link: "https://cryptofamily.net/forbitspace-dex-super-aggregator-dapp-doc-dao-cho-giao-dich-da-chuoi/",
+    },
+    {
+        img: "mg-logo.png",
+        link: "https://mg.ventures/forbitspace-sieu-tong-hop-dex-trong-tuong-lai-da-chuoi/",
+    },
+];
+
+export const BackerData = [
+    {
+        img: "space-venture.png",
+        link: "",
+    },
+    {
+        img: "boarc-gray.png",
+        link: "https://boarc.org/",
+    },
+    {
+        img: "crypto-spacex.png",
+        link: "",
+    },
+    {
+        img: "defiaz.png",
+        link: "",
+    },
+    {
+        img: "blog-defi.png",
+        link: "",
+    },
+    {
+        img: "song-ngu.png",
+        link: "",
+    },
+    {
+        img: "av-star-gray.png",
+        link: "https://avstarcapital.co/",
+    },
+    {
+        img: "space-defi.png",
+        link: "",
     },
 ];
 export const DataSocialLinkFooter = [
@@ -272,7 +341,8 @@ export const DataSocialLinkFooter = [
         url: "./images/icon-social-footer/1.svg",
     },
     {
-        link: "https://discord.com/invite/forbitspace",
+        // link: "https://discord.com/invite/forbitspace",
+        link: "https://discord.gg/CnJqNa2wfG",
         url: "./images/icon-social-footer/3.svg",
     },
     {

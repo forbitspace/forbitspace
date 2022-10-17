@@ -1,5 +1,12 @@
 import styled from "styled-components";
-import { AuditData, DataSocialLinkFooter, EcosystemData } from "../constants";
+import {
+    AuditData,
+    BackerData,
+    DataSocialLinkFooter,
+    EcosystemData,
+    MediaData,
+    ExclusiveData
+} from "../constants";
 import LazyLoad from "react-lazyload";
 const System = () => {
     const ContributorRender = ({ data, title }) => {
@@ -12,6 +19,10 @@ const System = () => {
                             <LazyLoad height={45}>
                                 <img
                                     src={`./images/logo-contributor/${item.img}`}
+                                    className={`img-${item.img?.split(".")[0]
+                                        ? item.img.split(".")[0]
+                                        : "eco-system"
+                                        }`}
                                     alt={`logo-${item.img}`}
                                 />
                             </LazyLoad>
@@ -28,17 +39,53 @@ const System = () => {
                 <div className="img-content">
                     {data.map((item, index) => (
                         <div className="img-holder" key={index}>
-                            <LazyLoad height={45}>
-                                <img
-                                    src={`./images/logo-contributor/${item.img}`}
-                                    className={`img-${
-                                        item.img.split(".")[0]
+                            <a
+                                href={item.link}
+                                target="_blank"
+                                rel="noreferrer noreopenner"
+                                className="link-to-web"
+                            >
+                                <LazyLoad height={45}>
+                                    <img
+                                        src={`./images/logo-contributor/${item.img}`}
+                                        className={`img-${item.img.split(".")[0]
                                             ? item.img.split(".")[0]
                                             : "auditor"
-                                    }`}
-                                    alt={`logo-${item.img}`}
-                                />
-                            </LazyLoad>
+                                            }`}
+                                        alt={`logo-${item.img}`}
+                                    />
+                                </LazyLoad>
+                            </a>
+                        </div>
+                    ))}
+                </div>
+            </WrapperInner>
+        );
+    };
+    const MediaRender = ({ data, title }) => {
+        return (
+            <WrapperInner className="media">
+                <div className="header">{title}</div>
+                <div className="img-content">
+                    {data.map((item, index) => (
+                        <div className="img-holder" key={index}>
+                            <a
+                                href={item.link}
+                                target="_blank"
+                                rel="noreferrer noreopenner"
+                                className="link-to-web"
+                            >
+                                <LazyLoad height={45}>
+                                    <img
+                                        src={`./images/logo-contributor/${item.img}`}
+                                        className={`img-${item.img.split(".")[0]
+                                            ? item.img.split(".")[0]
+                                            : "auditor"
+                                            }`}
+                                        alt={`logo-${item.img}`}
+                                    />
+                                </LazyLoad>
+                            </a>
                         </div>
                     ))}
                 </div>
@@ -51,13 +98,21 @@ const System = () => {
             <div className="container">
                 <ContributorRender
                     data={EcosystemData}
-                    title={"Ecosystem partners"}
+                    title={"Intergrated In Platform"}
                 />
                 <AuditorRender
                     data={AuditData}
-                    title={"Security Audit Partner"}
+                    title={"Security Audit Partners"}
                 />
-                {/* <ContributorRender data={ContributorData} title={"Stakeholders"} /> */}
+                <MediaRender data={MediaData} title={"Media Partners"} />
+                <MediaRender
+                    data={BackerData}
+                    title={"Backers and Investors"}
+                />
+                <AuditorRender
+                    data={ExclusiveData}
+                    title={"Exclusive Partner"}
+                />
                 <BecomeBox>
                     <div className="content">
                         <div className="header-content">Join the community</div>
@@ -87,6 +142,7 @@ const System = () => {
                         );
                     })}
                 </SocialLink>
+
             </div>
         </WrapperSystem>
     );
@@ -103,10 +159,58 @@ const WrapperSystem = styled.section`
 `;
 const WrapperInner = styled.div`
     &.auditor {
-        .img-content {
-            justify-content: center;
-            padding: 15px 0 45px;
-            gap: 6rem;
+        .img-holder {
+            margin: 0 2rem;
+        }
+    }
+    &.media {
+        .img-holder {
+            width: 15%;
+            @media (max-width: 945px) {
+                width: 22.5%;
+            }
+
+            @media (max-width: 768px) {
+                width: 32%;
+            }
+
+            @media (max-width: 574px) {
+                width: 45%;
+            }
+        }
+        img {
+            transform: scale(0.85);
+        }
+        .img-song-ngu,
+        .img-space-venture {
+            margin-left: 50%;
+            transform: translate(-50%) scale(1.2);
+        }
+        .img-bsc-news {
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    @media (max-width: 768px) {
+        &.auditor {
+            .img-holder {
+                padding: 10px 0;
+            }
+            .img-hacken {
+                width: 100%;
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        &.auditor {
+            .img-holder {
+                margin: 0;
+            }
+        }
+        &.media {
+            .img-holder {
+                margin: 0;
+            }
         }
     }
     .header {
@@ -127,9 +231,11 @@ const WrapperInner = styled.div`
         flex-wrap: wrap;
         padding: 45px;
         gap: 10px;
+        justify-content: center;
+        padding: 15px 0 45px;
 
-        @media (max-width: 767px){
-            gap: 7px;;
+        @media (max-width: 767px) {
+            gap: 7px;
         }
 
         @media (max-width: 576px) {
@@ -146,9 +252,8 @@ const WrapperInner = styled.div`
             width: auto;
             max-height: 65px;
         }
-        .img-hacken {
-            margin-left: -2rem;
-            padding: 0;
+        .img-trust-wallet {
+            height: 60px;
         }
 
         @media (max-width: 945px) {
@@ -161,38 +266,6 @@ const WrapperInner = styled.div`
 
         @media (max-width: 574px) {
             width: 45%;
-        }
-
-        /* @media (max-width: 415px) {
-      width: 70%;
-    } */
-    }
-    @media (max-width: 1024px) {
-        &.auditor {
-            .img-content {
-                gap: 2rem;
-            }
-            .img-hacken {
-                margin-left: 0;
-            }
-        }
-    }
-    @media (max-width: 768px) {
-        &.auditor {
-            .img-holder {
-                padding: 10px 0;
-            }
-            .img-hacken {
-                margin-left: 0;
-                width: 100%;
-            }
-        }
-    }
-    @media (max-width: 576px) {
-        &.auditor {
-            .img-content {
-                gap: 10px;
-            }
         }
     }
 `;
@@ -229,6 +302,9 @@ const Link = styled.a`
     :hover {
         cursor: pointer;
     }
+    @media (max-width: 576px) {
+        margin-right: 10px;
+    }
 `;
 
 const Icon = styled.img`
@@ -239,7 +315,7 @@ const Icon = styled.img`
         transform: scale(1.2);
     }
     @media (max-width: 576px) {
-        max-width: 25px;
+        max-width: 24px;
     }
 `;
 

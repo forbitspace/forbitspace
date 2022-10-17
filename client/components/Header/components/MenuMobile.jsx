@@ -6,12 +6,13 @@ import { navContent } from "../constants/index";
 
 const MenuMobile = () => {
     const [menu, setMenu] = useState(false);
-    const [active, setActive] = useState(false);
+    const [active, setActive] = useState();
 
     const toggle = () => {
         setMenu(!menu);
-        setActive(!active);
+        // setActive(!active);
     };
+
     return (
         <StyledMenu>
             {menu ? <GlobalStyle /> : <></>}
@@ -35,13 +36,14 @@ const MenuMobile = () => {
             >
                 <div>
                     <ul>
-                        <li style={{ margin: "0 0 20px -10px" }}>
+                        <li style={{ margin: "0 0 20px -10px" }} onClick={toggle}>
                             <Logo />
                         </li>
                         {navContent.map((item, index) => (
                             <li
-                                className={active ? "title active" : "title"}
+                                className={active === item.nav ? "title active" : "title"}
                                 key={index}
+                                onClick={() => setActive(item.nav === active ? "" : item.nav)}
                             >
                                 <Link
                                     href={item.link}
@@ -114,7 +116,7 @@ const Nav = styled.div`
     img {
         width: 12px;
         margin-left: 0.5rem;
-        transition: transform 0.3s;
+        transition: transform 0.6s;
     }
     ul {
         li {
@@ -127,14 +129,14 @@ const Nav = styled.div`
         }
     }
     .active {
-        :hover {
+        /* :hover { */
             .submenu {
                 max-height: 500px;
             }
             img {
-                transform: rotate(-180deg);
+                transform: rotateX(-180deg);
             }
-        }
+        /* } */
     }
     @media (max-width: 576px) {
         width: 100%;
