@@ -55,14 +55,13 @@ export const MemberData = [
     {
         name: "Joseph Miller",
         thumb: "../images/contributor-page/miller.png",
-        job: "Technical Manager",
-        jobb: "Lead Blockchain Engineer",
+        job: "CPO",
         linked: "/",
     },
     {
         name: "Mat Luu",
         thumb: "../images/contributor-page/mat-mind.png",
-        jobb: "Lead Blockchain Engineer",
+        jobb: "CTO",
         // linked: "https://www.linkedin.com/in/mat-luu/",
         linked: "/",
     },
@@ -71,13 +70,6 @@ export const MemberData = [
         thumb: "../images/contributor-page/pantinho.png",
         job: "Lead Blockchain Engineer",
         // linked: "https://www.linkedin.com/in/pantinho-vo/",
-        linked: "/",
-    },
-    {
-        name: "Jason Ly",
-        thumb: "../images/contributor-page/jason.png",
-        job: "Software Engineer (FE)",
-        // linked: "https://www.linkedin.com/in/jasonlyy/",
         linked: "/",
     },
     {
