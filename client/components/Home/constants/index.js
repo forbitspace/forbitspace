@@ -188,43 +188,22 @@ export const EcosystemData = [
         img: "bnb-chain.png",
     },
     {
-        img: "solana.svg",
-    },
-    {
         img: "polygon.svg",
     },
     {
         img: "avalanche.svg",
     },
     {
-        img: "arbitrum.svg",
-    },
-    {
-        img: "coinbase.svg",
-    },
-    {
         img: "metamask.svg",
-    },
-    {
-        img: "near.svg",
     },
     {
         img: "trust-wallet.svg",
     },
     {
-        img: "fire-block.svg",
-    },
-    {
         img: "wallet-connect.svg",
     },
     {
-        img: "safepal.svg",
-    },
-    {
         img: "coin-gecko.svg",
-    },
-    {
-        img: "defillama.svg",
     },
     {
         img: "link.svg",
@@ -233,30 +212,16 @@ export const EcosystemData = [
         img: "the-graph.svg",
     },
     {
-        img: "dune.svg",
+        img: "intotheblock.svg",
     },
-    {
-        img: "phantom.svg",
-    },
-    {
-        img: "zapper.svg",
-    },
+];
+
+export const ExclusiveData = [
     {
         img: "boarc.png",
     },
-    {
-        img: "crypto.svg",
-    },
-    {
-        img: "alpha-wallet.svg",
-    },
-    {
-        img: "intotheblock.svg",
-    },
-    {
-        img: "de-bank.svg",
-    },
 ];
+
 export const MediaData = [
     {
         img: "benzinga.png",

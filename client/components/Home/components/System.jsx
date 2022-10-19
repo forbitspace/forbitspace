@@ -5,6 +5,7 @@ import {
     DataSocialLinkFooter,
     EcosystemData,
     MediaData,
+    ExclusiveData
 } from "../constants";
 import LazyLoad from "react-lazyload";
 const System = () => {
@@ -18,11 +19,10 @@ const System = () => {
                             <LazyLoad height={45}>
                                 <img
                                     src={`./images/logo-contributor/${item.img}`}
-                                    className={`img-${
-                                        item.img?.split(".")[0]
-                                            ? item.img.split(".")[0]
-                                            : "eco-system"
-                                    }`}
+                                    className={`img-${item.img?.split(".")[0]
+                                        ? item.img.split(".")[0]
+                                        : "eco-system"
+                                        }`}
                                     alt={`logo-${item.img}`}
                                 />
                             </LazyLoad>
@@ -48,11 +48,10 @@ const System = () => {
                                 <LazyLoad height={45}>
                                     <img
                                         src={`./images/logo-contributor/${item.img}`}
-                                        className={`img-${
-                                            item.img.split(".")[0]
-                                                ? item.img.split(".")[0]
-                                                : "auditor"
-                                        }`}
+                                        className={`img-${item.img.split(".")[0]
+                                            ? item.img.split(".")[0]
+                                            : "auditor"
+                                            }`}
                                         alt={`logo-${item.img}`}
                                     />
                                 </LazyLoad>
@@ -79,11 +78,10 @@ const System = () => {
                                 <LazyLoad height={45}>
                                     <img
                                         src={`./images/logo-contributor/${item.img}`}
-                                        className={`img-${
-                                            item.img.split(".")[0]
-                                                ? item.img.split(".")[0]
-                                                : "auditor"
-                                        }`}
+                                        className={`img-${item.img.split(".")[0]
+                                            ? item.img.split(".")[0]
+                                            : "auditor"
+                                            }`}
                                         alt={`logo-${item.img}`}
                                     />
                                 </LazyLoad>
@@ -100,7 +98,7 @@ const System = () => {
             <div className="container">
                 <ContributorRender
                     data={EcosystemData}
-                    title={"Ecosystem Partnership"}
+                    title={"Intergrated In Platform"}
                 />
                 <AuditorRender
                     data={AuditData}
@@ -110,6 +108,10 @@ const System = () => {
                 <MediaRender
                     data={BackerData}
                     title={"Backers and Investors"}
+                />
+                <AuditorRender
+                    data={ExclusiveData}
+                    title={"Exclusive Partner"}
                 />
                 <BecomeBox>
                     <div className="content">
@@ -140,6 +142,7 @@ const System = () => {
                         );
                     })}
                 </SocialLink>
+
             </div>
         </WrapperSystem>
     );
@@ -156,19 +159,11 @@ const WrapperSystem = styled.section`
 `;
 const WrapperInner = styled.div`
     &.auditor {
-        .img-content {
-            justify-content: center;
-            padding: 15px 0 45px;
-        }
         .img-holder {
             margin: 0 2rem;
         }
     }
     &.media {
-        .img-content {
-            justify-content: center;
-            padding: 15px 0 45px;
-        }
         .img-holder {
             width: 15%;
             @media (max-width: 945px) {
@@ -236,6 +231,8 @@ const WrapperInner = styled.div`
         flex-wrap: wrap;
         padding: 45px;
         gap: 10px;
+        justify-content: center;
+        padding: 15px 0 45px;
 
         @media (max-width: 767px) {
             gap: 7px;
