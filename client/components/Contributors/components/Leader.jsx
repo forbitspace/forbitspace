@@ -133,17 +133,12 @@ const Leaders = () => {
                     <StyledMemberItem>
                         <WrapperIfo>
                             <FlexItem>
-                                <Name>Stella Vo</Name>
+                                <Name>Mat Luu</Name>
                                 <p style={{ marginLeft: "-13px" }}>
-                                    Head Strategist
+                                    CTO
                                 </p>
-                                <p style={{ marginLeft: "-13px" }}>
-                                    Business Development Manager
-                                </p>
-                                <p></p>
                                 <Social>
                                     <a
-                                        // href="https://www.linkedin.com/in/stella-vo-276627222"
                                         href="/"
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -154,8 +149,7 @@ const Leaders = () => {
                                         />
                                     </a>
                                     <a
-                                        // href="https://www.linkedin.com/in/stella-vo-276627222"
-                                        href="/"
+                                        href="https://www.linkedin.com/in/mat-luu/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
@@ -168,7 +162,7 @@ const Leaders = () => {
                             </FlexItem>
                             <Thumb>
                                 <img
-                                    src="../images/contributor-page/stella-vo.png"
+                                    src="../images/contributor-page/mat-mind.png"
                                     alt="icon member"
                                 />
                             </Thumb>
@@ -181,15 +175,14 @@ const Leaders = () => {
                         </Background>
                     </StyledMemberItem>
                     <Introduction className="vice-leader">
-                        <div className="name">Stella Vo</div>
+                        <div className="name">Mat Luu</div>
                         <div className="content">
-                            He is an economist, he join space blockchain in
-                            early 2018. He has attended many seminars, given
-                            presentations on blockchain, cryptocurrency in many
-                            different countries. He belief the blockchain will
-                            opportunity the innovations necessary to usher and
-                            decentralized trading for all also the future of the
-                            whole world.
+                            He is a Blockchain Developer for forbitspace.
+                            He is an interested coder, and he enjoy using his skills to contribute
+                            to the exciting technological advances that happen every day at forbitspace.
+                            He graduated from the VNU HCMC-University of Social Sciences and Humanities in
+                            2020 with a bachelor's degree information management. Working here for 2 years,
+                            He has accumulated a lot of knowledge and brought great value to the company.
                         </div>
                     </Introduction>
                 </Leader>
@@ -197,15 +190,14 @@ const Leaders = () => {
                     <StyledMemberItem>
                         <WrapperIfo>
                             <FlexItem>
-                                <Name>Emily Anh</Name>
-                                <p style={{ marginLeft: "-13px" }}>CMO</p>
+                                <Name>Pantinho Vo</Name>
+                                <p style={{ marginLeft: "-13px" }}>Lead Blockchain</p>
                                 <p style={{ marginLeft: "-13px" }}>
-                                    Business Development
+                                    Engineer
                                 </p>
                                 <p></p>
                                 <Social>
                                     <a
-                                        // href="https://www.linkedin.com/in/stella-vo-276627222"
                                         href="/"
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -216,7 +208,7 @@ const Leaders = () => {
                                         />
                                     </a>
                                     <a
-                                        href="/"
+                                        href="https://www.linkedin.com/in/pantinho-vo/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
@@ -229,7 +221,7 @@ const Leaders = () => {
                             </FlexItem>
                             <Thumb>
                                 <img
-                                    src="../images/contributor-page/emily-anh.png"
+                                    src="../images/contributor-page/pantinho.png"
                                     alt="icon member"
                                 />
                             </Thumb>
@@ -242,108 +234,26 @@ const Leaders = () => {
                         </Background>
                     </StyledMemberItem>
                     <Introduction className="vice-leader">
-                        <div className="name">Emily Anh</div>
+                        <div className="name">Pantinho</div>
                         <div className="content">
-                            Blockchain technology geek, I am young which has
-                            just started. I goal looking for ambitious are
-                            motivated to make{" "}
-                            <span className="forbitspace">forbitspace</span> one
-                            of the biggest DEX projects on all chains.
-                            <br />
-                            Managing incoming media requests and building
-                            relationships with industry journalists executing,
-                            and measuring media campaigns, strategic marketing,
-                            and communications plans.
+                            He is a software engineer who is passionate about everything related to technology,
+                            mathematic, and logic. He has more than years of experience working with different
+                            fields in technology. Currently, he focus on Blockchain and functional programming
+                            at forbitspace.
                         </div>
                     </Introduction>
                 </Leader>
             </WrapperLeader>
-            {/* <WrapperLeader>
-                <Leader>
-                    <StyledMemberItem>
-                        <WrapperIfo>
-                            <FlexItem>
-                                <Name>James Davis</Name>
-                                <p style={{ marginLeft: "-13px" }}>CFO</p>
-                                <p style={{ marginLeft: "-13px" }}>
-                                    Business Development
-                                </p>
-                                <p></p>
-                                <Social>
-                                    <a
-                                        // href="https://www.linkedin.com/in/stella-vo-276627222"
-                                        href="/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <img
-                                            src="../images/icons/twitter.svg"
-                                            alt=""
-                                        />
-                                    </a>
-                                    <a
-                                        // href="https://www.linkedin.com/in/stella-vo-276627222"
-                                        href="/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <img
-                                            src="../images/icons/linkedin.svg"
-                                            alt=""
-                                        />
-                                    </a>
-                                </Social>
-                            </FlexItem>
-                            <Thumb>
-                                <img
-                                    src="../images/contributor-page/davis.png"
-                                    alt="icon member"
-                                />
-                            </Thumb>
-                        </WrapperIfo>
-                        <Background>
-                            <img
-                                src="../images/contributor-page/orbit-background.svg"
-                                alt="background-orbit-image"
-                            />
-                        </Background>
-                    </StyledMemberItem>
-                    <Introduction className="vice-leader">
-                        <div className="name">James Davis</div>
-                        <div className="content">
-                            He is a software engineer who is interested in
-                            exploring technology and logical aspects. He has
-                            experience in different fields of programming and
-                            development, backend infrastructure design, and
-                            architect experience working on backend databases
-                            and extendable web-based infrastructures for online
-                            applications.
-                            <br /> He is a developer who builds the backbone of
-                            our <span className="forbitspace">forbitspace</span>
-                            . A blockchain engineer who focuses on algorithm
-                            optimization and data structures, specially on
-                            decentralized systems in Blockchain of{" "}
-                            <span className="forbitspace">forbitspace</span>.
-                            <br /> He always wants to be a better version of
-                            himself.
-                        </div>
-                    </Introduction>
-                </Leader>
-            </WrapperLeader> */}
             <WrapperLeader className="footer-member">
                 <Leader className="footer-leader">
                     <StyledMemberItem>
                         <WrapperIfo>
                             <FlexItem>
-                                <Name>James Davis</Name>
-                                <p style={{ marginLeft: "-13px" }}>CFO</p>
-                                <p style={{ marginLeft: "-13px" }}>
-                                    Business Development
-                                </p>
+                                <Name>Joseph Miller</Name>
+                                <p style={{ marginLeft: "-13px" }}>CPO</p>
                                 <p></p>
                                 <Social>
                                     <a
-                                        // href="https://www.linkedin.com/in/stella-vo-276627222"
                                         href="/"
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -354,8 +264,7 @@ const Leaders = () => {
                                         />
                                     </a>
                                     <a
-                                        // href="https://www.linkedin.com/in/stella-vo-276627222"
-                                        href="/"
+                                        href="https://www.linkedin.com/in/joseptran-forbitspace/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
@@ -368,7 +277,7 @@ const Leaders = () => {
                             </FlexItem>
                             <Thumb>
                                 <img
-                                    src="../images/contributor-page/davis.png"
+                                    src="../images/contributor-page/miller.png"
                                     alt="icon member"
                                 />
                             </Thumb>
@@ -381,23 +290,13 @@ const Leaders = () => {
                         </Background>
                     </StyledMemberItem>
                     <Introduction className="vice-leader">
-                        <div className="name">James Davis</div>
+                        <div className="name">Joseph Miller</div>
                         <div className="content">
-                            He is a software engineer who is interested in
-                            exploring technology and logical aspects. He has
-                            experience in different fields of programming and
-                            development, backend infrastructure design, and
-                            architect experience working on backend databases
-                            and extendable web-based infrastructures for online
-                            applications.
-                            <br /> He is a developer who builds the backbone of
-                            our <span className="forbitspace">forbitspace</span>
-                            . A blockchain engineer who focuses on algorithm
-                            optimization and data structures, specially on
-                            decentralized systems in Blockchain of{" "}
-                            <span className="forbitspace">forbitspace</span>.
-                            <br /> He always wants to be a better version of
-                            himself.
+                            More than 2 years working at  VIETRY CO., LTD
+
+                            <br /> Frontend Lead at Waytech Ltd
+
+                            <br /> Back End Developer at CNV Loyalty App Platform
                         </div>
                     </Introduction>
                 </Leader>
