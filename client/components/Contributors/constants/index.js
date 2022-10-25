@@ -17,8 +17,6 @@ export const NumData = [
     },
 ];
 
-// export const DirectorMemberData = [
-
 export const MemberUpperData = [
     {
         name: "James Davis",
@@ -29,6 +27,18 @@ export const MemberUpperData = [
 ];
 
 export const MemberData = [
+    {
+        name: "Shayha Duong",
+        thumb: "../images/contributor-page/shayha.png",
+        job: "Blockchain developer",
+        linked: "/",
+    },
+    {
+        name: "Matthew Phan",
+        thumb: "../images/contributor-page/matthew.png",
+        job: "Blockchain developer",
+        linked: "/",
+    },
     {
         name: "Chris Nguyen",
         thumb: "../images/contributor-page/chris.png",
@@ -53,27 +63,6 @@ export const MemberData = [
         job: "Marketing Manager",
         linked: "/",
     },
-    // {
-    //   name: "Nina Nguyen",
-    //   thumb: "../images/contributor-page/nina.png",
-    //   job: "Business Development",
-    //   // linked: "https://www.linkedin.com/in/nina-nguyen-192958224/",
-    //   linked: "/",
-    // },
-    // {
-    //   name: "Alysia Nguyen",
-    //   thumb: "../images/contributor-page/alysia.png",
-    //   job: "Business Development",
-    //   // linked: "https://www.linkedin.com/in/alysia-space-97a64b227/",
-    //   linked: "/",
-    // },
-    // {
-    //   name: "Jennie Le",
-    //   thumb: "../images/contributor-page/jennie.png",
-    //   job: "Business Development",
-    //   // linked: "http://linkedin.com/in/jennie-helen-11a677214/",
-    //   linked: "/",
-    // },
     {
         name: "DiDy Nguyen",
         thumb: "../images/contributor-page/didy-nguyen.png",
