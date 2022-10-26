@@ -240,7 +240,7 @@ const Leaders = () => {
                             mathematic, and logic.
                             He graduated from the Banking University in
                             2020 with a bachelor's degree Management Information Systems.
-                            He has more than years of experience working with different
+                            He has more than three years of experience working with different
                             fields in technology. Currently, he focus on Blockchain and functional programming
                             at forbitspace.
                         </div>
