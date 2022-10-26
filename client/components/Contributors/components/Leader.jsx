@@ -191,7 +191,7 @@ const Leaders = () => {
                         <WrapperIfo>
                             <FlexItem>
                                 <Name>Pantinho Vo</Name>
-                                <p style={{ marginLeft: "-13px" }}>Lead Blockchain</p>
+                                <p style={{ marginLeft: "-13px" }}>Manager Blockchain Engineer</p>
                                 <p style={{ marginLeft: "-13px" }}>
                                     Engineer
                                 </p>
